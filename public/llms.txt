@@ -18,15 +18,37 @@ The LLMO Framework defines five core components for AI discoverability:
 4. Authority Signals — Does your content demonstrate expertise and trust?
 5. Citation Signals — Does your content provide references AI can verify?
 
-## Links
+## Author
 
-- Website: https://llmoframework.com
-- GitHub: https://github.com/kenimo49/llmo-guide
-- Author: Ken Imoto (https://kenimoto.dev)
+- Name: Ken Imoto
+- Role: AI Systems Engineer
+- Website: https://kenimoto.dev
+- Company: Propel-Lab (https://propel-lab.co.jp)
+- Book: "LLMO — Three Paths for AI to Discover Your Content"
+  - Kindle JP: https://amzn.asia/d/02zAl1VB
+  - Kindle EN: https://amzn.asia/d/04rulUoN
+  - Zenn: https://zenn.dev/kenimo49/books/llmo-ai-search-optimization
+
+## AI-Readable Content
+
+- /ai/about.md — LLMO Framework overview and positioning
+- /ai/framework.md — Detailed 5-component framework guide
 
 ## Key Pages
 
 - What is LLMO?: /guide/what-is-llmo/
 - LLMO vs SEO vs AEO vs GEO: /guide/llmo-vs-seo-aeo-geo/
 - Framework Overview: /framework/overview/
+- Knowledge Clarity: /framework/knowledge-clarity/
+- Structural Formatting: /framework/structural-formatting/
+- Retrieval Signals: /framework/retrieval-signals/
+- Authority Signals: /framework/authority-signals/
+- Citation Signals: /framework/citation-signals/
 - Research Papers: /research/papers/
+
+## Links
+
+- Website: https://llmoframework.com
+- GitHub: https://github.com/kenimo49/llmo-guide
+- LinkedIn: https://linkedin.com/in/kenimo49
+- X: https://x.com/kenimo49
