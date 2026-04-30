@@ -1,0 +1,98 @@
+---
+title: LLMO Framework
+description: AIによる発見可能性のためのオープンスタンダード -- ChatGPT、Claude、Gemini、Perplexityからコンテンツを見つけてもらうために。
+template: splash
+hero:
+  title: LLMO Framework
+  tagline: ChatGPT、Claude、Gemini、Perplexityにコンテンツを発見してもらうためのオープンスタンダード。研究に基づき、本番環境で実証済み。オープンソース。
+  actions:
+    - text: 30分でクイックスタート
+      link: /ja/guide/quickstart/
+      icon: right-arrow
+    - text: フレームワークを読む
+      link: /ja/framework/overview/
+      variant: minimal
+    - text: GitHub
+      link: https://github.com/kenimo49/llmo-guide
+      variant: minimal
+      icon: external
+head:
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: |
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "LLMO Framework",
+        "applicationCategory": "DeveloperApplication",
+        "description": "The open standard for making web content discoverable by AI systems including ChatGPT, Claude, Gemini, and Perplexity.",
+        "url": "https://llmoframework.com",
+        "author": {
+          "@type": "Person",
+          "name": "Ken Imoto",
+          "url": "https://kenimoto.dev"
+        },
+        "license": "https://opensource.org/licenses/MIT"
+      }
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## 5つのコンポーネント
+
+<CardGrid>
+  <Card title="1. Knowledge Clarity" icon="pencil">
+    AIが正確に理解・要約できる、明確で事実に基づいた曖昧さのないコンテンツ。
+  </Card>
+  <Card title="2. Structural Formatting" icon="setting">
+    機械可読な構造: Markdown、JSON-LD、セマンティックHTML、llms.txt。
+  </Card>
+  <Card title="3. Retrieval Signals" icon="magnifier">
+    llms.txt、/ai/ ディレクトリ、robots.txt、sitemap -- AIシステムにコンテンツを見つけてもらう仕組み。
+  </Card>
+  <Card title="4. Authority Signals" icon="approve-check">
+    クロスプラットフォームでの存在感、出版物、検証可能な専門性と実績。
+  </Card>
+  <Card title="5. Citation Signals" icon="document">
+    一次情報、統計データ、日付、参考文献など、AIが引用したくなる要素。
+  </Card>
+</CardGrid>
+
+## 研究が示すデータ
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <span class="number">+115.1%</span>
+    <span class="label">統計データの追加による引用率の向上 (GEO, KDD 2024)</span>
+  </div>
+  <div class="stat-card">
+    <span class="number">25x</span>
+    <span class="label">従来の検索と比較したAI検索のコンバージョン率 (Go Fish Digital)</span>
+  </div>
+  <div class="stat-card">
+    <span class="number">-25%</span>
+    <span class="label">2026年までの従来型検索の利用減少予測 (Gartner)</span>
+  </div>
+</div>
+
+## なぜLLMOなのか
+
+**LLMO (Large Language Model Optimization)** とは、AIシステムがWebコンテンツを正確に発見・理解・引用できるように最適化する手法である。
+
+AI搭載の検索が主流になるにつれ、従来のSEOだけでは不十分になっている。ユーザーはGoogleだけでなく、ChatGPT、Claude、Gemini、Perplexityから回答を得る。LLMOはすべてのAIシステムにおけるコンテンツの発見可能性を確保する。
+
+LLMOは**AEO** (Answer Engine Optimization) と**GEO** (Generative Engine Optimization) を包含する上位フレームワークであり、すべてのLLMインタラクションに対応した実装重視のスタンダードを提供する。
+
+| アプローチ | 対象 | 目的 |
+|----------|--------|------|
+| SEO | 検索エンジン (Google, Bing) | 検索結果で上位に表示される |
+| AEO | 回答エンジン (Featured Snippets, 音声) | 直接的な回答として選ばれる |
+| GEO | 生成エンジン (ChatGPT, Perplexity) | AI生成の回答で引用される |
+| **LLMO** | **すべてのLLM搭載システム** | **包括的なAI発見可能性** |
+
+## 作者
+
+LLMO Frameworkは、AIシステムエンジニア兼[Propel-Lab](https://propel-lab.co.jp) CEOの[Ken Imoto](https://kenimoto.dev)が作成した。著書に『LLMO -- AIがあなたのコンテンツを発見する3つの経路』([Kindle](https://amzn.asia/d/02zAl1VB) / [Zenn](https://zenn.dev/kenimo49/books/llmo-ai-search-optimization))のほか、AI開発に関する14冊以上の書籍がある。
+
+DOI登録済みの研究論文3本と、複数サイトでの本番実装に裏付けられている。
