@@ -7,8 +7,41 @@ export default defineConfig({
     starlight({
       title: 'LLMO Framework',
       description: 'The definitive guide to LLM Optimization — making your content discoverable by AI.',
+      customCss: ['./src/styles/custom.css'],
+      components: {
+        Head: './src/components/Head.astro',
+      },
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/kenimo49/llmo-guide' },
+      ],
+      head: [
+        {
+          tag: 'script',
+          attrs: { type: 'application/ld+json' },
+          content: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: 'LLMO Framework',
+            url: 'https://llmoframework.com',
+            description: 'The definitive guide to LLM Optimization — making your content discoverable by AI.',
+            author: {
+              '@type': 'Person',
+              name: 'Ken Imoto',
+              url: 'https://kenimoto.dev',
+              jobTitle: 'AI Systems Engineer',
+              sameAs: [
+                'https://github.com/kenimo49',
+                'https://www.linkedin.com/in/kenimo49',
+                'https://x.com/kenimo49',
+              ],
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'Propel-Lab',
+              url: 'https://propel-lab.co.jp',
+            },
+          }),
+        },
       ],
       sidebar: [
         {
@@ -16,6 +49,8 @@ export default defineConfig({
           items: [
             { label: 'What is LLMO?', slug: 'guide/what-is-llmo' },
             { label: 'LLMO vs SEO vs AEO vs GEO', slug: 'guide/llmo-vs-seo-aeo-geo' },
+            { label: 'How AI Finds Content', slug: 'guide/how-ai-finds-content' },
+            { label: 'Quickstart: 30 Minutes', slug: 'guide/quickstart' },
           ],
         },
         {
@@ -30,9 +65,17 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Case Studies',
+          items: [
+            { label: 'LLMO in Practice', slug: 'case-studies' },
+          ],
+        },
+        {
           label: 'Research',
           items: [
-            { label: 'Papers', slug: 'research/papers' },
+            { label: 'Papers & References', slug: 'research/papers' },
+            { label: 'GEO Paper Summary', slug: 'research/geo-paper-summary' },
+            { label: 'Microsoft Guidelines', slug: 'research/microsoft-guidelines' },
           ],
         },
       ],

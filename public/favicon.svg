@@ -1,1 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill-rule="evenodd" d="M81 36 64 0 47 36l-1 2-9-10a6 6 0 0 0-9 9l10 10h-2L0 64l36 17h2L28 91a6 6 0 1 0 9 9l9-10 1 2 17 36 17-36v-2l9 10a6 6 0 1 0 9-9l-9-9 2-1 36-17-36-17-2-1 9-9a6 6 0 1 0-9-9l-9 10v-2Zm-17 2-2 5c-4 8-11 15-19 19l-5 2 5 2c8 4 15 11 19 19l2 5 2-5c4-8 11-15 19-19l5-2-5-2c-8-4-15-11-19-19l-2-5Z" clip-rule="evenodd"/><path d="M118 19a6 6 0 0 0-9-9l-3 3a6 6 0 1 0 9 9l3-3Zm-96 4c-2 2-6 2-9 0l-3-3a6 6 0 1 1 9-9l3 3c3 2 3 6 0 9Zm0 82c-2-2-6-2-9 0l-3 3a6 6 0 1 0 9 9l3-3c3-2 3-6 0-9Zm96 4a6 6 0 0 1-9 9l-3-3a6 6 0 1 1 9-9l3 3Z"/><style>path{fill:#000}@media (prefers-color-scheme:dark){path{fill:#fff}}</style></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- LLMO Framework: 5 nodes = 5 components, connected by lines -->
+  <circle cx="64" cy="64" r="10" />
+  <circle cx="64" cy="20" r="7" />
+  <circle cx="106" cy="48" r="7" />
+  <circle cx="90" cy="100" r="7" />
+  <circle cx="38" cy="100" r="7" />
+  <circle cx="22" cy="48" r="7" />
+  <line x1="64" y1="54" x2="64" y2="27" stroke-width="2.5" />
+  <line x1="73" y1="59" x2="99" y2="48" stroke-width="2.5" />
+  <line x1="70" y1="72" x2="85" y2="95" stroke-width="2.5" />
+  <line x1="58" y1="72" x2="43" y2="95" stroke-width="2.5" />
+  <line x1="55" y1="59" x2="29" y2="48" stroke-width="2.5" />
+  <line x1="71" y1="20" x2="99" y2="43" stroke-width="1.5" opacity="0.4" />
+  <line x1="109" y1="55" x2="94" y2="94" stroke-width="1.5" opacity="0.4" />
+  <line x1="84" y1="104" x2="44" y2="104" stroke-width="1.5" opacity="0.4" />
+  <line x1="34" y1="94" x2="19" y2="55" stroke-width="1.5" opacity="0.4" />
+  <line x1="29" y1="43" x2="57" y2="20" stroke-width="1.5" opacity="0.4" />
+  <style>
+    circle{fill:#3b82f6}line{stroke:#3b82f6}
+    @media(prefers-color-scheme:dark){circle{fill:#60a5fa}line{stroke:#60a5fa}}
+  </style>
+</svg>

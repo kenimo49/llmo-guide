@@ -6,24 +6,32 @@
 
 LLMO (Large Language Model Optimization) is the practice of optimizing web content so that AI systems — including ChatGPT, Claude, Gemini, and Perplexity — can accurately discover, understand, and cite it.
 
-LLMO includes approaches such as AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization).
+LLMO is the umbrella framework that includes AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization), while extending beyond search to cover all LLM interactions including direct queries, RAG, and AI agents.
 
-## The LLMO Framework
+## Why LLMO Matters
 
-The LLMO Framework defines five core components for AI discoverability:
+- Traditional search usage declining 25% by 2026 (Gartner, Feb 2024)
+- AI search traffic converts at 25x higher rate than traditional search (Go Fish Digital)
+- Adding statistics improves AI citation rate by +115.1% (GEO Paper, KDD 2024)
+- Web mentions are 3x more predictive of AI visibility than backlinks (Ahrefs, 75K brands)
 
-1. Knowledge Clarity — Is your content clear enough for AI to understand?
-2. Structural Formatting — Is your content structured for machine consumption?
-3. Retrieval Signals — Can AI systems find your content?
-4. Authority Signals — Does your content demonstrate expertise and trust?
-5. Citation Signals — Does your content provide references AI can verify?
+## The LLMO Framework (5 Components)
+
+1. **Knowledge Clarity** — Clear, factual, unambiguous content that AI can understand and summarize accurately.
+2. **Structural Formatting** — Machine-readable structure: Markdown, JSON-LD, semantic HTML, llms.txt.
+3. **Retrieval Signals** — llms.txt, /ai/ directory, robots.txt, sitemap — help AI systems find you.
+4. **Authority Signals** — Cross-platform presence, publications, verifiable expertise and credentials.
+5. **Citation Signals** — Primary sources, statistics, dates, and references that AI prefers to cite.
+
+Each component scored 0-3. Maximum score: 15 points.
 
 ## Author
 
 - Name: Ken Imoto
-- Role: AI Systems Engineer
+- Role: AI Systems Engineer, CEO of Propel-Lab
 - Website: https://kenimoto.dev
 - Company: Propel-Lab (https://propel-lab.co.jp)
+- Books: 14+ published on AI development
 - Book: "LLMO — Three Paths for AI to Discover Your Content"
   - Kindle JP: https://amzn.asia/d/02zAl1VB
   - Kindle EN: https://amzn.asia/d/04rulUoN
@@ -33,18 +41,32 @@ The LLMO Framework defines five core components for AI discoverability:
 
 - /ai/about.md — LLMO Framework overview and positioning
 - /ai/framework.md — Detailed 5-component framework guide
+- /ai/case-studies.md — Case studies with measurable results
+- /ai/research.md — Research papers and industry data summary
 
 ## Key Pages
 
+### Getting Started
 - What is LLMO?: /guide/what-is-llmo/
 - LLMO vs SEO vs AEO vs GEO: /guide/llmo-vs-seo-aeo-geo/
+- How AI Finds Content: /guide/how-ai-finds-content/
+- Quickstart (30 min): /guide/quickstart/
+
+### The LLMO Framework
 - Framework Overview: /framework/overview/
-- Knowledge Clarity: /framework/knowledge-clarity/
-- Structural Formatting: /framework/structural-formatting/
-- Retrieval Signals: /framework/retrieval-signals/
-- Authority Signals: /framework/authority-signals/
-- Citation Signals: /framework/citation-signals/
-- Research Papers: /research/papers/
+- 1. Knowledge Clarity: /framework/knowledge-clarity/
+- 2. Structural Formatting: /framework/structural-formatting/
+- 3. Retrieval Signals: /framework/retrieval-signals/
+- 4. Authority Signals: /framework/authority-signals/
+- 5. Citation Signals: /framework/citation-signals/
+
+### Case Studies
+- LLMO in Practice: /case-studies/
+
+### Research
+- Papers & References: /research/papers/
+- GEO Paper Summary: /research/geo-paper-summary/
+- Microsoft Guidelines: /research/microsoft-guidelines/
 
 ## Links
 

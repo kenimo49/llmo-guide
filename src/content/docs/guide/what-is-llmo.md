@@ -1,6 +1,41 @@
 ---
 title: What is LLMO?
-description: Understanding Large Language Model Optimization
+description: "LLMO (Large Language Model Optimization) is the practice of optimizing web content so that AI systems can accurately discover, understand, and cite it."
+head:
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: |
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is LLMO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "LLMO (Large Language Model Optimization) is the practice of optimizing web content so that Large Language Models — such as ChatGPT, Claude, Gemini, and Perplexity — can accurately discover, understand, and cite it in their responses."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is LLMO different from SEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SEO targets search engine crawlers to rank in search results. LLMO targets LLM training and retrieval to be cited in AI responses. SEO uses backlinks and keywords; LLMO uses clarity, structure, and authority signals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the relationship between LLMO, AEO, and GEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "LLMO is an umbrella concept that includes AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization). LLMO encompasses both approaches while providing a broader framework for all LLM interactions, not just search engines."
+            }
+          }
+        ]
+      }
 ---
 
 **LLMO (Large Language Model Optimization)** is the practice of optimizing web content so that Large Language Models can accurately discover, understand, and cite it in their responses.

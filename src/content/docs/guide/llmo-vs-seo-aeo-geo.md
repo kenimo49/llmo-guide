@@ -1,6 +1,19 @@
 ---
 title: LLMO vs SEO vs AEO vs GEO
-description: Understanding the differences between optimization approaches
+description: "Comparison of LLMO, SEO, AEO, and GEO. LLMO is the umbrella framework that includes AEO and GEO while covering all LLM interactions."
+head:
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: |
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "LLMO vs SEO vs AEO vs GEO",
+        "description": "Comparison of search optimization approaches: LLMO, SEO, AEO, and GEO.",
+        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
+        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
+      }
 ---
 
 ## The Evolution of Search Optimization

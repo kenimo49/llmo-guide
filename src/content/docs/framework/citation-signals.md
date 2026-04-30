@@ -1,6 +1,19 @@
 ---
 title: "5. Citation Signals"
-description: Providing references that AI systems can verify
+description: "Citation Signals provide references, sources, and metadata that allow AI to verify claims. Adding statistics improves AI citation rates by +115.1% (GEO, KDD 2024)."
+head:
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: |
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "LLMO Component 5: Citation Signals",
+        "description": "Providing references and verifiable data that AI systems can cite. Statistics addition improves visibility by +115.1%.",
+        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
+        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
+      }
 ---
 
 ## What It Is

@@ -1,31 +1,98 @@
 ---
 title: LLMO Framework
-description: A Standard for AI Discoverability
+description: The open standard for AI discoverability — making your content findable by ChatGPT, Claude, Gemini, and Perplexity.
 template: splash
 hero:
   title: The LLMO Framework
-  tagline: A Standard for AI Discoverability — Making your content findable by ChatGPT, Claude, Gemini, and Perplexity.
+  tagline: The open standard for making your content discoverable by ChatGPT, Claude, Gemini, and Perplexity. Backed by research. Implemented in production. Open source.
   actions:
-    - text: Read the Guide
-      link: /guide/what-is-llmo/
+    - text: Quickstart in 30 min
+      link: /guide/quickstart/
       icon: right-arrow
-    - text: View on GitHub
+    - text: Read the Framework
+      link: /framework/overview/
+      variant: minimal
+    - text: GitHub
       link: https://github.com/kenimo49/llmo-guide
       variant: minimal
+      icon: external
+head:
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: |
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "LLMO Framework",
+        "applicationCategory": "DeveloperApplication",
+        "description": "The open standard for making web content discoverable by AI systems including ChatGPT, Claude, Gemini, and Perplexity.",
+        "url": "https://llmoframework.com",
+        "author": {
+          "@type": "Person",
+          "name": "Ken Imoto",
+          "url": "https://kenimoto.dev"
+        },
+        "license": "https://opensource.org/licenses/MIT"
+      }
 ---
 
-## What is LLMO?
+import { Card, CardGrid } from '@astrojs/starlight/components';
 
-**LLMO (Large Language Model Optimization)** is the practice of optimizing web content so that AI systems — including ChatGPT, Claude, Gemini, and Perplexity — can accurately discover, understand, and cite it.
+## The Five Components
 
-LLMO includes approaches such as AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization).
+<CardGrid>
+  <Card title="1. Knowledge Clarity" icon="pencil">
+    Clear, factual, unambiguous content that AI can understand and summarize accurately.
+  </Card>
+  <Card title="2. Structural Formatting" icon="setting">
+    Machine-readable structure: Markdown, JSON-LD, semantic HTML, llms.txt.
+  </Card>
+  <Card title="3. Retrieval Signals" icon="magnifier">
+    llms.txt, /ai/ directory, robots.txt, sitemap — help AI systems find you.
+  </Card>
+  <Card title="4. Authority Signals" icon="approve-check">
+    Cross-platform presence, publications, verifiable expertise and credentials.
+  </Card>
+  <Card title="5. Citation Signals" icon="document">
+    Primary sources, statistics, dates, and references that AI prefers to cite.
+  </Card>
+</CardGrid>
 
-## The LLMO Framework
+## What the Research Shows
 
-The LLMO Framework defines five core components for AI discoverability:
+<div class="stats-grid">
+  <div class="stat-card">
+    <span class="number">+115.1%</span>
+    <span class="label">Citation rate from adding statistics (GEO, KDD 2024)</span>
+  </div>
+  <div class="stat-card">
+    <span class="number">25x</span>
+    <span class="label">Higher conversion from AI search vs traditional (Go Fish Digital)</span>
+  </div>
+  <div class="stat-card">
+    <span class="number">-25%</span>
+    <span class="label">Traditional search usage by 2026 (Gartner)</span>
+  </div>
+</div>
 
-1. **Knowledge Clarity** — Is your content clear enough for AI to understand?
-2. **Structural Formatting** — Is your content structured for machine consumption?
-3. **Retrieval Signals** — Can AI systems find your content?
-4. **Authority Signals** — Does your content demonstrate expertise and trust?
-5. **Citation Signals** — Does your content provide references AI can verify?
+## Why LLMO?
+
+**LLMO (Large Language Model Optimization)** is the practice of optimizing web content so that AI systems can accurately discover, understand, and cite it.
+
+As AI-powered search becomes mainstream, traditional SEO alone is no longer sufficient. Users get answers from ChatGPT, Claude, Gemini, and Perplexity — not just Google. LLMO ensures your content is discoverable across all AI systems.
+
+LLMO is the umbrella framework that encompasses **AEO** (Answer Engine Optimization) and **GEO** (Generative Engine Optimization), providing a broader, implementation-focused standard for all LLM interactions.
+
+| Approach | Target | Goal |
+|----------|--------|------|
+| SEO | Search engines (Google, Bing) | Rank higher in search results |
+| AEO | Answer engines (Featured Snippets, Voice) | Become the direct answer |
+| GEO | Generative engines (ChatGPT, Perplexity) | Be cited in AI-generated responses |
+| **LLMO** | **All LLM-powered systems** | **Comprehensive AI discoverability** |
+
+## Created By
+
+The LLMO Framework was created by [Ken Imoto](https://kenimoto.dev), AI Systems Engineer and CEO of [Propel-Lab](https://propel-lab.co.jp). Author of *LLMO — Three Paths for AI to Discover Your Content* ([Kindle](https://amzn.asia/d/02zAl1VB) / [Zenn](https://zenn.dev/kenimo49/books/llmo-ai-search-optimization)) and 14+ books on AI development.
+
+Backed by 3 DOI-registered research papers and production implementations across multiple sites.

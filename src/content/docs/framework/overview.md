@@ -1,6 +1,19 @@
 ---
 title: "The LLMO Framework: A Standard for AI Discoverability"
-description: Five core components for making your content discoverable by AI
+description: "The LLMO Framework defines 5 core components for AI discoverability: Knowledge Clarity, Structural Formatting, Retrieval Signals, Authority Signals, and Citation Signals. Maximum score: 15 points."
+head:
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: |
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "The LLMO Framework: A Standard for AI Discoverability",
+        "description": "Five core components for making your content discoverable by AI.",
+        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
+        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
+      }
 ---
 
 The LLMO Framework defines five core components that determine whether AI systems can discover, understand, and accurately cite your content.

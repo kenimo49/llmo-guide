@@ -1,6 +1,19 @@
 ---
 title: "2. Structural Formatting"
-description: Structuring your content for machine consumption
+description: "Structural Formatting is the practice of organizing content using machine-readable formats — JSON-LD, semantic HTML, Markdown, llms.txt — so AI systems can efficiently parse and extract information."
+head:
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: |
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "LLMO Component 2: Structural Formatting",
+        "description": "Structuring your content for machine consumption with JSON-LD, semantic HTML, and llms.txt.",
+        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
+        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
+      }
 ---
 
 ## What It Is
