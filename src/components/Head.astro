@@ -4,6 +4,15 @@ import Default from '@astrojs/starlight/components/Head.astro';
 
 <Default><slot /></Default>
 
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-365LMYNSYQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-365LMYNSYQ');
+</script>
+
 <!-- Open Graph defaults -->
 <meta property="og:site_name" content="LLMO Framework" />
 <meta property="og:type" content="website" />
