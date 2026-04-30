@@ -1,0 +1,92 @@
+---
+title: LLMO Framework
+description: AI可发现性的开放标准——让你的内容被ChatGPT、Claude、Gemini和Perplexity发现。
+template: splash
+hero:
+  title: LLMO Framework
+  tagline: 让你的内容被ChatGPT、Claude、Gemini和Perplexity发现的开放标准。基于研究成果，已在生产环境中实施，完全开源。
+  actions:
+    - text: 30分钟快速入门
+      link: /zh/guide/quickstart/
+      icon: right-arrow
+    - text: 阅读框架文档
+      link: /zh/framework/overview/
+      variant: minimal
+    - text: GitHub
+      link: https://github.com/kenimo49/llmo-guide
+      variant: minimal
+      icon: external
+head:
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: |
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "LLMO Framework",
+        "applicationCategory": "DeveloperApplication",
+        "description": "The open standard for making web content discoverable by AI systems including ChatGPT, Claude, Gemini, and Perplexity.",
+        "url": "https://llmoframework.com",
+        "author": {
+          "@type": "Person",
+          "name": "Ken Imoto",
+          "url": "https://kenimoto.dev"
+        },
+        "license": "https://opensource.org/licenses/MIT"
+      }
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## 五大核心组件
+
+<CardGrid>
+  <Card title="1. Knowledge Clarity（知识清晰度）" icon="pencil">
+    清晰、准确、无歧义的内容，让AI能够正确理解和概括。
+  </Card>
+  <Card title="2. Structural Formatting（结构化格式）" icon="setting">
+    机器可读的结构：Markdown、JSON-LD、语义化HTML、llms.txt。
+  </Card>
+  <Card title="3. Retrieval Signals（检索信号）" icon="magnifier">
+    llms.txt、/ai/ 目录、robots.txt、sitemap——帮助AI系统找到你。
+  </Card>
+  <Card title="4. Authority Signals（权威信号）" icon="approve-check">
+    跨平台影响力、发表作品、可验证的专业知识和资质。
+  </Card>
+  <Card title="5. Citation Signals（引用信号）" icon="document">
+    一手资料、统计数据、日期和参考文献——AI更倾向于引用这些内容。
+  </Card>
+</CardGrid>
+
+## 研究数据
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <span class="number">+115.1%</span>
+    <span class="label">添加统计数据后引用率的提升幅度（GEO, KDD 2024）</span>
+  </div>
+  <div class="stat-card">
+    <span class="number">25x</span>
+    <span class="label">AI搜索相比传统搜索的转化率提升（Go Fish Digital）</span>
+  </div>
+  <div class="stat-card">
+    <span class="number">-25%</span>
+    <span class="label">到2026年传统搜索使用量的预计下降幅度（Gartner）</span>
+  </div>
+</div>
+
+## 为什么需要LLMO？
+
+**LLMO（Large Language Model Optimization，大语言模型优化）** 是一种优化网络内容的方法，让AI系统能够准确地发现、理解并引用你的内容。
+
+随着AI搜索的普及，仅依靠传统SEO已经不够了。用户正在通过ChatGPT、Claude、Gemini和Perplexity获取答案，而不仅仅是Google。LLMO确保你的内容在所有AI系统中都能被发现。
+
+LLMO是一个涵盖**AEO**（Answer Engine Optimization，答案引擎优化）和**GEO**（Generative Engine Optimization，生成引擎优化）的上位框架，为所有LLM交互提供更全面的、以实施为导向的标准。
+
+| 方法 | 目标 | 目的 |
+|------|------|------|
+| SEO | 搜索引擎（Google、Bing） | 在搜索结果中获得更高排名 |
+| AEO | 答案引擎（精选摘要、语音助手） | 成为直接答案 |
+| GEO | 生成引擎（ChatGPT、Perplexity） | 在AI生成的回答中被引用 |
+| **LLMO** | **所有LLM驱动的系统** | **全面的AI可发现性** |
