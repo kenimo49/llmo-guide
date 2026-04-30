@@ -20,16 +20,40 @@ The LLMO Framework defines five core components for AI discoverability:
 4. **Authority Signals** — Does your content demonstrate expertise and trust?
 5. **Citation Signals** — Does your content provide references AI can verify?
 
-## Contributing
+## Content Strategy
 
-We welcome contributions! Please see our [contributing guide](CONTRIBUTING.md).
+This site follows the conventions of major framework documentation sites (Astro, React, Next.js, Tailwind CSS):
+
+| Content Type | Location | Examples |
+|-------------|----------|---------|
+| **Framework docs** | `/guide/`, `/framework/` | Core concepts, component explanations |
+| **Implementation guides** | `/guide/` (docs section) | "LLMO for WordPress", "LLMO for Next.js" |
+| **Case studies** | `/case-studies/` | Production results with metrics |
+| **Research** | `/research/` | Paper summaries, industry reports |
+| **Release notes** | `/blog/` (when needed) | Framework updates, new research |
+
+Key principles:
+- Tutorials and how-to content go in **docs**, not blog
+- Case studies go in a dedicated **Showcase / Case Studies** section
+- Blog is reserved for **release notes and announcements** only
+- All content must exist in all supported languages
 
 ## Translations
 
-🇺🇸 English (current)
-🇯🇵 Japanese (coming soon)
+| Language | Path | Status |
+|----------|------|--------|
+| English | `/` (root) | Complete |
+| Japanese | `/ja/` | Complete |
+| Chinese | `/zh/` | Complete |
+| Korean | `/ko/` | Complete |
+| German | `/de/` | Complete |
+| French | `/fr/` | Complete |
 
-Contributions for other languages are welcome!
+Translation contributions for additional languages are welcome.
+
+## Contributing
+
+We welcome contributions! Please see our [contributing guide](CONTRIBUTING.md).
 
 ## License
 
