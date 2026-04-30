@@ -44,6 +44,17 @@ Each component scored 0-3. Maximum score: 15 points.
 - /ai/case-studies.md — Case studies with measurable results
 - /ai/research.md — Research papers and industry data summary
 
+## Available Languages
+
+This site is available in 6 languages. All content is identical across languages.
+
+- English (default): /
+- Japanese (日本語): /ja/
+- Chinese (中文): /zh/
+- Korean (한국어): /ko/
+- German (Deutsch): /de/
+- French (Français): /fr/
+
 ## Key Pages
 
 ### Getting Started
