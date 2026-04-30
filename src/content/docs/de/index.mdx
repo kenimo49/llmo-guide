@@ -1,0 +1,92 @@
+---
+title: LLMO Framework
+description: Der offene Standard für KI-Auffindbarkeit — damit Ihre Inhalte von ChatGPT, Claude, Gemini und Perplexity gefunden werden.
+template: splash
+hero:
+  title: Das LLMO Framework
+  tagline: Der offene Standard, um Ihre Inhalte für ChatGPT, Claude, Gemini und Perplexity auffindbar zu machen. Forschungsbasiert. In der Praxis erprobt. Open Source.
+  actions:
+    - text: Schnellstart in 30 Min
+      link: /de/guide/quickstart/
+      icon: right-arrow
+    - text: Das Framework lesen
+      link: /de/framework/overview/
+      variant: minimal
+    - text: GitHub
+      link: https://github.com/kenimo49/llmo-guide
+      variant: minimal
+      icon: external
+head:
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: |
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "LLMO Framework",
+        "applicationCategory": "DeveloperApplication",
+        "description": "The open standard for making web content discoverable by AI systems including ChatGPT, Claude, Gemini, and Perplexity.",
+        "url": "https://llmoframework.com",
+        "author": {
+          "@type": "Person",
+          "name": "Ken Imoto",
+          "url": "https://kenimoto.dev"
+        },
+        "license": "https://opensource.org/licenses/MIT"
+      }
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Die fünf Komponenten
+
+<CardGrid>
+  <Card title="1. Knowledge Clarity" icon="pencil">
+    Klare, faktische und eindeutige Inhalte, die KI verstehen und korrekt zusammenfassen kann.
+  </Card>
+  <Card title="2. Structural Formatting" icon="setting">
+    Maschinenlesbare Struktur: Markdown, JSON-LD, semantisches HTML, llms.txt.
+  </Card>
+  <Card title="3. Retrieval Signals" icon="magnifier">
+    llms.txt, /ai/-Verzeichnis, robots.txt, Sitemap — so finden KI-Systeme Sie.
+  </Card>
+  <Card title="4. Authority Signals" icon="approve-check">
+    Plattformübergreifende Präsenz, Publikationen, überprüfbare Expertise und Referenzen.
+  </Card>
+  <Card title="5. Citation Signals" icon="document">
+    Primärquellen, Statistiken, Datumsangaben und Referenzen, die KI bevorzugt zitiert.
+  </Card>
+</CardGrid>
+
+## Was die Forschung zeigt
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <span class="number">+115,1%</span>
+    <span class="label">Zitierrate durch Hinzufügen von Statistiken (GEO, KDD 2024)</span>
+  </div>
+  <div class="stat-card">
+    <span class="number">25x</span>
+    <span class="label">Höhere Konversionsrate bei KI-Suche vs. traditionell (Go Fish Digital)</span>
+  </div>
+  <div class="stat-card">
+    <span class="number">-25%</span>
+    <span class="label">Rückgang der traditionellen Suchnutzung bis 2026 (Gartner)</span>
+  </div>
+</div>
+
+## Warum LLMO?
+
+**LLMO (Large Language Model Optimization)** bezeichnet die Optimierung von Webinhalten, damit KI-Systeme diese korrekt finden, verstehen und zitieren können.
+
+Da KI-gestützte Suche immer mehr zum Standard wird, reicht traditionelles SEO allein nicht mehr aus. Nutzer erhalten Antworten von ChatGPT, Claude, Gemini und Perplexity — nicht nur von Google. LLMO stellt sicher, dass Ihre Inhalte in allen KI-Systemen auffindbar sind.
+
+LLMO ist das übergreifende Framework, das **AEO** (Answer Engine Optimization) und **GEO** (Generative Engine Optimization) einschließt und einen umfassenderen, praxisorientierten Standard für alle LLM-Interaktionen bietet.
+
+| Ansatz | Ziel | Zweck |
+|--------|------|-------|
+| SEO | Suchmaschinen (Google, Bing) | Höheres Ranking in Suchergebnissen |
+| AEO | Antwortmaschinen (Featured Snippets, Sprachassistenten) | Die direkte Antwort werden |
+| GEO | Generative Suchmaschinen (ChatGPT, Perplexity) | In KI-generierten Antworten zitiert werden |
+| **LLMO** | **Alle LLM-gestützten Systeme** | **Umfassende KI-Auffindbarkeit** |
