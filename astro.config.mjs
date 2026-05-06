@@ -3,6 +3,7 @@ import starlight from '@astrojs/starlight';
 
 export default defineConfig({
   site: 'https://llmoframework.com',
+  trailingSlash: 'always',
   integrations: [
     starlight({
       title: 'LLMO Framework',
