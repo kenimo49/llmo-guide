@@ -1,6 +1,7 @@
 ---
 title: "FAQ LLMO"
 description: "Perguntas frequentes sobre a implementação do LLMO — relação com SEO, tempo necessário, o que implementar primeiro, como medir a visibilidade IA."
+pubDate: 2026-05-08
 head:
   - tag: script
     attrs:

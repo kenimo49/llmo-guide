@@ -1,6 +1,7 @@
 ---
 title: "LLMO 常见问题"
 description: "关于实施 LLMO 的常见问题 — 与 SEO 的关系、所需时间、应优先实施的内容以及如何衡量 AI 可见性。"
+pubDate: 2026-05-08
 head:
   - tag: script
     attrs:

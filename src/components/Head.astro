@@ -1,10 +1,9 @@
 ---
-// Starlight's Default Head already emits og:title, og:type, og:url, og:locale,
-// og:description, og:site_name, twitter:card="summary_large_image" and the
-// per-locale hreflang links. This component only adds tags Starlight does NOT
-// emit (og:image*, twitter:image*, article:*, custom JSON-LD, x-default
-// hreflang) so we never duplicate or fight with the defaults.
-import Default from '@astrojs/starlight/components/Head.astro';
+// Replace Starlight's Default Head: render the route.head array ourselves so
+// we can filter out og:locale (Starlight emits ISO-639-1 like "ja"; OG spec
+// wants underscore form like "ja_JP") and then emit a corrected og:locale plus
+// the tags Starlight does not emit at all (og:image*, twitter:image*,
+// article:*, x-default hreflang, custom JSON-LD).
 
 const SITE = 'https://llmoframework.com';
 const OG_IMAGE = `${SITE}/og-image.png`;
@@ -17,7 +16,11 @@ const slug = entry?.slug ?? '';
 
 const pageUrl = new URL(Astro.url.pathname, SITE).href;
 
-const datePublished = (data.pubDate as string | undefined) ?? PROJECT_GENESIS;
+const pubDateRaw = data.pubDate as Date | string | undefined;
+const datePublished = pubDateRaw instanceof Date
+  ? pubDateRaw.toISOString().slice(0, 10)
+  : (typeof pubDateRaw === 'string' ? pubDateRaw.slice(0, 10) : PROJECT_GENESIS);
+
 const lastUpdatedRaw = route?.lastUpdated;
 const dateModified = lastUpdatedRaw instanceof Date
   ? lastUpdatedRaw.toISOString().slice(0, 10)
@@ -30,6 +33,20 @@ const langTag = (route?.lang as string | undefined)
 const title = (data.title as string | undefined) ?? 'LLMO Framework';
 const description = (data.description as string | undefined)
   ?? 'The open standard for making your content discoverable by AI — ChatGPT, Claude, Gemini, Perplexity.';
+
+// OG spec wants language_TERRITORY (underscore). Map BCP-47 -> OG locale.
+const ogLocaleMap: Record<string, string> = {
+  en: 'en_US',
+  ja: 'ja_JP',
+  'zh-CN': 'zh_CN',
+  ko: 'ko_KR',
+  de: 'de_DE',
+  fr: 'fr_FR',
+  es: 'es_ES',
+  'pt-BR': 'pt_BR',
+};
+const ogLocale = ogLocaleMap[langTag] ?? 'en_US';
+const ogLocaleAlternates = Object.values(ogLocaleMap).filter((v) => v !== ogLocale);
 
 const isArticle = slug !== '' && slug !== 'index';
 
@@ -84,9 +101,18 @@ const articleSchema = {
   },
   mainEntityOfPage: pageUrl,
 };
+
+// Filter Starlight's computed head array: drop og:locale (we re-emit it in
+// the OG-spec underscore form below) and og:image:alt placeholders if any.
+type HeadTag = { tag: string; attrs?: Record<string, string | undefined>; content?: string };
+const headTags: HeadTag[] = (route?.head ?? []).filter((t: HeadTag) => {
+  const attrs = t.attrs ?? {};
+  if (t.tag === 'meta' && attrs.property === 'og:locale') return false;
+  return true;
+});
 ---
 
-<Default><slot /></Default>
+{headTags.map(({ tag: Tag, attrs, content }) => <Tag {...attrs} set:html={content} />)}
 
 <!-- Google Analytics (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-365LMYNSYQ"></script>
@@ -97,7 +123,9 @@ const articleSchema = {
   gtag('config', 'G-365LMYNSYQ');
 </script>
 
-<!-- Open Graph: image (Starlight does not emit these) -->
+<!-- Open Graph: locale (underscore form) + alternates + image -->
+<meta property="og:locale" content={ogLocale} />
+{ogLocaleAlternates.map((loc) => <meta property="og:locale:alternate" content={loc} />)}
 <meta property="og:image" content={OG_IMAGE} />
 <meta property="og:image:secure_url" content={OG_IMAGE} />
 <meta property="og:image:type" content="image/png" />
@@ -108,7 +136,7 @@ const articleSchema = {
 {isArticle && <meta property="article:modified_time" content={dateModified} />}
 {isArticle && <meta property="article:author" content="https://kenimoto.dev" />}
 
-<!-- Twitter Card: image and creator (Starlight emits twitter:card by default) -->
+<!-- Twitter Card extras (Starlight emits twitter:card by default) -->
 <meta name="twitter:site" content="@kenimo49" />
 <meta name="twitter:creator" content="@kenimo49" />
 <meta name="twitter:image" content={OG_IMAGE} />

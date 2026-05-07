@@ -1,6 +1,7 @@
 ---
 title: "LLMO FAQ"
 description: "LLMOの実装に関するよくある質問 — SEOとの関係、所要時間、最初に着手すべき項目、AI可視性の測定方法。"
+pubDate: 2026-05-08
 head:
   - tag: script
     attrs:

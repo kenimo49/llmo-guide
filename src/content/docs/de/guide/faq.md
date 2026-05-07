@@ -1,6 +1,7 @@
 ---
 title: "LLMO FAQ"
 description: "Häufig gestellte Fragen zur Implementierung von LLMO — wie es sich zu SEO verhält, wie lange es dauert, womit man anfängt und wie man die KI-Sichtbarkeit misst."
+pubDate: 2026-05-08
 head:
   - tag: script
     attrs:

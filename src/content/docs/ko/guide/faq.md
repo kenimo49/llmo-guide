@@ -1,6 +1,7 @@
 ---
 title: "LLMO FAQ"
 description: "LLMO 구현에 관한 자주 묻는 질문 — SEO와의 관계, 소요 시간, 우선 구현 항목, AI 가시성 측정 방법."
+pubDate: 2026-05-08
 head:
   - tag: script
     attrs:

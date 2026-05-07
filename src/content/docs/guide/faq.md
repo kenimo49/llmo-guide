@@ -1,6 +1,7 @@
 ---
 title: "LLMO FAQ"
 description: "Frequently asked questions about implementing LLMO — how it relates to SEO, how long it takes, what to instrument first, and how to measure AI visibility."
+pubDate: 2026-05-08
 head:
   - tag: script
     attrs:
