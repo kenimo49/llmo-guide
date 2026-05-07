@@ -1,11 +1,12 @@
 ---
-title: "2. Structural Formatting"
-description: "Structural Formatting ist die Praxis, Inhalte in maschinenlesbaren Formaten zu organisieren -- JSON-LD, semantisches HTML, Markdown, llms.txt -- damit KI-Systeme Informationen effizient parsen und extrahieren können."
+title: "2. Strukturierte Formatierung"
+description: "Strukturierte Formatierung ist die Praxis, Inhalte in maschinenlesbaren Formaten zu organisieren -- JSON-LD, semantisches HTML, Markdown, llms.txt -- damit KI-Systeme Informationen effizient parsen und extrahieren können."
+pubDate: 2026-04-30
 ---
 
 ## Was es ist
 
-Structural Formatting ist die Praxis, Ihre Inhalte mithilfe maschinenlesbarer Formate und semantischem Markup so zu organisieren, dass KI-Systeme Informationen effizient parsen, kategorisieren und extrahieren können.
+Strukturierte Formatierung ist die Praxis, Ihre Inhalte mithilfe maschinenlesbarer Formate und semantischem Markup so zu organisieren, dass KI-Systeme Informationen effizient parsen, kategorisieren und extrahieren können.
 
 ## Warum es wichtig ist
 

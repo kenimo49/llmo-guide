@@ -1,6 +1,7 @@
 ---
 title: "Wie KI-Systeme Ihre Inhalte finden"
 description: "KI entdeckt Inhalte auf drei Wegen: Trainingsdaten, Echtzeit-Websuche und RAG-Retrieval. Das Verständnis dieser Wege ist entscheidend für LLMO."
+pubDate: 2026-04-30
 ---
 
 Wenn ein Nutzer ChatGPT nach Ihrem Unternehmen fragt, woher kommt die Antwort? KI-Systeme entdecken Inhalte auf drei verschiedenen Wegen. Jeder Weg stellt unterschiedliche Anforderungen an die Optimierung.
@@ -30,7 +31,7 @@ Large Language Models werden auf massiven Web-Crawls trainiert (Common Crawl, pr
 - Ungenaue oder veraltete Inhalte in den Trainingsdaten erzeugen hartnäckige Halluzinationen
 - Sie können nicht direkt kontrollieren, was das Modell gelernt hat, aber Sie können zukünftige Trainings beeinflussen
 
-**Relevante LLMO-Komponenten:** Knowledge Clarity, Authority Signals
+**Relevante LLMO-Komponenten:** Wissensklarheit, Autoritätssignale
 
 ### Weg 2: Websuche
 
@@ -42,7 +43,7 @@ ChatGPT (mit Browsing), Perplexity, Gemini und andere KI-Systeme führen Echtzei
 - Strukturierte Inhalte (Tabellen, Listen, klare Überschriften) werden mit höherer Wahrscheinlichkeit extrahiert
 - Dies ist der Weg, auf dem LLMO die unmittelbarste Wirkung hat
 
-**Relevante LLMO-Komponenten:** Retrieval Signals, Structural Formatting, Citation Signals
+**Relevante LLMO-Komponenten:** Abrufsignale, Strukturierte Formatierung, Zitiersignale
 
 ### Weg 3: RAG (Retrieval-Augmented Generation)
 
@@ -54,13 +55,13 @@ RAG-Systeme rufen relevante Dokumente aus einer Vektordatenbank ab und fügen si
 - Strukturierte Fakten (wer, was, wann, wo) verbessern die Retrieval-Präzision
 - llms.txt und /ai/-Endpunkte liefern vorbereitete Inhalte, die für RAG optimiert sind
 
-**Relevante LLMO-Komponenten:** Knowledge Clarity, Structural Formatting, Retrieval Signals
+**Relevante LLMO-Komponenten:** Wissensklarheit, Strukturierte Formatierung, Abrufsignale
 
 ## Welcher Weg ist am wichtigsten?
 
 | Weg | Kontrollgrad | Wirkungszeitraum | Primärer LLMO-Fokus |
 |-----|-------------|------------------|---------------------|
-| Trainingsdaten | Gering | Monate bis Jahre | Knowledge Clarity |
+| Trainingsdaten | Gering | Monate bis Jahre | Wissensklarheit |
 | Websuche | Hoch | Tage bis Wochen | Retrieval + Structure |
 | RAG | Mittel | Sofort | Structure + Clarity |
 
@@ -72,7 +73,7 @@ Diese Wege verstärken sich gegenseitig:
 
 1. **Korrekte Webinhalte** → Bessere Trainingsdaten bei zukünftigen Modell-Updates
 2. **Strukturierte Inhalte** → Besseres RAG-Retrieval → Bessere KI-Antworten → Mehr Zitierungen
-3. **Mehr Zitierungen** → Stärkere Authority Signals → Höhere Wahrscheinlichkeit, in der Websuche ausgewählt zu werden
+3. **Mehr Zitierungen** → Stärkere Autoritätssignale → Höhere Wahrscheinlichkeit, in der Websuche ausgewählt zu werden
 
 LLMO optimiert für alle drei Wege gleichzeitig. Die [fünf Komponenten](/de/framework/overview/) des LLMO Frameworks adressieren jeweils spezifische Aspekte dieser Entdeckungswege.
 

@@ -1,11 +1,12 @@
 ---
 title: "3. Signaux de recherche"
 description: "Les Signaux de recherche sont les mécanismes qui permettent aux systèmes d'IA de découvrir et d'accéder à votre contenu -- robots.txt, llms.txt, sitemap, points d'accès /ai/, et présence multiplateforme."
+pubDate: 2026-04-30
 ---
 
 ## De quoi s'agit-il
 
-Les Signaux de recherche (Retrieval Signals) sont les indicateurs et mécanismes qui permettent aux systèmes d'IA de découvrir et d'accéder à votre contenu. Cela inclut à la fois l'accessibilité traditionnelle au crawl et les méthodes de découverte plus récentes spécifiques à l'IA.
+Les Signaux de recherche sont les indicateurs et mécanismes qui permettent aux systèmes d'IA de découvrir et d'accéder à votre contenu. Cela inclut à la fois l'accessibilité traditionnelle au crawl et les méthodes de découverte plus récentes spécifiques à l'IA.
 
 ## Pourquoi c'est important
 

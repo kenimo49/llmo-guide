@@ -1,11 +1,12 @@
 ---
-title: "1. Knowledge Clarity"
-description: "Knowledge Clarity beschreibt, wie genau KI Ihre Inhalte verstehen und zusammenfassen kann. Klare Inhalte werden zitiert. Unklare Inhalte werden ignoriert."
+title: "1. Wissensklarheit"
+description: "Wissensklarheit beschreibt, wie genau KI Ihre Inhalte verstehen und zusammenfassen kann. Klare Inhalte werden zitiert. Unklare Inhalte werden ignoriert."
+pubDate: 2026-04-30
 ---
 
 ## Was es ist
 
-Knowledge Clarity beschreibt den Grad, in dem Ihre Inhalte von einem KI-System korrekt verstanden und zusammengefasst werden können. Sie misst, ob ein LLM die richtige Bedeutung aus Ihrem Text extrahieren kann -- ohne Mehrdeutigkeit oder Fehlinterpretation.
+Wissensklarheit beschreibt den Grad, in dem Ihre Inhalte von einem KI-System korrekt verstanden und zusammengefasst werden können. Sie misst, ob ein LLM die richtige Bedeutung aus Ihrem Text extrahieren kann -- ohne Mehrdeutigkeit oder Fehlinterpretation.
 
 ## Warum es wichtig ist
 

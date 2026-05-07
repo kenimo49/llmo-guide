@@ -1,6 +1,7 @@
 ---
 title: "Artículo GEO: Lo que dice la ciencia"
 description: "Resumen del artículo GEO (Generative Engine Optimization) de Princeton/IIT Delhi, publicado en KDD 2024. Hallazgos clave sobre tasas de citación, estrategias de contenido y mejoras estadísticas."
+pubDate: 2026-05-07
 ---
 
 El artículo **GEO (Generative Engine Optimization)** es el primer marco académico para optimizar la visibilidad del contenido en motores de búsqueda potenciados por IA. Publicado en KDD 2024 (ACM SIGKDD), proporciona evidencia empírica de las estrategias de optimización de contenido sobre las que se basa el LLMO Framework.

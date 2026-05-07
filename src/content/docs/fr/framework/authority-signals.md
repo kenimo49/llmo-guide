@@ -1,11 +1,12 @@
 ---
 title: "4. Signaux d'autorité"
 description: "Les Signaux d'autorité démontrent l'expertise et la fiabilité auprès de l'IA. Lorsque plusieurs sources fournissent des informations similaires, l'IA cite celle qui paraît la plus crédible."
+pubDate: 2026-04-30
 ---
 
 ## De quoi s'agit-il
 
-Les Signaux d'autorité (Authority Signals) sont les indicateurs qui démontrent votre expertise, votre crédibilité et votre fiabilité auprès des systèmes d'IA. Ils aident les LLM à déterminer s'ils doivent citer votre contenu comme source fiable.
+Les Signaux d'autorité sont les indicateurs qui démontrent votre expertise, votre crédibilité et votre fiabilité auprès des systèmes d'IA. Ils aident les LLM à déterminer s'ils doivent citer votre contenu comme source fiable.
 
 ## Pourquoi c'est important
 

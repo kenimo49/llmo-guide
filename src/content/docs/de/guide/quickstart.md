@@ -1,6 +1,7 @@
 ---
 title: "LLMO-Schnellstart: In 30 Minuten umsetzen"
 description: "Fügen Sie die drei wichtigsten LLMO-Dateien in unter 30 Minuten zu Ihrer Website hinzu: llms.txt, robots.txt für KI-Crawler und JSON-LD strukturierte Daten."
+pubDate: 2026-04-30
 head:
   - tag: script
     attrs:
@@ -183,9 +184,9 @@ Prüfen Sie nach dem Deployment:
 
 ## Wie geht es weiter?
 
-Dieser Schnellstart deckt die Komponenten **Retrieval Signals** und **Structural Formatting** des LLMO Frameworks ab. Für das vollständige Framework:
+Dieser Schnellstart deckt die Komponenten **Abrufsignale** und **Strukturierte Formatierung** des LLMO Frameworks ab. Für das vollständige Framework:
 
-- [Knowledge Clarity](/de/framework/knowledge-clarity/) — Inhalte schreiben, die KI verstehen kann
-- [Authority Signals](/de/framework/authority-signals/) — Überprüfbare Expertise aufbauen
-- [Citation Signals](/de/framework/citation-signals/) — Daten bereitstellen, die KI gerne zitiert
+- [Wissensklarheit](/de/framework/knowledge-clarity/) — Inhalte schreiben, die KI verstehen kann
+- [Autoritätssignale](/de/framework/authority-signals/) — Überprüfbare Expertise aufbauen
+- [Zitiersignale](/de/framework/citation-signals/) — Daten bereitstellen, die KI gerne zitiert
 - [Framework-Übersicht](/de/framework/overview/) — Ihre Website anhand aller 5 Komponenten bewerten

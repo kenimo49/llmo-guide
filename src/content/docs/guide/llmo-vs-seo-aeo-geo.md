@@ -1,6 +1,7 @@
 ---
 title: LLMO vs SEO vs AEO vs GEO
 description: "Comparison of LLMO, SEO, AEO, and GEO. LLMO is the umbrella framework that includes AEO and GEO while covering all LLM interactions."
+pubDate: 2026-03-09
 ---
 
 ## The Evolution of Search Optimization

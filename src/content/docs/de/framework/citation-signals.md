@@ -1,11 +1,12 @@
 ---
-title: "5. Citation Signals"
-description: "Citation Signals liefern Referenzen, Quellen und Metadaten, die es KI ermöglichen, Aussagen zu verifizieren. Das Hinzufügen von Statistiken verbessert die KI-Zitierrate um +115,1 % (GEO, KDD 2024)."
+title: "5. Zitiersignale"
+description: "Zitiersignale liefern Referenzen, Quellen und Metadaten, die es KI ermöglichen, Aussagen zu verifizieren. Das Hinzufügen von Statistiken verbessert die KI-Zitierrate um +115,1 % (GEO, KDD 2024)."
+pubDate: 2026-04-30
 ---
 
 ## Was es ist
 
-Citation Signals sind die Referenzen, Quellen und Metadaten in Ihren Inhalten, die es KI-Systemen ermöglichen, Aussagen zu verifizieren, Herkunft festzustellen und Vertrauen in das Zitieren Ihrer Arbeit aufzubauen.
+Zitiersignale sind die Referenzen, Quellen und Metadaten in Ihren Inhalten, die es KI-Systemen ermöglichen, Aussagen zu verifizieren, Herkunft festzustellen und Vertrauen in das Zitieren Ihrer Arbeit aufzubauen.
 
 ## Warum es wichtig ist
 

@@ -4,7 +4,7 @@
 
 Das LLMO-Framework bietet einen strukturierten Ansatz, um deine Inhalte für KI-Systeme auffindbar zu machen. 5 Komponenten arbeiten zusammen, um die KI-Sichtbarkeit zu maximieren.
 
-## 1. Wissensklarheit (Knowledge Clarity)
+## 1. Wissensklarheit
 
 **Ziel**: Sicherstellen, dass deine Inhalte sachlich klar und unmissverständlich sind.
 
@@ -14,7 +14,7 @@ Das LLMO-Framework bietet einen strukturierten Ansatz, um deine Inhalte für KI-
 - Domänenspezifische Begriffe explizit definieren
 - Inhalte um konkrete Nutzerfragen strukturieren
 
-## 2. Strukturierte Formatierung (Structural Formatting)
+## 2. Strukturierte Formatierung
 
 **Ziel**: Inhalte maschinenlesbar machen.
 
@@ -26,7 +26,7 @@ Das LLMO-Framework bietet einen strukturierten Ansatz, um deine Inhalte für KI-
 
 **Wichtige Schemas**: Organization, Person, Product, Service, Book, FAQPage, WebSite, TechArticle
 
-## 3. Abrufsignale (Retrieval Signals)
+## 3. Abrufsignale
 
 **Ziel**: KI-Systemen helfen, deine Inhalte zu finden und abzurufen.
 
@@ -36,7 +36,7 @@ Das LLMO-Framework bietet einen strukturierten Ansatz, um deine Inhalte für KI-
 - **Sitemap**: XML-Sitemap
 - **Cross-Linking**: llms.txt, /ai/ und Hauptinhalte verknüpfen
 
-## 4. Autoritätssignale (Authority Signals)
+## 4. Autoritätssignale
 
 **Ziel**: Glaubwürdigkeit aufbauen, die LLMs erkennen.
 
@@ -46,7 +46,7 @@ Das LLMO-Framework bietet einen strukturierten Ansatz, um deine Inhalte für KI-
 - Zitate von anderen Quellen erhalten
 - Konsistente Identität über Plattformen (gleicher Name, gleiche Bio, gleiche Themen)
 
-## 5. Zitiersignale (Citation Signals)
+## 5. Zitiersignale
 
 **Ziel**: Inhalte schaffen, die LLMs gerne zitieren.
 

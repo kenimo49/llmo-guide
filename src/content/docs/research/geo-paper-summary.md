@@ -1,6 +1,7 @@
 ---
 title: "GEO Paper: What the Science Says"
 description: "Summary of the GEO (Generative Engine Optimization) paper from Princeton/IIT Delhi, published at KDD 2024. Key findings on citation rates, content strategies, and statistical improvements."
+pubDate: 2026-04-30
 ---
 
 The **GEO (Generative Engine Optimization)** paper is the first academic framework for optimizing content visibility in AI-powered search engines. Published at KDD 2024 (ACM SIGKDD), it provides empirical evidence for content optimization strategies that the LLMO Framework builds upon.

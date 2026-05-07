@@ -1,6 +1,7 @@
 ---
-title: "3. 검색 시그널 (Retrieval Signals)"
+title: "3. 검색 시그널 (검색 신호)"
 description: "검색 시그널은 AI 시스템이 콘텐츠를 발견하고 접근할 수 있게 하는 메커니즘입니다. robots.txt, llms.txt, sitemap, /ai/ 엔드포인트, 크로스 플랫폼 존재감을 포함합니다."
+pubDate: 2026-04-30
 ---
 
 ## 개요

@@ -1,6 +1,7 @@
 ---
 title: "Como Sistemas de IA Encontram Seu Conteúdo"
 description: "A IA descobre conteúdo por três caminhos: dados de treinamento, busca web em tempo real e recuperação RAG. Entender esses caminhos é essencial para o LLMO."
+pubDate: 2026-05-07
 ---
 
 Quando um usuário pergunta ao ChatGPT sobre o seu negócio, de onde vem a resposta? Sistemas de IA descobrem conteúdo por três caminhos distintos. Cada caminho tem requisitos diferentes para otimização.

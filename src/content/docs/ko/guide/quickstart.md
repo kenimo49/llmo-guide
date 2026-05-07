@@ -1,6 +1,7 @@
 ---
 title: "LLMO 퀵스타트: 30분 만에 구현하기"
 description: "30분 안에 사이트에 LLMO 필수 파일 3개를 추가하세요: llms.txt, AI 크롤러용 robots.txt, JSON-LD 구조화 데이터."
+pubDate: 2026-04-30
 head:
   - tag: script
     attrs:
@@ -183,9 +184,9 @@ Sitemap: https://yoursite.com/sitemap.xml
 
 ## 다음 단계
 
-이 퀵스타트는 LLMO Framework의 **Retrieval Signals**와 **Structural Formatting** 컴포넌트를 다뤘다. 전체 프레임워크:
+이 퀵스타트는 LLMO Framework의 **검색 신호**와 **구조화 포맷** 컴포넌트를 다뤘다. 전체 프레임워크:
 
-- [Knowledge Clarity](/ko/framework/knowledge-clarity/) -- AI가 이해할 수 있는 콘텐츠 작성
-- [Authority Signals](/ko/framework/authority-signals/) -- 검증 가능한 전문성 구축
-- [Citation Signals](/ko/framework/citation-signals/) -- AI가 인용하고 싶은 데이터 제공
+- [지식 명확성](/ko/framework/knowledge-clarity/) -- AI가 이해할 수 있는 콘텐츠 작성
+- [권위 신호](/ko/framework/authority-signals/) -- 검증 가능한 전문성 구축
+- [인용 신호](/ko/framework/citation-signals/) -- AI가 인용하고 싶은 데이터 제공
 - [Framework Overview](/ko/framework/overview/) -- 5가지 컴포넌트로 사이트 점수 확인

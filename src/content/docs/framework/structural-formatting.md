@@ -1,6 +1,7 @@
 ---
 title: "2. Structural Formatting"
 description: "Structural Formatting is the practice of organizing content using machine-readable formats — JSON-LD, semantic HTML, Markdown, llms.txt — so AI systems can efficiently parse and extract information."
+pubDate: 2026-03-09
 ---
 
 ## What It Is

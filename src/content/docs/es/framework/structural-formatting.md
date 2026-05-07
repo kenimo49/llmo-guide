@@ -1,6 +1,7 @@
 ---
 title: "2. Formato estructurado"
 description: "El Formato estructurado es la práctica de organizar el contenido usando formatos legibles por máquinas — JSON-LD, HTML semántico, Markdown, llms.txt — para que los sistemas de IA puedan analizar y extraer información eficientemente."
+pubDate: 2026-05-07
 ---
 
 ## Qué es

@@ -1,6 +1,7 @@
 ---
 title: "Article GEO : ce que dit la science"
 description: "Résumé de l'article GEO (Generative Engine Optimization) de Princeton/IIT Delhi, publié à KDD 2024. Principaux résultats sur les taux de citation, les stratégies de contenu et les améliorations statistiques."
+pubDate: 2026-04-30
 ---
 
 L'article **GEO (Generative Engine Optimization)** constitue le premier cadre académique pour l'optimisation de la visibilité du contenu dans les moteurs de recherche alimentés par l'IA. Publié à KDD 2024 (ACM SIGKDD), il fournit des preuves empiriques pour les stratégies d'optimisation de contenu sur lesquelles le framework LLMO s'appuie.
@@ -38,13 +39,13 @@ Les chercheurs ont construit **GEO-Bench**, un benchmark de 10 000 requêtes de 
 
 | Stratégie | Amélioration de la visibilité | Composante LLMO |
 |-----------|------------------------------|-----------------|
-| **Ajout de statistiques** | **+115,1 %** | Citation Signals |
-| **Citer les sources** | **+77,0 %** | Citation Signals |
-| **Ajout de citations** | **+72,2 %** | Authority Signals |
-| Ton d'autorité | +21,5 % | Knowledge Clarity |
-| Optimisation de la fluidité | +15,2 % | Knowledge Clarity |
-| Termes techniques | +5,8 % | Knowledge Clarity |
-| Langage accessible | +2,4 % | Knowledge Clarity |
+| **Ajout de statistiques** | **+115,1 %** | Signaux de citation |
+| **Citer les sources** | **+77,0 %** | Signaux de citation |
+| **Ajout de citations** | **+72,2 %** | Signaux d'autorité |
+| Ton d'autorité | +21,5 % | Clarté des connaissances |
+| Optimisation de la fluidité | +15,2 % | Clarté des connaissances |
+| Termes techniques | +5,8 % | Clarté des connaissances |
+| Langage accessible | +2,4 % | Clarté des connaissances |
 | Mots uniques | -3,1 % | — |
 | Bourrage de mots-clés | -10,2 % | — |
 
@@ -65,13 +66,13 @@ Les trois stratégies les plus efficaces partagent un trait commun : elles fourn
 
 ## Implications pour le LLMO
 
-### 1. Les Citation Signals sont la composante à plus fort effet de levier
+### 1. Les Signaux de citation sont la composante à plus fort effet de levier
 
-Les données GEO montrent que les Citation Signals (statistiques, sources, citations) génèrent les plus fortes améliorations de visibilité. C'est pourquoi le framework LLMO positionne les Citation Signals comme composante 5 — la pierre de voûte qui multiplie l'effet de toutes les autres composantes.
+Les données GEO montrent que les Signaux de citation (statistiques, sources, citations) génèrent les plus fortes améliorations de visibilité. C'est pourquoi le framework LLMO positionne les Signaux de citation comme composante 5 — la pierre de voûte qui multiplie l'effet de toutes les autres composantes.
 
 ### 2. La clarté du contenu compte, mais moins que les preuves
 
-Les stratégies liées à Knowledge Clarity (ton d'autorité, fluidité, langage accessible) montrent toutes des améliorations positives mais modestes (2–22 %). Bien écrire est nécessaire mais pas suffisant. L'effet multiplicateur vient de l'ajout de faits vérifiables.
+Les stratégies liées à Clarté des connaissances (ton d'autorité, fluidité, langage accessible) montrent toutes des améliorations positives mais modestes (2–22 %). Bien écrire est nécessaire mais pas suffisant. L'effet multiplicateur vient de l'ajout de faits vérifiables.
 
 ### 3. Les tactiques SEO sont contre-productives pour l'IA
 
@@ -93,10 +94,10 @@ Le framework LLMO étend GEO de trois manières :
 
 1. **Portée élargie** : GEO se concentre sur les moteurs de recherche génératifs. Le LLMO couvre toutes les interactions avec les LLM, y compris les requêtes directes, le RAG et les agents IA.
 2. **Orientation mise en œuvre** : GEO identifie *ce qui* fonctionne. Le LLMO explique *comment l'implémenter* avec des formats de fichiers spécifiques (llms.txt), des données structurées (JSON-LD) et des design patterns de contenu.
-3. **Couche de récupération** : GEO suppose que le contenu est déjà récupéré. Le LLMO ajoute la composante Retrieval Signals pour garantir que le contenu est découvrable en premier lieu.
+3. **Couche de récupération** : GEO suppose que le contenu est déjà récupéré. Le LLMO ajoute la composante Signaux de recherche pour garantir que le contenu est découvrable en premier lieu.
 
 ## Pour aller plus loin
 
 - [Article complet sur arXiv](https://arxiv.org/abs/2311.09735)
 - [Vue d'ensemble du framework LLMO](/fr/framework/overview/)
-- [Citation Signals](/fr/framework/citation-signals/) — mise en œuvre de la stratégie GEO la plus efficace
+- [Signaux de citation](/fr/framework/citation-signals/) — mise en œuvre de la stratégie GEO la plus efficace

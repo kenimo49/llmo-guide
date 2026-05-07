@@ -1,6 +1,7 @@
 ---
 title: "3. Señales de recuperación"
 description: "Las Señales de recuperación son los mecanismos que permiten a los sistemas de IA descubrir y acceder a tu contenido — robots.txt, llms.txt, sitemap, endpoints /ai/ y presencia multiplataforma."
+pubDate: 2026-05-07
 ---
 
 ## Qué son

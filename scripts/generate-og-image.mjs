@@ -1,5 +1,4 @@
 import sharp from 'sharp';
-import { writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -36,12 +35,12 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
   <text x="80" y="450" font-family="ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', sans-serif"
         font-size="28" fill="#cbd5e1">Make your content findable by ChatGPT, Claude, Gemini, Perplexity.</text>
 
-  <g transform="translate(80, 520)" font-family="ui-monospace, 'SF Mono', 'JetBrains Mono', monospace" font-size="22" fill="#94a3b8">
-    <text x="0"   y="0">01 Knowledge Clarity</text>
-    <text x="260" y="0">02 Structural Formatting</text>
-    <text x="560" y="0">03 Retrieval Signals</text>
-    <text x="820" y="0">04 Authority</text>
-    <text x="1000" y="0">05 Citation</text>
+  <g transform="translate(80, 520)" font-family="ui-monospace, 'SF Mono', 'JetBrains Mono', monospace" font-size="20" fill="#94a3b8">
+    <text x="0"   y="0">01 KNOWLEDGE</text>
+    <text x="220" y="0">02 STRUCTURE</text>
+    <text x="440" y="0">03 RETRIEVAL</text>
+    <text x="660" y="0">04 AUTHORITY</text>
+    <text x="880" y="0">05 CITATION</text>
   </g>
 
   <text x="80" y="585" font-family="ui-monospace, 'SF Mono', 'JetBrains Mono', monospace"

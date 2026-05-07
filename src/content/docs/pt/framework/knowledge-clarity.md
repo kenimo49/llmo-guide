@@ -1,6 +1,7 @@
 ---
 title: "1. Clareza de conhecimento"
 description: "Clareza de conhecimento é o grau em que seu conteúdo pode ser entendido e resumido com precisão pela IA. Conteúdo claro é citado. Conteúdo obscuro é ignorado."
+pubDate: 2026-05-07
 ---
 
 ## O Que É

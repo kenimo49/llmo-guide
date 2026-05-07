@@ -1,6 +1,7 @@
 ---
 title: "Artigos e referências"
 description: "Pesquisas acadêmicas e relatórios do setor relacionados ao LLMO e à otimização para busca por IA. Inclui GEO (KDD 2024), proposta llms.txt e estudos relacionados."
+pubDate: 2026-05-07
 ---
 
 ## Papers Principais

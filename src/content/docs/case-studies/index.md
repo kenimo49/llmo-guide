@@ -1,6 +1,7 @@
 ---
 title: "Case Studies: LLMO in Practice"
 description: "Real-world examples of LLMO implementation. TRM Labs grew AI-referred traffic by 8,337%. Go Fish Digital achieved 25x higher conversion from AI search. Data-backed results from production deployments."
+pubDate: 2026-04-30
 ---
 
 These case studies demonstrate LLMO principles applied in production environments. Each example includes specific metrics and the LLMO components that contributed to the results.

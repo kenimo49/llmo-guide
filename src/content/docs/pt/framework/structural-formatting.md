@@ -1,6 +1,7 @@
 ---
 title: "2. Formatação estrutural"
 description: "Formatação estrutural é a prática de organizar conteúdo usando formatos legíveis por máquina — JSON-LD, HTML semântico, Markdown, llms.txt — para que sistemas de IA possam processar e extrair informações com eficiência."
+pubDate: 2026-05-07
 ---
 
 ## O Que É

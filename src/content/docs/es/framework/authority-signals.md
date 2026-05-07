@@ -1,6 +1,7 @@
 ---
 title: "4. Señales de autoridad"
 description: "Las Señales de autoridad demuestran expertise y confiabilidad a la IA. Cuando múltiples fuentes proporcionan información similar, la IA cita la que parece más creíble."
+pubDate: 2026-05-07
 ---
 
 ## Qué son

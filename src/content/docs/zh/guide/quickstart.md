@@ -1,6 +1,7 @@
 ---
 title: "LLMO快速入门：30分钟实施指南"
 description: "在30分钟内为你的网站添加三个核心LLMO文件：llms.txt、AI爬虫专用robots.txt和JSON-LD结构化数据。"
+pubDate: 2026-04-30
 head:
   - tag: script
     attrs:
@@ -183,9 +184,9 @@ Sitemap: https://yoursite.com/sitemap.xml
 
 ## 下一步
 
-本快速入门涵盖了LLMO Framework的 **Retrieval Signals** 和 **Structural Formatting** 组件。要了解完整框架：
+本快速入门涵盖了LLMO Framework的 **检索信号** 和 **结构化格式** 组件。要了解完整框架：
 
-- [Knowledge Clarity](/zh/framework/knowledge-clarity/) — 撰写AI能理解的内容
-- [Authority Signals](/zh/framework/authority-signals/) — 建立可验证的专业权威
-- [Citation Signals](/zh/framework/citation-signals/) — 提供AI愿意引用的数据
+- [知识清晰度](/zh/framework/knowledge-clarity/) — 撰写AI能理解的内容
+- [权威信号](/zh/framework/authority-signals/) — 建立可验证的专业权威
+- [引用信号](/zh/framework/citation-signals/) — 提供AI愿意引用的数据
 - [Framework Overview](/zh/framework/overview/) — 从5大组件全面评估你的网站

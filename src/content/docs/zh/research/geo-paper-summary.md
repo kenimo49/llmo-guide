@@ -1,6 +1,7 @@
 ---
 title: "GEO 论文：科学研究的发现"
 description: "Princeton/IIT Delhi 发表的 GEO（Generative Engine Optimization）论文摘要，发表于 KDD 2024。关于引用率、内容策略和统计改进的关键发现。"
+pubDate: 2026-04-30
 ---
 
 **GEO（Generative Engine Optimization）** 论文是首个针对 AI 搜索引擎内容可见性优化的学术框架。该论文发表于 KDD 2024（ACM SIGKDD），为 LLMO 框架所依据的内容优化策略提供了实证支持。

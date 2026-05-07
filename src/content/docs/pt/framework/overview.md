@@ -1,6 +1,7 @@
 ---
 title: "O LLMO Framework: Um Padrão para Descobribilidade por IA"
 description: "O LLMO Framework define 5 componentes principais para descobribilidade por IA: Clareza de conhecimento, Formatação estrutural, Sinais de recuperação, Sinais de autoridade e Sinais de citação. Pontuação máxima: 15 pontos."
+pubDate: 2026-05-07
 ---
 
 O LLMO Framework define cinco componentes principais que determinam se sistemas de IA conseguem descobrir, entender e citar seu conteúdo com precisão.

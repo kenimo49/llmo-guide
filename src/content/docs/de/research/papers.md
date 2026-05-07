@@ -1,6 +1,7 @@
 ---
 title: "Publikationen & Referenzen"
 description: "Akademische Forschung und Branchenberichte zu LLMO und KI-Suchoptimierung. Enthält GEO (KDD 2024), den llms.txt-Vorschlag und verwandte Studien."
+pubDate: 2026-04-30
 ---
 
 ## Kernpublikationen
@@ -78,7 +79,7 @@ Die LLMO-Landschaft hat sich seit dem ursprünglichen GEO-Paper schnell weiteren
 
 ### Schema.org Structured Data
 - **URL**: [schema.org](https://schema.org/)
-- **Relevanz**: Der Vokabularstandard für die JSON-LD-Implementierung strukturierter Daten in LLMO-Komponente 2 (Structural Formatting).
+- **Relevanz**: Der Vokabularstandard für die JSON-LD-Implementierung strukturierter Daten in LLMO-Komponente 2 (Strukturierte Formatierung).
 
 ### Google Structured Data Documentation
 - **URL**: [developers.google.com/search/docs/appearance/structured-data](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data)

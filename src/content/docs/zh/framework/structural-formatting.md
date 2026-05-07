@@ -1,6 +1,7 @@
 ---
 title: "2. 结构化格式"
 description: "结构化格式是指使用机器可读的格式组织内容的实践——JSON-LD、语义化HTML、Markdown、llms.txt——使AI系统能够高效地解析和提取信息。"
+pubDate: 2026-04-30
 ---
 
 ## 定义

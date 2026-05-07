@@ -1,6 +1,7 @@
 ---
 title: "Études de cas : le LLMO en pratique"
 description: "Exemples concrets de mise en œuvre du LLMO. TRM Labs a augmenté son trafic issu de l'IA de 8 337 %. Go Fish Digital a obtenu un taux de conversion 25 fois supérieur via la recherche IA. Résultats chiffrés issus de déploiements en production."
+pubDate: 2026-04-30
 ---
 
 Ces études de cas illustrent l'application des principes LLMO en environnement de production. Chaque exemple inclut des métriques précises et les composantes LLMO qui ont contribué aux résultats.
@@ -21,10 +22,10 @@ TRM Labs, une entreprise spécialisée dans l'intelligence blockchain, a suivi l
 
 ### Ce qu'ils ont fait
 
-1. **Knowledge Clarity** : Publication d'explications détaillées et accessibles sur des sujets complexes liés à la conformité blockchain
-2. **Structural Formatting** : Organisation du contenu avec des titres clairs, des tableaux et des guides étape par étape
-3. **Authority Signals** : Positionnement cohérent en tant qu'expert sur leur blog, les réseaux sociaux et les publications du secteur
-4. **Citation Signals** : Intégration de données chiffrées, de références réglementaires et de statistiques vérifiables dans tous les contenus
+1. **Clarté des connaissances** : Publication d'explications détaillées et accessibles sur des sujets complexes liés à la conformité blockchain
+2. **Formatage structuré** : Organisation du contenu avec des titres clairs, des tableaux et des guides étape par étape
+3. **Signaux d'autorité** : Positionnement cohérent en tant qu'expert sur leur blog, les réseaux sociaux et les publications du secteur
+4. **Signaux de citation** : Intégration de données chiffrées, de références réglementaires et de statistiques vérifiables dans tous les contenus
 
 ### Leçon LLMO
 
@@ -84,7 +85,7 @@ Ce résultat remet en question l'hypothèse selon laquelle l'autorité SEO tradi
 
 ### Leçon LLMO
 
-Les Authority Signals en LLMO ont une portée plus large que l'autorité SEO. Multiplier les mentions sur différentes plateformes (articles, forums, réseaux sociaux, documentation) est plus efficace que d'accumuler des backlinks provenant de quelques sites à forte autorité.
+Les Signaux d'autorité en LLMO ont une portée plus large que l'autorité SEO. Multiplier les mentions sur différentes plateformes (articles, forums, réseaux sociaux, documentation) est plus efficace que d'accumuler des backlinks provenant de quelques sites à forte autorité.
 
 ---
 
@@ -105,11 +106,11 @@ Viray Digital a développé une approche systématique pour accroître la visibi
 
 | Composante | Mise en œuvre |
 |------------|--------------|
-| Knowledge Clarity | Réécriture des descriptions produits pour les rendre factuelles et sans ambiguïté |
-| Structural Formatting | Ajout de JSON-LD, restructuration des pages avec des titres sémantiques |
-| Retrieval Signals | Création de llms.txt, endpoints /ai/, mise à jour de robots.txt |
-| Authority Signals | Campagne de cohérence d'information multi-plateformes |
-| Citation Signals | Ajout de statistiques, dates de publication et liens vers les sources dans tous les contenus |
+| Clarté des connaissances | Réécriture des descriptions produits pour les rendre factuelles et sans ambiguïté |
+| Formatage structuré | Ajout de JSON-LD, restructuration des pages avec des titres sémantiques |
+| Signaux de recherche | Création de llms.txt, endpoints /ai/, mise à jour de robots.txt |
+| Signaux d'autorité | Campagne de cohérence d'information multi-plateformes |
+| Signaux de citation | Ajout de statistiques, dates de publication et liens vers les sources dans tous les contenus |
 
 ### Leçon LLMO
 
@@ -123,8 +124,8 @@ La visibilité IA n'est pas une optimisation ponctuelle. Elle nécessite un suiv
 |---------|--------|-----------------|
 | +8 337 % de croissance du trafic IA possible | TRM Labs | Les 5 composantes en synergie |
 | Conversion 25 fois supérieure via la recherche IA | Go Fish Digital | La qualité prime sur la quantité |
-| Mentions web 3 fois plus prédictives que les backlinks | Ahrefs (75 000 marques) | Authority Signals > SEO traditionnel |
-| +115,1 % de visibilité en ajoutant des statistiques | GEO Paper (KDD 2024) | Citation Signals : levier le plus puissant |
+| Mentions web 3 fois plus prédictives que les backlinks | Ahrefs (75 000 marques) | Signaux d'autorité > SEO traditionnel |
+| +115,1 % de visibilité en ajoutant des statistiques | GEO Paper (KDD 2024) | Signaux de citation : levier le plus puissant |
 | -10,2 % de visibilité avec le bourrage de mots-clés | GEO Paper (KDD 2024) | Les tactiques SEO nuisent à la visibilité IA |
 
 ## Commencer la mise en œuvre

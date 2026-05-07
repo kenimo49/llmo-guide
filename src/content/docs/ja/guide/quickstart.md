@@ -1,6 +1,7 @@
 ---
 title: "LLMOクイックスタート: 30分で実装"
 description: "30分以内にサイトへLLMOの3つの必須ファイルを追加する: llms.txt、AI向けrobots.txt、JSON-LD構造化データ。"
+pubDate: 2026-04-30
 head:
   - tag: script
     attrs:
@@ -183,9 +184,9 @@ Sitemap: https://yoursite.com/sitemap.xml
 
 ## 次のステップ
 
-このクイックスタートでは、LLMO Frameworkの**Retrieval Signals**と**Structural Formatting**コンポーネントをカバーした。フレームワークの全体像については以下を参照:
+このクイックスタートでは、LLMO Frameworkの**検索シグナル**と**構造化フォーマット**コンポーネントをカバーした。フレームワークの全体像については以下を参照:
 
-- [Knowledge Clarity](/ja/framework/knowledge-clarity/) -- AIが理解できるコンテンツの書き方
-- [Authority Signals](/ja/framework/authority-signals/) -- 検証可能な専門性の構築
-- [Citation Signals](/ja/framework/citation-signals/) -- AIが引用したくなるデータの提供
+- [ナレッジクラリティ](/ja/framework/knowledge-clarity/) -- AIが理解できるコンテンツの書き方
+- [権威性シグナル](/ja/framework/authority-signals/) -- 検証可能な専門性の構築
+- [引用シグナル](/ja/framework/citation-signals/) -- AIが引用したくなるデータの提供
 - [Framework Overview](/ja/framework/overview/) -- 5つのコンポーネントでサイトをスコアリング

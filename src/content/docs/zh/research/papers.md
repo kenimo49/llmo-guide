@@ -1,6 +1,7 @@
 ---
 title: "论文与参考文献"
 description: "与 LLMO 和 AI 搜索优化相关的学术研究与行业报告。包括 GEO（KDD 2024）、llms.txt 提案及相关研究。"
+pubDate: 2026-04-30
 ---
 
 ## 核心论文

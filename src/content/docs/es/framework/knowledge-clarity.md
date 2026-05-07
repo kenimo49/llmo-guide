@@ -1,6 +1,7 @@
 ---
 title: "1. Claridad del conocimiento"
 description: "La Claridad del conocimiento es el grado en que tu contenido puede ser comprendido y resumido con precisión por la IA. El contenido claro se cita. El contenido confuso se ignora."
+pubDate: 2026-05-07
 ---
 
 ## Qué es

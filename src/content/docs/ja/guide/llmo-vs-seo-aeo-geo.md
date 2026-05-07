@@ -1,6 +1,7 @@
 ---
 title: LLMO vs SEO vs AEO vs GEO
 description: "LLMO、SEO、AEO、GEOの比較。LLMOはAEOとGEOを包含し、すべてのLLMインタラクションをカバーする上位フレームワークである。"
+pubDate: 2026-04-30
 ---
 
 ## 検索最適化の進化

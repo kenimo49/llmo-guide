@@ -1,6 +1,7 @@
 ---
 title: "5. Sinais de citação"
 description: "Sinais de citação fornecem referências, fontes e metadados que permitem à IA verificar afirmações. Adicionar estatísticas melhora as taxas de citação por IA em +115,1% (GEO, KDD 2024)."
+pubDate: 2026-05-07
 ---
 
 ## O Que São

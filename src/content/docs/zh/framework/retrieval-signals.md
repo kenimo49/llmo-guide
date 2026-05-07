@@ -1,6 +1,7 @@
 ---
 title: "3. 检索信号"
 description: "检索信号是使AI系统能够发现和访问你的内容的机制——robots.txt、llms.txt、sitemap、/ai/端点以及跨平台存在。"
+pubDate: 2026-04-30
 ---
 
 ## 定义

@@ -1,6 +1,7 @@
 ---
 title: LLMO란 무엇인가?
 description: "LLMO (Large Language Model Optimization)는 AI 시스템이 웹 콘텐츠를 정확하게 발견하고, 이해하며, 인용할 수 있도록 최적화하는 방법론이다."
+pubDate: 2026-04-30
 head:
   - tag: script
     attrs:

@@ -1,11 +1,12 @@
 ---
 title: "1. Clarté des connaissances"
 description: "La Clarté des connaissances mesure à quel point votre contenu peut être compris et résumé fidèlement par l'IA. Un contenu clair est cité. Un contenu flou est ignoré."
+pubDate: 2026-04-30
 ---
 
 ## De quoi s'agit-il
 
-La Clarté des connaissances (Knowledge Clarity) mesure à quel point votre contenu peut être compris et résumé fidèlement par un système d'IA. Elle évalue si un LLM peut extraire le sens exact de votre texte sans ambiguïté ni erreur d'interprétation.
+La Clarté des connaissances mesure à quel point votre contenu peut être compris et résumé fidèlement par un système d'IA. Elle évalue si un LLM peut extraire le sens exact de votre texte sans ambiguïté ni erreur d'interprétation.
 
 ## Pourquoi c'est important
 

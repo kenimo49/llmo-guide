@@ -1,6 +1,7 @@
 ---
 title: "LLMO Quickstart: Implement in 30 Minutes"
 description: "Add the three essential LLMO files to your site in under 30 minutes: llms.txt, robots.txt for AI crawlers, and JSON-LD structured data."
+pubDate: 2026-04-30
 head:
   - tag: script
     attrs:

@@ -1,6 +1,7 @@
 ---
 title: LLMO vs SEO vs AEO vs GEO
 description: "LLMO、SEO、AEO、GEO的比较。LLMO是涵盖AEO和GEO，同时覆盖所有LLM交互场景的上位框架。"
+pubDate: 2026-04-30
 ---
 
 ## 搜索优化的演进

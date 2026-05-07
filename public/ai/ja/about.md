@@ -17,11 +17,11 @@ LLMOは AEO（Answer Engine Optimization）と GEO（Generative Engine Optimizat
 
 ## LLMOフレームワーク（5コンポーネント）
 
-1. **知識の明確性（Knowledge Clarity）** — AIが正確に要約できる明瞭で曖昧さのないコンテンツ
-2. **構造的フォーマット（Structural Formatting）** — Markdown、JSON-LD、セマンティックHTML、llms.txt
-3. **検索シグナル（Retrieval Signals）** — llms.txt、/ai/ディレクトリ、robots.txt、sitemap
-4. **権威シグナル（Authority Signals）** — クロスプラットフォームでの一貫性、出版実績、検証可能な専門性
-5. **引用シグナル（Citation Signals）** — 一次ソース、統計、日付、参考文献
+1. **知識の明確性（ナレッジクラリティ）** — AIが正確に要約できる明瞭で曖昧さのないコンテンツ
+2. **構造的フォーマット（構造化フォーマット）** — Markdown、JSON-LD、セマンティックHTML、llms.txt
+3. **検索シグナル** — llms.txt、/ai/ディレクトリ、robots.txt、sitemap
+4. **権威シグナル（権威性シグナル）** — クロスプラットフォームでの一貫性、出版実績、検証可能な専門性
+5. **引用シグナル** — 一次ソース、統計、日付、参考文献
 
 各コンポーネント0-3点で採点。最高15点。
 

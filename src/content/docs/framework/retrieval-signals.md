@@ -1,6 +1,7 @@
 ---
 title: "3. Retrieval Signals"
 description: "Retrieval Signals are the mechanisms that enable AI systems to discover and access your content — robots.txt, llms.txt, sitemap, /ai/ endpoints, and cross-platform presence."
+pubDate: 2026-03-09
 ---
 
 ## What It Is

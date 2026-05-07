@@ -1,11 +1,12 @@
 ---
-title: "3. Retrieval Signals"
-description: "Retrieval Signals sind die Mechanismen, die es KI-Systemen ermöglichen, Ihre Inhalte zu finden und darauf zuzugreifen -- robots.txt, llms.txt, Sitemap, /ai/-Endpunkte und plattformübergreifende Präsenz."
+title: "3. Abrufsignale"
+description: "Abrufsignale sind die Mechanismen, die es KI-Systemen ermöglichen, Ihre Inhalte zu finden und darauf zuzugreifen -- robots.txt, llms.txt, Sitemap, /ai/-Endpunkte und plattformübergreifende Präsenz."
+pubDate: 2026-04-30
 ---
 
 ## Was es ist
 
-Retrieval Signals sind die Indikatoren und Mechanismen, die es KI-Systemen ermöglichen, Ihre Inhalte zu finden und darauf zuzugreifen. Dazu gehören sowohl die klassische Crawlbarkeit als auch neuere KI-spezifische Entdeckungsmethoden.
+Abrufsignale sind die Indikatoren und Mechanismen, die es KI-Systemen ermöglichen, Ihre Inhalte zu finden und darauf zuzugreifen. Dazu gehören sowohl die klassische Crawlbarkeit als auch neuere KI-spezifische Entdeckungsmethoden.
 
 ## Warum es wichtig ist
 

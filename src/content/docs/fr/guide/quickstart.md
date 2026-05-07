@@ -1,6 +1,7 @@
 ---
 title: "Demarrage rapide LLMO : Implementation en 30 minutes"
 description: "Ajoutez les trois fichiers essentiels LLMO a votre site en moins de 30 minutes : llms.txt, robots.txt pour les robots d'IA et les donnees structurees JSON-LD."
+pubDate: 2026-04-30
 head:
   - tag: script
     attrs:
@@ -183,9 +184,9 @@ Apres le deploiement, verifiez :
 
 ## Et ensuite
 
-Ce demarrage rapide couvre les composants **Retrieval Signals** et **Structural Formatting** du LLMO Framework. Pour le cadre complet :
+Ce demarrage rapide couvre les composants **Signaux de recherche** et **Formatage structuré** du LLMO Framework. Pour le cadre complet :
 
-- [Knowledge Clarity](/fr/framework/knowledge-clarity/) -- Ecrivez du contenu que l'IA peut comprendre
-- [Authority Signals](/fr/framework/authority-signals/) -- Construisez une expertise verifiable
-- [Citation Signals](/fr/framework/citation-signals/) -- Fournissez des donnees que l'IA souhaite citer
+- [Clarté des connaissances](/fr/framework/knowledge-clarity/) -- Ecrivez du contenu que l'IA peut comprendre
+- [Signaux d'autorité](/fr/framework/authority-signals/) -- Construisez une expertise verifiable
+- [Signaux de citation](/fr/framework/citation-signals/) -- Fournissez des donnees que l'IA souhaite citer
 - [Vue d'ensemble du Framework](/fr/framework/overview/) -- Evaluez votre site sur les 5 composants

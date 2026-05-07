@@ -1,15 +1,16 @@
 ---
-title: "4. Authority Signals"
-description: "Authority Signals demonstrieren Fachkompetenz und Vertrauenswürdigkeit gegenüber KI. Wenn mehrere Quellen ähnliche Informationen liefern, zitiert KI die glaubwürdigste."
+title: "4. Autoritätssignale"
+description: "Autoritätssignale demonstrieren Fachkompetenz und Vertrauenswürdigkeit gegenüber KI. Wenn mehrere Quellen ähnliche Informationen liefern, zitiert KI die glaubwürdigste."
+pubDate: 2026-04-30
 ---
 
 ## Was es ist
 
-Authority Signals sind die Indikatoren, die Ihre Fachkompetenz, Glaubwürdigkeit und Vertrauenswürdigkeit gegenüber KI-Systemen demonstrieren. Sie helfen LLMs zu entscheiden, ob Ihre Inhalte als zuverlässige Quelle zitiert werden sollen.
+Autoritätssignale sind die Indikatoren, die Ihre Fachkompetenz, Glaubwürdigkeit und Vertrauenswürdigkeit gegenüber KI-Systemen demonstrieren. Sie helfen LLMs zu entscheiden, ob Ihre Inhalte als zuverlässige Quelle zitiert werden sollen.
 
 ## Warum es wichtig ist
 
-LLMs sind darauf trainiert, autoritative Quellen zu bevorzugen. Wenn mehrere Quellen ähnliche Informationen liefern, zitieren KI-Systeme diejenige, die am glaubwürdigsten erscheint. Authority Signals helfen Ihren Inhalten, diesen Auswahlprozess zu gewinnen.
+LLMs sind darauf trainiert, autoritative Quellen zu bevorzugen. Wenn mehrere Quellen ähnliche Informationen liefern, zitieren KI-Systeme diejenige, die am glaubwürdigsten erscheint. Autoritätssignale helfen Ihren Inhalten, diesen Auswahlprozess zu gewinnen.
 
 ## Umsetzung
 

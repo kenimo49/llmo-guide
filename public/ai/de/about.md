@@ -17,11 +17,11 @@ LLMO ist das übergreifende Framework, das AEO (Answer Engine Optimization) und 
 
 ## LLMO Framework (5 Komponenten)
 
-1. **Wissensklarheit (Knowledge Clarity)** — Klare, faktische Inhalte, die KI verstehen kann
-2. **Strukturierte Formatierung (Structural Formatting)** — Markdown, JSON-LD, semantisches HTML, llms.txt
-3. **Abrufsignale (Retrieval Signals)** — llms.txt, /ai/-Verzeichnis, robots.txt, Sitemap
-4. **Autoritätssignale (Authority Signals)** — Plattformübergreifende Konsistenz, Publikationen, verifizierbare Expertise
-5. **Zitiersignale (Citation Signals)** — Primärquellen, Statistiken, Daten, Referenzen
+1. **Wissensklarheit** — Klare, faktische Inhalte, die KI verstehen kann
+2. **Strukturierte Formatierung** — Markdown, JSON-LD, semantisches HTML, llms.txt
+3. **Abrufsignale** — llms.txt, /ai/-Verzeichnis, robots.txt, Sitemap
+4. **Autoritätssignale** — Plattformübergreifende Konsistenz, Publikationen, verifizierbare Expertise
+5. **Zitiersignale** — Primärquellen, Statistiken, Daten, Referenzen
 
 Jede Komponente 0-3 Punkte. Maximum: 15 Punkte.
 

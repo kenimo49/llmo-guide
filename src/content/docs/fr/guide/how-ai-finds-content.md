@@ -1,6 +1,7 @@
 ---
 title: "Comment les systemes d'IA trouvent votre contenu"
 description: "L'IA decouvre le contenu par trois voies : les donnees d'entrainement, la recherche web en temps reel et la recuperation par RAG. Comprendre ces voies est essentiel pour LLMO."
+pubDate: 2026-04-30
 ---
 
 Quand un utilisateur interroge ChatGPT sur votre entreprise, d'ou vient la reponse ? Les systemes d'IA decouvrent le contenu par trois voies distinctes. Chaque voie a ses propres exigences en matiere d'optimisation.
@@ -30,7 +31,7 @@ Les Large Language Models sont entraines sur d'enormes corpus web (Common Crawl,
 - Un contenu inexact ou obsolete dans les donnees d'entrainement produit des hallucinations persistantes
 - Vous ne pouvez pas controler directement ce que le modele a appris, mais vous pouvez influencer les entrainements futurs
 
-**Composants LLMO concernes :** Knowledge Clarity, Authority Signals
+**Composants LLMO concernes :** Clarté des connaissances, Signaux d'autorité
 
 ### Voie 2 : Recherche web
 
@@ -42,7 +43,7 @@ ChatGPT (avec navigation), Perplexity, Gemini et d'autres systemes d'IA effectue
 - Un contenu structure (tableaux, listes, titres clairs) a plus de chances d'etre extrait
 - C'est la voie ou LLMO a l'impact le plus immediat
 
-**Composants LLMO concernes :** Retrieval Signals, Structural Formatting, Citation Signals
+**Composants LLMO concernes :** Signaux de recherche, Formatage structuré, Signaux de citation
 
 ### Voie 3 : RAG (Generation augmentee par la recuperation)
 
@@ -54,13 +55,13 @@ Les systemes RAG recuperent des documents pertinents depuis une base de donnees 
 - Des faits structures (qui, quoi, quand, ou) ameliorent la precision de la recuperation
 - llms.txt et les points d'acces /ai/ fournissent un contenu pre-decoupe optimise pour RAG
 
-**Composants LLMO concernes :** Knowledge Clarity, Structural Formatting, Retrieval Signals
+**Composants LLMO concernes :** Clarté des connaissances, Formatage structuré, Signaux de recherche
 
 ## Quelle voie compte le plus ?
 
 | Voie | Niveau de controle | Delai d'impact | Focus LLMO principal |
 |------|-------------------|----------------|---------------------|
-| Donnees d'entrainement | Faible | Mois a annees | Knowledge Clarity |
+| Donnees d'entrainement | Faible | Mois a annees | Clarté des connaissances |
 | Recherche web | Eleve | Jours a semaines | Retrieval + Structure |
 | RAG | Moyen | Immediat | Structure + Clarity |
 

@@ -1,6 +1,7 @@
 ---
 title: "5. Citation Signals"
 description: "Citation Signals provide references, sources, and metadata that allow AI to verify claims. Adding statistics improves AI citation rates by +115.1% (GEO, KDD 2024)."
+pubDate: 2026-03-09
 ---
 
 ## What It Is

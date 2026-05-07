@@ -1,11 +1,12 @@
 ---
 title: "2. Formatage structuré"
 description: "Le Formatage structuré consiste à organiser le contenu à l'aide de formats lisibles par les machines -- JSON-LD, HTML sémantique, Markdown, llms.txt -- pour que les systèmes d'IA puissent analyser et extraire efficacement l'information."
+pubDate: 2026-04-30
 ---
 
 ## De quoi s'agit-il
 
-Le Formatage structuré (Structural Formatting) consiste à organiser votre contenu à l'aide de formats lisibles par les machines et de balisage sémantique, afin que les systèmes d'IA puissent analyser, catégoriser et extraire efficacement l'information.
+Le Formatage structuré consiste à organiser votre contenu à l'aide de formats lisibles par les machines et de balisage sémantique, afin que les systèmes d'IA puissent analyser, catégoriser et extraire efficacement l'information.
 
 ## Pourquoi c'est important
 

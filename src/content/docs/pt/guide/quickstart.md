@@ -1,6 +1,7 @@
 ---
 title: "Início Rápido do LLMO: Implemente em 30 Minutos"
 description: "Adicione os três arquivos essenciais do LLMO ao seu site em menos de 30 minutos: llms.txt, robots.txt para crawlers de IA e dados estruturados JSON-LD."
+pubDate: 2026-05-07
 head:
   - tag: script
     attrs:

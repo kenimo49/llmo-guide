@@ -1,6 +1,7 @@
 ---
 title: "Fallstudien: LLMO in der Praxis"
 description: "Praxisbeispiele zur LLMO-Implementierung. TRM Labs steigerte den KI-vermittelten Traffic um 8.337 %. Go Fish Digital erzielte eine 25-fach h&ouml;here Conversion &uuml;ber KI-Suche. Datengest&uuml;tzte Ergebnisse aus produktiven Umgebungen."
+pubDate: 2026-04-30
 ---
 
 Diese Fallstudien zeigen LLMO-Prinzipien im produktiven Einsatz. Jedes Beispiel enthält konkrete Kennzahlen und die LLMO-Komponenten, die zu den Ergebnissen beigetragen haben.
@@ -21,10 +22,10 @@ TRM Labs, ein Unternehmen für Blockchain-Analyse, verfolgte das Wachstum des KI
 
 ### Vorgehensweise
 
-1. **Knowledge Clarity**: Veröffentlichung detaillierter, verständlicher Erklärungen komplexer Blockchain-Compliance-Themen
-2. **Structural Formatting**: Inhalte mit klaren Überschriften, Tabellen und Schritt-für-Schritt-Anleitungen organisiert
-3. **Authority Signals**: Konsistente Expertenpositionierung über Blog, Social Media und Fachpublikationen hinweg
-4. **Citation Signals**: Spezifische Datenpunkte, regulatorische Referenzen und überprüfbare Statistiken in allen Inhalten
+1. **Wissensklarheit**: Veröffentlichung detaillierter, verständlicher Erklärungen komplexer Blockchain-Compliance-Themen
+2. **Strukturierte Formatierung**: Inhalte mit klaren Überschriften, Tabellen und Schritt-für-Schritt-Anleitungen organisiert
+3. **Autoritätssignale**: Konsistente Expertenpositionierung über Blog, Social Media und Fachpublikationen hinweg
+4. **Zitiersignale**: Spezifische Datenpunkte, regulatorische Referenzen und überprüfbare Statistiken in allen Inhalten
 
 ### LLMO-Erkenntnis
 
@@ -84,7 +85,7 @@ Dieses Ergebnis stellt die Annahme in Frage, dass traditionelle SEO-Autorität (
 
 ### LLMO-Erkenntnis
 
-Authority Signals in LLMO sind breiter gefasst als SEO-Autorität. Der Aufbau von Erwähnungen über verschiedene Plattformen hinweg (Artikel, Foren, Social Media, Dokumentation) ist effektiver als das Ansammeln von Backlinks weniger hochrangiger Websites.
+Autoritätssignale in LLMO sind breiter gefasst als SEO-Autorität. Der Aufbau von Erwähnungen über verschiedene Plattformen hinweg (Artikel, Foren, Social Media, Dokumentation) ist effektiver als das Ansammeln von Backlinks weniger hochrangiger Websites.
 
 ---
 
@@ -105,11 +106,11 @@ Viray Digital entwickelte einen systematischen Ansatz, um die Sichtbarkeit ihrer
 
 | Komponente | Umsetzung |
 |------------|-----------|
-| Knowledge Clarity | Produktbeschreibungen sachlich und unmissverständlich umgeschrieben |
-| Structural Formatting | JSON-LD hinzugefügt, Seiten mit semantischen Überschriften umstrukturiert |
-| Retrieval Signals | llms.txt erstellt, /ai/-Endpunkte eingerichtet, robots.txt aktualisiert |
-| Authority Signals | Plattformübergreifende Kampagne zur Informationskonsistenz |
-| Citation Signals | Statistiken, Veröffentlichungsdaten und Quellenlinks in alle Inhalte integriert |
+| Wissensklarheit | Produktbeschreibungen sachlich und unmissverständlich umgeschrieben |
+| Strukturierte Formatierung | JSON-LD hinzugefügt, Seiten mit semantischen Überschriften umstrukturiert |
+| Abrufsignale | llms.txt erstellt, /ai/-Endpunkte eingerichtet, robots.txt aktualisiert |
+| Autoritätssignale | Plattformübergreifende Kampagne zur Informationskonsistenz |
+| Zitiersignale | Statistiken, Veröffentlichungsdaten und Quellenlinks in alle Inhalte integriert |
 
 ### LLMO-Erkenntnis
 
@@ -123,8 +124,8 @@ KI-Sichtbarkeit ist keine einmalige Optimierung. Sie erfordert laufendes Monitor
 |------------|--------|---------------|
 | +8.337 % KI-Traffic-Wachstum möglich | TRM Labs | Alle 5 Komponenten im Zusammenspiel |
 | 25-fach höhere Conversion durch KI-Suche | Go Fish Digital | Qualität vor Quantität |
-| Web Mentions 3-fach prädiktiver als Backlinks | Ahrefs (75.000 Marken) | Authority Signals > traditionelle SEO |
-| +115,1 % Sichtbarkeit durch Statistikintegration | GEO Paper (KDD 2024) | Citation Signals mit größtem Hebel |
+| Web Mentions 3-fach prädiktiver als Backlinks | Ahrefs (75.000 Marken) | Autoritätssignale > traditionelle SEO |
+| +115,1 % Sichtbarkeit durch Statistikintegration | GEO Paper (KDD 2024) | Zitiersignale mit größtem Hebel |
 | -10,2 % Sichtbarkeit durch Keyword-Stuffing | GEO Paper (KDD 2024) | SEO-Taktiken schaden der KI-Sichtbarkeit |
 
 ## Jetzt implementieren

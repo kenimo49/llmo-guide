@@ -1,6 +1,7 @@
 ---
 title: "Estudos de caso: LLMO na Prática"
 description: "Exemplos reais de implementação do LLMO. TRM Labs aumentou o tráfego referenciado por IA em 8.337%. Go Fish Digital obteve conversão 25x maior da busca por IA. Resultados baseados em dados de implantações em produção."
+pubDate: 2026-05-07
 ---
 
 Estes estudos de caso demonstram princípios do LLMO aplicados em ambientes de produção. Cada exemplo inclui métricas específicas e os componentes do LLMO que contribuíram para os resultados.

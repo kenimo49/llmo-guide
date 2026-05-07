@@ -1,6 +1,7 @@
 ---
 title: LLMO vs SEO vs AEO vs GEO
 description: "Comparación de LLMO, SEO, AEO y GEO. LLMO es el marco paraguas que incluye AEO y GEO mientras cubre todas las interacciones con LLM."
+pubDate: 2026-05-07
 ---
 
 ## La evolución de la optimización para búsqueda

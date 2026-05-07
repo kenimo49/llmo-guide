@@ -1,13 +1,14 @@
 ---
 title: "Das LLMO-Framework: Ein Standard für KI-Auffindbarkeit"
-description: "Das LLMO-Framework definiert 5 Kernkomponenten für die KI-Auffindbarkeit: Knowledge Clarity, Structural Formatting, Retrieval Signals, Authority Signals und Citation Signals. Maximale Punktzahl: 15 Punkte."
+description: "Das LLMO-Framework definiert 5 Kernkomponenten für die KI-Auffindbarkeit: Wissensklarheit, Strukturierte Formatierung, Abrufsignale, Autoritätssignale und Zitiersignale. Maximale Punktzahl: 15 Punkte."
+pubDate: 2026-04-30
 ---
 
 Das LLMO-Framework definiert fünf Kernkomponenten, die bestimmen, ob KI-Systeme Ihre Inhalte finden, verstehen und korrekt zitieren können.
 
 ## Die fünf Komponenten
 
-### 1. Knowledge Clarity
+### 1. Wissensklarheit
 Ist Ihr Inhalt klar genug, damit KI ihn richtig verstehen und zusammenfassen kann?
 
 - Verwenden Sie klare, eindeutige Sprache
@@ -15,7 +16,7 @@ Ist Ihr Inhalt klar genug, damit KI ihn richtig verstehen und zusammenfassen kan
 - Liefern Sie strukturierte Fakten (wer, was, wann, wo)
 - Vermeiden Sie Fachjargon ohne Erklärung
 
-### 2. Structural Formatting
+### 2. Strukturierte Formatierung
 Ist Ihr Inhalt für die maschinelle Verarbeitung strukturiert?
 
 - Verwenden Sie semantisches HTML und Markdown
@@ -23,7 +24,7 @@ Ist Ihr Inhalt für die maschinelle Verarbeitung strukturiert?
 - Stellen Sie eine llms.txt für KI-spezifische Inhalte bereit
 - Organisieren Sie Inhalte hierarchisch
 
-### 3. Retrieval Signals
+### 3. Abrufsignale
 Können KI-Systeme Ihre Inhalte finden, wenn sie diese benötigen?
 
 - Stellen Sie Crawlbarkeit sicher (robots.txt, sitemap.xml)
@@ -31,7 +32,7 @@ Können KI-Systeme Ihre Inhalte finden, wenn sie diese benötigen?
 - Implementieren Sie den llms.txt-Standard
 - Machen Sie Inhalte nach Möglichkeit über APIs verfügbar
 
-### 4. Authority Signals
+### 4. Autoritätssignale
 Demonstriert Ihr Inhalt Fachkompetenz und Vertrauenswürdigkeit?
 
 - Autorenangabe mit überprüfbaren Referenzen
@@ -39,7 +40,7 @@ Demonstriert Ihr Inhalt Fachkompetenz und Vertrauenswürdigkeit?
 - Konsistente Informationen über alle Plattformen hinweg
 - Evidenzbasierte Aussagen mit Quellenangaben
 
-### 5. Citation Signals
+### 5. Zitiersignale
 Enthält Ihr Inhalt Referenzen, die KI verifizieren kann?
 
 - Verlinken Sie auf Primärquellen

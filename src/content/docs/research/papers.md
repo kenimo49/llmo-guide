@@ -1,6 +1,7 @@
 ---
 title: "Papers & References"
 description: "Academic research and industry reports related to LLMO and AI search optimization. Includes GEO (KDD 2024), llms.txt proposal, and related studies."
+pubDate: 2026-03-09
 ---
 
 ## Core Papers

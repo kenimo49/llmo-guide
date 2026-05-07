@@ -1,11 +1,12 @@
 ---
 title: "5. Signaux de citation"
 description: "Les Signaux de citation fournissent des références, des sources et des métadonnées qui permettent à l'IA de vérifier les affirmations. L'ajout de statistiques améliore le taux de citation par l'IA de +115,1 % (GEO, KDD 2024)."
+pubDate: 2026-04-30
 ---
 
 ## De quoi s'agit-il
 
-Les Signaux de citation (Citation Signals) sont les références, sources et métadonnées présentes dans votre contenu qui permettent aux systèmes d'IA de vérifier les affirmations, d'établir la provenance et de renforcer leur confiance pour citer votre travail.
+Les Signaux de citation sont les références, sources et métadonnées présentes dans votre contenu qui permettent aux systèmes d'IA de vérifier les affirmations, d'établir la provenance et de renforcer leur confiance pour citer votre travail.
 
 ## Pourquoi c'est important
 

@@ -1,6 +1,7 @@
 ---
 title: "Articles & Références"
 description: "Recherche académique et rapports sectoriels liés au LLMO et à l'optimisation pour la recherche IA. Inclut GEO (KDD 2024), la proposition llms.txt et les études associées."
+pubDate: 2026-04-30
 ---
 
 ## Articles fondamentaux
@@ -78,7 +79,7 @@ Le paysage du LLMO a évolué rapidement depuis l'article GEO original. Les sour
 
 ### Schema.org — Données structurées
 - **URL** : [schema.org](https://schema.org/)
-- **Pertinence** : Le standard de vocabulaire utilisé pour l'implémentation des données structurées en JSON-LD dans la composante 2 du LLMO (Structural Formatting).
+- **Pertinence** : Le standard de vocabulaire utilisé pour l'implémentation des données structurées en JSON-LD dans la composante 2 du LLMO (Formatage structuré).
 
 ### Documentation Google sur les données structurées
 - **URL** : [developers.google.com/search/docs/appearance/structured-data](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data)

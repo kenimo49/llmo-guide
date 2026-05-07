@@ -1,6 +1,7 @@
 ---
 title: "4. Authority Signals"
 description: "Authority Signals demonstrate expertise and trustworthiness to AI. When multiple sources provide similar information, AI cites the one that appears most credible."
+pubDate: 2026-03-09
 ---
 
 ## What It Is

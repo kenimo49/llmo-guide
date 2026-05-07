@@ -1,6 +1,7 @@
 ---
 title: "1. Knowledge Clarity"
 description: "Knowledge Clarity is the degree to which your content can be accurately understood and summarized by AI. Clear content gets cited. Unclear content gets ignored."
+pubDate: 2026-03-09
 ---
 
 ## What It Is

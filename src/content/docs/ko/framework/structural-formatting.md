@@ -1,6 +1,7 @@
 ---
-title: "2. 구조적 포맷팅 (Structural Formatting)"
+title: "2. 구조적 포맷팅 (구조화 포맷)"
 description: "구조적 포맷팅은 AI 시스템이 효율적으로 파싱하고 정보를 추출할 수 있도록 콘텐츠를 기계 판독 가능한 형식(JSON-LD, 시맨틱 HTML, Markdown, llms.txt)으로 구성하는 방법입니다."
+pubDate: 2026-04-30
 ---
 
 ## 개요

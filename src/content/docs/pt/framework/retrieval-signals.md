@@ -1,6 +1,7 @@
 ---
 title: "3. Sinais de recuperação"
 description: "Sinais de recuperação são os mecanismos que permitem que sistemas de IA descubram e acessem seu conteúdo — robots.txt, llms.txt, sitemap, endpoints /ai/ e presença multiplataforma."
+pubDate: 2026-05-07
 ---
 
 ## O Que São

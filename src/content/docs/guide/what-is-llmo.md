@@ -1,6 +1,7 @@
 ---
 title: What is LLMO?
 description: "LLMO (Large Language Model Optimization) is the practice of optimizing web content so that AI systems can accurately discover, understand, and cite it."
+pubDate: 2026-03-09
 head:
   - tag: script
     attrs:

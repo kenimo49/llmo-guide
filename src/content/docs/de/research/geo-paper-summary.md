@@ -1,6 +1,7 @@
 ---
 title: "GEO Paper: Was die Wissenschaft sagt"
 description: "Zusammenfassung des GEO-Papers (Generative Engine Optimization) von Princeton/IIT Delhi, veröffentlicht auf der KDD 2024. Zentrale Ergebnisse zu Zitationsraten, Content-Strategien und statistischen Verbesserungen."
+pubDate: 2026-04-30
 ---
 
 Das **GEO (Generative Engine Optimization)**-Paper ist das erste akademische Framework zur Optimierung der Content-Sichtbarkeit in KI-gestützten Suchmaschinen. Veröffentlicht auf der KDD 2024 (ACM SIGKDD), liefert es empirische Belege für Content-Optimierungsstrategien, auf denen das LLMO Framework aufbaut.
@@ -38,13 +39,13 @@ Die Forscher erstellten **GEO-Bench**, einen Benchmark mit 10.000 Suchanfragen a
 
 | Strategie | Sichtbarkeitsverbesserung | LLMO-Komponente |
 |-----------|--------------------------|-----------------|
-| **Statistics Addition** | **+115,1 %** | Citation Signals |
-| **Cite Sources** | **+77,0 %** | Citation Signals |
-| **Quotation Addition** | **+72,2 %** | Authority Signals |
-| Authoritative Tone | +21,5 % | Knowledge Clarity |
-| Fluency Optimization | +15,2 % | Knowledge Clarity |
-| Technical Terms | +5,8 % | Knowledge Clarity |
-| Easy-to-Understand | +2,4 % | Knowledge Clarity |
+| **Statistics Addition** | **+115,1 %** | Zitiersignale |
+| **Cite Sources** | **+77,0 %** | Zitiersignale |
+| **Quotation Addition** | **+72,2 %** | Autoritätssignale |
+| Authoritative Tone | +21,5 % | Wissensklarheit |
+| Fluency Optimization | +15,2 % | Wissensklarheit |
+| Technical Terms | +5,8 % | Wissensklarheit |
+| Easy-to-Understand | +2,4 % | Wissensklarheit |
 | Unique Words | -3,1 % | — |
 | Keyword Stuffing | -10,2 % | — |
 
@@ -65,13 +66,13 @@ Die drei effektivsten Strategien haben eine Gemeinsamkeit: Sie liefern **überpr
 
 ## Implikationen für LLMO
 
-### 1. Citation Signals sind die wirkungsvollste Komponente
+### 1. Zitiersignale sind die wirkungsvollste Komponente
 
-Die GEO-Daten zeigen, dass Citation Signals (Statistiken, Quellen, Zitate) die größten Sichtbarkeitsverbesserungen erzielen. Deshalb setzt das LLMO Framework Citation Signals als Komponente 5 ein — den Schlussstein, der die Wirkung aller anderen Komponenten multipliziert.
+Die GEO-Daten zeigen, dass Zitiersignale (Statistiken, Quellen, Zitate) die größten Sichtbarkeitsverbesserungen erzielen. Deshalb setzt das LLMO Framework Zitiersignale als Komponente 5 ein — den Schlussstein, der die Wirkung aller anderen Komponenten multipliziert.
 
 ### 2. Inhaltsklarheit ist wichtig, aber weniger als Belege
 
-Strategien im Bereich Knowledge Clarity (autoritativer Ton, Flüssigkeit, verständliche Sprache) zeigten allesamt positive, aber moderate Verbesserungen (2–22 %). Gutes Schreiben ist notwendig, aber nicht ausreichend. Der Multiplikator entsteht durch das Hinzufügen überprüfbarer Fakten.
+Strategien im Bereich Wissensklarheit (autoritativer Ton, Flüssigkeit, verständliche Sprache) zeigten allesamt positive, aber moderate Verbesserungen (2–22 %). Gutes Schreiben ist notwendig, aber nicht ausreichend. Der Multiplikator entsteht durch das Hinzufügen überprüfbarer Fakten.
 
 ### 3. SEO-Taktiken sind für KI kontraproduktiv
 
@@ -93,10 +94,10 @@ Das LLMO Framework erweitert GEO in drei Bereichen:
 
 1. **Breiterer Anwendungsbereich**: GEO konzentriert sich auf generative Suchmaschinen. LLMO deckt alle LLM-Interaktionen ab, einschließlich direkter Abfragen, RAG und KI-Agenten.
 2. **Implementierungsfokus**: GEO identifiziert, *was* funktioniert. LLMO zeigt, *wie man es umsetzt* — mit konkreten Dateiformaten (llms.txt), strukturierten Daten (JSON-LD) und Content-Design-Patterns.
-3. **Retrieval-Ebene**: GEO geht davon aus, dass Inhalte bereits abgerufen wurden. LLMO fügt die Komponente Retrieval Signals hinzu, um sicherzustellen, dass Inhalte überhaupt erst auffindbar sind.
+3. **Retrieval-Ebene**: GEO geht davon aus, dass Inhalte bereits abgerufen wurden. LLMO fügt die Komponente Abrufsignale hinzu, um sicherzustellen, dass Inhalte überhaupt erst auffindbar sind.
 
 ## Weiterführende Lektüre
 
 - [Vollständiges Paper auf arXiv](https://arxiv.org/abs/2311.09735)
 - [LLMO Framework im Überblick](/de/framework/overview/)
-- [Citation Signals](/de/framework/citation-signals/) — Umsetzung der wirksamsten GEO-Strategie
+- [Zitiersignale](/de/framework/citation-signals/) — Umsetzung der wirksamsten GEO-Strategie
