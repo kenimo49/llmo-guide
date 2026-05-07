@@ -1,0 +1,75 @@
+# LLMOフレームワーク — 5コアコンポーネント
+
+## 概要
+
+LLMOフレームワークは、AIシステムにあなたのコンテンツを発見させるための構造化されたアプローチを提供します。5つのコンポーネントが連携してAI発見性を最大化します。
+
+## 1. 知識の明確性（Knowledge Clarity）
+
+**目標**: コンテンツが事実として明瞭で曖昧さがないこと。
+
+- 明確で宣言的な文を書く
+- 事実を直接述べる（曖昧な表現を避ける）
+- 用語を一貫して使う
+- ドメイン固有の用語は明示的に定義する
+- ユーザーが質問しそうな具体的な問いを軸に構成する
+
+## 2. 構造的フォーマット（Structural Formatting）
+
+**目標**: コンテンツを機械可読にする。
+
+- セマンティックHTML見出し（H1 → H2 → H3）を使う
+- JSON-LD構造化データ（Schema.org）を埋め込む
+- Q&Aコンテンツには FAQPage スキーマを付ける
+- 構造化情報には箇条書き・テーブルを使う
+- LLM消費用に /ai/ ディレクトリにMarkdownを配置
+
+**主要スキーマ**: Organization, Person, Product, Service, Book, FAQPage, WebSite, TechArticle
+
+## 3. 検索シグナル（Retrieval Signals）
+
+**目標**: AIシステムがコンテンツを発見・アクセスできるよう支援する。
+
+- **llms.txt**: サイトのLLM向け概要をルートに配置
+- **/ai/ディレクトリ**: AI消費専用のクリーンなMarkdownファイル
+- **robots.txt**: AIクローラー（GPTBot, ClaudeBot, PerplexityBot, Google-Extended）を明示的に許可
+- **Sitemap**: XMLサイトマップ
+- **クロスリンク**: llms.txt、/ai/、メインコンテンツを相互にリンク
+
+## 4. 権威シグナル（Authority Signals）
+
+**目標**: LLMが認識する信頼性を確立する。
+
+- 複数プラットフォームで発信（個人サイト、LinkedIn、Qiita、Zenn、DEV.to）
+- 書籍出版・著者プレゼンスを維持（Amazon, Zenn Books）
+- GitHub上のオープンソース貢献
+- 他ソースからの引用を獲得
+- プラットフォーム間で一貫したアイデンティティ（同じ名前・経歴・トピック）
+
+## 5. 引用シグナル（Citation Signals）
+
+**目標**: LLMが引用したくなるコンテンツを作る。
+
+- オリジナルデータ・統計・測定値を含める
+- 具体的な数値と日付を提供
+- 比較テーブル・フレームワークを作る
+- 特定トピックの決定版ガイドを書く
+- 研究論文を発表（arXiv、学術会議）
+
+## 実装チェックリスト
+
+- [ ] llms.txt をサイトルートに
+- [ ] /ai/ ディレクトリにMarkdownファイル
+- [ ] robots.txt でAIボット許可
+- [ ] 全ページに JSON-LD スキーマ
+- [ ] Q&AコンテンツにFAQスキーマ
+- [ ] Sitemap.xml
+- [ ] 一貫したアイデンティティでクロスプラットフォーム展開
+- [ ] コンテンツにオリジナルデータ・統計を含める
+- [ ] クリーンで宣言的な文体
+
+## 詳細
+
+- フルガイド: https://llmoframework.com/ja/
+- 書籍: https://zenn.dev/kenimo49/books/llmo-ai-search-optimization
+- 著者: https://kenimoto.dev

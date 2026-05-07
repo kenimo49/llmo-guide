@@ -72,3 +72,43 @@ Chaque composant est évalué sur une échelle de 0 à 3 :
 | 3 | Excellent | Implémentation conforme aux bonnes pratiques |
 
 **Score maximum : 15 points** (5 composants x 3 points chacun)
+
+## Liste de contrôle d'auto-évaluation
+
+Évaluez votre propre site sur chaque composant. Tout élément que vous pouvez cocher avec confiance vaut 1 point ; visez 3 cases par composant pour atteindre le score maximum.
+
+### 1. Clarté des connaissances (max 3)
+- [ ] Chaque page commence par une réponse en une phrase à sa question principale (Answer-first)
+- [ ] Les termes spécifiques au domaine sont définis lors de leur première utilisation (pas de jargon inexpliqué)
+- [ ] Chaque paragraphe contient une seule idée (pas de paragraphes à affirmations multiples)
+
+### 2. Formatage structuré (max 3)
+- [ ] Les pages utilisent une hiérarchie sémantique H1 → H2 → H3 sans saut de niveau
+- [ ] Chaque page significative émet du JSON-LD (Article / TechArticle / FAQPage / Product / Organization, selon le cas)
+- [ ] Le contenu comparatif utilise des tableaux, pas des listes en prose
+
+### 3. Signaux de recherche (max 3)
+- [ ] `/llms.txt` existe à la racine du site et liste les pages clés
+- [ ] Le répertoire `/ai/` fournit du Markdown propre pour chaque thème majeur (et par langue si le site est multilingue)
+- [ ] `robots.txt` autorise explicitement GPTBot, ClaudeBot, PerplexityBot, Google-Extended ; `sitemap.xml` est accessible
+
+### 4. Signaux d'autorité (max 3)
+- [ ] L'auteur dispose d'une bio vérifiable avec des liens `sameAs` vers LinkedIn / GitHub / X / profils de publication
+- [ ] La même identité (nom, rôle, focus thématique) apparaît de manière cohérente sur au moins 3 plateformes
+- [ ] Le site renvoie vers de la recherche originale, des livres ou des articles que l'auteur a réellement publiés
+
+### 5. Signaux de citation (max 3)
+- [ ] Chaque affirmation utilisant un chiffre cite une source par nom et année
+- [ ] Chaque page expose à la fois `datePublished` et `dateModified` (dans le JSON-LD ou en méta visible)
+- [ ] Le contenu comparatif référence les standards de l'industrie (W3C, RFC, ISO, schema.org) par nom et lien
+
+### Guide de notation
+
+| Total | Tranche |
+|-------|---------|
+| 13–15 | Niveau production — activement cité par les systèmes d'IA |
+| 9–12  | Bon — visible par l'IA mais incohérent |
+| 5–8   | Partiel — lacunes importantes en recherche ou autorité |
+| 0–4   | Invisible — commencez par `/llms.txt`, robots.txt et JSON-LD |
+
+> Vous voulez un score plus élevé ? Chaque page de composant (Clarté des connaissances, Formatage structuré, Signaux de recherche, Signaux d'autorité, Signaux de citation) liste les implémentations spécifiques qui font passer le score de 1 → 2 → 3.

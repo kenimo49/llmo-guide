@@ -72,3 +72,43 @@ Each component can be scored on a scale of 0-3:
 | 3 | Excellent | Best-practice implementation |
 
 **Maximum score: 15 points** (5 components × 3 points each)
+
+## Self-Assessment Checklist
+
+Score your own site against each component. Treat anything you can confidently check off as 1 point; aim for 3 boxes per component to reach the top score.
+
+### 1. Knowledge Clarity (max 3)
+- [ ] Every page leads with a one-sentence answer to its primary question (Answer-first)
+- [ ] Domain-specific terms are defined on first use (no unexplained jargon)
+- [ ] Each paragraph holds a single idea (no multi-claim paragraphs)
+
+### 2. Structural Formatting (max 3)
+- [ ] Pages use semantic H1 → H2 → H3 hierarchy with no heading skips
+- [ ] Every meaningful page emits JSON-LD (Article / TechArticle / FAQPage / Product / Organization, as appropriate)
+- [ ] Comparative content uses tables, not prose lists
+
+### 3. Retrieval Signals (max 3)
+- [ ] `/llms.txt` exists at the site root and lists key pages
+- [ ] `/ai/` directory ships clean Markdown for each major topic (and per-language if the site is multilingual)
+- [ ] `robots.txt` explicitly allows GPTBot, ClaudeBot, PerplexityBot, Google-Extended; `sitemap.xml` is reachable
+
+### 4. Authority Signals (max 3)
+- [ ] Author has a verifiable bio with `sameAs` links to LinkedIn / GitHub / X / publication profiles
+- [ ] The same identity (name, role, topic focus) appears consistently across at least 3 platforms
+- [ ] Site links to original research, books, or papers the author has actually published
+
+### 5. Citation Signals (max 3)
+- [ ] Every claim that uses a number cites a source by name and year
+- [ ] Each page exposes both `datePublished` and `dateModified` (in JSON-LD or visible meta)
+- [ ] Comparison content references industry standards (W3C, RFC, ISO, schema.org) by name and link
+
+### Scoring guide
+
+| Total | Band |
+|-------|------|
+| 13–15 | Production-grade — actively cited by AI systems |
+| 9–12 | Good — visible to AI but inconsistent |
+| 5–8 | Partial — significant gaps in retrieval or authority |
+| 0–4 | Invisible — start with `/llms.txt`, robots.txt, and JSON-LD |
+
+> Want a higher score? Each component page (Knowledge Clarity, Structural Formatting, Retrieval Signals, Authority Signals, Citation Signals) lists the specific implementations that move the score from 1 → 2 → 3.

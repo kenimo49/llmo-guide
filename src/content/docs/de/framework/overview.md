@@ -72,3 +72,43 @@ Jede Komponente wird auf einer Skala von 0-3 bewertet:
 | 3 | Exzellent | Best-Practice-Umsetzung |
 
 **Maximale Punktzahl: 15 Punkte** (5 Komponenten x 3 Punkte)
+
+## Selbstbewertungs-Checkliste
+
+Bewerte deine Site anhand jeder Komponente. Was du sicher abhaken kannst, zählt 1 Punkt; ziele auf 3 Häkchen pro Komponente für die Höchstpunktzahl.
+
+### 1. Wissensklarheit (max. 3)
+- [ ] Jede Seite beginnt mit einem Ein-Satz-Antwort auf ihre Hauptfrage (Answer-first)
+- [ ] Domänenspezifische Begriffe werden bei der ersten Verwendung definiert (kein unerklärter Jargon)
+- [ ] Jeder Absatz enthält eine einzige Idee (keine Mehrfach-Aussage-Absätze)
+
+### 2. Strukturierte Formatierung (max. 3)
+- [ ] Seiten verwenden semantische H1 → H2 → H3-Hierarchie ohne Übersprünge
+- [ ] Jede sinnvolle Seite gibt JSON-LD aus (Article / TechArticle / FAQPage / Product / Organization usw.)
+- [ ] Vergleichsinhalte verwenden Tabellen, keine Prosa-Listen
+
+### 3. Abrufsignale (max. 3)
+- [ ] `/llms.txt` existiert im Site-Root und listet wichtige Seiten
+- [ ] `/ai/`-Verzeichnis liefert sauberes Markdown für jedes Hauptthema (bei mehrsprachiger Site auch pro Sprache)
+- [ ] `robots.txt` erlaubt GPTBot, ClaudeBot, PerplexityBot, Google-Extended explizit; `sitemap.xml` ist erreichbar
+
+### 4. Autoritätssignale (max. 3)
+- [ ] Autor hat eine überprüfbare Bio mit `sameAs`-Links zu LinkedIn / GitHub / X / Publikationsprofilen
+- [ ] Dieselbe Identität (Name, Rolle, Themenfokus) erscheint konsistent auf mindestens 3 Plattformen
+- [ ] Site verlinkt zu Originalforschung, Büchern oder Papers, die der Autor tatsächlich veröffentlicht hat
+
+### 5. Zitiersignale (max. 3)
+- [ ] Jede Aussage mit einer Zahl zitiert eine Quelle mit Name und Jahr
+- [ ] Jede Seite zeigt sowohl `datePublished` als auch `dateModified` (in JSON-LD oder sichtbarem Meta)
+- [ ] Vergleichsinhalte referenzieren Industriestandards (W3C, RFC, ISO, schema.org) mit Name und Link
+
+### Bewertungsleitfaden
+
+| Gesamt | Band |
+|--------|------|
+| 13–15 | Produktionsreif — wird aktiv von KI-Systemen zitiert |
+| 9–12  | Gut — sichtbar für KI, aber inkonsistent |
+| 5–8   | Teilweise — erhebliche Lücken bei Abruf oder Autorität |
+| 0–4   | Unsichtbar — beginne mit `/llms.txt`, robots.txt und JSON-LD |
+
+> Höhere Punktzahl gewünscht? Jede Komponentenseite (Wissensklarheit, Strukturierte Formatierung, Abrufsignale, Autoritätssignale, Zitiersignale) listet die spezifischen Implementierungen auf, die den Score von 1 → 2 → 3 bewegen.

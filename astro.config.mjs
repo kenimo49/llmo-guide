@@ -9,6 +9,11 @@ export default defineConfig({
       title: 'LLMO Framework',
       description: 'The definitive guide to LLM Optimization — making your content discoverable by AI.',
       defaultLocale: 'root',
+      // URL slugs intentionally use ISO-639-1 (e.g. /pt/) while hreflang uses
+      // the more specific BCP-47 region tag (e.g. pt-BR). Starlight emits
+      // <link rel="alternate" hreflang="pt-BR" href=".../pt/"> from these
+      // values — URL convention and hreflang are independent per Google's
+      // i18n guidance.
       locales: {
         root: { label: 'English', lang: 'en' },
         ja: { label: '日本語', lang: 'ja' },
@@ -32,26 +37,84 @@ export default defineConfig({
           attrs: { type: 'application/ld+json' },
           content: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'WebSite',
-            name: 'LLMO Framework',
-            url: 'https://llmoframework.com',
-            description: 'The definitive guide to LLM Optimization — making your content discoverable by AI.',
-            author: {
-              '@type': 'Person',
-              name: 'Ken Imoto',
-              url: 'https://kenimoto.dev',
-              jobTitle: 'AI Systems Engineer',
-              sameAs: [
-                'https://github.com/kenimo49',
-                'https://www.linkedin.com/in/kenimo49',
-                'https://x.com/kenimo49',
-              ],
-            },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Propel-Lab',
-              url: 'https://propel-lab.co.jp',
-            },
+            '@graph': [
+              {
+                '@type': 'WebSite',
+                '@id': 'https://llmoframework.com/#website',
+                name: 'LLMO Framework',
+                alternateName: 'LLMO',
+                url: 'https://llmoframework.com',
+                description: 'The definitive guide to LLM Optimization — making your content discoverable by AI.',
+                inLanguage: ['en', 'ja', 'zh-CN', 'ko', 'de', 'fr', 'es', 'pt-BR'],
+                license: 'https://opensource.org/licenses/MIT',
+                publisher: { '@id': 'https://propel-lab.co.jp/#organization' },
+                author: { '@id': 'https://kenimoto.dev/#person' },
+                potentialAction: {
+                  '@type': 'SearchAction',
+                  target: {
+                    '@type': 'EntryPoint',
+                    urlTemplate: 'https://llmoframework.com/?q={search_term_string}',
+                  },
+                  'query-input': 'required name=search_term_string',
+                },
+              },
+              {
+                '@type': 'Organization',
+                '@id': 'https://propel-lab.co.jp/#organization',
+                name: 'Propel-Lab',
+                legalName: 'Propel-Lab Inc.',
+                url: 'https://propel-lab.co.jp',
+                logo: {
+                  '@type': 'ImageObject',
+                  url: 'https://llmoframework.com/og-image.png',
+                  width: 1200,
+                  height: 630,
+                },
+                foundingDate: '2024',
+                founder: { '@id': 'https://kenimoto.dev/#person' },
+                sameAs: [
+                  'https://github.com/kenimo49',
+                  'https://propel-lab.co.jp',
+                ],
+                knowsAbout: [
+                  'Large Language Model Optimization',
+                  'Generative Engine Optimization',
+                  'Answer Engine Optimization',
+                  'Search Engine Optimization',
+                  'AI Systems Engineering',
+                ],
+                contactPoint: {
+                  '@type': 'ContactPoint',
+                  contactType: 'editorial',
+                  url: 'https://github.com/kenimo49/llmo-guide/issues',
+                },
+              },
+              {
+                '@type': 'Person',
+                '@id': 'https://kenimoto.dev/#person',
+                name: 'Ken Imoto',
+                givenName: 'Ken',
+                familyName: 'Imoto',
+                url: 'https://kenimoto.dev',
+                jobTitle: 'AI Systems Engineer',
+                worksFor: { '@id': 'https://propel-lab.co.jp/#organization' },
+                knowsAbout: [
+                  'Large Language Model Optimization',
+                  'Generative Engine Optimization',
+                  'Multi-agent systems',
+                  'Prompt engineering',
+                ],
+                sameAs: [
+                  'https://github.com/kenimo49',
+                  'https://www.linkedin.com/in/kenimo49',
+                  'https://x.com/kenimo49',
+                  'https://zenn.dev/kenimo49',
+                  'https://qiita.com/kenimo49',
+                  'https://dev.to/kenimo49',
+                  'https://www.amazon.co.jp/stores/author/B0GQNPRCGF',
+                ],
+              },
+            ],
           }),
         },
       ],
@@ -64,6 +127,7 @@ export default defineConfig({
             { label: 'LLMO vs SEO vs AEO vs GEO', slug: 'guide/llmo-vs-seo-aeo-geo' },
             { label: 'How AI Finds Content', translations: { ja: 'AIがコンテンツを発見する仕組み', zh: 'AI如何发现内容', ko: 'AI가 콘텐츠를 발견하는 방법', de: 'Wie KI Inhalte findet', fr: "Comment l'IA découvre le contenu", es: 'Cómo la IA encuentra contenido', pt: 'Como a IA encontra conteúdo' }, slug: 'guide/how-ai-finds-content' },
             { label: 'Quickstart: 30 Minutes', translations: { ja: 'クイックスタート：30分で実装', zh: '快速入门：30分钟实现', ko: '빠른 시작: 30분 구현', de: 'Schnellstart: 30 Minuten', fr: 'Démarrage rapide : 30 minutes', es: 'Inicio rápido: 30 minutos', pt: 'Início rápido: 30 minutos' }, slug: 'guide/quickstart' },
+            { label: 'FAQ', translations: { ja: 'FAQ', zh: '常见问题', ko: 'FAQ', de: 'FAQ', fr: 'FAQ', es: 'FAQ', pt: 'FAQ' }, slug: 'guide/faq' },
           ],
         },
         {

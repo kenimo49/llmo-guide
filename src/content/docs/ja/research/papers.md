@@ -53,6 +53,40 @@ head:
 - **発行元**: Go Fish Digital
 - **概要**: AI搭載検索からのトラフィックは、事前検証済みのユーザーインテントにより、従来の検索トラフィックの25倍のコンバージョン率を記録。
 
+## 2025–2026 アップデート
+
+LLMO 領域は GEO 論文以降、急速に変化しています。以下は一次情報として継続的に追跡している参照先。
+
+### Cloudflare Radar — AI Insights
+- **発行元**: Cloudflare
+- **URL**: [radar.cloudflare.com/ai-insights](https://radar.cloudflare.com/ai-insights)
+- **種別**: 継続更新ダッシュボード
+- **関連性**: AIボットのクロールシェア、主要AIクローラー（GPTBot、ClaudeBot、PerplexityBot、Bytespider、Google-Extended等）、ドメイン別のAIボット vs リファラル比率の公開データ。Cloudflareは2024年にAIボットブロック機能を追加し、2025年通して四半期トレンドデータを公開。
+
+### OpenAI GPTBot ドキュメント
+- **発行元**: OpenAI
+- **URL**: [platform.openai.com/docs/bots](https://platform.openai.com/docs/bots)
+- **種別**: 公式クローラー仕様
+- **関連性**: GPTBot のユーザーエージェント、IP範囲、robots.txt ディレクティブ、オプトアウト仕様の正規リファレンス。継続的に更新。
+
+### Anthropic クローラー仕様
+- **発行元**: Anthropic
+- **URL**: [support.anthropic.com](https://support.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler)
+- **種別**: 公式クローラー仕様
+- **関連性**: ClaudeBot、Claude-Web、Claude-User の各ユーザーエージェントとサイト所有者による制御方法の正規リファレンス。
+
+### llms.txt 採用トラッカー
+- **発行元**: directory.llmstxt.cloud
+- **URL**: [directory.llmstxt.cloud](https://directory.llmstxt.cloud/)
+- **種別**: コミュニティ管理ディレクトリ
+- **関連性**: `/llms.txt` 標準を採用したサイトを追跡。2025年を通じてドキュメントサイト（Anthropic、Mintlify、Stripe形式のAPI docs等）で採用が拡大。
+
+### Schema.org リリース（2025）
+- **発行元**: schema.org
+- **URL**: [schema.org/docs/releases.html](https://schema.org/docs/releases.html)
+- **種別**: バージョン管理された語彙リリース
+- **関連性**: LLMO コンポーネント2（構造的フォーマット）で使われる語彙への継続的追加。AI 消費に関連する新しい型（`LearningResource`、`EducationalOccupationalCredential` 等）を追跡。
+
 ## 関連リサーチ
 
 ### Schema.org 構造化データ

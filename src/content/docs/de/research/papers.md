@@ -53,6 +53,40 @@ head:
 - **Herausgeber**: Go Fish Digital
 - **Zusammenfassung**: Traffic aus KI-gestützter Suche konvertiert 25-fach besser als traditioneller Such-Traffic — dank vorvalidierter Nutzerabsicht.
 
+## Aktualisierungen 2025–2026
+
+Die LLMO-Landschaft hat sich seit dem ursprünglichen GEO-Paper schnell weiterentwickelt. Die folgenden Quellen werden als laufende Primärreferenzen verfolgt.
+
+### Cloudflare Radar — AI Insights
+- **Herausgeber**: Cloudflare
+- **URL**: [radar.cloudflare.com/ai-insights](https://radar.cloudflare.com/ai-insights)
+- **Typ**: Live-Dashboard (kontinuierlich aktualisiert)
+- **Relevanz**: Öffentliche Daten zu KI-Bot-Crawl-Anteilen, führenden KI-Crawlern (GPTBot, ClaudeBot, PerplexityBot, Bytespider, Google-Extended usw.) und domainspezifischen KI-Bot- vs. Referral-Verhältnissen. Cloudflare hat 2024 KI-Bot-Blocking eingeführt und über 2025 hinweg vierteljährliche Trenddaten veröffentlicht.
+
+### OpenAI GPTBot Documentation
+- **Herausgeber**: OpenAI
+- **URL**: [platform.openai.com/docs/bots](https://platform.openai.com/docs/bots)
+- **Typ**: Offizielle Crawler-Offenlegung
+- **Relevanz**: Kanonische Referenz für GPTBot User-Agent, IP-Bereiche, robots.txt-Anweisungen und Opt-out-Semantik. Wird kontinuierlich aktualisiert.
+
+### Anthropic Crawler Disclosure
+- **Herausgeber**: Anthropic
+- **URL**: [support.anthropic.com](https://support.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler)
+- **Typ**: Offizielle Crawler-Offenlegung
+- **Relevanz**: Kanonische Referenz für ClaudeBot-, Claude-Web- und Claude-User-User-Agents und wie Site-Betreiber sie steuern.
+
+### llms.txt Adoption Tracker
+- **Herausgeber**: directory.llmstxt.cloud
+- **URL**: [directory.llmstxt.cloud](https://directory.llmstxt.cloud/)
+- **Typ**: Community-gepflegtes Verzeichnis
+- **Relevanz**: Verfolgt Sites, die den `/llms.txt`-Standard übernommen haben. Die Adoption hat sich 2025 hinweg auf Dokumentationsseiten (Anthropic, Mintlify, Stripe-artige API-Docs) ausgeweitet.
+
+### Schema.org Releases (2025)
+- **Herausgeber**: schema.org
+- **URL**: [schema.org/docs/releases.html](https://schema.org/docs/releases.html)
+- **Typ**: Versionierte Vokabular-Releases
+- **Relevanz**: Fortlaufende Erweiterungen am Vokabular für LLMO-Komponente 2 (Strukturierte Formatierung). Verfolge neue Typen, die für die KI-Konsumption relevant sind (z. B. `LearningResource`, `EducationalOccupationalCredential`).
+
 ## Weiterführende Forschung
 
 ### Schema.org Structured Data

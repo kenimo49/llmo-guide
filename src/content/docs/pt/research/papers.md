@@ -53,6 +53,40 @@ head:
 - **Publicador**: Go Fish Digital
 - **Resumo**: Tráfego de busca baseada em IA converte a 25x a taxa do tráfego de busca tradicional, devido à intenção pré-validada do usuário.
 
+## Atualizações 2025–2026
+
+O panorama do LLMO evoluiu rapidamente desde o paper GEO original. As fontes a seguir são rastreadas como referências primárias ao vivo.
+
+### Cloudflare Radar — AI Insights
+- **Publicador**: Cloudflare
+- **URL**: [radar.cloudflare.com/ai-insights](https://radar.cloudflare.com/ai-insights)
+- **Tipo**: Dashboard ao vivo (atualizado continuamente)
+- **Relevância**: Dados públicos sobre a participação de crawl de bots de IA, principais crawlers de IA (GPTBot, ClaudeBot, PerplexityBot, Bytespider, Google-Extended, etc.) e proporções de bot de IA vs. referral por domínio. A Cloudflare adicionou bloqueio de bots de IA em 2024 e publicou dados de tendências trimestrais ao longo de 2025.
+
+### Documentação OpenAI GPTBot
+- **Publicador**: OpenAI
+- **URL**: [platform.openai.com/docs/bots](https://platform.openai.com/docs/bots)
+- **Tipo**: Divulgação oficial do crawler
+- **Relevância**: Referência canônica para o user agent GPTBot, faixas de IP, diretivas robots.txt e semântica de opt-out. Atualizado continuamente.
+
+### Divulgação do crawler da Anthropic
+- **Publicador**: Anthropic
+- **URL**: [support.anthropic.com](https://support.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler)
+- **Tipo**: Divulgação oficial do crawler
+- **Relevância**: Referência canônica para os user agents ClaudeBot, Claude-Web, Claude-User e como os donos de sites os controlam.
+
+### Rastreador de adoção llms.txt
+- **Publicador**: directory.llmstxt.cloud
+- **URL**: [directory.llmstxt.cloud](https://directory.llmstxt.cloud/)
+- **Tipo**: Diretório mantido pela comunidade
+- **Relevância**: Rastreia sites que adotaram o padrão `/llms.txt`. A adoção se ampliou ao longo de 2025 em sites de documentação (Anthropic, Mintlify, docs API estilo Stripe).
+
+### Releases Schema.org (2025)
+- **Publicador**: schema.org
+- **URL**: [schema.org/docs/releases.html](https://schema.org/docs/releases.html)
+- **Tipo**: Releases de vocabulário versionadas
+- **Relevância**: Adições contínuas ao vocabulário usado pelo Componente 2 do LLMO (Formatação estrutural). Acompanhe novos tipos relevantes para consumo por IA (por exemplo `LearningResource`, `EducationalOccupationalCredential`).
+
 ## Pesquisas Relacionadas
 
 ### Dados Estruturados Schema.org

@@ -37,31 +37,74 @@ Each component scored 0-3. Maximum score: 15 points.
   - Kindle EN: https://amzn.asia/d/04rulUoN
   - Zenn: https://zenn.dev/kenimo49/books/llmo-ai-search-optimization
 
-## AI-Readable Content
+## AI-Readable Content (English)
 
 - /ai/about.md — LLMO Framework overview and positioning
 - /ai/framework.md — Detailed 5-component framework guide
 - /ai/case-studies.md — Case studies with measurable results
 - /ai/research.md — Research papers and industry data summary
 
-## Available Languages
+## AI-Readable Content (Localized)
 
-This site is available in 6 languages. All content is identical across languages.
+Available in 7 languages. All AI-readable Markdown is mirrored under `/ai/<lang>/`:
 
-- English (default): /
-- Japanese (日本語): /ja/
-- Chinese (中文): /zh/
-- Korean (한국어): /ko/
-- German (Deutsch): /de/
-- French (Français): /fr/
+### 日本語 (Japanese)
+- /ai/ja/about.md
+- /ai/ja/framework.md
+- /ai/ja/case-studies.md
+- /ai/ja/research.md
+- Localized index: /ja/llms.txt
 
-## Key Pages
+### 中文 (Chinese, simplified)
+- /ai/zh/about.md
+- /ai/zh/framework.md
+- /ai/zh/case-studies.md
+- /ai/zh/research.md
+- Localized index: /zh/llms.txt
+
+### 한국어 (Korean)
+- /ai/ko/about.md
+- /ai/ko/framework.md
+- /ai/ko/case-studies.md
+- /ai/ko/research.md
+- Localized index: /ko/llms.txt
+
+### Deutsch (German)
+- /ai/de/about.md
+- /ai/de/framework.md
+- /ai/de/case-studies.md
+- /ai/de/research.md
+- Localized index: /de/llms.txt
+
+### Français (French)
+- /ai/fr/about.md
+- /ai/fr/framework.md
+- /ai/fr/case-studies.md
+- /ai/fr/research.md
+- Localized index: /fr/llms.txt
+
+### Español (Spanish)
+- /ai/es/about.md
+- /ai/es/framework.md
+- /ai/es/case-studies.md
+- /ai/es/research.md
+- Localized index: /es/llms.txt
+
+### Português (Brazilian Portuguese, pt-BR)
+- /ai/pt/about.md
+- /ai/pt/framework.md
+- /ai/pt/case-studies.md
+- /ai/pt/research.md
+- Localized index: /pt/llms.txt
+
+## Key Pages (English)
 
 ### Getting Started
 - What is LLMO?: /guide/what-is-llmo/
 - LLMO vs SEO vs AEO vs GEO: /guide/llmo-vs-seo-aeo-geo/
 - How AI Finds Content: /guide/how-ai-finds-content/
 - Quickstart (30 min): /guide/quickstart/
+- FAQ: /guide/faq/
 
 ### The LLMO Framework
 - Framework Overview: /framework/overview/
@@ -78,6 +121,17 @@ This site is available in 6 languages. All content is identical across languages
 - Papers & References: /research/papers/
 - GEO Paper Summary: /research/geo-paper-summary/
 - Microsoft Guidelines: /research/microsoft-guidelines/
+
+## Localized Site Roots
+
+- English: /
+- 日本語: /ja/
+- 中文: /zh/
+- 한국어: /ko/
+- Deutsch: /de/
+- Français: /fr/
+- Español: /es/
+- Português (BR): /pt/
 
 ## Links
 

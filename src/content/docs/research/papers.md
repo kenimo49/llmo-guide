@@ -53,6 +53,40 @@ head:
 - **Publisher**: Go Fish Digital
 - **Summary**: Traffic from AI-powered search converts at 25x the rate of traditional search traffic, due to pre-validated user intent.
 
+## 2025–2026 Updates
+
+The LLMO landscape has moved fast since the original GEO paper. The following sources are tracked as live, primary references.
+
+### Cloudflare Radar — AI Insights
+- **Publisher**: Cloudflare
+- **URL**: [radar.cloudflare.com/ai-insights](https://radar.cloudflare.com/ai-insights)
+- **Type**: Live dashboard (continuously updated)
+- **Relevance**: Public data on AI bot crawl share, top AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Bytespider, Google-Extended, etc.), and per-domain AI bot vs. referral ratios. Cloudflare added AI bot blocking in 2024 and has published quarterly trend data through 2025.
+
+### OpenAI GPTBot Documentation
+- **Publisher**: OpenAI
+- **URL**: [platform.openai.com/docs/bots](https://platform.openai.com/docs/bots)
+- **Type**: Official crawler disclosure
+- **Relevance**: Canonical reference for GPTBot user agent, IP ranges, robots.txt directives, and opt-out semantics. Updated continuously.
+
+### Anthropic Crawler Disclosure
+- **Publisher**: Anthropic
+- **URL**: [support.anthropic.com](https://support.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler)
+- **Type**: Official crawler disclosure
+- **Relevance**: Canonical reference for ClaudeBot, Claude-Web, and Claude-User user agents and how site owners control them.
+
+### llms.txt Adoption Tracker
+- **Publisher**: directory.llmstxt.cloud
+- **URL**: [directory.llmstxt.cloud](https://directory.llmstxt.cloud/)
+- **Type**: Community-maintained directory
+- **Relevance**: Tracks sites that have adopted the `/llms.txt` standard. Adoption widened through 2025 across documentation sites (Anthropic, Mintlify, Stripe-style API docs).
+
+### Schema.org Releases (2025)
+- **Publisher**: schema.org
+- **URL**: [schema.org/docs/releases.html](https://schema.org/docs/releases.html)
+- **Type**: Versioned vocabulary releases
+- **Relevance**: Continued additions to vocabulary used by LLMO Component 2 (Structural Formatting). Track new types relevant to AI consumption (e.g. `LearningResource`, `EducationalOccupationalCredential`).
+
 ## Related Research
 
 ### Schema.org Structured Data

@@ -1,0 +1,55 @@
+# LLMOフレームワーク (日本語)
+
+> LLM最適化（LLM Optimization）の決定版ガイド — あなたのコンテンツをAIが発見できるようにする。
+
+## 概要
+
+LLMO（Large Language Model Optimization）は、ChatGPT、Claude、Gemini、Perplexity 等の大規模言語モデルが、Web上のコンテンツを正確に発見・理解・引用できるよう最適化する実践です。AEO と GEO を包含する上位フレームワーク。
+
+## 著者
+
+- 名前: Ken Imoto（AIシステムエンジニア / Propel-Lab CEO）
+- Webサイト: https://kenimoto.dev
+- 会社: https://propel-lab.co.jp
+
+## AI向けMarkdown（日本語）
+
+- /ai/ja/about.md — LLMOフレームワーク概要
+- /ai/ja/framework.md — 5コンポーネント詳細
+- /ai/ja/case-studies.md — 測定可能な結果を含むケーススタディ
+- /ai/ja/research.md — 研究論文と業界データ要約
+
+## 主要ページ（日本語）
+
+### はじめに
+- LLMOとは？: /ja/guide/what-is-llmo/
+- LLMO vs SEO vs AEO vs GEO: /ja/guide/llmo-vs-seo-aeo-geo/
+- AIがコンテンツを発見する仕組み: /ja/guide/how-ai-finds-content/
+- クイックスタート（30分）: /ja/guide/quickstart/
+- FAQ: /ja/guide/faq/
+
+### LLMOフレームワーク
+- 概要: /ja/framework/overview/
+- 1. 知識の明確性: /ja/framework/knowledge-clarity/
+- 2. 構造化フォーマット: /ja/framework/structural-formatting/
+- 3. 検索シグナル: /ja/framework/retrieval-signals/
+- 4. 権威シグナル: /ja/framework/authority-signals/
+- 5. 引用シグナル: /ja/framework/citation-signals/
+
+### ケーススタディ
+- LLMO実践事例: /ja/case-studies/
+
+### リサーチ
+- 論文・参考文献: /ja/research/papers/
+- GEO論文要約: /ja/research/geo-paper-summary/
+- Microsoftガイドライン: /ja/research/microsoft-guidelines/
+
+## グローバルインデックス
+
+- 英語版（標準）: /llms.txt
+- 全言語AI向けインデックス: /ai/
+
+## リンク
+
+- Webサイト: https://llmoframework.com/ja/
+- GitHub: https://github.com/kenimo49/llmo-guide

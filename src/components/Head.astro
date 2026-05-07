@@ -1,5 +1,96 @@
 ---
 import Default from '@astrojs/starlight/components/Head.astro';
+
+const SITE = 'https://llmoframework.com';
+const OG_IMAGE = `${SITE}/og-image.png`;
+const PROJECT_GENESIS = '2026-03-07';
+
+const route = (Astro.locals as any).starlightRoute;
+const entry = route?.entry;
+const data = entry?.data ?? {};
+const slug = entry?.slug ?? '';
+
+const pageUrl = new URL(Astro.url.pathname, SITE).href;
+
+const datePublished = (data.pubDate as string | undefined) ?? PROJECT_GENESIS;
+const lastUpdatedRaw = route?.lastUpdated;
+const dateModified = lastUpdatedRaw instanceof Date
+  ? lastUpdatedRaw.toISOString().slice(0, 10)
+  : (typeof lastUpdatedRaw === 'string' ? lastUpdatedRaw.slice(0, 10) : datePublished);
+
+const localeKey = (route?.locale as string | undefined) ?? '';
+const langTag = (route?.lang as string | undefined)
+  ?? (localeKey === 'pt' ? 'pt-BR' : localeKey === 'zh' ? 'zh-CN' : (localeKey || 'en'));
+
+const title = (data.title as string | undefined) ?? 'LLMO Framework';
+const description = (data.description as string | undefined)
+  ?? 'The open standard for making your content discoverable by AI — ChatGPT, Claude, Gemini, Perplexity.';
+
+const ogLocaleMap: Record<string, string> = {
+  en: 'en_US',
+  ja: 'ja_JP',
+  'zh-CN': 'zh_CN',
+  ko: 'ko_KR',
+  de: 'de_DE',
+  fr: 'fr_FR',
+  es: 'es_ES',
+  'pt-BR': 'pt_BR',
+};
+const ogLocale = ogLocaleMap[langTag] ?? 'en_US';
+
+const isArticle = slug !== '' && slug !== 'index';
+
+// x-default hreflang: link to the English (root locale) equivalent of the current page.
+const localePrefixes = ['ja', 'zh', 'ko', 'de', 'fr', 'es', 'pt'];
+let pathWithoutLocale = Astro.url.pathname;
+for (const prefix of localePrefixes) {
+  if (pathWithoutLocale === `/${prefix}/` || pathWithoutLocale === `/${prefix}`) {
+    pathWithoutLocale = '/';
+    break;
+  }
+  if (pathWithoutLocale.startsWith(`/${prefix}/`)) {
+    pathWithoutLocale = pathWithoutLocale.slice(prefix.length + 1);
+    break;
+  }
+}
+const xDefaultUrl = new URL(pathWithoutLocale, SITE).href;
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'TechArticle',
+  headline: title,
+  description,
+  url: pageUrl,
+  inLanguage: langTag,
+  datePublished,
+  dateModified,
+  author: {
+    '@type': 'Person',
+    name: 'Ken Imoto',
+    url: 'https://kenimoto.dev',
+    sameAs: [
+      'https://github.com/kenimo49',
+      'https://www.linkedin.com/in/kenimo49',
+      'https://x.com/kenimo49',
+    ],
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Propel-Lab',
+    url: 'https://propel-lab.co.jp',
+    logo: {
+      '@type': 'ImageObject',
+      url: OG_IMAGE,
+    },
+  },
+  image: OG_IMAGE,
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'LLMO Framework',
+    url: SITE,
+  },
+  mainEntityOfPage: pageUrl,
+};
 ---
 
 <Default><slot /></Default>
@@ -13,8 +104,34 @@ import Default from '@astrojs/starlight/components/Head.astro';
   gtag('config', 'G-365LMYNSYQ');
 </script>
 
-<!-- Open Graph defaults -->
+<!-- Open Graph -->
 <meta property="og:site_name" content="LLMO Framework" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
+<meta property="og:type" content={isArticle ? 'article' : 'website'} />
+<meta property="og:url" content={pageUrl} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={OG_IMAGE} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="LLMO Framework — The open standard for AI discoverability" />
+<meta property="og:locale" content={ogLocale} />
+{isArticle && <meta property="article:published_time" content={datePublished} />}
+{isArticle && <meta property="article:modified_time" content={dateModified} />}
+{isArticle && <meta property="article:author" content="https://kenimoto.dev" />}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@kenimo49" />
+<meta name="twitter:creator" content="@kenimo49" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={OG_IMAGE} />
+<meta name="twitter:image:alt" content="LLMO Framework — The open standard for AI discoverability" />
+
+<!-- x-default hreflang complements Starlight's per-locale hreflang tags -->
+<link rel="alternate" hreflang="x-default" href={xDefaultUrl} />
+
+<!-- Per-page TechArticle JSON-LD with datePublished / dateModified -->
+{isArticle && (
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(articleSchema)} />
+)}

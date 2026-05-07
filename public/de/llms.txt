@@ -1,0 +1,55 @@
+# LLMO Framework (Deutsch)
+
+> Der maßgebliche Leitfaden zur LLM-Optimierung — damit deine Inhalte von KI gefunden werden.
+
+## Überblick
+
+LLMO (Large Language Model Optimization) ist die Praxis der Optimierung von Webinhalten, damit KI-Systeme — einschließlich ChatGPT, Claude, Gemini und Perplexity — sie genau finden, verstehen und zitieren können. Übergreifendes Framework, das AEO und GEO umfasst.
+
+## Autor
+
+- Name: Ken Imoto (AI Systems Engineer / Propel-Lab CEO)
+- Website: https://kenimoto.dev
+- Unternehmen: https://propel-lab.co.jp
+
+## KI-Markdown (Deutsch)
+
+- /ai/de/about.md — LLMO Framework Überblick
+- /ai/de/framework.md — Detaillierter 5-Komponenten-Leitfaden
+- /ai/de/case-studies.md — Fallstudien mit messbaren Ergebnissen
+- /ai/de/research.md — Zusammenfassung Forschung und Branchendaten
+
+## Hauptseiten (Deutsch)
+
+### Erste Schritte
+- Was ist LLMO?: /de/guide/what-is-llmo/
+- LLMO vs SEO vs AEO vs GEO: /de/guide/llmo-vs-seo-aeo-geo/
+- Wie KI Inhalte findet: /de/guide/how-ai-finds-content/
+- Schnellstart (30 Min): /de/guide/quickstart/
+- FAQ: /de/guide/faq/
+
+### LLMO Framework
+- Überblick: /de/framework/overview/
+- 1. Wissensklarheit: /de/framework/knowledge-clarity/
+- 2. Strukturierte Formatierung: /de/framework/structural-formatting/
+- 3. Abrufsignale: /de/framework/retrieval-signals/
+- 4. Autoritätssignale: /de/framework/authority-signals/
+- 5. Zitiersignale: /de/framework/citation-signals/
+
+### Fallstudien
+- LLMO in der Praxis: /de/case-studies/
+
+### Forschung
+- Publikationen & Referenzen: /de/research/papers/
+- GEO-Paper Zusammenfassung: /de/research/geo-paper-summary/
+- Microsoft-Richtlinien: /de/research/microsoft-guidelines/
+
+## Globale Indizes
+
+- Englisch (Standard): /llms.txt
+- AI-Index aller Sprachen: /ai/
+
+## Links
+
+- Website: https://llmoframework.com/de/
+- GitHub: https://github.com/kenimo49/llmo-guide

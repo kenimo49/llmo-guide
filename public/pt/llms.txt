@@ -1,0 +1,55 @@
+# LLMO Framework (Português)
+
+> O guia definitivo de otimização para LLMs — fazer com que seu conteúdo seja descoberto pela IA.
+
+## Visão geral
+
+LLMO (Large Language Model Optimization) é a prática de otimizar conteúdo web para que sistemas de IA — ChatGPT, Claude, Gemini e Perplexity — possam descobri-lo, compreendê-lo e citá-lo com precisão. Framework abrangente que inclui AEO e GEO.
+
+## Autor
+
+- Nome: Ken Imoto (Engenheiro de sistemas IA / CEO da Propel-Lab)
+- Site: https://kenimoto.dev
+- Empresa: https://propel-lab.co.jp
+
+## Markdown para IA (Português)
+
+- /ai/pt/about.md — Visão geral do framework LLMO
+- /ai/pt/framework.md — Guia detalhado dos 5 componentes
+- /ai/pt/case-studies.md — Estudos de caso com resultados mensuráveis
+- /ai/pt/research.md — Resumo de pesquisa e dados da indústria
+
+## Páginas principais (Português)
+
+### Primeiros passos
+- O que é LLMO?: /pt/guide/what-is-llmo/
+- LLMO vs SEO vs AEO vs GEO: /pt/guide/llmo-vs-seo-aeo-geo/
+- Como a IA encontra conteúdo: /pt/guide/how-ai-finds-content/
+- Início rápido (30 min): /pt/guide/quickstart/
+- FAQ: /pt/guide/faq/
+
+### O framework LLMO
+- Visão geral: /pt/framework/overview/
+- 1. Clareza de conhecimento: /pt/framework/knowledge-clarity/
+- 2. Formatação estrutural: /pt/framework/structural-formatting/
+- 3. Sinais de recuperação: /pt/framework/retrieval-signals/
+- 4. Sinais de autoridade: /pt/framework/authority-signals/
+- 5. Sinais de citação: /pt/framework/citation-signals/
+
+### Estudos de caso
+- LLMO na prática: /pt/case-studies/
+
+### Pesquisa
+- Artigos e referências: /pt/research/papers/
+- Resumo do artigo GEO: /pt/research/geo-paper-summary/
+- Diretrizes da Microsoft: /pt/research/microsoft-guidelines/
+
+## Índices globais
+
+- Inglês (padrão): /llms.txt
+- Índice IA todos os idiomas: /ai/
+
+## Links
+
+- Site: https://llmoframework.com/pt/
+- GitHub: https://github.com/kenimo49/llmo-guide

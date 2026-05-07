@@ -72,3 +72,43 @@ Cada componente pode ser avaliado em uma escala de 0 a 3:
 | 3 | Excelente | Implementação de melhores práticas |
 
 **Pontuação máxima: 15 pontos** (5 componentes × 3 pontos cada)
+
+## Checklist de autoavaliação
+
+Avalie seu próprio site contra cada componente. Qualquer item que você possa marcar com confiança vale 1 ponto; vise 3 caixas por componente para alcançar a pontuação máxima.
+
+### 1. Clareza de conhecimento (máx 3)
+- [ ] Cada página começa com uma resposta de uma frase para sua pergunta principal (Answer-first)
+- [ ] Termos específicos do domínio são definidos no primeiro uso (sem jargão sem explicação)
+- [ ] Cada parágrafo contém uma única ideia (sem parágrafos com múltiplas afirmações)
+
+### 2. Formatação estrutural (máx 3)
+- [ ] As páginas usam hierarquia semântica H1 → H2 → H3 sem pular níveis
+- [ ] Cada página significativa emite JSON-LD (Article / TechArticle / FAQPage / Product / Organization, conforme apropriado)
+- [ ] Conteúdo comparativo usa tabelas, não listas em prosa
+
+### 3. Sinais de recuperação (máx 3)
+- [ ] `/llms.txt` existe na raiz do site e lista páginas-chave
+- [ ] O diretório `/ai/` fornece Markdown limpo para cada tópico principal (e por idioma se o site for multilíngue)
+- [ ] `robots.txt` permite explicitamente GPTBot, ClaudeBot, PerplexityBot, Google-Extended; `sitemap.xml` está acessível
+
+### 4. Sinais de autoridade (máx 3)
+- [ ] O autor tem bio verificável com links `sameAs` para LinkedIn / GitHub / X / perfis de publicação
+- [ ] A mesma identidade (nome, função, foco temático) aparece consistentemente em pelo menos 3 plataformas
+- [ ] O site liga a pesquisa original, livros ou papers que o autor realmente publicou
+
+### 5. Sinais de citação (máx 3)
+- [ ] Cada afirmação que usa um número cita uma fonte por nome e ano
+- [ ] Cada página expõe tanto `datePublished` quanto `dateModified` (em JSON-LD ou meta visível)
+- [ ] Conteúdo comparativo referencia padrões da indústria (W3C, RFC, ISO, schema.org) por nome e link
+
+### Guia de pontuação
+
+| Total | Faixa |
+|-------|-------|
+| 13–15 | Nível produção — ativamente citado por sistemas de IA |
+| 9–12  | Bom — visível para IA mas inconsistente |
+| 5–8   | Parcial — lacunas significativas em recuperação ou autoridade |
+| 0–4   | Invisível — comece com `/llms.txt`, robots.txt e JSON-LD |
+
+> Quer pontuação maior? Cada página de componente (Clareza de conhecimento, Formatação estrutural, Sinais de recuperação, Sinais de autoridade, Sinais de citação) lista as implementações específicas que movem a pontuação de 1 → 2 → 3.

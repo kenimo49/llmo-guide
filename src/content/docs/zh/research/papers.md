@@ -53,6 +53,40 @@ head:
 - **发布方**：Go Fish Digital
 - **摘要**：由于用户意图经过预验证，AI 搜索流量的转化率是传统搜索流量的 25 倍。
 
+## 2025–2026 更新
+
+自最初的 GEO 论文以来，LLMO 领域发展迅速。以下是作为实时一手参考持续追踪的来源。
+
+### Cloudflare Radar — AI Insights
+- **发布方**：Cloudflare
+- **URL**：[radar.cloudflare.com/ai-insights](https://radar.cloudflare.com/ai-insights)
+- **类型**：实时仪表板（持续更新）
+- **相关性**：关于 AI 机器人爬取份额、主要 AI 爬虫（GPTBot、ClaudeBot、PerplexityBot、Bytespider、Google-Extended 等）以及按域名的 AI 机器人与引荐流量比例的公开数据。Cloudflare 于 2024 年添加了 AI 机器人封锁功能，并在整个 2025 年发布了季度趋势数据。
+
+### OpenAI GPTBot 文档
+- **发布方**：OpenAI
+- **URL**：[platform.openai.com/docs/bots](https://platform.openai.com/docs/bots)
+- **类型**：官方爬虫披露
+- **相关性**：GPTBot 用户代理、IP 范围、robots.txt 指令和退出语义的权威参考。持续更新。
+
+### Anthropic 爬虫披露
+- **发布方**：Anthropic
+- **URL**：[support.anthropic.com](https://support.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler)
+- **类型**：官方爬虫披露
+- **相关性**：ClaudeBot、Claude-Web、Claude-User 用户代理及站点所有者控制方式的权威参考。
+
+### llms.txt 采用追踪器
+- **发布方**：directory.llmstxt.cloud
+- **URL**：[directory.llmstxt.cloud](https://directory.llmstxt.cloud/)
+- **类型**：社区维护目录
+- **相关性**：追踪采用 `/llms.txt` 标准的站点。2025 年期间在文档站点（Anthropic、Mintlify、Stripe 风格的 API 文档）中采用范围扩大。
+
+### Schema.org 发布版本（2025）
+- **发布方**：schema.org
+- **URL**：[schema.org/docs/releases.html](https://schema.org/docs/releases.html)
+- **类型**：版本化词汇发布
+- **相关性**：持续向 LLMO 组件 2（结构化格式）使用的词汇添加内容。追踪与 AI 消费相关的新类型（如 `LearningResource`、`EducationalOccupationalCredential`）。
+
 ## 相关研究
 
 ### Schema.org 结构化数据

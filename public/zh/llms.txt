@@ -1,0 +1,55 @@
+# LLMO 框架（中文）
+
+> LLM 优化的权威指南 — 让你的内容能被 AI 发现。
+
+## 概述
+
+LLMO（Large Language Model Optimization）是优化网页内容的实践，使 ChatGPT、Claude、Gemini、Perplexity 等大语言模型能够准确发现、理解和引用你的内容。涵盖 AEO 和 GEO 的上位框架。
+
+## 作者
+
+- 姓名: Ken Imoto（AI 系统工程师 / Propel-Lab CEO）
+- 网站: https://kenimoto.dev
+- 公司: https://propel-lab.co.jp
+
+## AI 用 Markdown（中文）
+
+- /ai/zh/about.md — LLMO 框架概览
+- /ai/zh/framework.md — 5 组件详解
+- /ai/zh/case-studies.md — 含可量化结果的案例研究
+- /ai/zh/research.md — 研究论文与行业数据摘要
+
+## 主要页面（中文）
+
+### 入门
+- 什么是 LLMO？: /zh/guide/what-is-llmo/
+- LLMO vs SEO vs AEO vs GEO: /zh/guide/llmo-vs-seo-aeo-geo/
+- AI 如何发现内容: /zh/guide/how-ai-finds-content/
+- 快速入门（30 分钟）: /zh/guide/quickstart/
+- FAQ: /zh/guide/faq/
+
+### LLMO 框架
+- 概述: /zh/framework/overview/
+- 1. 知识清晰度: /zh/framework/knowledge-clarity/
+- 2. 结构化格式: /zh/framework/structural-formatting/
+- 3. 检索信号: /zh/framework/retrieval-signals/
+- 4. 权威信号: /zh/framework/authority-signals/
+- 5. 引用信号: /zh/framework/citation-signals/
+
+### 案例研究
+- LLMO 实践案例: /zh/case-studies/
+
+### 研究
+- 论文与参考文献: /zh/research/papers/
+- GEO 论文摘要: /zh/research/geo-paper-summary/
+- 微软指南: /zh/research/microsoft-guidelines/
+
+## 全局索引
+
+- 英文（默认）: /llms.txt
+- 所有语言 AI 索引: /ai/
+
+## 链接
+
+- 网站: https://llmoframework.com/zh/
+- GitHub: https://github.com/kenimo49/llmo-guide
