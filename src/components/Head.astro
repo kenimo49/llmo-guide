@@ -1,4 +1,9 @@
 ---
+// Starlight's Default Head already emits og:title, og:type, og:url, og:locale,
+// og:description, og:site_name, twitter:card="summary_large_image" and the
+// per-locale hreflang links. This component only adds tags Starlight does NOT
+// emit (og:image*, twitter:image*, article:*, custom JSON-LD, x-default
+// hreflang) so we never duplicate or fight with the defaults.
 import Default from '@astrojs/starlight/components/Head.astro';
 
 const SITE = 'https://llmoframework.com';
@@ -25,18 +30,6 @@ const langTag = (route?.lang as string | undefined)
 const title = (data.title as string | undefined) ?? 'LLMO Framework';
 const description = (data.description as string | undefined)
   ?? 'The open standard for making your content discoverable by AI — ChatGPT, Claude, Gemini, Perplexity.';
-
-const ogLocaleMap: Record<string, string> = {
-  en: 'en_US',
-  ja: 'ja_JP',
-  'zh-CN': 'zh_CN',
-  ko: 'ko_KR',
-  de: 'de_DE',
-  fr: 'fr_FR',
-  es: 'es_ES',
-  'pt-BR': 'pt_BR',
-};
-const ogLocale = ogLocaleMap[langTag] ?? 'en_US';
 
 const isArticle = slug !== '' && slug !== 'index';
 
@@ -104,27 +97,20 @@ const articleSchema = {
   gtag('config', 'G-365LMYNSYQ');
 </script>
 
-<!-- Open Graph -->
-<meta property="og:site_name" content="LLMO Framework" />
-<meta property="og:type" content={isArticle ? 'article' : 'website'} />
-<meta property="og:url" content={pageUrl} />
-<meta property="og:title" content={title} />
-<meta property="og:description" content={description} />
+<!-- Open Graph: image (Starlight does not emit these) -->
 <meta property="og:image" content={OG_IMAGE} />
+<meta property="og:image:secure_url" content={OG_IMAGE} />
+<meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content="LLMO Framework — The open standard for AI discoverability" />
-<meta property="og:locale" content={ogLocale} />
 {isArticle && <meta property="article:published_time" content={datePublished} />}
 {isArticle && <meta property="article:modified_time" content={dateModified} />}
 {isArticle && <meta property="article:author" content="https://kenimoto.dev" />}
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
+<!-- Twitter Card: image and creator (Starlight emits twitter:card by default) -->
 <meta name="twitter:site" content="@kenimo49" />
 <meta name="twitter:creator" content="@kenimo49" />
-<meta name="twitter:title" content={title} />
-<meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={OG_IMAGE} />
 <meta name="twitter:image:alt" content="LLMO Framework — The open standard for AI discoverability" />
 
