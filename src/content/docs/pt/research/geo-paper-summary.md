@@ -118,5 +118,5 @@ O LLMO Framework estende o GEO de três maneiras:
 ## Leitura Adicional
 
 - [Paper completo no arXiv](https://arxiv.org/abs/2311.09735)
-- [Visão Geral do LLMO Framework](/framework/overview/)
-- [Sinais de citação](/framework/citation-signals/) — implementando a estratégia GEO mais eficaz
+- [Visão Geral do LLMO Framework](/pt/framework/overview/)
+- [Sinais de citação](/pt/framework/citation-signals/) — implementando a estratégia GEO mais eficaz

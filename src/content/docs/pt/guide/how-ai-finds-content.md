@@ -87,7 +87,7 @@ Esses caminhos se reforçam mutuamente:
 2. **Conteúdo estruturado** → Melhor recuperação RAG → Melhores respostas de IA → Mais citações
 3. **Mais citações** → Sinais de autoridade mais fortes → Maior probabilidade de ser selecionado na busca na web
 
-O LLMO otimiza para os três caminhos simultaneamente. Os [cinco componentes](/framework/overview/) do LLMO Framework abordam aspectos específicos desses caminhos de descoberta.
+O LLMO otimiza para os três caminhos simultaneamente. Os [cinco componentes](/pt/framework/overview/) do LLMO Framework abordam aspectos específicos desses caminhos de descoberta.
 
 ## Equívocos Comuns
 

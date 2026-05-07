@@ -94,6 +94,6 @@ A convergência entre os princípios da Microsoft e o LLMO Framework sugere que 
 ## Fonte
 
 - Microsoft Bing Webmaster Blog: "Optimizing your content for AI-powered search answers" (Outubro de 2025)
-- [Visão Geral do LLMO Framework](/framework/overview/)
-- [Formatação estrutural](/framework/structural-formatting/)
-- [Sinais de autoridade](/framework/authority-signals/)
+- [Visão Geral do LLMO Framework](/pt/framework/overview/)
+- [Formatação estrutural](/pt/framework/structural-formatting/)
+- [Sinais de autoridade](/pt/framework/authority-signals/)

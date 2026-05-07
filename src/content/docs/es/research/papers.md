@@ -24,7 +24,7 @@ head:
 - **Publicación**: KDD 2024 (ACM SIGKDD)
 - **Enlace**: [arXiv:2311.09735](https://arxiv.org/abs/2311.09735)
 - **Resumen**: Primer marco académico para optimizar la visibilidad del contenido en motores de búsqueda generativos. Se probaron 9 estrategias de optimización en 10,000 consultas. Hallazgo clave: agregar estadísticas mejoró la visibilidad en +115.1%.
-- **[Resumen detallado →](/research/geo-paper-summary/)**
+- **[Resumen detallado →](/es/research/geo-paper-summary/)**
 
 ### Propuesta llms.txt
 - **Autor**: Jeremy Howard
@@ -37,7 +37,7 @@ head:
 - **Editor**: Microsoft (Bing Webmaster Blog)
 - **Fecha**: octubre de 2025
 - **Resumen**: Directrices oficiales que identifican 3 principios para la optimización de contenido en IA: Estructura, Autoridad y Actualidad.
-- **[Resumen detallado →](/research/microsoft-guidelines/)**
+- **[Resumen detallado →](/es/research/microsoft-guidelines/)**
 
 ### Ahrefs: Menciones web vs. backlinks para la visibilidad en IA
 - **Editor**: Ahrefs

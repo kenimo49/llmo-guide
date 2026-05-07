@@ -142,6 +142,6 @@ La visibilidad en IA no es una optimización puntual. Requiere monitoreo continu
 
 ## Empieza a implementar
 
-- [Inicio rápido: Implementa LLMO en 30 minutos](/guide/quickstart/)
-- [Resumen del LLMO Framework](/framework/overview/)
-- [Artículo GEO: Resumen completo de la investigación](/research/geo-paper-summary/)
+- [Inicio rápido: Implementa LLMO en 30 minutos](/es/guide/quickstart/)
+- [Resumen del LLMO Framework](/es/framework/overview/)
+- [Artículo GEO: Resumen completo de la investigación](/es/research/geo-paper-summary/)

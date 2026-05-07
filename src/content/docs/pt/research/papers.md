@@ -24,7 +24,7 @@ head:
 - **Evento**: KDD 2024 (ACM SIGKDD)
 - **Link**: [arXiv:2311.09735](https://arxiv.org/abs/2311.09735)
 - **Resumo**: Primeiro framework acadêmico para otimizar a visibilidade de conteúdo em motores de busca generativos. Testou 9 estratégias de otimização em 10.000 consultas. Descoberta principal: adicionar estatísticas melhorou a visibilidade em +115,1%.
-- **[Resumo detalhado →](/research/geo-paper-summary/)**
+- **[Resumo detalhado →](/pt/research/geo-paper-summary/)**
 
 ### Proposta llms.txt
 - **Autor**: Jeremy Howard
@@ -37,7 +37,7 @@ head:
 - **Publicador**: Microsoft (Bing Webmaster Blog)
 - **Data**: Outubro de 2025
 - **Resumo**: Diretrizes oficiais que identificam 3 princípios para otimização de conteúdo para IA: Estrutura, Autoridade e Atualidade.
-- **[Resumo detalhado →](/research/microsoft-guidelines/)**
+- **[Resumo detalhado →](/pt/research/microsoft-guidelines/)**
 
 ### Ahrefs: Menções na Web vs. Backlinks para Visibilidade em IA
 - **Publicador**: Ahrefs

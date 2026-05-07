@@ -185,7 +185,7 @@ Después de publicar, comprueba:
 
 Este inicio rápido cubre los componentes de **Señales de recuperación** y **Formato estructurado** del LLMO Framework. Para el framework completo:
 
-- [Claridad del conocimiento](/framework/knowledge-clarity/) — Escribe contenido que la IA pueda entender
-- [Señales de autoridad](/framework/authority-signals/) — Construye expertise verificable
-- [Señales de citación](/framework/citation-signals/) — Proporciona datos que la IA quiera citar
-- [Resumen del framework](/framework/overview/) — Evalúa tu sitio en los 5 componentes
+- [Claridad del conocimiento](/es/framework/knowledge-clarity/) — Escribe contenido que la IA pueda entender
+- [Señales de autoridad](/es/framework/authority-signals/) — Construye expertise verificable
+- [Señales de citación](/es/framework/citation-signals/) — Proporciona datos que la IA quiera citar
+- [Resumen del framework](/es/framework/overview/) — Evalúa tu sitio en los 5 componentes
