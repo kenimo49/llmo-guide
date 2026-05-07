@@ -1,19 +1,6 @@
 ---
 title: "Microsoft's 3 Principles for AI Content"
 description: "Microsoft's official guidelines for optimizing content to appear in AI-generated search answers. Three core principles: Structure, Authority, and Freshness."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Microsoft's 3 Principles for AI Content",
-        "description": "Summary of Microsoft's official guidelines for AI content optimization.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 In October 2025, Microsoft published official guidelines for content creators who want their content to appear in AI-generated search answers (Bing Chat, Copilot). These guidelines align closely with the LLMO Framework and provide vendor-confirmed validation for several LLMO components.

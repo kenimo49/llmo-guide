@@ -1,19 +1,6 @@
 ---
 title: "2. Formatação estrutural"
 description: "Formatação estrutural é a prática de organizar conteúdo usando formatos legíveis por máquina — JSON-LD, HTML semântico, Markdown, llms.txt — para que sistemas de IA possam processar e extrair informações com eficiência."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 2: Structural Formatting",
-        "description": "Structuring your content for machine consumption with JSON-LD, semantic HTML, and llms.txt.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## O Que É

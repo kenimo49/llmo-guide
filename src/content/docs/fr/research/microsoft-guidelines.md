@@ -1,19 +1,6 @@
 ---
 title: "Les 3 principes de Microsoft pour le contenu IA"
 description: "Lignes directrices officielles de Microsoft pour optimiser le contenu afin qu'il apparaisse dans les réponses de recherche générées par l'IA. Trois principes fondamentaux : Structure, Autorité et Fraîcheur."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Microsoft's 3 Principles for AI Content",
-        "description": "Summary of Microsoft's official guidelines for AI content optimization.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 En octobre 2025, Microsoft a publié des lignes directrices officielles à destination des créateurs de contenu souhaitant que leurs contenus apparaissent dans les réponses de recherche générées par l'IA (Bing Chat, Copilot). Ces lignes directrices s'alignent étroitement avec le framework LLMO et apportent une validation officielle de plusieurs composantes LLMO.

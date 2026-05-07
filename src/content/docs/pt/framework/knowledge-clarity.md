@@ -1,19 +1,6 @@
 ---
 title: "1. Clareza de conhecimento"
 description: "Clareza de conhecimento é o grau em que seu conteúdo pode ser entendido e resumido com precisão pela IA. Conteúdo claro é citado. Conteúdo obscuro é ignorado."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 1: Knowledge Clarity",
-        "description": "Making your content clear enough for AI to understand and summarize accurately.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## O Que É

@@ -1,19 +1,6 @@
 ---
 title: "2. Formatage structuré"
 description: "Le Formatage structuré consiste à organiser le contenu à l'aide de formats lisibles par les machines -- JSON-LD, HTML sémantique, Markdown, llms.txt -- pour que les systèmes d'IA puissent analyser et extraire efficacement l'information."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 2: Structural Formatting",
-        "description": "Structuring your content for machine consumption with JSON-LD, semantic HTML, and llms.txt.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## De quoi s'agit-il

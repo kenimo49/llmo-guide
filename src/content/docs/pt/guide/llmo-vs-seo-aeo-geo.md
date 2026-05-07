@@ -1,19 +1,6 @@
 ---
 title: LLMO vs SEO vs AEO vs GEO
 description: "Comparação entre LLMO, SEO, AEO e GEO. O LLMO é o framework guarda-chuva que inclui AEO e GEO enquanto cobre todas as interações com LLMs."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO vs SEO vs AEO vs GEO",
-        "description": "Comparison of search optimization approaches: LLMO, SEO, AEO, and GEO.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## A Evolução da Otimização de Busca

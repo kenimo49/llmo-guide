@@ -1,19 +1,6 @@
 ---
 title: "4. Signaux d'autorité"
 description: "Les Signaux d'autorité démontrent l'expertise et la fiabilité auprès de l'IA. Lorsque plusieurs sources fournissent des informations similaires, l'IA cite celle qui paraît la plus crédible."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 4: Authority Signals",
-        "description": "Demonstrating expertise and trustworthiness to AI systems through author attribution and cross-platform consistency.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## De quoi s'agit-il

@@ -1,19 +1,6 @@
 ---
 title: "4. Authority Signals"
 description: "Authority Signals demonstrieren Fachkompetenz und Vertrauenswürdigkeit gegenüber KI. Wenn mehrere Quellen ähnliche Informationen liefern, zitiert KI die glaubwürdigste."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 4: Authority Signals",
-        "description": "Demonstrating expertise and trustworthiness to AI systems through author attribution and cross-platform consistency.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## Was es ist

@@ -1,19 +1,6 @@
 ---
 title: "案例研究：LLMO 实践应用"
 description: "LLMO 实施的真实案例。TRM Labs 的 AI 引荐流量增长 8,337%。Go Fish Digital 实现 AI 搜索转化率提升 25 倍。来自生产环境的数据驱动成果。"
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Case Studies: LLMO in Practice",
-        "description": "Real-world LLMO case studies with measurable results.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 以下案例展示了 LLMO 原则在生产环境中的实际应用。每个案例都包含具体指标，以及对结果起关键作用的 LLMO 组件。

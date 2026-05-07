@@ -1,19 +1,6 @@
 ---
 title: "3. Sinais de recuperação"
 description: "Sinais de recuperação são os mecanismos que permitem que sistemas de IA descubram e acessem seu conteúdo — robots.txt, llms.txt, sitemap, endpoints /ai/ e presença multiplataforma."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 3: Retrieval Signals",
-        "description": "Ensuring AI systems can find your content through crawlability, llms.txt, and machine-readable endpoints.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## O Que São

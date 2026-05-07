@@ -1,19 +1,6 @@
 ---
 title: "1. Knowledge Clarity"
 description: "Knowledge Clarityは、コンテンツがAIによってどれだけ正確に理解・要約できるかの度合いを示す。明確なコンテンツは引用される。不明確なコンテンツは無視される。"
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 1: Knowledge Clarity",
-        "description": "Making your content clear enough for AI to understand and summarize accurately.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## 概要

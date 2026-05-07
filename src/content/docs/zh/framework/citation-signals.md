@@ -1,19 +1,6 @@
 ---
 title: "5. 引用信号"
 description: "引用信号提供参考文献、来源和元数据，使AI能够验证主张。添加统计数据可将AI引用率提升+115.1%（GEO, KDD 2024）。"
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 5: Citation Signals",
-        "description": "Providing references and verifiable data that AI systems can cite. Statistics addition improves visibility by +115.1%.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## 定义

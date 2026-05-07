@@ -1,19 +1,6 @@
 ---
 title: "1. Clarté des connaissances"
 description: "La Clarté des connaissances mesure à quel point votre contenu peut être compris et résumé fidèlement par l'IA. Un contenu clair est cité. Un contenu flou est ignoré."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 1: Knowledge Clarity",
-        "description": "Making your content clear enough for AI to understand and summarize accurately.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## De quoi s'agit-il

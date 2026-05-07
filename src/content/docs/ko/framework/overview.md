@@ -1,19 +1,6 @@
 ---
 title: "LLMO 프레임워크: AI 발견 가능성을 위한 표준"
 description: "LLMO 프레임워크는 AI 발견 가능성을 위한 5가지 핵심 구성요소를 정의합니다: 지식 명확성, 구조적 포맷팅, 검색 시그널, 권위 시그널, 인용 시그널. 최고 점수: 15점."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "The LLMO Framework: A Standard for AI Discoverability",
-        "description": "Five core components for making your content discoverable by AI.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 LLMO 프레임워크는 AI 시스템이 여러분의 콘텐츠를 발견하고, 이해하고, 정확하게 인용할 수 있는지를 결정하는 5가지 핵심 구성요소를 정의합니다.

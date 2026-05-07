@@ -1,26 +1,6 @@
 ---
 title: "GEO論文: 科学が示すもの"
 description: "Princeton/IIT Delhiによる GEO（Generative Engine Optimization）論文のサマリー。KDD 2024で発表。引用率、コンテンツ戦略、統計改善に関する主要な知見。"
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "GEO Paper: What the Science Says",
-        "description": "Summary of the GEO paper (KDD 2024) with key findings on AI citation optimization.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"},
-        "citation": {
-          "@type": "ScholarlyArticle",
-          "name": "GEO: Generative Engine Optimization",
-          "author": "Aggarwal, Murahari, Rajpurohit, Kalyan, Narasimhan, Deshpande",
-          "datePublished": "2024",
-          "url": "https://arxiv.org/abs/2311.09735"
-        }
-      }
 ---
 
 **GEO（Generative Engine Optimization）** 論文は、AI搭載検索エンジンにおけるコンテンツの可視性を最適化するための初の学術フレームワークである。KDD 2024（ACM SIGKDD）で発表されたこの論文は、LLMOフレームワークが基盤とするコンテンツ最適化戦略について実証的な根拠を提供している。

@@ -1,19 +1,6 @@
 ---
 title: "Case Studies: LLMO in Practice"
 description: "Real-world examples of LLMO implementation. TRM Labs grew AI-referred traffic by 8,337%. Go Fish Digital achieved 25x higher conversion from AI search. Data-backed results from production deployments."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Case Studies: LLMO in Practice",
-        "description": "Real-world LLMO case studies with measurable results.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 These case studies demonstrate LLMO principles applied in production environments. Each example includes specific metrics and the LLMO components that contributed to the results.

@@ -1,19 +1,6 @@
 ---
 title: "1. 지식 명확성 (Knowledge Clarity)"
 description: "지식 명확성은 AI가 여러분의 콘텐츠를 정확하게 이해하고 요약할 수 있는 정도를 나타냅니다. 명확한 콘텐츠는 인용됩니다. 불명확한 콘텐츠는 무시됩니다."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 1: Knowledge Clarity",
-        "description": "Making your content clear enough for AI to understand and summarize accurately.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## 개요

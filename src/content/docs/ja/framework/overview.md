@@ -1,19 +1,6 @@
 ---
 title: "LLMOフレームワーク: AI発見可能性の標準"
 description: "LLMOフレームワークは、AI発見可能性のための5つのコアコンポーネントを定義する: Knowledge Clarity、Structural Formatting、Retrieval Signals、Authority Signals、Citation Signals。最大スコア: 15点。"
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "The LLMO Framework: A Standard for AI Discoverability",
-        "description": "Five core components for making your content discoverable by AI.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 LLMOフレームワークは、AIシステムがコンテンツを発見し、理解し、正確に引用できるかどうかを決定する5つのコアコンポーネントを定義する。

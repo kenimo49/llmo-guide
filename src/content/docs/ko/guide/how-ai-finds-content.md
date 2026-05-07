@@ -1,19 +1,6 @@
 ---
 title: "AI 시스템이 콘텐츠를 찾는 방법"
 description: "AI는 학습 데이터, 실시간 웹 검색, RAG 검색의 세 가지 경로로 콘텐츠를 발견한다. 이 경로를 이해하는 것이 LLMO의 핵심이다."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "How AI Systems Find Your Content",
-        "description": "AI discovers content through three paths: training data, real-time web search, and RAG retrieval.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 사용자가 ChatGPT에 당신의 비즈니스에 대해 질문하면, 그 답변은 어디서 오는 걸까? AI 시스템은 세 가지 경로를 통해 콘텐츠를 발견한다. 각 경로는 최적화를 위한 요구 사항이 다르다.

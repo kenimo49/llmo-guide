@@ -1,19 +1,6 @@
 ---
 title: "How AI Systems Find Your Content"
 description: "AI discovers content through three paths: training data, real-time web search, and RAG retrieval. Understanding these paths is essential for LLMO."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "How AI Systems Find Your Content",
-        "description": "AI discovers content through three paths: training data, real-time web search, and RAG retrieval.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 When a user asks ChatGPT about your business, where does the answer come from? AI systems discover content through three distinct paths. Each path has different requirements for optimization.

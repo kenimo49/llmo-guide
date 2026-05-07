@@ -1,19 +1,6 @@
 ---
 title: "4. 권위 시그널 (Authority Signals)"
 description: "권위 시그널은 AI에게 전문성과 신뢰성을 입증합니다. 여러 출처가 유사한 정보를 제공할 때, AI는 가장 신뢰할 수 있어 보이는 출처를 인용합니다."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 4: Authority Signals",
-        "description": "Demonstrating expertise and trustworthiness to AI systems through author attribution and cross-platform consistency.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## 개요

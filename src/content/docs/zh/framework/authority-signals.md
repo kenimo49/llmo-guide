@@ -1,19 +1,6 @@
 ---
 title: "4. 权威信号"
 description: "权威信号向AI展示专业能力和可信度。当多个来源提供相似信息时，AI会引用看起来最可信的那个。"
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 4: Authority Signals",
-        "description": "Demonstrating expertise and trustworthiness to AI systems through author attribution and cross-platform consistency.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## 定义

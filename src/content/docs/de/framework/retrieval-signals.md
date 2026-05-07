@@ -1,19 +1,6 @@
 ---
 title: "3. Retrieval Signals"
 description: "Retrieval Signals sind die Mechanismen, die es KI-Systemen ermöglichen, Ihre Inhalte zu finden und darauf zuzugreifen -- robots.txt, llms.txt, Sitemap, /ai/-Endpunkte und plattformübergreifende Präsenz."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 3: Retrieval Signals",
-        "description": "Ensuring AI systems can find your content through crawlability, llms.txt, and machine-readable endpoints.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## Was es ist

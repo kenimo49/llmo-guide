@@ -1,19 +1,6 @@
 ---
 title: "Articles & Références"
 description: "Recherche académique et rapports sectoriels liés au LLMO et à l'optimisation pour la recherche IA. Inclut GEO (KDD 2024), la proposition llms.txt et les études associées."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Research Papers & References",
-        "description": "Academic research and industry reports related to LLMO and AI search optimization.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## Articles fondamentaux

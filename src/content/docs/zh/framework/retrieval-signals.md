@@ -1,19 +1,6 @@
 ---
 title: "3. 检索信号"
 description: "检索信号是使AI系统能够发现和访问你的内容的机制——robots.txt、llms.txt、sitemap、/ai/端点以及跨平台存在。"
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 3: Retrieval Signals",
-        "description": "Ensuring AI systems can find your content through crawlability, llms.txt, and machine-readable endpoints.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## 定义

@@ -1,19 +1,6 @@
 ---
 title: "Cómo los sistemas de IA encuentran tu contenido"
 description: "La IA descubre contenido a través de tres caminos: datos de entrenamiento, búsqueda web en tiempo real y recuperación RAG. Comprender estos caminos es esencial para LLMO."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "How AI Systems Find Your Content",
-        "description": "AI discovers content through three paths: training data, real-time web search, and RAG retrieval.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 Cuando un usuario le pregunta a ChatGPT sobre tu negocio, ¿de dónde proviene la respuesta? Los sistemas de IA descubren contenido a través de tres caminos distintos. Cada camino tiene diferentes requisitos de optimización.

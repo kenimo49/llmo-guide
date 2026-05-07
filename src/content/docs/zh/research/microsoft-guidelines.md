@@ -1,19 +1,6 @@
 ---
 title: "Microsoft 的 AI 内容三大原则"
 description: "Microsoft 官方指南：如何优化内容以出现在 AI 生成的搜索回答中。三大核心原则：结构化、权威性和时效性。"
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Microsoft's 3 Principles for AI Content",
-        "description": "Summary of Microsoft's official guidelines for AI content optimization.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 2025 年 10 月，Microsoft 发布了面向内容创作者的官方指南，帮助他们的内容出现在 AI 生成的搜索回答中（Bing Chat、Copilot）。这些指南与 LLMO 框架高度契合，并为多个 LLMO 组件提供了来自厂商的验证。

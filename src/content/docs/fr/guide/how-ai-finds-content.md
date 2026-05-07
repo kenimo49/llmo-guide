@@ -1,19 +1,6 @@
 ---
 title: "Comment les systemes d'IA trouvent votre contenu"
 description: "L'IA decouvre le contenu par trois voies : les donnees d'entrainement, la recherche web en temps reel et la recuperation par RAG. Comprendre ces voies est essentiel pour LLMO."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "How AI Systems Find Your Content",
-        "description": "AI discovers content through three paths: training data, real-time web search, and RAG retrieval.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 Quand un utilisateur interroge ChatGPT sur votre entreprise, d'ou vient la reponse ? Les systemes d'IA decouvrent le contenu par trois voies distinctes. Chaque voie a ses propres exigences en matiere d'optimisation.

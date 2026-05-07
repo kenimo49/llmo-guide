@@ -1,26 +1,6 @@
 ---
 title: "Paper GEO: O Que a Ciência Diz"
 description: "Resumo do paper GEO (Generative Engine Optimization) de Princeton/IIT Delhi, publicado no KDD 2024. Descobertas principais sobre taxas de citação, estratégias de conteúdo e melhorias estatísticas."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "GEO Paper: What the Science Says",
-        "description": "Summary of the GEO paper (KDD 2024) with key findings on AI citation optimization.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"},
-        "citation": {
-          "@type": "ScholarlyArticle",
-          "name": "GEO: Generative Engine Optimization",
-          "author": "Aggarwal, Murahari, Rajpurohit, Kalyan, Narasimhan, Deshpande",
-          "datePublished": "2024",
-          "url": "https://arxiv.org/abs/2311.09735"
-        }
-      }
 ---
 
 O paper **GEO (Generative Engine Optimization)** é o primeiro framework acadêmico para otimizar a visibilidade de conteúdo em motores de busca baseados em IA. Publicado no KDD 2024 (ACM SIGKDD), fornece evidências empíricas para estratégias de otimização de conteúdo nas quais o LLMO Framework se baseia.

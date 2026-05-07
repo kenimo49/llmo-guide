@@ -1,19 +1,6 @@
 ---
 title: "Fallstudien: LLMO in der Praxis"
 description: "Praxisbeispiele zur LLMO-Implementierung. TRM Labs steigerte den KI-vermittelten Traffic um 8.337 %. Go Fish Digital erzielte eine 25-fach h&ouml;here Conversion &uuml;ber KI-Suche. Datengest&uuml;tzte Ergebnisse aus produktiven Umgebungen."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Case Studies: LLMO in Practice",
-        "description": "Real-world LLMO case studies with measurable results.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 Diese Fallstudien zeigen LLMO-Prinzipien im produktiven Einsatz. Jedes Beispiel enthält konkrete Kennzahlen und die LLMO-Komponenten, die zu den Ergebnissen beigetragen haben.

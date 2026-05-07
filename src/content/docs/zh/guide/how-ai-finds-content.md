@@ -1,19 +1,6 @@
 ---
 title: "AI系统如何发现你的内容"
 description: "AI通过三条路径发现内容：训练数据、实时网络搜索和RAG检索。理解这些路径是LLMO的基础。"
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "How AI Systems Find Your Content",
-        "description": "AI discovers content through three paths: training data, real-time web search, and RAG retrieval.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 当用户向ChatGPT询问关于你的业务的问题时，答案从何而来？AI系统通过三条不同的路径发现内容，每条路径对优化有不同的要求。

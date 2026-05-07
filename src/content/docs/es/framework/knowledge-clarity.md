@@ -1,19 +1,6 @@
 ---
 title: "1. Claridad del conocimiento"
 description: "La Claridad del conocimiento es el grado en que tu contenido puede ser comprendido y resumido con precisión por la IA. El contenido claro se cita. El contenido confuso se ignora."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 1: Knowledge Clarity",
-        "description": "Making your content clear enough for AI to understand and summarize accurately.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## Qué es

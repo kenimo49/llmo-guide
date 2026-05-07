@@ -1,19 +1,6 @@
 ---
 title: "Microsoft의 AI 콘텐츠 3대 원칙"
 description: "AI 생성 검색 답변에 콘텐츠가 노출되도록 최적화하기 위한 Microsoft 공식 가이드라인. 세 가지 핵심 원칙: 구조(Structure), 권위(Authority), 최신성(Freshness)."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Microsoft's 3 Principles for AI Content",
-        "description": "Summary of Microsoft's official guidelines for AI content optimization.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 2025년 10월, Microsoft는 AI 생성 검색 답변(Bing Chat, Copilot)에 콘텐츠가 표시되기를 원하는 콘텐츠 제작자를 위한 공식 가이드라인을 발표했습니다. 이 가이드라인은 LLMO 프레임워크와 밀접하게 일치하며, 여러 LLMO 구성 요소에 대한 벤더 차원의 검증을 제공합니다.

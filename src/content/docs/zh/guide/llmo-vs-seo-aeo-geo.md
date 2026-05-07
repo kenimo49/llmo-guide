@@ -1,19 +1,6 @@
 ---
 title: LLMO vs SEO vs AEO vs GEO
 description: "LLMO、SEO、AEO、GEO的比较。LLMO是涵盖AEO和GEO，同时覆盖所有LLM交互场景的上位框架。"
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO vs SEO vs AEO vs GEO",
-        "description": "Comparison of search optimization approaches: LLMO, SEO, AEO, and GEO.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## 搜索优化的演进

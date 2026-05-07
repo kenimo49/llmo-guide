@@ -1,19 +1,6 @@
 ---
 title: "3. Signaux de recherche"
 description: "Les Signaux de recherche sont les mécanismes qui permettent aux systèmes d'IA de découvrir et d'accéder à votre contenu -- robots.txt, llms.txt, sitemap, points d'accès /ai/, et présence multiplateforme."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 3: Retrieval Signals",
-        "description": "Ensuring AI systems can find your content through crawlability, llms.txt, and machine-readable endpoints.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## De quoi s'agit-il

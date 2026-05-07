@@ -1,19 +1,6 @@
 ---
 title: "사례 연구: 실전 LLMO"
 description: "LLMO 구현의 실제 사례. TRM Labs는 AI 유입 트래픽을 8,337% 성장시켰고, Go Fish Digital은 AI 검색에서 25배 높은 전환율을 달성했습니다. 프로덕션 환경에서 검증된 데이터 기반 결과를 소개합니다."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Case Studies: LLMO in Practice",
-        "description": "Real-world LLMO case studies with measurable results.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 이 사례 연구들은 프로덕션 환경에서 LLMO 원칙을 적용한 결과를 보여줍니다. 각 사례에는 구체적인 지표와 해당 결과에 기여한 LLMO 구성 요소가 포함되어 있습니다.

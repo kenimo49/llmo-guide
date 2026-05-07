@@ -1,19 +1,6 @@
 ---
 title: "5. Signaux de citation"
 description: "Les Signaux de citation fournissent des références, des sources et des métadonnées qui permettent à l'IA de vérifier les affirmations. L'ajout de statistiques améliore le taux de citation par l'IA de +115,1 % (GEO, KDD 2024)."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 5: Citation Signals",
-        "description": "Providing references and verifiable data that AI systems can cite. Statistics addition improves visibility by +115.1%.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## De quoi s'agit-il

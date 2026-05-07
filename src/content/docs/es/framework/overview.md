@@ -1,19 +1,6 @@
 ---
 title: "El LLMO Framework: Un estándar para la visibilidad en IA"
 description: "El LLMO Framework define 5 componentes principales para la visibilidad en IA: Claridad del conocimiento, Formato estructurado, Señales de recuperación, Señales de autoridad y Señales de citación. Puntuación máxima: 15 puntos."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "The LLMO Framework: A Standard for AI Discoverability",
-        "description": "Five core components for making your content discoverable by AI.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 El LLMO Framework define cinco componentes principales que determinan si los sistemas de IA pueden descubrir, comprender y citar tu contenido con precisión.

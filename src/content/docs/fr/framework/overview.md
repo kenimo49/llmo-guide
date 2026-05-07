@@ -1,19 +1,6 @@
 ---
 title: "Le framework LLMO : un standard pour la découvrabilité par l'IA"
 description: "Le framework LLMO définit 5 composants fondamentaux pour la découvrabilité par l'IA : Clarté des connaissances, Formatage structuré, Signaux de recherche, Signaux d'autorité et Signaux de citation. Score maximum : 15 points."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "The LLMO Framework: A Standard for AI Discoverability",
-        "description": "Five core components for making your content discoverable by AI.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 Le framework LLMO definit cinq composants fondamentaux qui determinent si les systemes d'IA peuvent decouvrir, comprendre et citer correctement votre contenu.

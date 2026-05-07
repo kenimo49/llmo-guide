@@ -1,19 +1,6 @@
 ---
 title: "1. 知识清晰度"
 description: "知识清晰度衡量的是你的内容能否被AI准确理解和概括。清晰的内容会被引用，模糊的内容会被忽略。"
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 1: Knowledge Clarity",
-        "description": "Making your content clear enough for AI to understand and summarize accurately.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## 定义

@@ -1,19 +1,6 @@
 ---
 title: "Das LLMO-Framework: Ein Standard für KI-Auffindbarkeit"
 description: "Das LLMO-Framework definiert 5 Kernkomponenten für die KI-Auffindbarkeit: Knowledge Clarity, Structural Formatting, Retrieval Signals, Authority Signals und Citation Signals. Maximale Punktzahl: 15 Punkte."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "The LLMO Framework: A Standard for AI Discoverability",
-        "description": "Five core components for making your content discoverable by AI.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 Das LLMO-Framework definiert fünf Kernkomponenten, die bestimmen, ob KI-Systeme Ihre Inhalte finden, verstehen und korrekt zitieren können.

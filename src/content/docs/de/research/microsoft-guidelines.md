@@ -1,19 +1,6 @@
 ---
 title: "Microsofts 3 Prinzipien für KI-Content"
 description: "Microsofts offizielle Richtlinien zur Optimierung von Inhalten für KI-generierte Suchantworten. Drei Kernprinzipien: Struktur, Autorität und Aktualität."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Microsoft's 3 Principles for AI Content",
-        "description": "Summary of Microsoft's official guidelines for AI content optimization.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 Im Oktober 2025 veröffentlichte Microsoft offizielle Richtlinien für Content-Ersteller, die möchten, dass ihre Inhalte in KI-generierten Suchantworten (Bing Chat, Copilot) erscheinen. Diese Richtlinien stimmen eng mit dem LLMO Framework überein und liefern eine herstellerseitige Bestätigung mehrerer LLMO-Komponenten.

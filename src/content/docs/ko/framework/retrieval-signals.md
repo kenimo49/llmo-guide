@@ -1,19 +1,6 @@
 ---
 title: "3. 검색 시그널 (Retrieval Signals)"
 description: "검색 시그널은 AI 시스템이 콘텐츠를 발견하고 접근할 수 있게 하는 메커니즘입니다. robots.txt, llms.txt, sitemap, /ai/ 엔드포인트, 크로스 플랫폼 존재감을 포함합니다."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 3: Retrieval Signals",
-        "description": "Ensuring AI systems can find your content through crawlability, llms.txt, and machine-readable endpoints.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## 개요

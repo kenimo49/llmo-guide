@@ -1,19 +1,6 @@
 ---
 title: "ケーススタディ: LLMOの実践事例"
 description: "LLMOの実装事例を紹介。TRM LabsはAI経由トラフィックを8,337%成長させ、Go Fish DigitalはAI検索から従来比25倍のコンバージョンを達成。本番環境でのデータに基づく成果。"
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Case Studies: LLMO in Practice",
-        "description": "Real-world LLMO case studies with measurable results.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ここでは、LLMOの原則を本番環境で適用した事例を紹介する。各事例には具体的な指標と、成果に寄与したLLMOコンポーネントを記載している。

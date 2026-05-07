@@ -1,19 +1,6 @@
 ---
 title: "Wie KI-Systeme Ihre Inhalte finden"
 description: "KI entdeckt Inhalte auf drei Wegen: Trainingsdaten, Echtzeit-Websuche und RAG-Retrieval. Das Verständnis dieser Wege ist entscheidend für LLMO."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "How AI Systems Find Your Content",
-        "description": "AI discovers content through three paths: training data, real-time web search, and RAG retrieval.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 Wenn ein Nutzer ChatGPT nach Ihrem Unternehmen fragt, woher kommt die Antwort? KI-Systeme entdecken Inhalte auf drei verschiedenen Wegen. Jeder Weg stellt unterschiedliche Anforderungen an die Optimierung.

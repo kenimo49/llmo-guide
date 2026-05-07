@@ -1,19 +1,6 @@
 ---
 title: "논문 및 참고 자료"
 description: "LLMO 및 AI 검색 최적화 관련 학술 연구와 업계 보고서. GEO (KDD 2024), llms.txt 제안, 관련 연구를 포함합니다."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Research Papers & References",
-        "description": "Academic research and industry reports related to LLMO and AI search optimization.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## 핵심 논문

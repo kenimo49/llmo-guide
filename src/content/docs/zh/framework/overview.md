@@ -1,19 +1,6 @@
 ---
 title: "LLMO框架：AI可发现性标准"
 description: "LLMO框架定义了AI可发现性的5个核心组件：知识清晰度、结构化格式、检索信号、权威信号和引用信号。满分：15分。"
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "The LLMO Framework: A Standard for AI Discoverability",
-        "description": "Five core components for making your content discoverable by AI.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 LLMO框架定义了五个核心组件，用于衡量AI系统能否发现、理解并准确引用你的内容。

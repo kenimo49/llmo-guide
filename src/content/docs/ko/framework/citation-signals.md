@@ -1,19 +1,6 @@
 ---
 title: "5. 인용 시그널 (Citation Signals)"
 description: "인용 시그널은 AI가 주장을 검증할 수 있도록 참고 문헌, 출처, 메타데이터를 제공합니다. 통계 추가는 AI 인용률을 +115.1% 향상시킵니다 (GEO, KDD 2024)."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 5: Citation Signals",
-        "description": "Providing references and verifiable data that AI systems can cite. Statistics addition improves visibility by +115.1%.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## 개요

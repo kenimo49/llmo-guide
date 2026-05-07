@@ -1,19 +1,6 @@
 ---
 title: "2. 结构化格式"
 description: "结构化格式是指使用机器可读的格式组织内容的实践——JSON-LD、语义化HTML、Markdown、llms.txt——使AI系统能够高效地解析和提取信息。"
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 2: Structural Formatting",
-        "description": "Structuring your content for machine consumption with JSON-LD, semantic HTML, and llms.txt.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## 定义

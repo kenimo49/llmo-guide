@@ -1,19 +1,6 @@
 ---
 title: "論文・参考文献"
 description: "LLMOとAI検索最適化に関連する学術研究と業界レポート。GEO（KDD 2024）、llms.txt提案、関連する研究を掲載。"
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Research Papers & References",
-        "description": "Academic research and industry reports related to LLMO and AI search optimization.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## 主要論文

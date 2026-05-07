@@ -1,19 +1,6 @@
 ---
 title: "4. Authority Signals"
 description: "Authority Signalsは、AIに対して専門性と信頼性を示すシグナルである。複数のソースが類似の情報を提供する場合、AIは最も信頼性の高い情報源を引用する。"
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 4: Authority Signals",
-        "description": "Demonstrating expertise and trustworthiness to AI systems through author attribution and cross-platform consistency.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## 概要

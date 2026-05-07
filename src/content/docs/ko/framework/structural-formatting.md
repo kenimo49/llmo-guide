@@ -1,19 +1,6 @@
 ---
 title: "2. 구조적 포맷팅 (Structural Formatting)"
 description: "구조적 포맷팅은 AI 시스템이 효율적으로 파싱하고 정보를 추출할 수 있도록 콘텐츠를 기계 판독 가능한 형식(JSON-LD, 시맨틱 HTML, Markdown, llms.txt)으로 구성하는 방법입니다."
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "LLMO Component 2: Structural Formatting",
-        "description": "Structuring your content for machine consumption with JSON-LD, semantic HTML, and llms.txt.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ## 개요

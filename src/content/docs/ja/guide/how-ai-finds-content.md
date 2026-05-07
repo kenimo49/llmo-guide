@@ -1,19 +1,6 @@
 ---
 title: "AIシステムがコンテンツを発見する仕組み"
 description: "AIは学習データ、リアルタイムWeb検索、RAGの3つの経路でコンテンツを発見する。これらの経路を理解することがLLMOの基礎となる。"
-head:
-  - tag: script
-    attrs:
-      type: application/ld+json
-    content: |
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "How AI Systems Find Your Content",
-        "description": "AI discovers content through three paths: training data, real-time web search, and RAG retrieval.",
-        "author": {"@type": "Person", "name": "Ken Imoto", "url": "https://kenimoto.dev"},
-        "publisher": {"@type": "Organization", "name": "LLMO Framework"}
-      }
 ---
 
 ユーザーがChatGPTにビジネスについて質問したとき、回答はどこから生成されるのか。AIシステムは3つの異なる経路でコンテンツを発見する。それぞれの経路には、最適化のための異なる要件がある。
