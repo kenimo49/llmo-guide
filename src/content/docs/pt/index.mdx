@@ -1,0 +1,92 @@
+---
+title: LLMO Framework
+description: O padrão aberto para descobribilidade por IA — tornando seu conteúdo encontrável pelo ChatGPT, Claude, Gemini e Perplexity.
+template: splash
+hero:
+  title: O LLMO Framework
+  tagline: O padrão aberto para tornar seu conteúdo descobrível pelo ChatGPT, Claude, Gemini e Perplexity. Baseado em pesquisa. Implementado em produção. Open source.
+  actions:
+    - text: Início rápido em 30 min
+      link: /guide/quickstart/
+      icon: right-arrow
+    - text: Leia o Framework
+      link: /framework/overview/
+      variant: minimal
+    - text: GitHub
+      link: https://github.com/kenimo49/llmo-guide
+      variant: minimal
+      icon: external
+head:
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: |
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "LLMO Framework",
+        "applicationCategory": "DeveloperApplication",
+        "description": "The open standard for making web content discoverable by AI systems including ChatGPT, Claude, Gemini, and Perplexity.",
+        "url": "https://llmoframework.com",
+        "author": {
+          "@type": "Person",
+          "name": "Ken Imoto",
+          "url": "https://kenimoto.dev"
+        },
+        "license": "https://opensource.org/licenses/MIT"
+      }
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Os Cinco Componentes
+
+<CardGrid>
+  <Card title="1. Clareza de conhecimento" icon="pencil">
+    Conteúdo claro, factual e sem ambiguidades que a IA consegue entender e resumir com precisão.
+  </Card>
+  <Card title="2. Formatação estrutural" icon="setting">
+    Estrutura legível por máquina: Markdown, JSON-LD, HTML semântico, llms.txt.
+  </Card>
+  <Card title="3. Sinais de recuperação" icon="magnifier">
+    llms.txt, diretório /ai/, robots.txt, sitemap — ajude sistemas de IA a encontrar você.
+  </Card>
+  <Card title="4. Sinais de autoridade" icon="approve-check">
+    Presença multiplataforma, publicações, expertise e credenciais verificáveis.
+  </Card>
+  <Card title="5. Sinais de citação" icon="document">
+    Fontes primárias, estatísticas, datas e referências que a IA prefere citar.
+  </Card>
+</CardGrid>
+
+## O Que a Pesquisa Mostra
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <span class="number">+115,1%</span>
+    <span class="label">Taxa de citação ao adicionar estatísticas (GEO, KDD 2024)</span>
+  </div>
+  <div class="stat-card">
+    <span class="number">25x</span>
+    <span class="label">Maior conversão da busca por IA vs. busca tradicional (Go Fish Digital)</span>
+  </div>
+  <div class="stat-card">
+    <span class="number">-25%</span>
+    <span class="label">Uso de busca tradicional até 2026 (Gartner)</span>
+  </div>
+</div>
+
+## Por Que LLMO?
+
+**LLMO (Large Language Model Optimization)** é a prática de otimizar conteúdo web para que sistemas de IA possam descobri-lo, entendê-lo e citá-lo com precisão.
+
+À medida que a busca baseada em IA se torna mainstream, o SEO tradicional por si só não é mais suficiente. Os usuários obtêm respostas do ChatGPT, Claude, Gemini e Perplexity — não apenas do Google. O LLMO garante que seu conteúdo seja descobrível em todos os sistemas de IA.
+
+O LLMO é o framework guarda-chuva que engloba **AEO** (Answer Engine Optimization) e **GEO** (Generative Engine Optimization), fornecendo um padrão mais amplo e focado em implementação para todas as interações com LLMs.
+
+| Abordagem | Alvo | Objetivo |
+|-----------|------|---------|
+| SEO | Motores de busca (Google, Bing) | Melhor posição nos resultados de busca |
+| AEO | Motores de resposta (Featured Snippets, Voz) | Tornar-se a resposta direta |
+| GEO | Motores generativos (ChatGPT, Perplexity) | Ser citado em respostas geradas por IA |
+| **LLMO** | **Todos os sistemas com LLM** | **Descobribilidade abrangente por IA** |
