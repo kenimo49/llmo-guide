@@ -15,7 +15,7 @@ LLMO (Large Language Model Optimization) ist die Praxis der Optimierung von Webi
 ## KI-Markdown (Deutsch)
 
 - /ai/de/about.md — LLMO Framework Überblick
-- /ai/de/framework.md — Detaillierter 5-Komponenten-Leitfaden
+- /ai/de/framework.md — Detaillierter 6-Komponenten-Leitfaden
 - /ai/de/case-studies.md — Fallstudien mit messbaren Ergebnissen
 - /ai/de/research.md — Zusammenfassung Forschung und Branchendaten
 
@@ -28,21 +28,29 @@ LLMO (Large Language Model Optimization) ist die Praxis der Optimierung von Webi
 - Schnellstart (30 Min): /de/guide/quickstart/
 - FAQ: /de/guide/faq/
 
-### LLMO Framework
+### LLMO Framework (v1.1.0: 6 Komponenten, max. 18 Punkte)
 - Überblick: /de/framework/overview/
 - 1. Wissensklarheit: /de/framework/knowledge-clarity/
 - 2. Strukturierte Formatierung: /de/framework/structural-formatting/
 - 3. Abrufsignale: /de/framework/retrieval-signals/
 - 4. Autoritätssignale: /de/framework/authority-signals/
 - 5. Zitiersignale: /de/framework/citation-signals/
+- 6. Kohärenzsignale (en): /framework/coherence-signals/
+
+### Audit (nur EN/JA)
+- Zwei-Pass-Review: /guide/llmo-audit-two-pass-review/
 
 ### Fallstudien
 - LLMO in der Praxis: /de/case-studies/
+- Selbst-Audit: 20 Befunde (en): /case-studies/propel-lab-self-audit/
 
 ### Forschung
 - Publikationen & Referenzen: /de/research/papers/
 - GEO-Paper Zusammenfassung: /de/research/geo-paper-summary/
 - Microsoft-Richtlinien: /de/research/microsoft-guidelines/
+
+### Über
+- Änderungsprotokoll (EN/JA): /changelog/
 
 ## Globale Indizes
 

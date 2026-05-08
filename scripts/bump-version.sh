@@ -13,7 +13,7 @@
 #   6. Asks you to edit CHANGELOG.md, then commits, then tags.
 #
 # Versioning policy:
-#   MAJOR — breaking framework change (component renamed/removed, scoring change)
+#   MAJOR — breaking framework change (component renamed/removed, scoring scale change)
 #   MINOR — new framework component, new guide article, new case study
 #   PATCH — substantive section added to an existing article
 #   Design tweaks / typos / translation backfills do NOT bump.
@@ -50,37 +50,57 @@ esac
 NEW_VERSION="${MAJOR}.${MINOR}.${PATCH}"
 TODAY="$(date -u +%Y-%m-%d)"
 
+# Idempotency guard: refuse to bump if the new version already exists in
+# CHANGELOG.md or has a git tag. Avoids re-running the script and getting
+# duplicate sections.
+if [[ -f "CHANGELOG.md" ]] && grep -q "^## \[${NEW_VERSION}\]" CHANGELOG.md; then
+  echo "error: CHANGELOG.md already has a v${NEW_VERSION} section. Refusing to duplicate." >&2
+  exit 3
+fi
+if git tag -l | grep -qx "v${NEW_VERSION}"; then
+  echo "error: git tag v${NEW_VERSION} already exists. Refusing to overwrite." >&2
+  exit 3
+fi
+
 echo "Bumping $CURRENT -> $NEW_VERSION ($BUMP_TYPE) — $SUMMARY"
 
+# Pass user input as environment variables so quotes / single-quotes /
+# backticks inside SUMMARY do not break the embedded scripts.
+export NEW_VERSION TODAY SUMMARY
+
 # 1. package.json
-node --input-type=module -e "
-import { readFileSync, writeFileSync } from 'fs';
-const pkg = JSON.parse(readFileSync('package.json', 'utf8'));
-pkg.version = '${NEW_VERSION}';
-writeFileSync('package.json', JSON.stringify(pkg, null, 2) + '\n');
-"
+node --input-type=module -e '
+import { readFileSync, writeFileSync } from "fs";
+const pkg = JSON.parse(readFileSync("package.json", "utf8"));
+pkg.version = process.env.NEW_VERSION;
+writeFileSync("package.json", JSON.stringify(pkg, null, 2) + "\n");
+'
 
 # 2. src/data/version.ts
 VERSION_FILE="src/data/version.ts"
 if [[ -f "$VERSION_FILE" ]]; then
-  # replace VERSION constant
+  # replace VERSION constant (NEW_VERSION is X.Y.Z, no special chars)
   perl -i -pe "s/^export const VERSION = '[^']+';/export const VERSION = '${NEW_VERSION}';/" "$VERSION_FILE"
   # prepend a new RELEASES entry (template; user fills highlights)
-  python3 - <<PYEOF
-import re, pathlib
-p = pathlib.Path("${VERSION_FILE}")
+  # Use quoted heredoc + os.environ so SUMMARY content cannot break python parsing.
+  python3 - <<'PYEOF'
+import re, os, pathlib
+p = pathlib.Path(os.environ["VERSION_FILE"]) if os.environ.get("VERSION_FILE") else pathlib.Path("src/data/version.ts")
 src = p.read_text()
-entry = """  {
-    version: '${NEW_VERSION}',
-    date: '${TODAY}',
+new_version = os.environ["NEW_VERSION"]
+today = os.environ["TODAY"]
+summary = os.environ["SUMMARY"].replace("\\", "\\\\").replace("'", "\\'")
+entry = f"""  {{
+    version: '{new_version}',
+    date: '{today}',
     summary:
-      '${SUMMARY}',
+      '{summary}',
     highlights: [
       // TODO: fill in 1-line highlights
     ],
-  },
+  }},
 """
-src = re.sub(r'(export const RELEASES = \\[\n)', r'\\1' + entry, src, count=1)
+src = re.sub(r'(export const RELEASES = \[\n)', r'\1' + entry, src, count=1)
 p.write_text(src)
 PYEOF
 fi
@@ -88,23 +108,26 @@ fi
 # 3. CHANGELOG.md — prepend new section
 CHANGELOG="CHANGELOG.md"
 if [[ -f "$CHANGELOG" ]]; then
-  python3 - <<PYEOF
-import re, pathlib
-p = pathlib.Path("${CHANGELOG}")
+  python3 - <<'PYEOF'
+import re, os, pathlib
+p = pathlib.Path("CHANGELOG.md")
 src = p.read_text()
-new_section = """## [${NEW_VERSION}] — ${TODAY}
+new_version = os.environ["NEW_VERSION"]
+today = os.environ["TODAY"]
+summary = os.environ["SUMMARY"]
+new_section = f"""## [{new_version}] — {today}
 
 ### Headline
 
-${SUMMARY}
+{summary}
 
 ### Added / Changed / Re-scored
 
 - TODO: fill in details before tagging.
 
 """
-# Insert after the policy paragraph (find first '## [')
-src = re.sub(r'(\n## \\[)', '\n' + new_section + r'\\1', src, count=1)
+# Insert before the first existing release section
+src = re.sub(r'(\n## \[)', '\n' + new_section + r'\1', src, count=1)
 p.write_text(src)
 PYEOF
 fi

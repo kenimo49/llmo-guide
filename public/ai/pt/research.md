@@ -38,7 +38,7 @@
 
 ## Relação com o framework LLMO
 
-O framework LLMO sintetiza essas descobertas em 5 componentes implementáveis:
+O framework LLMO sintetiza essas descobertas em 6 componentes implementáveis:
 1. Clareza de conhecimento — das métricas de clareza GEO
 2. Formatação estrutural — do princípio Estrutura da Microsoft
 3. Sinais de recuperação — de llms.txt + pesquisa de crawlabilidade

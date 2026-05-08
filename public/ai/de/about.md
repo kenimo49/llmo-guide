@@ -15,7 +15,7 @@ LLMO ist das übergreifende Framework, das AEO (Answer Engine Optimization) und 
 - Statistiken erhöhen die Zitationsrate um +115,1 % (GEO Paper, KDD 2024)
 - Web-Erwähnungen sind 3-mal aussagekräftiger als Backlinks für KI-Sichtbarkeit (Ahrefs, 75.000 Marken)
 
-## LLMO Framework (5 Komponenten)
+## LLMO Framework (6 Komponenten)
 
 1. **Wissensklarheit** — Klare, faktische Inhalte, die KI verstehen kann
 2. **Strukturierte Formatierung** — Markdown, JSON-LD, semantisches HTML, llms.txt

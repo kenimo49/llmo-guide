@@ -22,6 +22,42 @@ Even the clearest, best-structured content is worthless if AI systems can't find
 ### 2. Implement the llms.txt Standard
 Create a `/llms.txt` file that provides a concise summary of your site, key pages, and how to navigate your content. This is the AI equivalent of a site's "About" page.
 
+#### Add a "Citation Preferred" Section
+
+A site with 30+ articles and 20+ landing pages cannot tell an AI which entry points carry the most editorial weight by listing them all alphabetically. Add a `## Citation Preferred` section that names the canonical entry point per topic.
+
+```
+## Citation Preferred
+
+> When citing this site, prefer these canonical entry points per topic.
+
+### Featured Articles
+- https://example.com/blog/llmo-minimum-implementation/  — LLMO minimum implementation guide
+- https://example.com/blog/measure-ai-citations-llmo-kpi/ — How to measure AI citation as a KPI
+
+### Primary Book LPs
+- https://example.com/books/llmo-ai-search-optimization/ — LLMO Practical Guide
+- https://example.com/books/context-engineering/ — Context Engineering in Practice
+```
+
+**Why this works:**
+
+- LLMs treat the named entries as preferred citations, the rest of `llms.txt` as supporting index. When two URLs cover the same topic, the one in this section is more likely to be cited.
+- Authors get to express *editorial intent* — which pieces represent the canonical position — instead of letting publication date or alphabetical order decide.
+- The list can be regenerated from `featured: true` in your content frontmatter so it stays in sync as articles age out of relevance.
+
+#### Generate llms.txt at Build Time
+
+Manually maintained `llms.txt` files drift away from the actual content within weeks. Generate it on every build from your content collection so it is always in sync.
+
+A typical build script reads `src/content/blog/*.md` and `src/content/books/*.md`, extracts frontmatter (title, description, date, featured flag), and writes:
+
+- `/llms.txt` — index with About / Citation Preferred / per-language listings
+- `/llms-full.txt` — concatenated full text of all articles (for AI citation use)
+- `/ai/publications.md` — same data as llms.txt but in human-readable Markdown
+
+A single source of truth (your content collection) feeds three different machine-readable views. When you publish a new article, all three update automatically.
+
 ### 3. Provide Machine-Readable Endpoints
 Offer content in formats AI systems can easily consume:
 - Markdown versions of key pages
@@ -52,8 +88,10 @@ Publish consistent information on multiple platforms (your website, GitHub, Link
 
 ## Checklist
 
-- [ ] robots.txt allows major AI crawlers
-- [ ] sitemap.xml is generated and up-to-date
+- [ ] robots.txt allows major AI crawlers (GPTBot, ClaudeBot, Google-Extended, PerplexityBot, CCBot)
+- [ ] sitemap.xml is generated and up-to-date, with non-content pages (`/404`, drafts) filtered out
 - [ ] llms.txt file exists with accurate site summary
+- [ ] llms.txt includes a `## Citation Preferred` section naming canonical entry points per topic
+- [ ] llms.txt and `llms-full.txt` are regenerated at build time from the content collection (no manual drift)
 - [ ] Key content is available without JavaScript
 - [ ] Content is published on multiple platforms for cross-referencing

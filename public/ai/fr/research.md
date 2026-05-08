@@ -38,7 +38,7 @@
 
 ## Relation avec le framework LLMO
 
-Le framework LLMO synthétise ces découvertes en 5 composants implémentables :
+Le framework LLMO synthétise ces découvertes en 6 composants implémentables :
 1. Clarté des connaissances — depuis les métriques de clarté GEO
 2. Formatage structuré — depuis le principe Structure de Microsoft
 3. Signaux de recherche — depuis llms.txt + recherche sur la crawlabilité

@@ -1,14 +1,15 @@
 {
   "name": "llmo-guide",
   "type": "module",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "bump": "scripts/bump-version.sh"
+    "bump": "scripts/bump-version.sh",
+    "verify-jsonld": "node scripts/verify-json-ld.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.37.7",

@@ -15,15 +15,18 @@ LLMO is the umbrella framework that includes AEO (Answer Engine Optimization) an
 - Adding statistics improves AI citation rate by +115.1% (GEO Paper, KDD 2024)
 - Web mentions are 3x more predictive of AI visibility than backlinks (Ahrefs, 75K brands)
 
-## The LLMO Framework (5 Components)
+## The LLMO Framework (6 Components, v1.1.0)
 
 1. **Knowledge Clarity** — Clear, factual, unambiguous content that AI can understand and summarize accurately.
-2. **Structural Formatting** — Machine-readable structure: Markdown, JSON-LD, semantic HTML, llms.txt.
+2. **Structural Formatting** — Machine-readable structure with page-scoped JSON-LD; verify it actually emits.
 3. **Retrieval Signals** — llms.txt, /ai/ directory, robots.txt, sitemap — help AI systems find you.
 4. **Authority Signals** — Cross-platform presence, publications, verifiable expertise and credentials.
 5. **Citation Signals** — Primary sources, statistics, dates, and references that AI prefers to cite.
+6. **Coherence Signals** — Same fact tells the same story across HTML, JSON-LD, Markdown, llms.txt — single source of truth.
 
-Each component scored 0-3. Maximum score: 15 points.
+Each component scored 0-3. Maximum score: 18 points.
+
+Changelog: /changelog/ (current: v1.1.0, 2026-05-08)
 
 ## Author
 
@@ -40,7 +43,7 @@ Each component scored 0-3. Maximum score: 15 points.
 ## AI-Readable Content (English)
 
 - /ai/about.md — LLMO Framework overview and positioning
-- /ai/framework.md — Detailed 5-component framework guide
+- /ai/framework.md — Detailed 6-component framework guide
 - /ai/case-studies.md — Case studies with measurable results
 - /ai/research.md — Research papers and industry data summary
 
@@ -113,14 +116,22 @@ Available in 7 languages. All AI-readable Markdown is mirrored under `/ai/<lang>
 - 3. Retrieval Signals: /framework/retrieval-signals/
 - 4. Authority Signals: /framework/authority-signals/
 - 5. Citation Signals: /framework/citation-signals/
+- 6. Coherence Signals: /framework/coherence-signals/
+
+### Auditing
+- Two-Pass Review: /guide/llmo-audit-two-pass-review/
 
 ### Case Studies
 - LLMO in Practice: /case-studies/
+- Self-Audit: 20 Findings on the Propel-Lab Reference Site: /case-studies/propel-lab-self-audit/
 
 ### Research
 - Papers & References: /research/papers/
 - GEO Paper Summary: /research/geo-paper-summary/
 - Microsoft Guidelines: /research/microsoft-guidelines/
+
+### About
+- Changelog: /changelog/
 
 ## Localized Site Roots
 

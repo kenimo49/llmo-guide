@@ -6,6 +6,8 @@ pubDate: 2026-05-08
 
 ## What It Is
 
+> **Boundary with Structural Formatting**: *Structural Formatting* asks "is each surface individually well-formed?" — valid JSON-LD, semantic HTML, scoped schema. *Coherence Signals* asks "do the surfaces agree with each other?" — same address in HTML and Markdown, same numbers in `llms.txt` and the homepage profile, no two `Organization` entities with conflicting fields. A page can pass Structural Formatting and still fail Coherence: each block is valid, but together they tell two stories.
+
 Coherence Signals measure whether your content tells **the same story across every surface that an AI agent can read**. A modern LLMO-optimized site exposes facts through many channels:
 
 - HTML page body (visible to humans + AI crawlers)

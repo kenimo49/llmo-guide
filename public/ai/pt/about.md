@@ -15,7 +15,7 @@ LLMO é o framework abrangente que inclui AEO (Answer Engine Optimization) e GEO
 - Adicionar estatísticas melhora a taxa de citação em +115,1 % (paper GEO, KDD 2024)
 - Menções web são 3× mais preditivas que backlinks para visibilidade IA (Ahrefs, 75.000 marcas)
 
-## O framework LLMO (5 componentes)
+## O framework LLMO (6 componentes)
 
 1. **Clareza de conhecimento** — Conteúdo claro, factual e sem ambiguidades
 2. **Formatação estrutural** — Markdown, JSON-LD, HTML semântico, llms.txt

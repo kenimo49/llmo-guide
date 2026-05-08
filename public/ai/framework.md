@@ -2,7 +2,7 @@
 
 ## Overview
 
-The LLMO Framework provides a structured approach to making your content discoverable by AI systems. It consists of 5 components that work together to maximize AI discoverability.
+The LLMO Framework provides a structured approach to making your content discoverable by AI systems. It consists of 6 components that work together to maximize AI discoverability.
 
 ## 1. Knowledge Clarity
 

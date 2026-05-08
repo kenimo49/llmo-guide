@@ -27,8 +27,21 @@ const dateModified = lastUpdatedRaw instanceof Date
   : (typeof lastUpdatedRaw === 'string' ? lastUpdatedRaw.slice(0, 10) : datePublished);
 
 const localeKey = (route?.locale as string | undefined) ?? '';
-const langTag = (route?.lang as string | undefined)
-  ?? (localeKey === 'pt' ? 'pt-BR' : localeKey === 'zh' ? 'zh-CN' : (localeKey || 'en'));
+
+// Fallback detection: if the URL says /<lang>/ but the resolved entry.id
+// doesn't start with that lang directory, Starlight is serving the English
+// fallback. In that case the visible body language is English, so the OG
+// locale and JSON-LD inLanguage signals must reflect English — not the URL
+// language. Without this, AI crawlers see <html lang="zh-CN"> on a page
+// that is actually English content (Coherence Signal violation in the very
+// site that defines Coherence Signals).
+const entryId = (entry?.id as string | undefined) ?? '';
+const isFallback = Boolean(localeKey) && !entryId.startsWith(`${localeKey}/`);
+
+const langTag = isFallback
+  ? 'en'
+  : (route?.lang as string | undefined)
+    ?? (localeKey === 'pt' ? 'pt-BR' : localeKey === 'zh' ? 'zh-CN' : (localeKey || 'en'));
 
 const title = (data.title as string | undefined) ?? 'LLMO Framework';
 const description = (data.description as string | undefined)
@@ -48,7 +61,11 @@ const ogLocaleMap: Record<string, string> = {
 const ogLocale = ogLocaleMap[langTag] ?? 'en_US';
 const ogLocaleAlternates = Object.values(ogLocaleMap).filter((v) => v !== ogLocale);
 
-const isArticle = slug !== '' && slug !== 'index';
+// Articles get TechArticle schema and article:* meta. The site root and the
+// 404 page are NOT articles — they describe the site as a whole or signal an
+// error, not a single document.
+const NON_ARTICLE_SLUGS = new Set(['', 'index', '404']);
+const isArticle = !NON_ARTICLE_SLUGS.has(slug);
 
 // x-default hreflang: link to the English (root locale) equivalent of the current page.
 const localePrefixes = ['ja', 'zh', 'ko', 'de', 'fr', 'es', 'pt'];

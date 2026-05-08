@@ -1,8 +1,8 @@
-# LLMO Framework — 5 componentes principais
+# LLMO Framework — 6 componentes principais
 
 ## Visão geral
 
-O framework LLMO fornece uma abordagem estruturada para tornar seu conteúdo descobrível por sistemas de IA. 5 componentes trabalham juntos para maximizar a descobribilidade pela IA.
+O framework LLMO fornece uma abordagem estruturada para tornar seu conteúdo descobrível por sistemas de IA. 6 componentes trabalham juntos para maximizar a descobribilidade pela IA.
 
 ## 1. Clareza de conhecimento
 

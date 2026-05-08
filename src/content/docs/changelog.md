@@ -18,6 +18,22 @@ The current version, the `package.json` `version` field, and the git tag `vX.Y.Z
 
 The full machine-readable history lives in [CHANGELOG.md on GitHub](https://github.com/kenimo49/llmo-guide/blob/main/CHANGELOG.md). Below is the human-readable summary.
 
+## v1.2.0 — 2026-05-08
+
+**Headline**: Two field-tested patterns added — `Identity-as-Code` (one Person/Organization, one `@id`, cited everywhere) and `Citation Preferred` (named canonical entry points in llms.txt).
+
+### Expanded
+
+- **[Authority Signals](/framework/authority-signals/)** — added *Identity-as-Code: One Person, One `@id`, Cited Everywhere*. Defines the per-page-duplication anti-pattern and the URL-based `@id` pattern, with rules for multi-language sites (shared `Person`/`Organization`, per-language `WebSite`). Three new checklist items.
+- **[Retrieval Signals](/framework/retrieval-signals/)** — added two sub-sections under llms.txt:
+  - *Add a "Citation Preferred" Section*: name canonical entry points per topic so AI cites the right URL when several cover the same subject.
+  - *Generate llms.txt at Build Time*: drop manual maintenance; build script reads the content collection and emits `llms.txt`, `llms-full.txt`, and `/ai/publications.md` from one source of truth.
+- **Checklist additions** for both: `@id` strategy and llms.txt drift prevention.
+
+### Why
+
+Three sites (mypcrig.com, legacydram.com, kenimoto.dev) implementing the framework hit the same two failure modes within a single review session: identity fragmentation across languages and pages, and llms.txt entries that quietly drifted out of sync with the actual content. Both patterns now have explicit framework guidance instead of being folded into checklists.
+
 ## v1.1.0 — 2026-05-08
 
 **Headline**: The framework grew from 5 to 6 components. Maximum score is now 18 (was 15).

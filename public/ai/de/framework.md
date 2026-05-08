@@ -2,7 +2,7 @@
 
 ## Überblick
 
-Das LLMO-Framework bietet einen strukturierten Ansatz, um deine Inhalte für KI-Systeme auffindbar zu machen. 5 Komponenten arbeiten zusammen, um die KI-Sichtbarkeit zu maximieren.
+Das LLMO-Framework bietet einen strukturierten Ansatz, um deine Inhalte für KI-Systeme auffindbar zu machen. 6 Komponenten arbeiten zusammen, um die KI-Sichtbarkeit zu maximieren.
 
 ## 1. Wissensklarheit
 

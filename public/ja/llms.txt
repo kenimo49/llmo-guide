@@ -15,7 +15,7 @@ LLMO（Large Language Model Optimization）は、ChatGPT、Claude、Gemini、Per
 ## AI向けMarkdown（日本語）
 
 - /ai/ja/about.md — LLMOフレームワーク概要
-- /ai/ja/framework.md — 5コンポーネント詳細
+- /ai/ja/framework.md — 6コンポーネント詳細
 - /ai/ja/case-studies.md — 測定可能な結果を含むケーススタディ
 - /ai/ja/research.md — 研究論文と業界データ要約
 
@@ -28,16 +28,24 @@ LLMO（Large Language Model Optimization）は、ChatGPT、Claude、Gemini、Per
 - クイックスタート（30分）: /ja/guide/quickstart/
 - FAQ: /ja/guide/faq/
 
-### LLMOフレームワーク
+### LLMOフレームワーク（v1.1.0、6コンポーネント、最大18点）
 - 概要: /ja/framework/overview/
 - 1. 知識の明確性: /ja/framework/knowledge-clarity/
 - 2. 構造化フォーマット: /ja/framework/structural-formatting/
 - 3. 検索シグナル: /ja/framework/retrieval-signals/
 - 4. 権威シグナル: /ja/framework/authority-signals/
 - 5. 引用シグナル: /ja/framework/citation-signals/
+- 6. 整合性シグナル: /ja/framework/coherence-signals/
+
+### 監査
+- 二段レビュー: /ja/guide/llmo-audit-two-pass-review/
 
 ### ケーススタディ
 - LLMO実践事例: /ja/case-studies/
+- 自社監査: 20件の発見: /ja/case-studies/propel-lab-self-audit/
+
+### このサイトについて
+- 変更履歴: /ja/changelog/
 
 ### リサーチ
 - 論文・参考文献: /ja/research/papers/

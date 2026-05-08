@@ -1,8 +1,10 @@
 ---
-title: "Self-Audit: 20 LLMO Findings on the Propel-Lab Reference Site"
-description: "An LLMO framework site audited its own implementation in May 2026. The two-pass review (self → independent AI) surfaced 20 findings across SEO, structured data, and content coherence — including silent JSON-LD drops the team had run with for months."
+title: "Self-Audit: 20 LLMO Findings on the Propel-Lab Reference Sites"
+description: "An LLMO framework team audited two production sites it had built (propel-lab.co.jp and kaoriq.com) in May 2026. The two-pass review (self → independent AI) surfaced 20 findings across SEO, structured data, and content coherence — including silent JSON-LD drops the team had run with for months."
 pubDate: 2026-05-08
 ---
+
+> **Scope**: Two sites are audited together because they share the same playbook and the same reviewer. Findings labeled **(propel-lab)** apply to [propel-lab.co.jp](https://propel-lab.co.jp/); findings labeled **(kaoriq)** apply to [kaoriq.com](https://kaoriq.com/); a few apply to both.
 
 ## Why This Case Study Exists
 
@@ -32,19 +34,19 @@ Findings were triaged by severity (P0 / P1 / P2) and fixed in two commits per si
 
 These are the kinds of issues a careful self-review can spot when you know the LLMO checklist:
 
-| # | Finding | Why first pass caught it |
-|---|---------|--------------------------|
-| 1 | OG image fallback returned 404 in production | Visible if you check `curl -I` on the OG URL |
-| 2 | `og:type` emitted twice (website + article) on blog posts | Shows up in any view-source check |
-| 3 | Trailing slash missing on internal blog links → 301 redirects | Greps clearly for `]( /blog/` patterns |
-| 4 | Static pages had no hreflang declarations | Comparing meta blocks across page types reveals it |
-| 5 | JSON-LD `BlogPosting` missing `image` / `dateModified` / `publisher.logo` | Schema.org checklist |
-| 6 | Header/Footer hardcoded in Japanese on the English page | Visiting `/en/` exposes it immediately |
-| 7 | Coming Soon cards had no links | UX review |
-| 8 | Empty `public/ai/` directory deployed | File system inspection |
-| 9 | `llms.txt` only listed 2 of 5 supported languages | Comparing llms.txt to actual `/blog/` directory |
-| 10 | Nav language switcher always showed all 6 languages, even on pages with no translation | Click-test reveals dead-ends |
-| 11 | Diacritic loss in PT/ES translated content (não → nao, voce instead of você) | Native-speaker review |
+| # | Site | Finding | Why first pass caught it |
+|---|------|---------|--------------------------|
+| 1 | kaoriq | OG image fallback returned 404 in production | Visible if you check `curl -I` on the OG URL |
+| 2 | kaoriq | `og:type` emitted twice (website + article) on blog posts | Shows up in any view-source check |
+| 3 | kaoriq | Trailing slash missing on internal blog links → 301 redirects | Greps clearly for `]( /blog/` patterns |
+| 4 | kaoriq | Static pages had no hreflang declarations | Comparing meta blocks across page types reveals it |
+| 5 | kaoriq | JSON-LD `BlogPosting` missing `image` / `dateModified` / `publisher.logo` | Schema.org checklist |
+| 6 | propel-lab | Header/Footer hardcoded in Japanese on the English page | Visiting `/en/` exposes it immediately |
+| 7 | kaoriq | Coming Soon cards had no links | UX review |
+| 8 | kaoriq | Empty `public/ai/` directory deployed | File system inspection |
+| 9 | kaoriq | `llms.txt` only listed 2 of 5 supported languages | Comparing llms.txt to actual `/blog/` directory |
+| 10 | kaoriq | Nav language switcher always showed all 6 languages, even on pages with no translation | Click-test reveals dead-ends |
+| 11 | kaoriq | Diacritic loss in PT/ES translated content (não → nao, voce instead of você) | Native-speaker review |
 
 The pattern: these are findings where **looking at the right thing surfaces the bug**. The reviewer just has to look.
 
@@ -52,7 +54,7 @@ The pattern: these are findings where **looking at the right thing surfaces the 
 
 These are the findings that broke the implementer's mental model:
 
-### F12. Silent JSON-LD drop via missing `<slot name="head" />`
+### F12. Silent JSON-LD drop via missing `<slot name="head" />` *(propel-lab)*
 
 The Astro layout had no `<slot name="head" />` declaration in its `<head>`. Pages that wrote `<script slot="head" type="application/ld+json">` for page-specific schema were silently dropped — the framework discarded the script with no warning.
 
@@ -60,7 +62,7 @@ The site had been deployed for months in this state. The implementer had written
 
 **LLMO lesson**: Output verification is a discrete framework concern. *Writing* JSON-LD and *emitting* JSON-LD are different events. The build pipeline must verify every JSON-LD block makes it to the served HTML, every release.
 
-### F13. Two `Organization` entities, conflicting addresses
+### F13. Two `Organization` entities, conflicting addresses *(propel-lab)*
 
 The shared layout emitted `Organization` with the address `天神4丁目6-28 天神ファーストビル7階`. A page-level snippet (intended to override the layout, but not written that way) added a second `Organization` with `天神4-6-28 天神第一ビル7F` — same building, different transcription. Both made it to HTML.
 
@@ -68,7 +70,7 @@ A crawler parsing both for the same `@id`-less entity gets two contradictory add
 
 **LLMO lesson**: Duplicate entity declarations are a coherence failure, not a structure failure. JSON-LD validators don't catch them because each declaration is individually well-formed. The fix is to assign stable `@id` values to all primary entities and use `@id` references everywhere else.
 
-### F14. Cross-file numeric drift (4 books vs 14 books)
+### F14. Cross-file numeric drift (4 books vs 14 books) *(propel-lab)*
 
 The author profile claimed:
 
@@ -79,7 +81,7 @@ Both surfaces were served to AI crawlers. An AI quoting `/ai/founder.md` reporte
 
 **LLMO lesson**: Coherence Signals are real. Every numeric or factual claim needs a single canonical source file, with all surfaces (HTML, Markdown, JSON-LD, llms.txt) generated from it.
 
-### F15. JSON-LD over-injection on every page
+### F15. JSON-LD over-injection on every page *(propel-lab)*
 
 The shared layout emitted 11 schemas on *every* page — `Organization`, `Person`, `Service[]` (×7), `MusicGroup`, `Book[]` (×2), `FAQPage`, `WebSite`. The 404 page advertised the full music project. The privacy page advertised every book. The /products page and /yureru page each carried entities they had nothing to do with.
 
@@ -87,19 +89,19 @@ A model parsing these reads them as page-relevant claims about page subject. Car
 
 **LLMO lesson**: Structural Formatting requires *scope*, not just *presence*. Site-wide entities are `Organization` / `WebSite` / `Person`. Page-relevant entities (`Service[]`, `Book[]`, `MusicGroup`, `FAQPage`) belong on the pages that are actually about them.
 
-### F16. og:locale stuck at ja_JP on English pages
+### F16. og:locale stuck at ja_JP on English pages *(propel-lab)*
 
 The `/en/` page declared `og:locale = ja_JP` because the layout hardcoded it. Social platforms and AI integrations using OG metadata for language detection saw a Japanese page when serving an English audience.
 
 **LLMO lesson**: OG metadata is part of multilingual LLMO. Language signal must be lang-aware end-to-end: HTML `lang`, JSON-LD `inLanguage`, OG `og:locale`, hreflang, content-language headers.
 
-### F17. www. and apex domain mixed across `/ai/` files
+### F17. www. and apex domain mixed across `/ai/` files *(propel-lab)*
 
 The canonical domain was `https://propel-lab.co.jp`. Five `/ai/*.md` files referenced `https://www.propel-lab.co.jp` instead. AI agents crawling these markdown surfaces would receive the non-canonical URL and either follow a 301 (cost) or treat it as a separate entity (worse).
 
 **LLMO lesson**: Canonical domain enforcement is not just an HTML concern. Every Markdown surface, every llms.txt link, every internal-reference URL must use the same canonical host.
 
-### F18. 404 page canonical pointed to `/404/` instead of `/404.html`
+### F18. 404 page canonical pointed to `/404/` instead of `/404.html` *(both)*
 
 Astro generated `dist/404.html` (per GitHub Pages convention). The page emitted `og:url = https://propel-lab.co.jp/404/` because that's the route Astro inferred. GitHub Pages serves `404.html` directly on any miss; the `/404/` URL doesn't actually return the 404 page.
 
@@ -107,7 +109,7 @@ Result: shared 404 URLs misdirected. The canonical declaration was internally co
 
 **LLMO lesson**: Canonical URLs must match what the host serves, not what the framework infers. For 404 pages specifically, suppressing canonical and OG entirely is cleaner than declaring URLs that don't resolve.
 
-### F19. Invalid HTML output (`<a>` adoption agency bug in `<table>`)
+### F19. Invalid HTML output (`<a>` adoption agency bug in `<table>`) *(propel-lab)*
 
 The `<dt>`-style company info table used `<a>` inside the last `<td>`. Astro's HTML emission produced an empty `<a></a>` plus an open `<a>` wrapping the entire next section — invalid HTML that browsers (and crawlers) auto-corrected differently. The empty anchor and the wrapping anchor both pointed to `mailto:info@propel-lab.co.jp`.
 
@@ -115,7 +117,7 @@ The fix was switching `<table>` → `<dl>` for the structured key/value layout; 
 
 **LLMO lesson**: Output verification matters even for non-JSON-LD HTML. Invalid markup in `dist/` reaches AI crawlers — and the way each crawler corrects it is non-deterministic. Validate the actual served HTML against W3C validator at least at major releases.
 
-### F20. Hreflang declared `/en/` as alternate for sub-pages with no English equivalent
+### F20. Hreflang declared `/en/` as alternate for sub-pages with no English equivalent *(propel-lab)*
 
 The Japanese `/company/`, `/products/`, `/yureru/` pages declared `hreflang="en" href="https://propel-lab.co.jp/en/"`. But `/en/` is a single page that consolidates the whole English site — it isn't the company page in English, the products page in English, or the yureru page in English. The hreflang asserted a 4-to-1 equivalence that wasn't true.
 

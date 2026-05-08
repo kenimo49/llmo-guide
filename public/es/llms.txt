@@ -15,7 +15,7 @@ LLMO (Large Language Model Optimization) es la práctica de optimizar contenido 
 ## Markdown para IA (Español)
 
 - /ai/es/about.md — Resumen del framework LLMO
-- /ai/es/framework.md — Guía detallada de los 5 componentes
+- /ai/es/framework.md — Guía detallada de los 6 componentes
 - /ai/es/case-studies.md — Casos de estudio con resultados medibles
 - /ai/es/research.md — Resumen de investigación y datos de industria
 
@@ -28,21 +28,29 @@ LLMO (Large Language Model Optimization) es la práctica de optimizar contenido 
 - Inicio rápido (30 min): /es/guide/quickstart/
 - FAQ: /es/guide/faq/
 
-### El framework LLMO
+### El framework LLMO (v1.1.0: 6 componentes, máx. 18 puntos)
 - Visión general: /es/framework/overview/
 - 1. Claridad del conocimiento: /es/framework/knowledge-clarity/
 - 2. Formato estructurado: /es/framework/structural-formatting/
 - 3. Señales de recuperación: /es/framework/retrieval-signals/
 - 4. Señales de autoridad: /es/framework/authority-signals/
 - 5. Señales de citación: /es/framework/citation-signals/
+- 6. Señales de coherencia (en): /framework/coherence-signals/
+
+### Auditoría (sólo EN/JA)
+- Revisión en dos pases: /guide/llmo-audit-two-pass-review/
 
 ### Casos de estudio
 - LLMO en la práctica: /es/case-studies/
+- Auto-auditoría: 20 hallazgos (en): /case-studies/propel-lab-self-audit/
 
 ### Investigación
 - Artículos y referencias: /es/research/papers/
 - Resumen del artículo GEO: /es/research/geo-paper-summary/
 - Directrices de Microsoft: /es/research/microsoft-guidelines/
+
+### Acerca de
+- Registro de cambios (EN/JA): /changelog/
 
 ## Índices globales
 

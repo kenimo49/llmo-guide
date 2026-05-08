@@ -95,7 +95,7 @@ Score your own site against each component. Treat anything you can confidently c
 
 ### 5. Citation Signals (max 3)
 - [ ] Every claim that uses a number cites a source by name and year
-- [ ] Each page exposes both `datePublished` and `dateModified` (in JSON-LD or visible meta)
+- [ ] Each **content page** (article, guide, case study) exposes both `datePublished` and `dateModified` (in JSON-LD or visible meta). Site root and error pages are exempt
 - [ ] Comparison content references industry standards (W3C, RFC, ISO, schema.org) by name and link
 
 ### 6. Coherence Signals (max 3)

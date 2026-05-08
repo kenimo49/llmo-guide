@@ -15,7 +15,7 @@ LLMOは AEO（Answer Engine Optimization）と GEO（Generative Engine Optimizat
 - 統計値の追加で引用率+115.1%（GEO論文, KDD 2024）
 - Web言及はAI可視性の予測指標として被リンクの3倍（Ahrefs, 75,000ブランド）
 
-## LLMOフレームワーク（5コンポーネント）
+## LLMOフレームワーク（6コンポーネント）
 
 1. **知識の明確性（ナレッジクラリティ）** — AIが正確に要約できる明瞭で曖昧さのないコンテンツ
 2. **構造的フォーマット（構造化フォーマット）** — Markdown、JSON-LD、セマンティックHTML、llms.txt
@@ -23,7 +23,7 @@ LLMOは AEO（Answer Engine Optimization）と GEO（Generative Engine Optimizat
 4. **権威シグナル（権威性シグナル）** — クロスプラットフォームでの一貫性、出版実績、検証可能な専門性
 5. **引用シグナル** — 一次ソース、統計、日付、参考文献
 
-各コンポーネント0-3点で採点。最高15点。
+各コンポーネント0-3点で採点。最高18点。
 
 ## 著者
 
