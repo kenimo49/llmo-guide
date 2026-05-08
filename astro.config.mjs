@@ -157,6 +157,7 @@ export default defineConfig({
           items: [
             { label: 'LLMO in Practice', translations: { ja: 'LLMO実践事例', 'zh-CN': 'LLMO实践案例', ko: 'LLMO 실전 사례', de: 'LLMO in der Praxis', fr: 'LLMO en pratique', es: 'LLMO en la práctica', 'pt-BR': 'LLMO na prática' }, slug: 'case-studies' },
             { label: 'Self-Audit: 20 Findings', translations: { ja: '自社監査: 20件の発見', 'zh-CN': '自审计：20项发现', ko: '자가 감사: 20건의 발견', de: 'Selbst-Audit: 20 Befunde', fr: 'Auto-audit : 20 constats', es: 'Auto-auditoría: 20 hallazgos', 'pt-BR': 'Auto-auditoria: 20 achados' }, slug: 'case-studies/propel-lab-self-audit' },
+            { label: 'When the Author Violates the Framework', translations: { ja: 'フレームワーク作者がフレームワークを破ったとき', 'zh-CN': '当作者违反了自己的框架', ko: '저자가 프레임워크를 어겼을 때', de: 'Wenn der Autor das eigene Framework bricht', fr: "Quand l'auteur enfreint le framework", es: 'Cuando el autor viola su propio framework', 'pt-BR': 'Quando o autor viola o próprio framework' }, slug: 'case-studies/llmo-framework-self-audit' },
           ],
         },
         {

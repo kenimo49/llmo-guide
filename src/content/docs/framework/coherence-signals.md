@@ -99,7 +99,22 @@ Add a CI step that grep's for the same numeric or string claim across surfaces a
 
 Even simpler: a JSON-LD validator that parses both inline `<script>` and any standalone `.jsonld` file and asserts they agree on shared `@id` values.
 
-### 6. Avoid duplicate JSON-LD entities for the same `@id`
+### 6. Release process is a coherence surface
+
+A version number is a fact in the LLMO sense — a claim about your site that an AI can quote. If `package.json` says `1.2.0`, `src/data/version.ts` says `1.1.0`, the changelog page says `v1.2.0` in English but `v1.1.0` in Japanese, and the latest git tag is `v1.1.0`, the site is contradicting itself across five surfaces about the same fact.
+
+This is not theoretical. The framework you are reading shipped exactly that drift in v1.2.0; the [self-audit case study](/case-studies/llmo-framework-self-audit/) records what happened.
+
+The pattern that prevents it:
+
+1. **Generate as many version surfaces as possible from one source**. A bump script that updates `package.json` + a typed data module + the changelog markdown together is mandatory infrastructure for any framework that claims coherence as a value.
+2. **Make the version visible at run time, not just in metadata**. A footer that displays `v{VERSION}` reading from the typed data module turns build-time drift into immediate user-facing feedback. A maintainer running `npm run build` will see the discrepancy on every page.
+3. **Gate the release on cross-checks**. A CI step that reads `package.json` version and grep's for it in `CHANGELOG.md`, `src/data/version.ts`, and the changelog page should exit non-zero if any disagrees.
+4. **Run a read-only AI second-pass review before tagging**. Cost is a few cents in API tokens; benefit is catching the irony before users do.
+
+The release process is the framework's content surface speaking to AI in real time. Treat it as one.
+
+### 7. Avoid duplicate JSON-LD entities for the same `@id`
 
 The most common silent failure: the layout emits `Organization` with one address, and a per-page snippet emits another `Organization` with a different address. Both make it to HTML. The crawler parses both. The trust score for the page drops.
 

@@ -9,9 +9,20 @@
  *
  * Design tweaks, typo fixes, translation backfills do NOT bump the version.
  */
-export const VERSION = '1.2.0';
+export const VERSION = '1.3.0';
 
 export const RELEASES = [
+  {
+    version: '1.3.0',
+    date: '2026-05-08',
+    summary:
+      'The framework records its own coherence failure. New case study captures the v1.1.0→v1.2.0 release where the site shipped five out-of-sync version surfaces. Coherence Signals adds a Release Process sub-section generalizing the lesson.',
+    highlights: [
+      'New: case-studies/llmo-framework-self-audit — when the framework author violates the framework',
+      'Coherence Signals: new sub-section "Release Process is a Coherence Surface"',
+      'Framework principle: "implementing a framework and following it are different cognitive acts"',
+    ],
+  },
   {
     version: '1.2.0',
     date: '2026-05-08',

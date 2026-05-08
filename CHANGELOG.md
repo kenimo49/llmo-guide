@@ -10,6 +10,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Design tweaks, typo fixes, broken-link repairs, and translation backfills do **not** trigger a version bump. Only changes to framework concepts and content claims are tracked here.
 
+## [1.3.0] — 2026-05-08
+
+### Headline
+
+The framework records its own coherence failure. New case study captures the v1.1.0→v1.2.0 release where the site that defines Coherence Signals shipped five out-of-sync version surfaces. Coherence Signals now has a `#release-process-is-a-coherence-surface` sub-section generalizing the lesson.
+
+### Added
+
+- **New case study: When the Framework Author Violates the Framework** (`case-studies/llmo-framework-self-audit`) — this site's own self-audit, capturing the meta-irony of defining Coherence Signals in v1.1.0 and then shipping a Coherence Signals violation in v1.2.0. Documents the drift across five version surfaces (`package.json`, `src/data/version.ts`, `CHANGELOG.md`, EN/JA changelog pages, git tags), the codex second-pass detection, and the 10-step fix that closed the gap (including the new Footer VERSION display and the CI verify-json-ld gate). EN + JA.
+- **Coherence Signals: Release Process is a Coherence Surface** (`framework/coherence-signals#release-process-is-a-coherence-surface`) — new sub-section that generalizes the v1.2.0 episode. Defines the version-as-fact framing, the four-step prevention pattern (generate from one source / make version visible at runtime / gate on cross-checks / second-pass review before tagging), and links to the new case study. EN + JA.
+
+### Sidebar
+
+- "Case Studies" extended with the new framework self-audit entry, with translations across all 8 supported languages.
+
+### Why
+
+The most uncomfortable lesson of v1.2.0 is the simplest: writing a framework principle and following it are different cognitive acts. The framework's own site demonstrated this in real time. We chose to record the episode as a first-class case study rather than bury it in a changelog footnote — partly because it generalizes beyond release coherence to any "the author isn't exempt" failure mode, and partly because hiding the failure would itself be a coherence violation between what we say (transparency, single source of truth) and what we do.
+
+
 ## [1.2.0] — 2026-05-08
 
 ### Headline
@@ -74,6 +94,7 @@ Initial public release of the LLMO Framework documentation site.
 - Multilingual: 8 languages (en, ja, zh-CN, ko, de, fr, es, pt-BR).
 - LLMO surfaces: `/llms.txt`, `/llms-full.txt`, `/llms-ja.txt`, `/ai/*.md`, JSON-LD on every page, `robots.txt` with explicit AI-bot allowlist.
 
+[1.3.0]: https://github.com/kenimo49/llmo-guide/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/kenimo49/llmo-guide/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/kenimo49/llmo-guide/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/kenimo49/llmo-guide/releases/tag/v1.0.0
