@@ -140,6 +140,14 @@ export default defineConfig({
             { label: '3. Retrieval Signals', translations: { ja: '3. 検索シグナル', 'zh-CN': '3. 检索信号', ko: '3. 검색 신호', de: '3. Abrufsignale', fr: '3. Signaux de recherche', es: '3. Señales de recuperación', 'pt-BR': '3. Sinais de recuperação' }, slug: 'framework/retrieval-signals' },
             { label: '4. Authority Signals', translations: { ja: '4. 権威性シグナル', 'zh-CN': '4. 权威信号', ko: '4. 권위 신호', de: '4. Autoritätssignale', fr: "4. Signaux d'autorité", es: '4. Señales de autoridad', 'pt-BR': '4. Sinais de autoridade' }, slug: 'framework/authority-signals' },
             { label: '5. Citation Signals', translations: { ja: '5. 引用シグナル', 'zh-CN': '5. 引用信号', ko: '5. 인용 신호', de: '5. Zitiersignale', fr: '5. Signaux de citation', es: '5. Señales de citación', 'pt-BR': '5. Sinais de citação' }, slug: 'framework/citation-signals' },
+            { label: '6. Coherence Signals', translations: { ja: '6. 整合性シグナル', 'zh-CN': '6. 一致性信号', ko: '6. 일관성 신호', de: '6. Kohärenzsignale', fr: '6. Signaux de cohérence', es: '6. Señales de coherencia', 'pt-BR': '6. Sinais de coerência' }, slug: 'framework/coherence-signals' },
+          ],
+        },
+        {
+          label: 'Auditing',
+          translations: { ja: '監査', 'zh-CN': '审计', ko: '감사', de: 'Audit', fr: 'Audit', es: 'Auditoría', 'pt-BR': 'Auditoria' },
+          items: [
+            { label: 'Two-Pass Review', translations: { ja: '二段レビュー', 'zh-CN': '两段审查', ko: '2단계 검토', de: 'Zwei-Pass-Review', fr: 'Revue en deux passes', es: 'Revisión en dos pases', 'pt-BR': 'Revisão em duas passagens' }, slug: 'guide/llmo-audit-two-pass-review' },
           ],
         },
         {
@@ -147,6 +155,7 @@ export default defineConfig({
           translations: { ja: 'ケーススタディ', 'zh-CN': '案例研究', ko: '사례 연구', de: 'Fallstudien', fr: 'Études de cas', es: 'Casos de estudio', 'pt-BR': 'Estudos de caso' },
           items: [
             { label: 'LLMO in Practice', translations: { ja: 'LLMO実践事例', 'zh-CN': 'LLMO实践案例', ko: 'LLMO 실전 사례', de: 'LLMO in der Praxis', fr: 'LLMO en pratique', es: 'LLMO en la práctica', 'pt-BR': 'LLMO na prática' }, slug: 'case-studies' },
+            { label: 'Self-Audit: 20 Findings', translations: { ja: '自社監査: 20件の発見', 'zh-CN': '自审计：20项发现', ko: '자가 감사: 20건의 발견', de: 'Selbst-Audit: 20 Befunde', fr: 'Auto-audit : 20 constats', es: 'Auto-auditoría: 20 hallazgos', 'pt-BR': 'Auto-auditoria: 20 achados' }, slug: 'case-studies/propel-lab-self-audit' },
           ],
         },
         {
@@ -156,6 +165,13 @@ export default defineConfig({
             { label: 'Papers & References', translations: { ja: '論文・参考文献', 'zh-CN': '论文与参考文献', ko: '논문 및 참고문헌', de: 'Publikationen & Referenzen', fr: 'Articles & Références', es: 'Artículos y referencias', 'pt-BR': 'Artigos e referências' }, slug: 'research/papers' },
             { label: 'GEO Paper Summary', translations: { ja: 'GEO論文の要約', 'zh-CN': 'GEO论文摘要', ko: 'GEO 논문 요약', de: 'GEO-Paper Zusammenfassung', fr: 'Résumé de l\'article GEO', es: 'Resumen del artículo GEO', 'pt-BR': 'Resumo do artigo GEO' }, slug: 'research/geo-paper-summary' },
             { label: 'Microsoft Guidelines', translations: { ja: 'Microsoftのガイドライン', 'zh-CN': '微软指南', ko: 'Microsoft 가이드라인', de: 'Microsoft-Richtlinien', fr: 'Directives Microsoft', es: 'Directrices de Microsoft', 'pt-BR': 'Diretrizes da Microsoft' }, slug: 'research/microsoft-guidelines' },
+          ],
+        },
+        {
+          label: 'About',
+          translations: { ja: 'このサイトについて', 'zh-CN': '关于', ko: '소개', de: 'Über', fr: 'À propos', es: 'Acerca de', 'pt-BR': 'Sobre' },
+          items: [
+            { label: 'Changelog', translations: { ja: '変更履歴', 'zh-CN': '更新日志', ko: '변경 이력', de: 'Änderungsprotokoll', fr: 'Journal des modifications', es: 'Registro de cambios', 'pt-BR': 'Registro de alterações' }, slug: 'changelog' },
           ],
         },
       ],

@@ -1,12 +1,12 @@
 ---
 title: "The LLMO Framework: A Standard for AI Discoverability"
-description: "The LLMO Framework defines 5 core components for AI discoverability: Knowledge Clarity, Structural Formatting, Retrieval Signals, Authority Signals, and Citation Signals. Maximum score: 15 points."
-pubDate: 2026-03-09
+description: "The LLMO Framework defines 6 core components for AI discoverability: Knowledge Clarity, Structural Formatting, Retrieval Signals, Authority Signals, Citation Signals, and Coherence Signals. Maximum score: 18 points."
+pubDate: 2026-05-08
 ---
 
-The LLMO Framework defines five core components that determine whether AI systems can discover, understand, and accurately cite your content.
+The LLMO Framework defines six core components that determine whether AI systems can discover, understand, and accurately cite your content.
 
-## The Five Components
+## The Six Components
 
 ### 1. Knowledge Clarity
 Is your content clear enough for AI to understand and summarize accurately?
@@ -20,9 +20,9 @@ Is your content clear enough for AI to understand and summarize accurately?
 Is your content structured for machine consumption?
 
 - Use semantic HTML and Markdown
-- Implement JSON-LD structured data
+- Implement JSON-LD structured data, scoped per page
 - Provide llms.txt for AI-specific content
-- Organize content hierarchically
+- Verify JSON-LD actually emits in the served HTML
 
 ### 3. Retrieval Signals
 Can AI systems find your content when they need it?
@@ -48,6 +48,14 @@ Does your content provide references that AI can verify?
 - Provide version information
 - Reference academic papers and official documentation
 
+### 6. Coherence Signals
+Does the same fact tell the same story across every surface AI reads?
+
+- Single source of truth for every numeric or factual claim
+- AI-only surfaces (`llms.txt`, `/ai/*.md`) generated from the same data as HTML
+- Canonical host and trailing-slash policy enforced everywhere
+- No duplicate JSON-LD entities for the same `@id`
+
 ## Scoring
 
 Each component can be scored on a scale of 0-3:
@@ -59,7 +67,7 @@ Each component can be scored on a scale of 0-3:
 | 2 | Good | Solid implementation with room for improvement |
 | 3 | Excellent | Best-practice implementation |
 
-**Maximum score: 15 points** (5 components × 3 points each)
+**Maximum score: 18 points** (6 components × 3 points each)
 
 ## Self-Assessment Checklist
 
@@ -72,8 +80,8 @@ Score your own site against each component. Treat anything you can confidently c
 
 ### 2. Structural Formatting (max 3)
 - [ ] Pages use semantic H1 → H2 → H3 hierarchy with no heading skips
-- [ ] Every meaningful page emits JSON-LD (Article / TechArticle / FAQPage / Product / Organization, as appropriate)
-- [ ] Comparative content uses tables, not prose lists
+- [ ] Every meaningful page emits page-relevant JSON-LD; site-wide layout emits only `Organization` / `WebSite` / `Person`
+- [ ] Build pipeline verifies JSON-LD actually parses in `dist/` HTML
 
 ### 3. Retrieval Signals (max 3)
 - [ ] `/llms.txt` exists at the site root and lists key pages
@@ -90,13 +98,18 @@ Score your own site against each component. Treat anything you can confidently c
 - [ ] Each page exposes both `datePublished` and `dateModified` (in JSON-LD or visible meta)
 - [ ] Comparison content references industry standards (W3C, RFC, ISO, schema.org) by name and link
 
+### 6. Coherence Signals (max 3)
+- [ ] Each numeric / factual claim has a single canonical source file referenced everywhere else
+- [ ] AI surfaces (`llms.txt`, `/ai/*.md`, URL.md endpoints) are generated from the same data as the HTML
+- [ ] CI checks for cross-file drift on key metrics; no duplicate JSON-LD entity for the same `@id`
+
 ### Scoring guide
 
 | Total | Band |
 |-------|------|
-| 13–15 | Production-grade — actively cited by AI systems |
-| 9–12 | Good — visible to AI but inconsistent |
-| 5–8 | Partial — significant gaps in retrieval or authority |
-| 0–4 | Invisible — start with `/llms.txt`, robots.txt, and JSON-LD |
+| 16–18 | Production-grade — actively cited by AI systems |
+| 11–15 | Good — visible to AI but inconsistent |
+| 6–10 | Partial — significant gaps in retrieval, authority, or coherence |
+| 0–5 | Invisible — start with `/llms.txt`, robots.txt, and JSON-LD |
 
-> Want a higher score? Each component page (Knowledge Clarity, Structural Formatting, Retrieval Signals, Authority Signals, Citation Signals) lists the specific implementations that move the score from 1 → 2 → 3.
+> Want a higher score? Each component page (Knowledge Clarity, Structural Formatting, Retrieval Signals, Authority Signals, Citation Signals, Coherence Signals) lists the specific implementations that move the score from 1 → 2 → 3.

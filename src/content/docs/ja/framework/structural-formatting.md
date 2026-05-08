@@ -32,6 +32,47 @@ AIシステムは人間のようにページを「読む」わけではない。
 ### 5. 比較データにはテーブルを使う
 比較、機能、仕様を提示する際は、散文的な説明ではなく適切なHTML/Markdownテーブルを使う。
 
+### 6. JSON-LDエンティティをページ主題に絞る
+
+すべてのエンティティをすべてのページに注入してはいけない。よくあるLLMO実装では、`Organization`、`Person`、`Service[]`、`Book[]`、`MusicGroup`、`FAQPage` を共通レイアウトに入れてしまう。結果、404ページやプライバシーページ、すべてのブログ記事に同じペイロードが乗る。AIシステムはこれを意味的ノイズとして読む — エンティティが、それと無関係なページに広告されてしまう。
+
+クリーンなパターンは**2階層スコープ**である:
+
+| 階層 | エンティティ | 配置 |
+|------|----------|------|
+| サイト全体 | `Organization`、`WebSite`、`Person`（創業者・著者） | 共通レイアウトの `<head>` |
+| ページ別 | `Service[]`、`Book[]`、`MusicGroup`、`FAQPage`、`ItemList`、`BreadcrumbList`、`Article` | そのエンティティが主題となるページ |
+
+サービスとFAQを掲載するトップページには `Service[]` + `FAQPage` を出す。書籍カタログページには `Book[]`。音楽プロジェクトページには `MusicGroup`。404ページとプライバシーページにはサイト全体階層のみを出す。
+
+安定した `@id` 値（`https://example.com/#org`、`#founder`、`#website`）を使うことで、ページ別エンティティはサイト全体エンティティを再宣言せずに参照できる。
+
+### 7. JSON-LDが実際に出力されているか検証する
+
+よくある silent failure: ページに `<script slot="head" type="application/ld+json">` を書いたが、レイアウトに対応する `<slot name="head" />` 宣言が無い。フレームワークは警告なしにスクリプトを破棄する。書いた構造化データはユーザーに届かない — そして、それに気づけない。
+
+出力検証をビルドの一部にする:
+
+```bash
+# dist 出力の各ページのJSON-LDブロック数を数える
+for p in dist/*/index.html dist/index.html; do
+  n=$(grep -oE '<script type="application/ld\+json">' "$p" | wc -l)
+  echo "$p: $n block(s)"
+done
+
+# 各ブロックがパース可能か検証
+python3 -c "
+import re, json, sys
+with open('dist/index.html') as f: html = f.read()
+for m in re.finditer(r'<script type=\"application/ld\+json\">(.+?)</script>', html, re.DOTALL):
+    try: json.loads(m.group(1))
+    except: sys.exit('INVALID JSON-LD: ' + m.group(1)[:200])
+print('OK')
+"
+```
+
+より強力な保証としては、代表的なページに対して [Schema.org Validator](https://validator.schema.org/) と Google の [Rich Results Test](https://search.google.com/test/rich-results) を実行する。CIからAPI経由で呼び出せる。
+
 ## 例
 
 **--- 非構造化:**
@@ -52,3 +93,7 @@ AIシステムは人間のようにページを「読む」わけではない。
 - [ ] ドメインルートにllms.txtファイルが存在する
 - [ ] コンテンツが適切にリストやテーブルを使っている
 - [ ] URL構造がコンテンツの階層を反映している
+- [ ] サイト全体レイアウトは `Organization` / `WebSite` / `Person` のみを出力。ページ別エンティティはそのページにスコープしている
+- [ ] 各エンティティがページ間参照のための安定した `@id` を持つ
+- [ ] ビルドパイプラインが各ページで JSON-LD ブロックの出力とパース可能性を検証している（silent drop なし）
+- [ ] 代表的なページが Google Rich Results Test と Schema.org Validator をパスする
