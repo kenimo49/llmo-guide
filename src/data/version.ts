@@ -9,9 +9,20 @@
  *
  * Design tweaks, typo fixes, translation backfills do NOT bump the version.
  */
-export const VERSION = '1.3.0';
+export const VERSION = '1.3.1';
 
 export const RELEASES = [
+  {
+    version: '1.3.1',
+    date: '2026-05-08',
+    summary:
+      'The case study about closing five coherence surfaces failed at six. Removed hardcoded v1.0 CSS badge in the page header — surviving four releases unnoticed. Footer is now the single canonical version display.',
+    highlights: [
+      'Fixed: hardcoded "v1.0" CSS badge in src/styles/custom.css (caught by reader within an hour of v1.3.0)',
+      'Self-audit case study: new "Postscript: The Sixth Surface" section in EN + JA',
+      'Lesson: enumerate the visual layer, not just the data layer, when listing coherence surfaces',
+    ],
+  },
   {
     version: '1.3.0',
     date: '2026-05-08',

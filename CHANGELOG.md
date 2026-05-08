@@ -10,6 +10,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Design tweaks, typo fixes, broken-link repairs, and translation backfills do **not** trigger a version bump. Only changes to framework concepts and content claims are tracked here.
 
+## [1.3.1] — 2026-05-08
+
+### Headline
+
+The case study about closing five coherence surfaces failed at six. ken read the v1.3.0 page bragging about the fix and pointed out the site header still said "v1.0". One CSS pseudo-element, hardcoded since the first commit, surviving four releases unnoticed.
+
+### Fixed
+
+- **Removed `.site-title::after { content: 'v1.0' }` from `src/styles/custom.css`** — the badge in the page header was hardcoded and never updated through v1.0 → v1.1 → v1.2 → v1.3. The Footer (added in v1.2.0) is now the single canonical display surface for the version.
+- **`case-studies/llmo-framework-self-audit`** (EN+JA) — added a *Postscript: The Sixth Surface* section. The case study originally claimed five surfaces of drift; the postscript records the sixth one (CSS visual layer) found within an hour of publication, and generalizes the lesson: when enumerating coherence surfaces, include the visual layer, not just the data layer. Anything that renders text to the user is a surface.
+
+### Why
+
+The pattern is becoming a literary device. v1.1.0 introduced Coherence Signals; v1.2.0 violated them on `llms.txt`; v1.3.0 documented the violation as a case study; v1.3.1 documents the case study's own incompleteness. Every fix surfaces the next surface. The lesson is not that these failures are exceptional — it's that they are normal, and that the discipline is to record them publicly so the next maintainer (or AI agent, or curious reader) can find what we missed.
+
+
 ## [1.3.0] — 2026-05-08
 
 ### Headline
@@ -94,6 +110,7 @@ Initial public release of the LLMO Framework documentation site.
 - Multilingual: 8 languages (en, ja, zh-CN, ko, de, fr, es, pt-BR).
 - LLMO surfaces: `/llms.txt`, `/llms-full.txt`, `/llms-ja.txt`, `/ai/*.md`, JSON-LD on every page, `robots.txt` with explicit AI-bot allowlist.
 
+[1.3.1]: https://github.com/kenimo49/llmo-guide/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/kenimo49/llmo-guide/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/kenimo49/llmo-guide/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/kenimo49/llmo-guide/compare/v1.0.0...v1.1.0

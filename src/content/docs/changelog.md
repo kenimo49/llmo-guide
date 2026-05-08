@@ -18,6 +18,19 @@ The current version, the `package.json` `version` field, and the git tag `vX.Y.Z
 
 The full machine-readable history lives in [CHANGELOG.md on GitHub](https://github.com/kenimo49/llmo-guide/blob/main/CHANGELOG.md). Below is the human-readable summary.
 
+## v1.3.1 — 2026-05-08
+
+**Headline**: The case study that bragged about closing five coherence surfaces failed at six. ken found the sixth in the time it took to read the v1.3.0 page.
+
+### Fixed
+
+- **`src/styles/custom.css`** — removed `.site-title::after { content: 'v1.0' }`. A version badge was hardcoded into the header CSS at the project's first commit and never updated. v1.0 → v1.1 → v1.2 → v1.3 — four releases survived without anyone noticing the visual layer was lying. The Footer (added in v1.2.0) reads from `src/data/version.ts` and is now the single canonical display surface.
+- **[Self-Audit case study](/case-studies/llmo-framework-self-audit/)** — added a *Postscript: The Sixth Surface* section in EN + JA. The case study originally enumerated five surfaces of drift; the postscript records the sixth (CSS visual layer), found within an hour of publication, and generalizes the lesson: when you enumerate "every place this fact lives," include the visual layer, not just the data layer.
+
+### Why
+
+Every release of this framework reveals what the previous release didn't see. v1.1.0 introduced Coherence Signals; v1.2.0 violated them on `llms.txt`; v1.3.0 documented the violation as a case study; v1.3.1 documents the case study's own incompleteness. The pattern is the framework working — the only way to be sure you've found every coherence surface is to publish your enumeration and let other readers find what you missed.
+
 ## v1.3.0 — 2026-05-08
 
 **Headline**: The framework records its own coherence failure as a first-class case study.

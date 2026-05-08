@@ -121,11 +121,27 @@ Practical steps in order of leverage:
 5. **Run a read-only AI second-pass review on every minor or higher release.** Cost: cents-to-low-dollars in API tokens. Benefit: catching the irony before it goes live.
 6. **Accept that being the framework author does not exempt you from the framework.** Build the gates anyway.
 
+## Postscript (v1.3.1): The Sixth Surface
+
+This case study, as originally published with v1.3.0, claimed five surfaces of version drift: `package.json`, `src/data/version.ts`, `CHANGELOG.md`, EN/JA changelog pages, and git tags. Within an hour of publishing, ken — reading the live site — pointed out that **the header still said `v1.0`**.
+
+The header was a CSS pseudo-element (`.site-title::after { content: 'v1.0' }`) hardcoded into `src/styles/custom.css`. It had been there since the project's first commit. v1.0 → v1.1 → v1.2 → v1.3 — four releases, four versions, none of them touched the CSS. The Footer was added in v1.2.0 to read from `src/data/version.ts`, becoming the canonical version display. The CSS badge in the header was never noticed; it lived in the visual layer, not in the version-management mental model.
+
+So the actual count was six surfaces, not five. Five were synchronized. One was forgotten — and lived in plain sight on every page.
+
+The fix in v1.3.1 was to remove the CSS pseudo-element entirely. The Footer is now the single source of visible version information. A comment in `custom.css` documents the removal so the next maintainer doesn't recreate the badge in another form.
+
+The lesson generalizes:
+
+> **Surfaces of the same fact are not always where you expect them to be.** A version number can live in JSON, in TypeScript, in Markdown, in a git tag, in a YAML frontmatter — and in a CSS `content:` property. When you enumerate "every place this fact lives," include the visual layer, not just the data layer. Anything that renders text to the user is a surface.
+
+ken caught the sixth surface in the time it took to read the v1.3.0 page that bragged about closing five. That is not a failure of the framework — it is the framework working. The only way to be sure you have found every coherence surface is to publish your enumeration and let other readers find what you missed.
+
 ## What's Next
 
 The v1.3.0 work that introduces this case study also adds a new sub-section to [Coherence Signals](/framework/coherence-signals/#release-process-is-a-coherence-surface) called *"Release Process is a Coherence Surface"*, generalizing the lesson.
 
-The framework is not finished. Every release reveals something the previous release didn't see.
+The framework is not finished. Every release reveals something the previous release didn't see — including, sometimes, an hour after the previous release shipped.
 
 ## Related
 

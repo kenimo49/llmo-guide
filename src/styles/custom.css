@@ -88,12 +88,9 @@
   border-color: var(--sl-color-accent) !important;
 }
 
-/* Version badge in site title */
-.site-title::after {
-  content: 'v1.0';
-  font-size: 0.6em;
-  color: var(--sl-color-gray-3);
-  margin-left: 0.5em;
-  font-weight: 400;
-  vertical-align: super;
-}
+/* Version badge previously here was hardcoded to 'v1.0' in CSS. Removed in
+   v1.3.1: the Footer (src/components/Footer.astro) renders v{VERSION} from
+   src/data/version.ts as the single canonical source for the displayed
+   version. Two badges with different sources is exactly the Coherence
+   Signals violation this framework documents — see
+   /case-studies/llmo-framework-self-audit/ for the full episode. */
