@@ -20,7 +20,7 @@ The full machine-readable history lives in [CHANGELOG.md on GitHub](https://gith
 
 ## v1.2.0 — 2026-05-08
 
-**Headline**: Two field-tested patterns added — `Identity-as-Code` (one Person/Organization, one `@id`, cited everywhere) and `Citation Preferred` (named canonical entry points in llms.txt).
+**Headline**: Two field-tested patterns added — `Identity-as-Code` and `Citation Preferred` — plus codex-second-pass cleanup that brings the site itself into Coherence Signals compliance.
 
 ### Expanded
 
@@ -30,9 +30,22 @@ The full machine-readable history lives in [CHANGELOG.md on GitHub](https://gith
   - *Generate llms.txt at Build Time*: drop manual maintenance; build script reads the content collection and emits `llms.txt`, `llms-full.txt`, and `/ai/publications.md` from one source of truth.
 - **Checklist additions** for both: `@id` strategy and llms.txt drift prevention.
 
+### Fixed (Coherence cleanup)
+
+- **`public/llms.txt` (8 languages)** — was stuck at "5 components / 15 points" while the rest of the site advertised the new 6th component. The site that defines Coherence Signals violated Coherence Signals on its own AI-readable surface. Updated to 6 components / 18 points; added Coherence Signals, Two-Pass Review, Self-Audit case study, Changelog entries.
+- **`/ai/*.md` (8 languages)** — same 5→6 component update. Canonical host normalized (`www.propel-lab.co.jp` → `propel-lab.co.jp`); Kindle 4→14 books / Qiita 39,000+→80,000+ aligned with profile data.
+- **CI gate**: new `scripts/verify-json-ld.mjs` runs in GitHub Actions before deploy. Verifies every `<script type="application/ld+json">` block parses, every page emits the site-wide `Organization`/`WebSite`/`Person`, and the 404 page does not carry article-shaped schema.
+- **`framework/coherence-signals`** — added boundary clarification with Structural Formatting at the top of the article ("Structural asks 'is each surface well-formed?'; Coherence asks 'do surfaces agree?'").
+- **`framework/overview`** — Citation Signals checklist scope corrected to "content pages" (site root and error pages exempt).
+- **`case-studies/propel-lab-self-audit`** — each finding now labeled with its source site (kaoriq / propel-lab / both); description and title clarify two-site scope.
+- **`scripts/bump-version.sh`** — SUMMARY now passed via env vars (immune to `'` and `"` in the input); idempotency guard refuses to overwrite an existing version section or git tag; python heredocs are quoted.
+- **`src/components/Head.astro`** — multi-language fallback detection: when a non-EN locale URL serves the English fallback content, JSON-LD `inLanguage` and OG `og:locale` are set to `en` to match the actual body language. The 404 page no longer carries `TechArticle`.
+
 ### Why
 
 Three sites (mypcrig.com, legacydram.com, kenimoto.dev) implementing the framework hit the same two failure modes within a single review session: identity fragmentation across languages and pages, and llms.txt entries that quietly drifted out of sync with the actual content. Both patterns now have explicit framework guidance instead of being folded into checklists.
+
+A codex second-pass review on the v1.1.0 release surfaced the most ironic miss possible: the site that defines Coherence Signals had `llms.txt` stuck at "5 components / 15 points" while the rest of the site advertised the new 6th component. That's fixed.
 
 ## v1.1.0 — 2026-05-08
 

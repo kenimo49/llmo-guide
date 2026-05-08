@@ -9,9 +9,21 @@
  *
  * Design tweaks, typo fixes, translation backfills do NOT bump the version.
  */
-export const VERSION = '1.1.0';
+export const VERSION = '1.2.0';
 
 export const RELEASES = [
+  {
+    version: '1.2.0',
+    date: '2026-05-08',
+    summary:
+      'Added two field-tested patterns — Identity-as-Code (one Person/Organization, one @id, cited everywhere) and Citation Preferred (named canonical entry points in llms.txt). Plus codex-second-pass cleanup: llms.txt now reflects the v1.1.0 framework, multi-language fallback signals are coherent, CI gates JSON-LD output verification.',
+    highlights: [
+      'Authority Signals: Identity-as-Code pattern + 3 checklist items',
+      'Retrieval Signals: Citation Preferred + build-time llms.txt + 3 checklist items',
+      'CI: scripts/verify-json-ld.mjs gate on JSON-LD parse and entity scope',
+      'Coherence cleanup: llms.txt (8 langs) updated to 6 components / 18 points',
+    ],
+  },
   {
     version: '1.1.0',
     date: '2026-05-08',

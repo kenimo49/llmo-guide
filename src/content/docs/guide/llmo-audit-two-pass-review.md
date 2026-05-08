@@ -4,6 +4,30 @@ description: "Why one reviewer misses things, and how a self-review followed by 
 pubDate: 2026-05-08
 ---
 
+## Quickstart: Three Commands
+
+If you already understand the pattern and just want the commands:
+
+```bash
+# 1. Save an audit prompt (you'll edit this for your site)
+cat > /tmp/audit-prompt.md <<'EOF'
+Review this Astro site for SEO/LLMO/structure. Look at both src/ and dist/.
+Output P0/P1/P2 findings with file paths. Diagnostic only — do not edit.
+EOF
+
+# 2. Run codex in read-only sandbox, output to a file (note </dev/null)
+codex exec -C /path/to/repo -s read-only --skip-git-repo-check \
+  -o /tmp/codex-review.md \
+  "$(cat /tmp/audit-prompt.md)" </dev/null
+
+# 3. Triage
+less /tmp/codex-review.md
+```
+
+`</dev/null` is required — without it, `codex exec` invoked from a non-interactive shell hangs waiting for stdin.
+
+The rest of this article explains why and how.
+
 ## The Problem with One-Pass Reviews
 
 You've shipped your LLMO implementation. JSON-LD is in place. `llms.txt` exists. Schema.org entities are validated. You've reviewed your own work and it looks complete.

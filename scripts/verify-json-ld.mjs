@@ -26,12 +26,24 @@ const SITEWIDE_REQUIRED = ['Organization', 'WebSite', 'Person'];
 // "an article about X", which is wrong for an error page.
 const FORBIDDEN_ON_404 = ['TechArticle', 'Article', 'BlogPosting', 'NewsArticle'];
 
+// Files that are technically .html but aren't real content pages.
+// Search Console verification files, ad-hoc redirects, etc.
+const SKIP_FILES = new Set(['google']);
+
+function shouldSkip(file) {
+  const base = file.split('/').pop();
+  for (const prefix of SKIP_FILES) {
+    if (base.startsWith(prefix)) return true;
+  }
+  return false;
+}
+
 function* walk(dir) {
   for (const entry of readdirSync(dir)) {
     const full = join(dir, entry);
     const st = statSync(full);
     if (st.isDirectory()) yield* walk(full);
-    else if (entry.endsWith('.html')) yield full;
+    else if (entry.endsWith('.html') && !shouldSkip(full)) yield full;
   }
 }
 

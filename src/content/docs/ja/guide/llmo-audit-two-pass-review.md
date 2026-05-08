@@ -4,6 +4,30 @@ description: "1人のレビュアーは見落とす — 自己レビューの後
 pubDate: 2026-05-08
 ---
 
+## クイックスタート: 3コマンド
+
+すでにパターンを理解していて、コマンドだけ欲しい場合:
+
+```bash
+# 1. 監査プロンプトを保存（サイト固有に編集する）
+cat > /tmp/audit-prompt.md <<'EOF'
+この Astro サイトを SEO/LLMO/構成の観点でレビュー。src/ と dist/ の両方を見る。
+P0/P1/P2 のファイルパス付き発見を出力。診断のみ — ファイル編集はしない。
+EOF
+
+# 2. codex を read-only サンドボックスで実行、出力をファイルへ（</dev/null 必須）
+codex exec -C /path/to/repo -s read-only --skip-git-repo-check \
+  -o /tmp/codex-review.md \
+  "$(cat /tmp/audit-prompt.md)" </dev/null
+
+# 3. トリアージ
+less /tmp/codex-review.md
+```
+
+`</dev/null` は必須 — これが無いと、非対話シェルから起動した `codex exec` が stdin 待ちでハングする。
+
+以下の本文では、その「なぜ」と「どう」を説明する。
+
 ## 一段レビューの限界
 
 LLMO実装をリリースした。JSON-LDを配置した。`llms.txt` を作った。Schema.orgエンティティはバリデータを通った。自分でレビューもした。一通り完成して見える。
