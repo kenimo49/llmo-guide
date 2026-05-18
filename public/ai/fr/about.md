@@ -22,6 +22,7 @@ Le LLMO est le framework général qui englobe l'AEO (Answer Engine Optimization
 3. **Signaux de recherche** — llms.txt, répertoire /ai/, robots.txt, sitemap
 4. **Signaux d'autorité** — Cohérence multi-plateforme, publications, expertise vérifiable
 5. **Signaux de citation** — Sources primaires, statistiques, dates, références
+6. **Signaux de cohérence** — Le même fait raconte la même histoire en HTML, JSON-LD, Markdown et llms.txt (source unique de vérité)
 
 Chaque composant noté de 0 à 3. Score maximum : 18 points.
 

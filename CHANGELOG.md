@@ -10,6 +10,36 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Design tweaks, typo fixes, broken-link repairs, and translation backfills do **not** trigger a version bump. Only changes to framework concepts and content claims are tracked here.
 
+## [1.3.3] — 2026-05-18
+
+### Headline
+
+The v1.3.2 changelog acknowledged "known coherence drift" in two surfaces — `public/llms.txt` (8 languages) still showed `v1.1.0`, and `public/ai/about.md` still listed 5 components instead of 6. The cleanup also surfaced a deeper drift: `public/ai/framework.md` in **all 8 languages** had only 5 component sections in the body, with titles split across languages (some saying "5", some saying "6" but with a 5-item body). This release closes all three surfaces in the same hour the drift was documented.
+
+### Fixed (coherence repair across 25 surfaces)
+
+- **`public/llms.txt` (8 languages)** — version label updated from `v1.1.0` to `v1.3.2` in the framework heading; root `llms.txt` Changelog line also updated. The "(6 Components, vX.Y.Z)" pattern is now coherent with the runtime VERSION constant.
+- **`public/ai/about.md` (8 languages)** — added a 6th list item for **Coherence Signals** with per-language naming pulled from each language's existing `framework/coherence-signals.md` translation. EN, KO previously said "5 components" in the heading too — both updated to 6. Max-score values updated from 15 to 18 where stale (EN, PT, ZH, ES, DE, KO).
+- **`public/ai/framework.md` (8 languages)** — added a full `## 6. Coherence Signals` section (Goal + 5 bullet points) before each language's "Implementation Checklist", mirroring the structure of components 1-5. Titles updated from "5 Core Components" → "6 Core Components" in EN, JA, ZH, DE, KO. PT/ES/FR had correct titles but missing bodies, now also closed.
+
+### Why
+
+The drift pattern is now textbook. v1.1.0 added Coherence Signals to the framework but only updated the human-facing pages, leaving the AI-only surfaces (`/ai/*.md`, `/llms.txt`) stuck at the pre-v1.1.0 5-component world. This is exactly the failure mode Coherence Signals warns against: when one surface drifts from another, the AI sees the older version and cites the older claim. The v1.3.2 release noticed two stale surfaces and called them out in its own changelog; expanding the audit revealed the third (`framework.md`) was even worse. The lesson, added to next maintenance cycle: when a release adds a framework component, the `/ai/` and `/llms.txt` surfaces are part of "every place this fact lives" and must be regenerated, not hand-updated.
+
+### Coherence narrative continuity
+
+| Release | What it fixed | What it missed |
+|---|---|---|
+| v1.1.0 | Added Coherence Signals | Didn't update /ai/ surfaces |
+| v1.2.0 | Fixed /llms.txt 5→6 components | Left version label stuck |
+| v1.3.0 | Documented the v1.1.0→v1.2.0 drift as a case study | — |
+| v1.3.1 | Fixed CSS visual layer | Left /ai/ + /llms.txt drift |
+| v1.3.2 | Question-form H2 restructure + schema | **Documented** the drift, didn't fix it |
+| v1.3.3 | **Fixed** the 25-surface drift documented in v1.3.2 | (next surface, TBD) |
+
+[1.3.3]: https://github.com/kenimo49/llmo-guide/compare/v1.3.2...v1.3.3
+
+
 ## [1.3.2] — 2026-05-18
 
 ### Headline

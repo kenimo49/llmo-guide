@@ -9,9 +9,21 @@
  *
  * Design tweaks, typo fixes, translation backfills do NOT bump the version.
  */
-export const VERSION = '1.3.2';
+export const VERSION = '1.3.3';
 
 export const RELEASES = [
+  {
+    version: '1.3.3',
+    date: '2026-05-18',
+    summary:
+      'Closed the coherence drift documented in v1.3.2 in the same hour it was documented. 25 AI-only surfaces (llms.txt × 8 + about.md × 8 + framework.md × 8) now agree with the human-facing pages on 6 components and v1.3.2 as current version.',
+    highlights: [
+      'public/llms.txt (8 langs): version label v1.1.0 → v1.3.2',
+      'public/ai/about.md (8 langs): added 6th component (Coherence Signals) per-language, max score 15 → 18 where stale',
+      'public/ai/framework.md (8 langs): full ## 6. Coherence Signals section added, titles "5 Core" → "6 Core" where stale',
+      'Discovery: framework.md drift was worse than about.md — all 8 langs had 5-item bodies, some with mismatched titles claiming 6',
+    ],
+  },
   {
     version: '1.3.2',
     date: '2026-05-18',

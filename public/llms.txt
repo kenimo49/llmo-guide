@@ -15,7 +15,7 @@ LLMO is the umbrella framework that includes AEO (Answer Engine Optimization) an
 - Adding statistics improves AI citation rate by +115.1% (GEO Paper, KDD 2024)
 - Web mentions are 3x more predictive of AI visibility than backlinks (Ahrefs, 75K brands)
 
-## The LLMO Framework (6 Components, v1.1.0)
+## The LLMO Framework (6 Components, v1.3.2)
 
 1. **Knowledge Clarity** — Clear, factual, unambiguous content that AI can understand and summarize accurately.
 2. **Structural Formatting** — Machine-readable structure with page-scoped JSON-LD; verify it actually emits.
@@ -26,7 +26,7 @@ LLMO is the umbrella framework that includes AEO (Answer Engine Optimization) an
 
 Each component scored 0-3. Maximum score: 18 points.
 
-Changelog: /changelog/ (current: v1.1.0, 2026-05-08)
+Changelog: /changelog/ (current: v1.3.2, 2026-05-18)
 
 ## Author
 

@@ -56,6 +56,16 @@ El framework LLMO proporciona un enfoque estructurado para hacer que tu contenid
 - Escribir guías definitivas sobre temas específicos
 - Publicar artículos de investigación (arXiv, conferencias académicas)
 
+## 6. Señales de coherencia
+
+**Objetivo**: Asegurar que el mismo hecho cuente la misma historia en cada superficie que la IA lee.
+
+- Generar superficies exclusivas de IA (llms.txt, /ai/*.md) a partir de los mismos datos que el HTML
+- Mantener una única fuente canónica para cada afirmación numérica o factual
+- Usar un solo @id para entidades citadas en múltiples bloques JSON-LD
+- Aplicar la política de host canónico y trailing-slash en todas partes
+- Agregar gates de CI que detecten drift entre archivos antes del release
+
 ## Lista de verificación de implementación
 
 - [ ] llms.txt en la raíz del sitio

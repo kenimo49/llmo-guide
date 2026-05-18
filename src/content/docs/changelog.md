@@ -18,6 +18,24 @@ The current version, the `package.json` `version` field, and the git tag `vX.Y.Z
 
 The full machine-readable history lives in [CHANGELOG.md on GitHub](https://github.com/kenimo49/llmo-guide/blob/main/CHANGELOG.md). Below is the human-readable summary.
 
+## v1.3.3 — 2026-05-18
+
+**Headline**: The v1.3.2 changelog acknowledged "known coherence drift" in two AI-only surfaces. Auditing the rest of `/ai/` and `/llms.txt` revealed a third, even worse one: `framework.md` in **all 8 languages** had only 5 component sections, with titles split across languages. This release closes all three surfaces in the same hour the drift was documented.
+
+### Fixed (25 surfaces)
+
+- **`public/llms.txt` (8 languages)** — version label updated from `v1.1.0` to `v1.3.2`. Root `llms.txt` Changelog line also updated.
+- **`public/ai/about.md` (8 languages)** — added 6th list item for **Coherence Signals** (per-language naming pulled from each language's `framework/coherence-signals.md` translation). Heading "5 components" → "6" where stale (EN, KO). Max score 15 → 18 where stale (EN, PT, ZH, ES, DE, KO).
+- **`public/ai/framework.md` (8 languages)** — added full `## 6. Coherence Signals` section (Goal + 5 bullet points) before each Implementation Checklist. Titles "5 Core Components" → "6 Core Components" where stale (EN, JA, ZH, DE, KO).
+
+### Why this matters as a release, not a typo fix
+
+The drift was load-bearing: AI systems crawling `/ai/about.md` or `/llms.txt` were reading a 5-component framework, while human readers on the same site saw a 6-component framework. Coherence Signals is exactly the component that defines this failure mode. Adding it to a release and then leaving it out of the AI-only surfaces — for **four subsequent releases** — is the most embarrassing class of violation the framework can produce. Counting this as PATCH (not "typo / no-bump") is the only way to keep the framework's own audit trail honest.
+
+### Coherence narrative continuity
+
+The framework now has a six-release lineage of one drift surface revealing the next: v1.1.0 added Coherence Signals → v1.2.0 fixed /llms.txt components but left version label → v1.3.0 case-studied the v1.1.0→v1.2.0 drift → v1.3.1 fixed CSS visual layer → v1.3.2 documented the /ai/ drift → v1.3.3 closed it. Every release surfaces what the previous one didn't see. The discipline is publishing the enumeration so the next reader (or AI) finds what we missed.
+
 ## v1.3.2 — 2026-05-18
 
 **Headline**: The framework site that teaches AI discoverability was not being cited. Three measurement rounds in a row showed citation rate = 0 while LLMO concepts were 75% mentioned. The H2s named topics, not questions, so the AI extract layer had no anchor sentence to lift.

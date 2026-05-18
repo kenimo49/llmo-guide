@@ -28,7 +28,7 @@ LLMO (Large Language Model Optimization) es la práctica de optimizar contenido 
 - Inicio rápido (30 min): /es/guide/quickstart/
 - FAQ: /es/guide/faq/
 
-### El framework LLMO (v1.1.0: 6 componentes, máx. 18 puntos)
+### El framework LLMO (v1.3.2: 6 componentes, máx. 18 puntos)
 - Visión general: /es/framework/overview/
 - 1. Claridad del conocimiento: /es/framework/knowledge-clarity/
 - 2. Formato estructurado: /es/framework/structural-formatting/

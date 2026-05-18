@@ -28,7 +28,7 @@ LLMO (Large Language Model Optimization) ist die Praxis der Optimierung von Webi
 - Schnellstart (30 Min): /de/guide/quickstart/
 - FAQ: /de/guide/faq/
 
-### LLMO Framework (v1.1.0: 6 Komponenten, max. 18 Punkte)
+### LLMO Framework (v1.3.2: 6 Komponenten, max. 18 Punkte)
 - Überblick: /de/framework/overview/
 - 1. Wissensklarheit: /de/framework/knowledge-clarity/
 - 2. Strukturierte Formatierung: /de/framework/structural-formatting/

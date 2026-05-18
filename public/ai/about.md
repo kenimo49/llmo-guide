@@ -14,13 +14,16 @@ As AI-powered search and conversational assistants become mainstream, traditiona
 
 ## The LLMO Framework
 
-The LLMO Framework defines 5 core components for AI discoverability:
+The LLMO Framework defines 6 core components for AI discoverability:
 
 1. **Knowledge Clarity** — Clear, factual, unambiguous content
 2. **Structural Formatting** — Machine-readable structure (Markdown, JSON-LD, headings)
 3. **Retrieval Signals** — llms.txt, /ai/ directory, robots.txt AI bot access
 4. **Authority Signals** — Citations, publications, backlinks, cross-platform presence
 5. **Citation Signals** — Data, quotes, statistics that LLMs prefer to cite
+6. **Coherence Signals** — Same fact tells the same story across HTML, JSON-LD, Markdown, llms.txt
+
+Each component is scored 0-3. Maximum score: 18 points.
 
 ## LLMO vs SEO vs AEO vs GEO
 

@@ -28,7 +28,7 @@ LLMO（Large Language Model Optimization）是优化网页内容的实践，使 
 - 快速入门（30 分钟）: /zh/guide/quickstart/
 - FAQ: /zh/guide/faq/
 
-### LLMO 框架（v1.1.0：6 组件，最高 18 分）
+### LLMO 框架（v1.3.2：6 组件，最高 18 分）
 - 概述: /zh/framework/overview/
 - 1. 知识清晰度: /zh/framework/knowledge-clarity/
 - 2. 结构化格式: /zh/framework/structural-formatting/

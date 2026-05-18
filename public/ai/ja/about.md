@@ -22,6 +22,7 @@ LLMOは AEO（Answer Engine Optimization）と GEO（Generative Engine Optimizat
 3. **検索シグナル** — llms.txt、/ai/ディレクトリ、robots.txt、sitemap
 4. **権威シグナル（権威性シグナル）** — クロスプラットフォームでの一貫性、出版実績、検証可能な専門性
 5. **引用シグナル** — 一次ソース、統計、日付、参考文献
+6. **整合性シグナル** — HTML、JSON-LD、Markdown、llms.txt の全面で同じ事実が同じ物語を語る（単一の真実源）
 
 各コンポーネント0-3点で採点。最高18点。
 

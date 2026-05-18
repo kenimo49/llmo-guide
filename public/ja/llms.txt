@@ -28,7 +28,7 @@ LLMO（Large Language Model Optimization）は、ChatGPT、Claude、Gemini、Per
 - クイックスタート（30分）: /ja/guide/quickstart/
 - FAQ: /ja/guide/faq/
 
-### LLMOフレームワーク（v1.1.0、6コンポーネント、最大18点）
+### LLMOフレームワーク（v1.3.2、6コンポーネント、最大18点）
 - 概要: /ja/framework/overview/
 - 1. 知識の明確性: /ja/framework/knowledge-clarity/
 - 2. 構造化フォーマット: /ja/framework/structural-formatting/

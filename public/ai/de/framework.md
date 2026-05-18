@@ -1,4 +1,4 @@
-# LLMO Framework — 5 Kernkomponenten
+# LLMO Framework — 6 Kernkomponenten
 
 ## Überblick
 
@@ -55,6 +55,16 @@ Das LLMO-Framework bietet einen strukturierten Ansatz, um deine Inhalte für KI-
 - Vergleichstabellen und Frameworks erstellen
 - Definitive Leitfäden zu spezifischen Themen schreiben
 - Forschungsarbeiten veröffentlichen (arXiv, akademische Konferenzen)
+
+## 6. Kohärenzsignale
+
+**Ziel**: Sicherstellen, dass dieselbe Tatsache auf jeder Oberfläche, die die KI liest, dieselbe Geschichte erzählt.
+
+- KI-exklusive Oberflächen (llms.txt, /ai/*.md) aus denselben Daten wie das HTML generieren
+- Für jede numerische oder faktische Behauptung eine einzige kanonische Quelle pflegen
+- Für Entitäten, die in mehreren JSON-LD-Blöcken zitiert werden, eine einzige @id verwenden
+- Canonical Host und Trailing-Slash-Policy überall durchsetzen
+- CI-Gates ergänzen, die vor dem Release Cross-File-Drift erkennen
 
 ## Implementierungs-Checkliste
 

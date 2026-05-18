@@ -1,4 +1,4 @@
-# LLMO Framework — 5 Core Components
+# LLMO Framework — 6 Core Components
 
 ## Overview
 
@@ -57,6 +57,16 @@ The LLMO Framework provides a structured approach to making your content discove
 - Create comparison tables and frameworks
 - Write definitive guides on specific topics
 - Publish research papers (arXiv, academic venues)
+
+## 6. Coherence Signals
+
+**Goal**: Ensure the same fact tells the same story across every surface AI reads.
+
+- Generate AI-only surfaces (llms.txt, /ai/*.md) from the same data as HTML
+- Maintain a single canonical source for every numeric or factual claim
+- Use one @id for entities cited across multiple JSON-LD blocks
+- Enforce canonical host and trailing-slash policy everywhere
+- Add CI gates that detect cross-file drift before release
 
 ## Implementation Checklist
 

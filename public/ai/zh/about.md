@@ -15,15 +15,16 @@ LLMO 是涵盖 AEO（Answer Engine Optimization）和 GEO（Generative Engine Op
 - 添加统计数据可使引用率提升 +115.1%（GEO 论文，KDD 2024）
 - Web 提及对 AI 可见性的预测能力是反向链接的 3 倍（Ahrefs，75,000 品牌）
 
-## LLMO 框架（5 个组件）
+## LLMO 框架（6 个组件）
 
 1. **知识清晰度** — AI 能准确理解和总结的清晰、事实、明确的内容
 2. **结构化格式** — 机器可读结构：Markdown、JSON-LD、语义化 HTML、llms.txt
 3. **检索信号** — llms.txt、/ai/ 目录、robots.txt、sitemap
 4. **权威信号** — 跨平台一致性、出版物、可验证的专业知识
 5. **引用信号** — 一手来源、统计数据、日期、参考资料
+6. **一致性信号** — 同一事实在 HTML、JSON-LD、Markdown、llms.txt 中讲述同样的故事（单一真实来源）
 
-每个组件 0-3 分。最高 15 分。
+每个组件 0-3 分。最高 18 分。
 
 ## 作者
 

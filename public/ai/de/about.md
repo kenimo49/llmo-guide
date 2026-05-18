@@ -22,8 +22,9 @@ LLMO ist das übergreifende Framework, das AEO (Answer Engine Optimization) und 
 3. **Abrufsignale** — llms.txt, /ai/-Verzeichnis, robots.txt, Sitemap
 4. **Autoritätssignale** — Plattformübergreifende Konsistenz, Publikationen, verifizierbare Expertise
 5. **Zitiersignale** — Primärquellen, Statistiken, Daten, Referenzen
+6. **Kohärenzsignale** — Dieselbe Tatsache erzählt dieselbe Geschichte in HTML, JSON-LD, Markdown und llms.txt (eine einzige Quelle der Wahrheit)
 
-Jede Komponente 0-3 Punkte. Maximum: 15 Punkte.
+Jede Komponente 0-3 Punkte. Maximum: 18 Punkte.
 
 ## Autor
 
