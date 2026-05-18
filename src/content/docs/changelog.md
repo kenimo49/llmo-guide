@@ -18,6 +18,29 @@ The current version, the `package.json` `version` field, and the git tag `vX.Y.Z
 
 The full machine-readable history lives in [CHANGELOG.md on GitHub](https://github.com/kenimo49/llmo-guide/blob/main/CHANGELOG.md). Below is the human-readable summary.
 
+## v1.3.2 — 2026-05-18
+
+**Headline**: The framework site that teaches AI discoverability was not being cited. Three measurement rounds in a row showed citation rate = 0 while LLMO concepts were 75% mentioned. The H2s named topics, not questions, so the AI extract layer had no anchor sentence to lift.
+
+### Changed
+
+- **[What is LLMO?](/guide/what-is-llmo/)** — replaced topic-style H2s with the exact question phrasing used in the existing FAQPage schema. Each section now opens with a one-sentence definition before tables or lists. Lead paragraph promoted to bold for quote extraction.
+- **[LLMO vs SEO vs AEO vs GEO](/guide/llmo-vs-seo-aeo-geo/)** — restructured into three question-form H2s (`What is the difference between LLMO, SEO, AEO, and GEO?`, `How are LLMO, AEO, and GEO related?`, `Which one should I optimize for?`), each opening with a direct definition.
+- **[The LLMO Framework: Overview](/framework/overview/)** — opening paragraph rewritten as a single bold definition listing all six components inline so an AI can extract the full component list from one sentence.
+
+### New structured data (not new pages)
+
+- **`framework/overview`** — attached a `DefinedTermSet` with six `DefinedTerm` entries (one per component). Each is `@id`-pinned to the page anchor so external sites can cite individual components by URL fragment.
+- **`guide/llmo-vs-seo-aeo-geo`** — added `FAQPage` with three Q&A pairs mirroring the new H2s. Previously only `what-is-llmo` carried this layer.
+
+### Why
+
+This is an applied test of the framework on itself. The hypothesis: H2 phrasing matters more than content quality for AI extraction. If citation rate moves from 0% over the next 2-3 weeks of observation across Claude / Perplexity / OpenAI without any content change beyond H2 restructuring + schema, the LLMO Framework gets to point at its own site as evidence. If it doesn't, the framework needs to admit the H2 axis was overweighted in our checklist. The result will be recorded in a future release regardless of which way it goes.
+
+### Known coherence drift (not addressed)
+
+`public/llms.txt` still says `v1.1.0` in its heading; `public/ai/about.md` still lists 5 components (current is 6). These are pre-existing drift, separate from this release, flagged for the next maintenance pass.
+
 ## v1.3.1 — 2026-05-08
 
 **Headline**: The case study that bragged about closing five coherence surfaces failed at six. ken found the sixth in the time it took to read the v1.3.0 page.

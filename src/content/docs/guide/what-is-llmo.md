@@ -39,19 +39,28 @@ head:
       }
 ---
 
-**LLMO (Large Language Model Optimization)** is the practice of optimizing web content so that Large Language Models can accurately discover, understand, and cite it in their responses.
+**LLMO (Large Language Model Optimization) is the practice of optimizing web content so that Large Language Models can accurately discover, understand, and cite it in their responses.**
 
-## The Problem
+## What is LLMO?
+
+LLMO is a content discipline aimed at AI systems — ChatGPT, Claude, Gemini, and Perplexity — rather than search engine crawlers. Where SEO optimizes for ranking, LLMO optimizes for *being cited verbatim* in an AI-generated answer.
+
+The shortest possible definition: **LLMO is SEO for AI answers instead of search results.**
+
+## Why does LLMO matter?
 
 When users ask AI assistants questions about your business, products, or expertise, the AI may:
+
 - Not mention you at all
 - Provide outdated information
 - Attribute your work to someone else
 - Give inaccurate descriptions
 
-LLMO solves this by making your content **AI-discoverable**.
+LLMO solves this by making your content **AI-discoverable** — present in the retrieval layer, structured for extraction, and consistent enough across surfaces that an LLM can quote it without hedging.
 
-## LLMO vs Traditional SEO
+## How is LLMO different from SEO?
+
+SEO targets search engine crawlers and ranking algorithms. LLMO targets LLM training data and runtime retrieval. SEO measures success in clicks; LLMO measures success in citation accuracy.
 
 | Aspect | SEO | LLMO |
 |--------|-----|------|
@@ -61,11 +70,12 @@ LLMO solves this by making your content **AI-discoverable**.
 | Signals | Backlinks, keywords | Clarity, structure, authority |
 | Measurement | Rankings, CTR | AI citation accuracy |
 
-## How LLMO Relates to AEO and GEO
+## How is LLMO related to AEO and GEO?
 
-LLMO is an umbrella concept that includes:
+LLMO is an umbrella term that includes both AEO and GEO and extends beyond them to cover all LLM interactions, not just search:
 
-- **AEO (Answer Engine Optimization)**: Focuses on being selected as the answer in AI-powered search. Coined by Jason Barnard (2018).
-- **GEO (Generative Engine Optimization)**: Academic framework for optimizing visibility in generative search engines. Introduced by researchers at Princeton University (2023).
+- **AEO (Answer Engine Optimization)** — being selected as the direct answer in AI-powered search. Coined by Jason Barnard (2018).
+- **GEO (Generative Engine Optimization)** — academic framework for optimizing visibility in generative search engines. Introduced by researchers at Princeton University (KDD 2024).
+- **LLMO** — covers AEO + GEO + direct chat queries + RAG applications + autonomous AI agents browsing the web.
 
-LLMO encompasses both approaches while providing a broader, implementation-focused framework for all LLM interactions — not just search engines.
+In one line: **GEO and AEO are subsets of LLMO; LLMO is the broader implementation-focused standard.**

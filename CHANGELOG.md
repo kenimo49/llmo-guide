@@ -10,6 +10,35 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Design tweaks, typo fixes, broken-link repairs, and translation backfills do **not** trigger a version bump. Only changes to framework concepts and content claims are tracked here.
 
+## [1.3.2] — 2026-05-18
+
+### Headline
+
+The framework site teaches AI discoverability but its own pages were not being cited. Three measurement rounds in a row showed citation rate = 0 across Claude queries even when LLMO concepts were 75% mentioned. The H2s named topics, not questions, so AI extract layers had no anchor sentence to lift. This release rewrites the three highest-leverage pages to lead with question-form headings and attaches schema.org structured data so the entity boundaries are unambiguous.
+
+### Changed
+
+- **`guide/what-is-llmo`** — replaced topic-style H2s (`The Problem`, `LLMO vs Traditional SEO`, `How LLMO Relates to AEO and GEO`) with the exact question phrasing used in the existing FAQPage schema (`Why does LLMO matter?`, `How is LLMO different from SEO?`, `How is LLMO related to AEO and GEO?`). Each section now opens with a one-sentence definition before tables or lists. Lead paragraph promoted to bold for quote extraction.
+- **`guide/llmo-vs-seo-aeo-geo`** — restructured into three question-form H2s (`What is the difference between LLMO, SEO, AEO, and GEO?`, `How are LLMO, AEO, and GEO related?`, `Which one should I optimize for?`), each opening with a direct definition. Added the chronological lineage as a bulleted ladder rather than only a code-block ASCII timeline.
+- **`framework/overview`** — opening paragraph rewritten as a single bold definition listing all six components inline (so an AI can extract the full component list from one sentence). H2 `The Six Components` rephrased to `What are the six components of the LLMO Framework?`.
+
+### Added (structured data, not new pages)
+
+- **`framework/overview`** — attached a `DefinedTermSet` with six `DefinedTerm` entries (one per component), each with `@id`, name, description, and `inDefinedTermSet` back-reference. The set is `@id`-pinned to the page anchor so external sites can cite individual components by URL fragment.
+- **`guide/llmo-vs-seo-aeo-geo`** — added a `FAQPage` with three Q&A pairs mirroring the new H2s. Previously only `what-is-llmo` had FAQPage; the comparison page is structurally a definition question and was missing this layer.
+
+### Why
+
+This is an applied test of the framework on itself. The hypothesis: H2 phrasing matters more than content quality for AI extraction. If citation rate moves from 0% over the next 2-3 weeks of observation (Claude / Perplexity / OpenAI) without any content change beyond H2 restructuring + schema, the LLMO Framework gets to point at its own site as evidence. If it doesn't move, the framework needs to admit the H2 axis was overweighted in our checklist. Issue tracker: kenimo49/iris-hub#113.
+
+### Known coherence drift (not addressed in this release)
+
+- `public/llms.txt` still says `v1.1.0` in the "(6 Components, v1.1.0)" heading (current is v1.3.2).
+- `public/ai/about.md` still lists 5 components (current framework is 6). These are pre-existing drift, separate from this release, flagged for the next maintenance pass.
+
+[1.3.2]: https://github.com/kenimo49/llmo-guide/compare/v1.3.1...v1.3.2
+
+
 ## [1.3.1] — 2026-05-08
 
 ### Headline

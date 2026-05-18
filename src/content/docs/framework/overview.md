@@ -2,11 +2,67 @@
 title: "The LLMO Framework: A Standard for AI Discoverability"
 description: "The LLMO Framework defines 6 core components for AI discoverability: Knowledge Clarity, Structural Formatting, Retrieval Signals, Authority Signals, Citation Signals, and Coherence Signals. Maximum score: 18 points."
 pubDate: 2026-05-08
+head:
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: |
+      {
+        "@context": "https://schema.org",
+        "@type": "DefinedTermSet",
+        "@id": "https://llmoframework.com/framework/overview/#components",
+        "name": "LLMO Framework Components",
+        "description": "Six core components of the LLMO Framework, scored 0-3 each, for a maximum site score of 18 points.",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Knowledge Clarity",
+            "description": "Clear, factual, unambiguous content that AI can understand and summarize accurately. Measured by plain language use, defined terms, structured facts, and absence of unexplained jargon.",
+            "inDefinedTermSet": "https://llmoframework.com/framework/overview/#components",
+            "url": "https://llmoframework.com/framework/knowledge-clarity/"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Structural Formatting",
+            "description": "Machine-readable structure including semantic HTML, Markdown, page-scoped JSON-LD, and the llms.txt standard, with build-time verification that JSON-LD actually emits in served HTML.",
+            "inDefinedTermSet": "https://llmoframework.com/framework/overview/#components",
+            "url": "https://llmoframework.com/framework/structural-formatting/"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Retrieval Signals",
+            "description": "Signals that help AI systems find content: crawlability via robots.txt and sitemap.xml, machine-readable endpoints under /ai/, and adoption of the llms.txt standard.",
+            "inDefinedTermSet": "https://llmoframework.com/framework/overview/#components",
+            "url": "https://llmoframework.com/framework/retrieval-signals/"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Authority Signals",
+            "description": "Signals that demonstrate expertise and trustworthiness: verifiable author attribution, cross-platform identity (sameAs links), and evidence-based claims with citations.",
+            "inDefinedTermSet": "https://llmoframework.com/framework/overview/#components",
+            "url": "https://llmoframework.com/framework/authority-signals/"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Citation Signals",
+            "description": "References that AI systems can verify: primary sources, publication and modification dates, version information, and links to academic papers or official documentation.",
+            "inDefinedTermSet": "https://llmoframework.com/framework/overview/#components",
+            "url": "https://llmoframework.com/framework/citation-signals/"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Coherence Signals",
+            "description": "Same fact tells the same story across every surface an AI reads: HTML, JSON-LD, Markdown, llms.txt. Single source of truth for numeric and factual claims, with CI gates against cross-file drift.",
+            "inDefinedTermSet": "https://llmoframework.com/framework/overview/#components",
+            "url": "https://llmoframework.com/framework/coherence-signals/"
+          }
+        ]
+      }
 ---
 
-The LLMO Framework defines six core components that determine whether AI systems can discover, understand, and accurately cite your content.
+**The LLMO Framework defines six core components — Knowledge Clarity, Structural Formatting, Retrieval Signals, Authority Signals, Citation Signals, and Coherence Signals — that together determine whether AI systems can discover, understand, and accurately cite your content.** Each component is scored 0-3, for a maximum site score of 18 points.
 
-## The Six Components
+## What are the six components of the LLMO Framework?
 
 ### 1. Knowledge Clarity
 Is your content clear enough for AI to understand and summarize accurately?

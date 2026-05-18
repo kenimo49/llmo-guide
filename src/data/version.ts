@@ -9,9 +9,21 @@
  *
  * Design tweaks, typo fixes, translation backfills do NOT bump the version.
  */
-export const VERSION = '1.3.1';
+export const VERSION = '1.3.2';
 
 export const RELEASES = [
+  {
+    version: '1.3.2',
+    date: '2026-05-18',
+    summary:
+      'Three measurement rounds showed citation rate = 0 while LLMO concepts were 75% mentioned. Rewrote the three highest-leverage pages to lead with question-form H2s and attached DefinedTermSet / FAQPage schema so the entity boundaries are unambiguous.',
+    highlights: [
+      'guide/what-is-llmo: H2s rewritten to match the FAQPage schema questions verbatim; each section opens with a one-sentence definition',
+      'guide/llmo-vs-seo-aeo-geo: three new question-form H2s + FAQPage schema (was missing this layer)',
+      'framework/overview: DefinedTermSet with 6 @id-pinned DefinedTerm entries so external sites can cite individual components by URL fragment',
+      'Hypothesis test: does H2 phrasing alone move citation rate over 2-3 weeks of observation across Claude / Perplexity / OpenAI?',
+    ],
+  },
   {
     version: '1.3.1',
     date: '2026-05-08',
