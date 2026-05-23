@@ -54,7 +54,7 @@ Grounding Stability: 70
 
 ### 상태
 
-지표 정의 책정 중. Draft v0.1 공개는 Phase 1 (시기 미정).
+지표 정의 작성 중. Draft v0.1 공개는 Phase 1 (시기 미정).
 
 ---
 

@@ -28,7 +28,7 @@ O espaço LLMO / AEO / GEO cresce rápido, mas três peças fundamentais estão 
 - **Sem vocabulário ou escopo compartilhado** — cada fornecedor publica definições próprias e o campo está fragmentado
 - **Pouco dado experimental aberto** — ferramentas comerciais de SEO dominam e a camada de pesquisa é fina
 
-Esta Initiative foi construída para preencher essas três lacunas. O objetivo é cumprir, para LLMO, o papel que o Lighthouse cumpre para SEO: publicar a metodologia, entregar as ferramentas e deixar a comunidade construir em cima.
+Esta Initiative foi construída para preencher essas três lacunas. O objetivo é cumprir, para LLMO, o papel que o Lighthouse cumpre para SEO: publicar a metodologia, entregar as ferramentas e deixar a comunidade construir a partir disso.
 
 ## Princípios de pesquisa
 
@@ -55,7 +55,7 @@ Publicações principais:
 
 ## Plano de Phases
 
-A Initiative amadurece em phases. Cada phase é pré-requisito da próxima.
+A Initiative amadurece em fases. Cada Phase é pré-requisito da próxima.
 
 | Phase | Escopo | Status |
 |-------|--------|--------|

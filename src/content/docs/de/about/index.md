@@ -45,7 +45,7 @@ Diese Initiative wurde gebaut, um diese drei Lücken zu schließen. Das Ziel ist
 
 Hauptveröffentlichungen:
 
-- Bücher: [Vollständige Liste (kenimoto.dev/books)](https://kenimoto.dev/books/)
+- Bücher: [Vollständige Liste (kenimoto.dev/books, auf Englisch)](https://kenimoto.dev/books/)
   - LLMO-Reihe (Kindle / Zenn Book, auf Japanisch, Englisch, Portugiesisch und Spanisch)
   - Harness-Engineering-Reihe (Kindle / Zenn Book)
 - Web: [kenimoto.dev](https://kenimoto.dev) / [propel-lab.co.jp](https://propel-lab.co.jp)

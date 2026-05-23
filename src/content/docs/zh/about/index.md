@@ -45,7 +45,7 @@ LLMO / AEO / GEO 领域正在快速扩张，但有三块基础尚不到位：
 
 主要公开物：
 
-- 书籍：[完整书单 (kenimoto.dev/books)](https://kenimoto.dev/books/)
+- 书籍：[完整书单 (kenimoto.dev/books，英文)](https://kenimoto.dev/books/)
   - LLMO 系列（Kindle / Zenn Book，日语、英语、葡语、西语）
   - Harness engineering 系列（Kindle / Zenn Book）
 - Web：[kenimoto.dev](https://kenimoto.dev) / [propel-lab.co.jp](https://propel-lab.co.jp)
