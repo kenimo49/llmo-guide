@@ -45,8 +45,12 @@ LLMO / AEO / GEO 領域は急速に拡大しているが、以下の前提が欠
 
 主な公開物:
 
-- 書籍: LLMO・ハーネスエンジニアリング関連の Zenn Book と Kindle 出版
+- 書籍: [全書籍リスト (kenimoto.dev/ja/books)](https://kenimoto.dev/ja/books/)
+  - LLMO シリーズ（Kindle / Zenn Book、日本語・英語・ポルトガル語・スペイン語）
+  - ハーネスエンジニアリングシリーズ（Kindle / Zenn Book）
 - Web: [kenimoto.dev](https://kenimoto.dev) / [propel-lab.co.jp](https://propel-lab.co.jp)
+- Amazon Author Page: [Ken Imoto on Amazon](https://www.amazon.co.jp/stores/author/B0GQNPRCGF)
+- Zenn: [zenn.dev/kenimo49](https://zenn.dev/kenimo49)
 - OSS: [github.com/kenimo49](https://github.com/kenimo49)
 
 ## Phase ロードマップ
