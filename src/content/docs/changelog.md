@@ -18,6 +18,32 @@ The current version, the `package.json` `version` field, and the git tag `vX.Y.Z
 
 The full machine-readable history lives in [CHANGELOG.md on GitHub](https://github.com/kenimo49/llmo-guide/blob/main/CHANGELOG.md). Below is the human-readable summary.
 
+## v1.4.0 — 2026-05-24
+
+**Headline**: llmoframework.com is now positioned as the **Open LLMO Research Initiative**, with the LLMO Framework as its first published reference artifact. Three top-level Initiative pages ship across all 8 locales, the sidebar puts the Initiative before the Framework, and the Footer carries the Founder attribution site-wide.
+
+### New (24 pages across 8 locales)
+
+- **[About the Initiative](/about/)** — Mission, research principles (Reproducibility-first / Draft-over-Standard / OSS-first / Solo-honest), Founder credentials, and the Phase 0–3 roadmap.
+- **[Research Areas](/research-areas/)** — the 5 focus domains: AI Citation Analysis, Grounding Visibility, LLM Retrieval Optimization, AI-native Documentation, Agent-oriented Information Architecture. Each domain ships with scope, key questions, and a Phase 1 deliverable.
+- **[Experimental Projects](/experimental-projects/)** — the three Core Projects: **LLMOFramework Score** (Draft v0.1 indicators), **Benchmark** (planning), **Compatible** (Phase 3 roadmap only, deliberately deferred so certification follows ecosystem adoption rather than precede it).
+
+### Repositioned
+
+- Hero tagline reframed from "open standard" to "open research initiative on AI retrieval, grounding visibility, and LLM-native web architecture" (EN + JA `index.mdx`).
+- Site description and WebSite JSON-LD description: same reframing applied across all locales via `astro.config.mjs`.
+- `Footer.astro` now carries "Open LLMO Research Initiative — Founded and maintained by Ken Imoto" above the version line, applied site-wide.
+
+### Schema coherence
+
+- `SoftwareApplication` (the Framework) gained `isPartOf` → `WebSite#website`, so the Initiative ↔ Framework relationship is structural in the JSON-LD graph, not only descriptive in prose.
+- "Why LLMO" sections (EN + JA): "implementation-focused standard" → "implementation-focused reference" so the page-level language matches the new framing.
+
+### Sidebar
+
+- New top-level section "Open LLMO Research Initiative" with About / Research Areas / Experimental Projects, translated to all 8 locales. The section label is kept as the English brand name across locales; the items inside have localized labels.
+- Placed before "Getting Started" so the Initiative reads as the parent of the Framework, not a subsection of it.
+
 ## v1.3.3 — 2026-05-18
 
 **Headline**: The v1.3.2 changelog acknowledged "known coherence drift" in two AI-only surfaces. Auditing the rest of `/ai/` and `/llms.txt` revealed a third, even worse one: `framework.md` in **all 8 languages** had only 5 component sections, with titles split across languages. This release closes all three surfaces in the same hour the drift was documented.

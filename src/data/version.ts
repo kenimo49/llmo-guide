@@ -9,9 +9,22 @@
  *
  * Design tweaks, typo fixes, translation backfills do NOT bump the version.
  */
-export const VERSION = '1.3.3';
+export const VERSION = '1.4.0';
 
 export const RELEASES = [
+  {
+    version: '1.4.0',
+    date: '2026-05-24',
+    summary:
+      'llmoframework.com is now positioned as the Open LLMO Research Initiative, with the LLMO Framework as its first published reference artifact. Three new Initiative pages (About / Research Areas / Experimental Projects) translated to all 8 locales, sidebar restructured Initiative-first, Footer Founder attribution added site-wide.',
+    highlights: [
+      'New Initiative section: about/ research-areas/ experimental-projects/ added across 8 locales (24 new pages)',
+      'Reframed hero + JSON-LD: "open standard" → "Open LLMO Research Initiative" with Founder attribution in Footer site-wide',
+      'Sidebar: new top-level "Open LLMO Research Initiative" section placed before the Framework',
+      'SoftwareApplication isPartOf WebSite: makes Framework ↔ Initiative relationship structural in schema, not only descriptive',
+      'avoid-ai-writing-pt-detect v7 added §7.2.5 build-on-top calque family from codex review during the 6-locale translation sweep',
+    ],
+  },
   {
     version: '1.3.3',
     date: '2026-05-18',

@@ -10,6 +10,50 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Design tweaks, typo fixes, broken-link repairs, and translation backfills do **not** trigger a version bump. Only changes to framework concepts and content claims are tracked here.
 
+## [1.4.0] — 2026-05-24
+
+### Headline
+
+llmoframework.com is now positioned as the **Open LLMO Research Initiative**, with the LLMO Framework as its first published reference artifact. The release adds three top-level Initiative pages (About, Research Areas, Experimental Projects) translated to all 8 locales, restructures the sidebar so the Initiative comes before the Framework, and makes the Founder attribution explicit in the Footer and site metadata.
+
+### Added (24 new pages across 8 locales)
+
+- `about/` — Initiative Mission, research principles (Reproducibility-first / Draft-over-Standard / OSS-first / Solo-honest), Founder credentials, Phase 0–3 roadmap
+- `research-areas/` — the 5 research areas (AI Citation Analysis / Grounding Visibility / LLM Retrieval Optimization / AI-native Documentation / Agent-oriented Information Architecture), each with scope, key questions, and Phase 1 deliverable
+- `experimental-projects/` — the three Core Projects: LLMOFramework Score (Draft v0.1 indicators), Benchmark (planning), Compatible (Phase 3 roadmap only)
+
+### Changed (framing reposition)
+
+- Hero tagline (EN + JA): "open standard" → "open research initiative on AI retrieval, grounding visibility, and LLM-native web architecture"
+- Site description and WebSite JSON-LD description: same reframing applied across all locales via `astro.config.mjs`
+- "Why LLMO" sections (EN + JA `index.mdx`): "implementation-focused standard" → "implementation-focused reference"
+- `Footer.astro`: added "Open LLMO Research Initiative — Founded and maintained by Ken Imoto" attribution block above the version line, applied site-wide
+
+### Coherence
+
+- `SoftwareApplication` JSON-LD (EN + JA `index.mdx`): added `isPartOf` → `WebSite#website` so the Framework ↔ Initiative relationship is structural rather than description-only
+- `/ja/index.mdx`: "実装重視のスタンダードを提供する" → "実装重視のリファレンスを提示する" (Phase 0 framing consistency)
+- Locale `about/index.md` book links annotated as English fallback where no localized `kenimoto.dev/books` page exists (DE / FR / KO / ZH)
+
+### Sidebar
+
+- New top-level section "Open LLMO Research Initiative" with About / Research Areas / Experimental Projects, translated to all 8 locales (section label kept as English brand name)
+- Placed before "Getting Started" so the Initiative reads as the parent of the Framework
+
+### Translation QA
+
+- `avoid-ai-writing-en-detect`: ✅ PASS on all 3 EN pages (Index ≈ 0)
+- `avoid-ai-writing-es-detect`: ✅ PASS on all 3 ES pages
+- `avoid-ai-writing-pt-detect`: 4× "roadmap" → "plano" per §8.5 + "construir em cima" → "construir a partir disso" per new §7.2.5 build-on-top calque family (skill bumped to v7 in sns-operations)
+- `avoid-ai-writing-ko / de / fr / zh`: grep PASS (no Tier 1/2 hits, em-dash all in list/table contexts excluded by §5.1.1)
+
+### i18n
+
+- All 8 locales now serve real pages for the 3 new slugs, resolving the hreflang-to-404 risk that would have appeared if JA-only pages had been launched
+
+[1.4.0]: https://github.com/kenimo49/llmo-guide/compare/v1.3.3...v1.4.0
+
+
 ## [1.3.3] — 2026-05-18
 
 ### Headline
