@@ -41,7 +41,7 @@ LLMO / AEO / GEO 領域は急速に拡大しているが、以下の前提が欠
 
 ## Founder
 
-[Ken Imoto](https://kenimoto.dev)。LLMO とハーネスエンジニアリングに関する複数書籍を Zenn / Amazon Kindle で公開。Propel-Lab Inc. 代表。harness-ops（事業運営自律化フレームワーク）と llmoframework.com の実装・運営担当。
+[Ken Imoto](https://kenimoto.dev)。LLMO とハーネスエンジニアリングに関する複数書籍を Zenn / Amazon Kindle で公開。Propel-Lab Inc. 代表。複数の自社フレームワークと llmoframework.com の実装・運営を担当する。
 
 主な公開物:
 
