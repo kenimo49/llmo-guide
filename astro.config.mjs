@@ -121,6 +121,14 @@ export default defineConfig({
       ],
       sidebar: [
         {
+          label: 'Open LLMO Research Initiative',
+          items: [
+            { label: 'About the Initiative', translations: { ja: 'このイニシアティブについて', 'zh-CN': '关于本 Initiative', ko: '본 Initiative 소개', de: 'Über die Initiative', fr: "À propos de l'Initiative", es: 'Acerca de la Initiative', 'pt-BR': 'Sobre a Initiative' }, slug: 'about' },
+            { label: 'Research Areas', translations: { ja: 'リサーチ領域', 'zh-CN': '研究领域', ko: '연구 영역', de: 'Forschungsbereiche', fr: 'Domaines de recherche', es: 'Áreas de investigación', 'pt-BR': 'Áreas de pesquisa' }, slug: 'research-areas' },
+            { label: 'Experimental Projects', translations: { ja: '実験プロジェクト', 'zh-CN': '实验性项目', ko: '실험 프로젝트', de: 'Experimentelle Projekte', fr: 'Projets expérimentaux', es: 'Proyectos experimentales', 'pt-BR': 'Projetos experimentais' }, slug: 'experimental-projects' },
+          ],
+        },
+        {
           label: 'Getting Started',
           translations: { ja: 'はじめに', 'zh-CN': '入门指南', ko: '시작하기', de: 'Erste Schritte', fr: 'Pour commencer', es: 'Primeros pasos', 'pt-BR': 'Primeiros passos' },
           items: [
