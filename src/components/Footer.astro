@@ -14,19 +14,52 @@ const label = localeKey === 'ja' ? '変更履歴' : 'Changelog';
 
 <Default><slot /></Default>
 
-<div class="version-footer">
-  <span class="version-label">LLMO Framework</span>
-  <a href={changelogHref} class="version-link">v{VERSION} · {label}</a>
+<div class="initiative-footer">
+  <div class="initiative-line">
+    <span class="initiative-label">Open LLMO Research Initiative</span>
+  </div>
+  <div class="founder-line">
+    Founded and maintained by <a href="https://kenimoto.dev" class="founder-link">Ken Imoto</a>
+  </div>
+  <div class="version-line">
+    <span class="version-label">LLMO Framework</span>
+    <a href={changelogHref} class="version-link">v{VERSION} · {label}</a>
+  </div>
 </div>
 
 <style>
-  .version-footer {
+  .initiative-footer {
     margin: 2rem auto 1.5rem;
     padding: 0 var(--sl-content-pad-x);
     max-width: var(--sl-content-width);
     text-align: center;
     font-size: var(--sl-text-xs);
     color: var(--sl-color-text-accent);
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  .initiative-label {
+    font-family: var(--sl-font-mono);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .founder-line {
+    font-size: var(--sl-text-xs);
+    opacity: 0.85;
+  }
+  .founder-link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dashed currentColor;
+  }
+  .founder-link:hover {
+    opacity: 1;
+    border-bottom-style: solid;
+  }
+  .version-line {
+    margin-top: 0.25rem;
     opacity: 0.7;
   }
   .version-label {

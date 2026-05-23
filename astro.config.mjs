@@ -7,7 +7,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'LLMO Framework',
-      description: 'The definitive guide to LLM Optimization — making your content discoverable by AI.',
+      description: 'Open LLMO Research Initiative — researching AI retrieval, grounding visibility, and LLM-native web architecture. Founded and maintained by Ken Imoto.',
       defaultLocale: 'root',
       // URL slugs intentionally use ISO-639-1 (e.g. /pt/) while hreflang uses
       // the more specific BCP-47 region tag (e.g. pt-BR). Starlight emits
@@ -45,7 +45,7 @@ export default defineConfig({
                 name: 'LLMO Framework',
                 alternateName: 'LLMO',
                 url: 'https://llmoframework.com',
-                description: 'The definitive guide to LLM Optimization — making your content discoverable by AI.',
+                description: 'Open LLMO Research Initiative — researching AI retrieval, grounding visibility, and LLM-native web architecture. Founded and maintained by Ken Imoto.',
                 inLanguage: ['en', 'ja', 'zh-CN', 'ko', 'de', 'fr', 'es', 'pt-BR'],
                 license: 'https://opensource.org/licenses/MIT',
                 publisher: { '@id': 'https://propel-lab.co.jp/#organization' },
