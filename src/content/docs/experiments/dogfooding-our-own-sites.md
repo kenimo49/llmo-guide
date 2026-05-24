@@ -18,7 +18,7 @@ The headline result: **our own corporate site scored 29 / 100**, lower than any 
 - Score: weighted average of 5 static checks — `llms-txt` (weight 20), `robots-ai` (15), `canonical` (15), `jsonld` (20), `meta` (15)
 - Score bands: 85+ well-grounded · 65–84 needs work · 40–64 poor · 0–39 critical
 
-All checks are pure HTTP fetches and HTML parsing. No AI-citation simulation in v0.1 — the score measures the **substrate** that an AI crawler can actually see.
+All checks are pure HTTP fetches and HTML parsing. In v0.1 there is no AI-citation simulation: the score measures the **substrate** that an AI crawler can actually see.
 
 ## Results
 
@@ -46,7 +46,7 @@ The root of `propel-lab.com` is **one line of HTML**. A `window.location.href` r
 
 This is fine for a human in Chrome. It is invisible to every AI crawler we know of. None of GPTBot, ClaudeBot, CCBot, Google-Extended, PerplexityBot, or Applebot-Extended execute JavaScript on fetch. They see the literal HTML above and stop.
 
-So at the root URL — the one most AI systems will probe first — the checker found:
+So at the root URL (the one most AI systems probe first), the checker found:
 
 - Missing `<title>`
 - Missing `<meta name="description">`
@@ -56,7 +56,7 @@ So at the root URL — the one most AI systems will probe first — the checker 
 - No JSON-LD
 - No `<link rel="canonical">`
 
-We then ran the checker against the **redirect destination**, `https://propel-lab.com/lander`. It scored **31 / 100** — also critical. The destination page has content, but no canonical, no JSON-LD, and weak metadata.
+We then ran the checker against the **redirect destination**, `https://propel-lab.com/lander`. It scored **31 / 100**, also critical. The destination page has content, but no canonical, no JSON-LD, and weak metadata.
 
 Both layers fail.
 
@@ -107,7 +107,7 @@ npx llmo-checker@0.1.0 https://propel-lab.com/
 npx llmo-checker@0.1.0 https://propel-lab.com/lander
 ```
 
-Add `--json` for machine output. Pin the version (`@0.1.0`) — the JSON shape may change in v0.2.
+Add `--json` for machine output. Pin the version (`@0.1.0`); the JSON shape may change in v0.2.
 
 ## What's next
 
