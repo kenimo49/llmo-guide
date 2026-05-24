@@ -9,9 +9,21 @@
  *
  * Design tweaks, typo fixes, translation backfills do NOT bump the version.
  */
-export const VERSION = '1.5.2';
+export const VERSION = '1.6.0';
 
 export const RELEASES = [
+  {
+    version: '1.6.0',
+    date: '2026-05-24',
+    summary:
+      'Public Experiment Log #2 ("External baseline panel") shipped in all 8 locales. 39 high-traffic technical sites scored with llmo-checker@0.1.0 to calibrate what "normal" looks like. Median 61, mean 58.8, range 23–94. Three large documentation portals (rust-lang.org, tailwindcss.com, djangoproject.com) scored below 40. Our owned sites at 93–99 land in the top decile.',
+    highlights: [
+      'Experiment Log #2 published in 8 locales (EN/JA/PT/ES/KO/ZH/DE/FR) with frontmatter, sidebar entry, and locale-aware internal links',
+      '40-URL panel measurement (1 dropped) with raw JSON results + reproduction script committed to open-llmo/llmo-checker (commit 3fdff05)',
+      'Findings: Documentation category median 45.5 (lowest), Product marketing median 68.5; jsonld panel median 0 (more than half emit no recognizable @type); llms-txt distribution is bimodal (90+ or 0)',
+      'Closing: score now passes 2 of 3 validation tests (internal consistency from v1.5.2 + non-flat external distribution). Third test (citation correlation) is Experiment Log #3, the decision point for the project',
+    ],
+  },
   {
     version: '1.5.2',
     date: '2026-05-24',

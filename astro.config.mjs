@@ -140,6 +140,7 @@ export default defineConfig({
           translations: { ja: '実験ログ', 'zh-CN': '实验日志', ko: '실험 로그', de: 'Experimente', fr: 'Expériences', es: 'Experimentos', 'pt-BR': 'Experimentos' },
           items: [
             { label: 'Dogfooding our own sites', translations: { ja: '自社サイトのdogfooding', 'zh-CN': '自家站点 dogfooding', ko: '자사 사이트 도그푸딩', de: 'Dogfooding eigener Sites', fr: 'Dogfooding de nos sites', es: 'Dogfooding de nuestros sitios', 'pt-BR': 'Dogfooding dos nossos sites' }, slug: 'experiments/dogfooding-our-own-sites' },
+            { label: 'External baseline panel', translations: { ja: '外部ベースラインパネル', 'zh-CN': '外部基线面板', ko: '외부 베이스라인 패널', de: 'Externes Baseline-Panel', fr: 'Panel de baseline externe', es: 'Panel de baseline externo', 'pt-BR': 'Painel de baseline externa' }, slug: 'experiments/external-baseline-panel' },
           ],
         },
         {

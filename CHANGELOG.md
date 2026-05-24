@@ -10,6 +10,49 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Design tweaks, typo fixes, broken-link repairs, and translation backfills do **not** trigger a version bump. Only changes to framework concepts and content claims are tracked here.
 
+## [1.6.0] — 2026-05-24 — **Public Experiment Log #2: External baseline panel**
+
+### Headline
+
+A panel of 39 high-traffic technical sites scored with `llmo-checker@0.1.0` to calibrate what "normal" looks like. **Median 61, mean 58.8, range 23–94.** Documentation category is the weakest (median 45.5); product marketing is the strongest (median 68.5). Three large documentation portals — `rust-lang.org` (23), `tailwindcss.com` (25), `djangoproject.com` (26) — score below 40.
+
+The panel gives Experiment Log #1 the calibration it could not provide on its own. Our six owned sites at 93–99 land in the top decile of this 39-site panel, with `mypcrig.com` (93) tying with `supabase.com` and `redis.io` at the panel's 90th percentile.
+
+### What changed (per locale, 8 new files + 1 sidebar config)
+
+- New file `experiments/external-baseline-panel.md` (~1,800 words) shipped in EN canonical + JA / PT / ES / KO / ZH / DE / FR translations
+- Sidebar config (`astro.config.mjs`) extended: "External baseline panel" sub-item added to Experiments group with all 7 locale translations of the label
+- Internal links in each translation use the locale-aware path (`/{locale}/specifications/score-v01/`, `/{locale}/experimental-projects/`)
+- `package.json` version 1.5.2 → 1.6.0; `src/data/version.ts` RELEASES entry prepended; this CHANGELOG entry added
+
+### Per-check findings on the external panel
+
+- `llms-txt`: median 90, mean 54.9 — **bimodal distribution**. Sites either have a spec-compliant file (90+) or no file at all (0); very few sit between. The cost of going from 0 → 90+ is a single file commit, not a multi-stage migration.
+- `jsonld`: median **0**, mean 26.1 — **more than half of the panel emits no recognizable `@type`**. Including major documentation portals. A `jsonld` score of 0 does not mean the site is broken — it means there is no entity-graph surface for an AI crawler to ground a citation on.
+- `canonical`: median 90, mean 67.9 — bimodal again (either consistent or absent).
+- `robots-ai`: median 80, mean 78.7 — narrower distribution; most sites have neutral robots posture without explicit AI-bot policy.
+- `meta`: median 80, mean 78.5 — the most stable check across the panel.
+
+### Validation status after this release
+
+The score has now passed two of the three tests a measurement tool has to pass:
+
+1. **Internal consistency** ✅ (v1.5.2 update — fixes produce the deltas the spec predicts)
+2. **Non-flat external distribution** ✅ (this release — n=39 panel produces stdev 19.5 with clear category-level differentiation)
+3. **Predictive validity for actual AI citation** — **pending Experiment Log #3 (citation correlation pilot)**
+
+Test #3 is the decision point: does the score predict the outcome it claims to predict? If yes, the v0.2 weights re-tune and Phase 2 (Community) launches. If no, the spec gets a substantially more interesting follow-up post.
+
+### Raw data
+
+The reproduction artifacts (URL list, run script, 39 raw `--json` results, analysis script, summary JSON) are committed at `open-llmo/llmo-checker` commit `3fdff05`: `experiments/external-baseline-2026-05/`. Anyone can re-run with `llmo-checker@0.1.0` and confirm within ±1 of the published scores (sites do drift between runs; a single new `<meta>` tag can shift `meta` by 10).
+
+### Why MINOR
+
+New Public Experiment Log article shipped in 8 locales with raw data committed publicly. Per versioning policy this is a "new case study, new research entry" → MINOR. Not MAJOR because no framework component renamed or scoring rule changed.
+
+---
+
 ## [1.5.2] — 2026-05-24 — **Experiment Log #1 follow-up**
 
 ### Headline
