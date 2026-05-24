@@ -1,18 +1,18 @@
 ---
 title: "Dogfooding LLMO Score v0.1: We Ran the Checker on Our Own 6 Sites"
-description: "We measured 6 sites we own — including the corporate site of the initiative behind LLMOFramework — with the new llmo-checker CLI. The corporate site scored 29 / 100."
+description: "We measured 6 sites we operate with the new llmo-checker CLI. All scored 90 or higher. The more interesting result was the one we almost published — and had to retract before going live."
 pubDate: 2026-05-24
 ---
 
 The first **Public Experiment Log** of the Open LLMO Research Initiative.
 
-We just released [`llmo-checker`](https://github.com/open-llmo/llmo-checker), a Lighthouse-style CLI that scores how AI-retrievable a URL is (v0.1 Draft). The very first thing we did with it was point it at every site we operate — including the corporate site of the lab that runs this initiative.
+We just released [`llmo-checker`](https://github.com/open-llmo/llmo-checker), a Lighthouse-style CLI that scores how AI-retrievable a URL is (v0.1 Draft). The very first thing we did with it was point it at every site we operate.
 
-The headline result: **our own corporate site scored 29 / 100**, lower than any of the consumer-facing sites it supposedly serves as a reference for.
+The headline result, after a correction: **all six properties we own scored 90 or higher**. The more useful artifact from this experiment is what happened during the *correction* — recounted in full below.
 
 ## Methodology
 
-- Tool: `npx llmo-checker <url>` v0.1.0 (commit `1db47ea`)
+- Tool: `npx llmo-checker <url>` v0.1.0
 - Date: 2026-05-24
 - Sites: 6 properties we own or operate
 - Score: weighted average of 5 static checks — `llms-txt` (weight 20), `robots-ai` (15), `canonical` (15), `jsonld` (20), `meta` (15)
@@ -26,94 +26,112 @@ All checks are pure HTTP fetches and HTML parsing. In v0.1 there is no AI-citati
 |---|---|---|---|---|
 | `llmoframework.com` | This initiative's site | **96** | well-grounded | `llms-txt` lacks link list (cosmetic) |
 | `kenimoto.dev` | Author personal site | **96** | well-grounded | same as above |
+| `propel-lab.co.jp` | Operating lab corporate site | **94** | well-grounded | `<meta name="description">` 47 chars (sweet spot 80–200) |
 | `legacydram.com` | Whisky × engineer media | **93** | well-grounded | JSON-LD partial (no `Organization`/`Person`) |
 | `mypcrig.com` | PC-build curation site | **90** | well-grounded | No `hreflang` (single-language is fine) + JSON-LD partial |
 | `kaoriq.com` | Fragrance e-commerce | **90** | well-grounded | No explicit AI-bot rules in robots.txt |
-| **`propel-lab.com`** | **Operating lab corporate site** | **29** | **critical** | Nearly everything |
 
-`propel-lab.com` is the corporate site of the lab that runs this very initiative. It scored worse than every consumer-facing product site we ship.
+Median 93, lowest 90. No site below the well-grounded band.
 
-## Why the corporate site failed
+This is a less dramatic table than the one we almost published.
 
-Curling the root tells the whole story:
+## What this experiment was almost about
+
+The first draft of this entry had a different headline: **"Our own corporate site scored 29 / 100, the worst result in the test."** It looked like exactly the kind of self-critical reporting that gives a new measurement project credibility.
+
+Here is the story it told. We had measured `propel-lab.com` and gotten 29 / 100 — critical band. We had `curl`ed the root and found one line of HTML:
 
 ```bash
 $ curl -s https://propel-lab.com/
 <!DOCTYPE html><html><head><script>window.onload=function(){window.location.href="/lander"}</script></head></html>
 ```
 
-The root of `propel-lab.com` is **one line of HTML**. A `window.location.href` redirect runs in the browser, sending visitors to `/lander`.
+A `window.location.href` redirect to `/lander`, invisible to every AI crawler we know of. Then we ran the checker on `/lander` itself and got **31 / 100**, also critical. Two layers, both failing. We had a clean morality tale: an LLMO-focused lab whose own corporate `.com` was failing the substrate test it preaches.
 
-This is fine for a human in Chrome. It is invisible to every AI crawler we know of. None of GPTBot, ClaudeBot, CCBot, Google-Extended, PerplexityBot, or Applebot-Extended execute JavaScript on fetch. They see the literal HTML above and stop.
+We almost published it.
 
-So at the root URL (the one most AI systems probe first), the checker found:
+## What stopped us
 
-- Missing `<title>`
-- Missing `<meta name="description">`
-- Missing OpenGraph
-- Zero `<h1>` elements
-- Missing `<html lang>`
-- No JSON-LD
-- No `<link rel="canonical">`
+Before going live, we ran one more check on that destination HTML. Three signatures jumped out:
 
-We then ran the checker against the **redirect destination**, `https://propel-lab.com/lander`. It scored **31 / 100**, also critical. The destination page has content, but no canonical, no JSON-LD, and weak metadata.
+```html
+<script>window.LANDER_SYSTEM="PW"</script>
+<script src="https://www.google.com/adsense/domains/caf.js"></script>
+<script src="https://img1.wsimg.com/parking-lander/static/js/main.be9a3b28.js"></script>
+```
 
-Both layers fail.
+That is the fingerprint of a **domain parking page** — `wsimg.com/parking-lander` is a third-party hosted-parking template, served alongside Google AdSense for Domains. The page is operating like a parking lot, not a corporate site.
 
-## What this means
+We do not own `propel-lab.com`. We never did. The corporate site is `propel-lab.co.jp`, which scored **94 / 100** — well-grounded, the third-best in the table.
 
-There is a common pattern where teams ship a "splash → landing" structure on the corporate site, assume Google handles JS just fine, and never check what the page looks like to a non-JS crawler. That assumption used to be mostly true for Google search. **It is mostly false for AI crawlers in 2026.**
+Our morality tale was about someone else's parked domain.
 
-In our case, the corporate site of an *LLMO-focused lab* fell into exactly this trap. We caught it because we built a tool that forced us to look at the substrate. Without the tool, we would have kept assuming everything was fine because the human-facing UX looked clean.
+## Why we are leaving this in the log
 
-This is the entire point of publishing the checker as OSS. The substrate gap is invisible until you measure it.
+The temptation, once you catch a near-miss like this before going live, is to quietly fix the draft and ship the boring honest version with no record of the close call. We are not doing that. Three reasons:
 
-## What we are changing
+1. **An LLMO initiative that hides its near-misses is the same as one that hides bad scores.** If we are going to make falsifiability a stated principle, we have to leave traces of the falsifications.
+2. **The parking-domain pattern is a real substrate failure case.** Anyone who registers a `.com` for branding but never serves a real site there is shipping `propel-lab.com`-shaped substrate to AI crawlers. That insight is the same regardless of whose domain it was.
+3. **Dogfooding gave us a 90+-only dataset.** That is too clean to be the proof we hoped for. If you measure your own work and the worst score is 90, you have learned that you write sites consistently to your own standard — not that the standard predicts anything useful.
 
-Adding this to our public backlog as a result of this experiment:
+The substantive question — "does the LLMO Score predict actual AI citation behavior?" — is unanswered by a six-site self-audit where everything passes. It needs an external baseline panel and a citation-correlation pilot. Those are the next two Experiment Logs.
 
-1. **Server-side redirect on `propel-lab.com/`** — replace the JS redirect with a 301 or render the landing content directly at the root
-2. **Add canonical + JSON-LD `Organization` + OG metadata to `/lander`** — bring it from 31 to ≥ 85 on its own
-3. **Re-run the checker as a smoke step** — script the audit into our own deploy pipeline, so future regressions surface immediately
-4. **Improve `mypcrig.com` and `kaoriq.com` JSON-LD coverage** — both currently sit at 82 / 100 on `jsonld` because they emit some but not all relevant types (`Product`, `Person`, `Article`)
-5. **Add explicit AI-bot policy to `kaoriq.com` robots.txt** — currently neutral; we want explicit opt-in for GPTBot / ClaudeBot / Google-Extended
+## What we are still changing on our own sites
+
+Even without the parking-domain story, the table shows small things worth fixing:
+
+1. **`propel-lab.co.jp` description** — currently 47 characters, sweet spot is 80–200. Expand to the same length as the other corporate-site descriptions in our portfolio.
+2. **Improve `mypcrig.com` and `kaoriq.com` JSON-LD coverage** — both sit at 82 / 100 on `jsonld` because they emit some but not all relevant types (`Product`, `Person`, `Article`)
+3. **Add explicit AI-bot policy to `kaoriq.com` robots.txt** — currently neutral; we want explicit opt-in for GPTBot / ClaudeBot / Google-Extended
+4. **Add link list to `/llms.txt` on `llmoframework.com` and `kenimoto.dev`** — current files have prose but no link section; both lose a small fraction of the `llms-txt` weight
 
 We will publish a follow-up Experiment Log when these are done, with re-measured scores. Honest delta or no delta.
 
-## Why we are publishing the bad score
+## What we learned that we did not expect
 
-There is a strong temptation, when you ship a measurement tool, to use it primarily on competitors. We are deliberately doing the opposite: the first public dataset for `llmo-checker` is **our own properties**, including the one that came out worst.
+The clearest lesson is not about substrate. It is about narrative discipline.
 
-Two reasons:
+When the score for `propel-lab.com` came back as 29, the first move was to write a story around the number. The story was tight, contrarian, and would have made the post share well. The number was what made the story possible.
 
-1. **The score has to be falsifiable.** If we never publish a failing score on something we own, no one has reason to trust the scoring is honest.
-2. **The initiative's credibility comes from artifacts, not framing.** A lab that publishes its own corporate site at 29 / 100 is more believable than one that publishes a manifesto and a 100 / 100 self-assessment.
+The fact that we owned `propel-lab.com` was assumed without checking. It is the kind of assumption that gets reinforced by a good narrative, because admitting the gap collapses the whole post. We caught it by accident — running one more curl on a different part of the HTML to look for additional findings, not to question the premise.
+
+For a project whose value proposition is *measure your AI substrate before assuming what it looks like*, accidentally almost publishing a piece based on **not measuring our domain ownership before assuming what it was** is the right kind of embarrassing.
 
 ## Limitations of this experiment
 
-- v0.1 measures substrate only. A site could score 95 on substrate and still get zero AI citations because the content itself is uninteresting, contradicts known facts, or duplicates higher-authority sources. Citation Visibility is reserved for v0.2.
+- v0.1 measures substrate only. A site can score 95 on substrate and still get zero AI citations because the content itself is uninteresting, contradicts known facts, or duplicates higher-authority sources. Citation Visibility is reserved for v0.2.
 - The score weights (`llms-txt` 20, `robots-ai` 15, `canonical` 15, `jsonld` 20, `meta` 15) are author-set and unvalidated. They are reasonable defaults, not derived from outcome data. We expect to recalibrate them as we collect citation-outcome data through Phase 2.
 - We tested home pages only. Article pages on each site may score differently.
+- The dataset is six sites we authored to our own standard. It tells us nothing about whether the standard generalizes.
 
 ## Reproducing this experiment
 
 ```bash
 npx llmo-checker@0.1.0 https://llmoframework.com/
 npx llmo-checker@0.1.0 https://kenimoto.dev/
+npx llmo-checker@0.1.0 https://propel-lab.co.jp/
 npx llmo-checker@0.1.0 https://legacydram.com/
 npx llmo-checker@0.1.0 https://mypcrig.com/
 npx llmo-checker@0.1.0 https://kaoriq.com/
-npx llmo-checker@0.1.0 https://propel-lab.com/
-npx llmo-checker@0.1.0 https://propel-lab.com/lander
 ```
 
 Add `--json` for machine output. Pin the version (`@0.1.0`); the JSON shape may change in v0.2.
+
+To reproduce the parking-domain detection, also run:
+
+```bash
+npx llmo-checker@0.1.0 https://propel-lab.com/
+npx llmo-checker@0.1.0 https://propel-lab.com/lander
+curl -s https://propel-lab.com/lander | head -1
+```
+
+The first two will return critical scores. The third will surface `LANDER_SYSTEM` / `parking-lander` / `adsense/domains` markers in the HTML.
 
 ## What's next
 
 This is the first entry of a Public Experiment Log series. The next two we plan to run:
 
-- **External baseline panel** — score a few dozen high-traffic technical sites (documentation portals, dev blogs, product marketing sites) and publish the distribution. This calibrates what "normal" looks like.
+- **External baseline panel** — score a few dozen high-traffic technical sites (documentation portals, dev blogs, product marketing sites) and publish the distribution. This calibrates what "normal" looks like — the comparison this self-audit cannot make on its own.
 - **Citation correlation pilot** — for ~50 URLs, compare LLMO Score to actual AI citation rate (probing ChatGPT, Claude, and Perplexity). This is the first real test of whether the score predicts the outcome it claims to predict.
 
 The full roadmap lives at [Experimental Projects](/experimental-projects/), and v0.1 score weights are defined in [Score v0.1 Draft Specification](/specifications/score-v01/).

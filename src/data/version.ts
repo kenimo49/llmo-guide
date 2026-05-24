@@ -9,9 +9,20 @@
  *
  * Design tweaks, typo fixes, translation backfills do NOT bump the version.
  */
-export const VERSION = '1.5.0';
+export const VERSION = '1.5.1';
 
 export const RELEASES = [
+  {
+    version: '1.5.1',
+    date: '2026-05-24',
+    summary:
+      'Errata. Experiment Log #1 ("Dogfooding our own sites") was retracted and rewritten across all 8 locales: the post had claimed propel-lab.com scored 29/100 as our corporate site, but propel-lab.com is a third-party parked domain we do not own. The actual corporate site is propel-lab.co.jp (94/100). Rewritten as an honest narrative-discipline pivot.',
+    highlights: [
+      'Experiment Log #1 retracted and rewritten in 8 locales: propel-lab.com is not ours (parking domain with wsimg.com/parking-lander + Google AdSense for Domains fingerprint), corporate site is propel-lab.co.jp (94/100, well-grounded)',
+      'New narrative: 6 owned sites all scored 90+, with the near-miss publication path preserved as a transparency record on falsifiability and narrative discipline',
+      'CHANGELOG and version surface updated; all 8 locales rebuilt in one pass',
+    ],
+  },
   {
     version: '1.5.0',
     date: '2026-05-24',

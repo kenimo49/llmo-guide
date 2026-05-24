@@ -1,18 +1,18 @@
 ---
 title: "Dogfooding du LLMO Score v0.1: nous avons passé le checker sur nos 6 sites"
-description: "Nous avons mesuré 6 sites que nous exploitons — y compris le site institutionnel du laboratoire derrière LLMOFramework — avec le nouveau CLI llmo-checker. Le site institutionnel a obtenu 29 / 100."
+description: "Nous avons mesuré 6 sites que nous exploitons avec le nouveau CLI llmo-checker. Tous ont obtenu 90 ou plus. Le résultat le plus intéressant est celui que nous avons failli publier — et qu'il a fallu retirer juste avant la mise en ligne."
 pubDate: 2026-05-24
 ---
 
 Le premier **Public Experiment Log** de l'Open LLMO Research Initiative.
 
-Nous venons de publier [`llmo-checker`](https://github.com/open-llmo/llmo-checker), un CLI de style Lighthouse qui mesure à quel point une URL est récupérable par une IA (v0.1 Draft). La première chose que nous avons faite avec, c'est le pointer sur chaque site que nous exploitons, y compris le site institutionnel du laboratoire qui maintient cette initiative.
+Nous venons de publier [`llmo-checker`](https://github.com/open-llmo/llmo-checker), un CLI de style Lighthouse qui mesure à quel point une URL est récupérable par une IA (v0.1 Draft). La première chose que nous avons faite avec, c'est le pointer sur chaque site que nous exploitons.
 
-Le titre du résultat: **notre propre site institutionnel a obtenu 29 / 100**, plus bas que n'importe lequel des sites grand public auxquels il est censé servir de référence.
+Le titre du résultat, après correction: **les six propriétés que nous possédons ont toutes obtenu 90 ou plus**. L'artefact le plus utile de cette expérience est ce qui s'est passé pendant cette *correction* — raconté en détail plus bas.
 
 ## Méthodologie
 
-- Outil: `npx llmo-checker <url>` v0.1.0 (commit `1db47ea`)
+- Outil: `npx llmo-checker <url>` v0.1.0
 - Date: 2026-05-24
 - Sites: 6 propriétés que nous possédons ou exploitons
 - Score: moyenne pondérée de 5 vérifications statiques — `llms-txt` (poids 20), `robots-ai` (15), `canonical` (15), `jsonld` (20), `meta` (15)
@@ -26,94 +26,112 @@ Toutes les vérifications sont des requêtes HTTP pures et du parsing HTML. En v
 |---|---|---|---|---|
 | `llmoframework.com` | Site de cette initiative | **96** | bien ancré | `llms-txt` sans liste de liens (cosmétique) |
 | `kenimoto.dev` | Site personnel de l'auteur | **96** | bien ancré | idem |
+| `propel-lab.co.jp` | Site institutionnel du laboratoire | **94** | bien ancré | `<meta name="description">` de 47 caractères (zone idéale 80–200) |
 | `legacydram.com` | Média whisky × ingénierie | **93** | bien ancré | JSON-LD partiel (pas de `Organization`/`Person`) |
 | `mypcrig.com` | Curation de configs PC | **90** | bien ancré | Pas de `hreflang` (ok pour un site monolingue) + JSON-LD partiel |
 | `kaoriq.com` | E-commerce de parfums | **90** | bien ancré | Pas de règles explicites pour les bots IA dans robots.txt |
-| **`propel-lab.com`** | **Site institutionnel du laboratoire** | **29** | **critique** | Presque tout |
 
-`propel-lab.com` est le site institutionnel du laboratoire qui maintient cette même initiative. Il a fait pire que chaque site produit grand public que nous livrons.
+Médiane 93, minimum 90. Aucun site sous la bande « bien ancré ».
 
-## Pourquoi le site institutionnel a échoué
+C'est un tableau nettement moins dramatique que celui que nous avons failli publier.
 
-Un `curl` sur la racine raconte toute l'histoire:
+## Ce dont cette expérience a failli parler
+
+La première version de cette entrée avait un autre titre: **« Notre propre site institutionnel a obtenu 29 / 100, le pire résultat du test. »** Exactement le genre de rapport auto-critique qui donne de la crédibilité à un nouveau projet de mesure.
+
+Voici l'histoire qu'elle racontait. Nous avions mesuré `propel-lab.com` et obtenu 29 / 100 — bande critique. Nous avions fait un `curl` sur la racine et trouvé une ligne de HTML:
 
 ```bash
 $ curl -s https://propel-lab.com/
 <!DOCTYPE html><html><head><script>window.onload=function(){window.location.href="/lander"}</script></head></html>
 ```
 
-La racine de `propel-lab.com`, c'est **une ligne de HTML**. Une redirection via `window.location.href` s'exécute dans le navigateur et envoie le visiteur vers `/lander`.
+Une redirection via `window.location.href` vers `/lander`, invisible pour tout crawler IA que nous connaissons. Ensuite nous avons passé le checker sur `/lander` lui-même, et obtenu **31 / 100**, également critique. Deux couches, les deux qui échouent. Nous avions une fable morale impeccable: un laboratoire orienté LLMO dont le `.com` institutionnel échoue au test de substrate qu'il prêche.
 
-Pour un humain sous Chrome, ça marche. Pour tout crawler IA que nous connaissons, c'est invisible. Aucun de GPTBot, ClaudeBot, CCBot, Google-Extended, PerplexityBot ni Applebot-Extended n'exécute JavaScript au moment de la requête. Ils voient le HTML brut ci-dessus et s'arrêtent là.
+Nous avons failli publier.
 
-Sur l'URL racine (la première que la plupart des systèmes d'IA vont sonder), le checker a donc trouvé:
+## Ce qui a arrêté la machine
 
-- Pas de `<title>`
-- Pas de `<meta name="description">`
-- Pas d'OpenGraph
-- Zéro élément `<h1>`
-- Pas de `<html lang>`
-- Pas de JSON-LD
-- Pas de `<link rel="canonical">`
+Avant la mise en ligne, nous avons relancé un `curl` sur ce HTML de destination. Trois signatures ont sauté:
 
-Ensuite, nous avons passé le checker sur la **destination de la redirection**, `https://propel-lab.com/lander`. Score **31 / 100**, également critique. La page de destination a du contenu, mais pas de canonical, pas de JSON-LD, et des métadonnées faibles.
+```html
+<script>window.LANDER_SYSTEM="PW"</script>
+<script src="https://www.google.com/adsense/domains/caf.js"></script>
+<script src="https://img1.wsimg.com/parking-lander/static/js/main.be9a3b28.js"></script>
+```
 
-Les deux couches échouent.
+C'est l'empreinte d'une **page de domaine parqué** — `wsimg.com/parking-lander` est un template de parking hébergé par un tiers, servi avec Google AdSense for Domains. La page tourne en mode parking, pas en site institutionnel.
 
-## Ce que ça veut dire
+Nous ne sommes pas propriétaires de `propel-lab.com`. Nous ne l'avons jamais été. Le site institutionnel, c'est `propel-lab.co.jp`, qui a obtenu **94 / 100** — bien ancré, troisième du tableau.
 
-Il existe un motif courant: les équipes publient une structure "splash → landing" sur le site institutionnel, supposent que Google gère le JS sans souci, et ne vérifient jamais à quoi la page ressemble pour un crawler sans JS. Cette supposition était à peu près vraie pour la recherche Google. **Elle est largement fausse pour les crawlers IA en 2026.**
+Notre fable morale parlait d'un domaine parqué par quelqu'un d'autre.
 
-Dans notre cas, le site institutionnel d'un *laboratoire orienté LLMO* est tombé exactement dans ce piège. Nous l'avons attrapé parce que nous avons construit un outil qui nous a forcés à regarder le substrate. Sans l'outil, nous aurions continué à supposer que tout allait bien parce que l'UX côté humain semblait propre.
+## Pourquoi nous laissons cet épisode dans le log
 
-C'est précisément le sens de publier le checker en OSS. La faille dans le substrate est invisible tant que nous ne mesurons pas.
+La tentation, après avoir attrapé un quasi-accident comme celui-ci juste avant la publication, c'est de corriger discrètement le brouillon et d'envoyer la version honnête et sans relief, sans aucune trace de l'incident. Nous ne le faisons pas. Trois raisons:
 
-## Ce que nous allons changer
+1. **Une initiative LLMO qui cache ses quasi-accidents revient au même qu'une qui cache ses mauvais scores.** Si la falsifiabilité est érigée en principe, il faut laisser des traces des falsifications.
+2. **Le motif du domaine parqué est un cas réel d'échec de substrate.** Quiconque enregistre un `.com` pour le branding mais n'y sert jamais de vrai site fournit aux crawlers IA un substrate de la même forme que `propel-lab.com`. Cet enseignement reste le même, quel que soit le propriétaire du domaine.
+3. **Le dogfooding nous a livré un dataset rempli uniquement de 90+.** C'est trop propre pour être la preuve que nous espérions. Si on mesure son propre travail et que le pire score est 90, on a appris qu'on écrit ses sites en cohérence avec son propre standard — pas que le standard prédit quoi que ce soit d'utile.
 
-À la suite de cette expérience, voici ce que nous ajoutons à notre backlog public:
+La question de fond — « le LLMO Score prédit-il vraiment le comportement de citation par les IA ? » — n'est pas tranchée par un self-audit de six sites où tout passe. Il faut un panel externe de référence et un pilote de corrélation avec citation. Ce sont les deux prochains Experiment Logs.
 
-1. **Redirection serveur sur `propel-lab.com/`** — remplacer la redirection JS par un 301 ou rendre le contenu de la landing directement à la racine
-2. **Ajouter canonical + JSON-LD `Organization` + métadonnées OG à `/lander`** — porter son score seul de 31 à ≥ 85
-3. **Faire tourner le checker comme étape de vérification rapide (smoke test)** — intégrer l'audit dans notre propre pipeline de déploiement, pour que les régressions futures remontent immédiatement
-4. **Améliorer la couverture JSON-LD de `mypcrig.com` et `kaoriq.com`** — les deux sont à 82 / 100 sur `jsonld` parce qu'ils émettent certains, mais pas tous les types pertinents (`Product`, `Person`, `Article`)
-5. **Ajouter une politique explicite pour les bots IA dans le robots.txt de `kaoriq.com`** — actuellement neutre; nous voulons un opt-in explicite pour GPTBot / ClaudeBot / Google-Extended
+## Ce que nous changeons malgré tout sur nos propres sites
+
+Même sans l'histoire du domaine parqué, le tableau pointe de petits ajustements à faire:
+
+1. **Description de `propel-lab.co.jp`** — actuellement 47 caractères, idéal 80–200. À étendre à la même longueur que les autres descriptions institutionnelles du portefeuille
+2. **Améliorer la couverture JSON-LD de `mypcrig.com` et `kaoriq.com`** — les deux sont à 82 / 100 sur `jsonld` parce qu'ils émettent certains, mais pas tous les types pertinents (`Product`, `Person`, `Article`)
+3. **Ajouter une politique explicite pour les bots IA dans le robots.txt de `kaoriq.com`** — actuellement neutre; nous voulons un opt-in explicite pour GPTBot / ClaudeBot / Google-Extended
+4. **Ajouter une liste de liens au `/llms.txt` de `llmoframework.com` et `kenimoto.dev`** — les fichiers actuels contiennent de la prose mais pas de section de liens; tous deux perdent une petite portion du poids `llms-txt`
 
 Quand ce sera fait, nous publierons un Experiment Log de suivi avec les scores remesurés. Honnêtes sur le delta, qu'il y en ait un ou pas.
 
-## Pourquoi nous publions la mauvaise note
+## Ce que nous n'avions pas prévu d'apprendre
 
-Quand on livre un outil de mesure, il y a une forte tentation de s'en servir surtout sur les concurrents. Nous faisons délibérément l'inverse: le premier dataset public pour `llmo-checker`, ce sont **nos propres propriétés**, y compris celle qui a eu la pire note.
+La leçon la plus nette ne porte pas sur le substrate. Elle porte sur la discipline narrative.
 
-Deux raisons:
+Au moment où le score 29 de `propel-lab.com` est revenu, le premier mouvement a été de bâtir un récit autour du chiffre. Le récit tenait, allait à contre-courant, aurait fait un post bien partagé. C'est le chiffre qui rendait le récit possible.
 
-1. **Le score doit être falsifiable.** Si nous ne publions jamais de note d'échec sur quelque chose à nous, personne n'a de raison de croire que la notation est honnête.
-2. **La crédibilité de l'initiative vient des artefacts, pas du cadrage.** Un laboratoire qui publie son propre site institutionnel à 29 / 100 est plus crédible qu'un autre qui publie un manifeste et une auto-évaluation à 100 / 100.
+Le fait que nous possédions `propel-lab.com` a été présumé sans vérification. C'est le genre de présupposé qu'un bon récit renforce, parce qu'admettre la faille fait s'effondrer tout le post. Nous l'avons attrapé par accident — en lançant un `curl` supplémentaire sur une autre partie du HTML pour chercher d'autres trouvailles, pas pour remettre la prémisse en cause.
+
+Pour un projet dont la proposition de valeur est *mesurez votre substrate IA avant de présumer ce qu'il est*, avoir failli publier un texte fondé sur **ne pas mesurer la propriété d'un domaine avant de présumer de quoi il s'agissait**, c'est le bon type d'embarras.
 
 ## Limites de cette expérience
 
 - v0.1 ne mesure que le substrate. Un site peut atteindre 95 sur le substrate et obtenir tout de même zéro citation par les IA, parce que le contenu lui-même est sans intérêt, contredit des faits connus, ou duplique des sources d'autorité plus haute. Citation Visibility est réservé à v0.2.
 - Les poids du score (`llms-txt` 20, `robots-ai` 15, `canonical` 15, `jsonld` 20, `meta` 15) sont fixés par les auteurs et non validés. Ce sont des valeurs par défaut raisonnables, pas dérivées de données de résultat. Nous comptons les recalibrer au fur et à mesure que nous collecterons des données de résultat de citation en Phase 2.
 - Nous n'avons testé que les pages d'accueil. Les pages d'article sur chaque site peuvent avoir des scores différents.
+- Le dataset, ce sont six sites que nous avons rédigés nous-mêmes selon notre propre standard. Il ne dit rien sur le caractère généralisable du standard.
 
 ## Reproduire l'expérience
 
 ```bash
 npx llmo-checker@0.1.0 https://llmoframework.com/
 npx llmo-checker@0.1.0 https://kenimoto.dev/
+npx llmo-checker@0.1.0 https://propel-lab.co.jp/
 npx llmo-checker@0.1.0 https://legacydram.com/
 npx llmo-checker@0.1.0 https://mypcrig.com/
 npx llmo-checker@0.1.0 https://kaoriq.com/
-npx llmo-checker@0.1.0 https://propel-lab.com/
-npx llmo-checker@0.1.0 https://propel-lab.com/lander
 ```
 
 Ajoutez `--json` pour une sortie lisible par machine. Épinglez la version (`@0.1.0`); la forme du JSON peut changer en v0.2.
+
+Pour reproduire la détection du domaine parqué, lancez aussi:
+
+```bash
+npx llmo-checker@0.1.0 https://propel-lab.com/
+npx llmo-checker@0.1.0 https://propel-lab.com/lander
+curl -s https://propel-lab.com/lander | head -1
+```
+
+Les deux premiers renverront des scores critiques. Le troisième fera ressortir les marqueurs `LANDER_SYSTEM` / `parking-lander` / `adsense/domains` dans le HTML.
 
 ## La suite
 
 C'est la première entrée d'une série de Public Experiment Logs. Les deux prochains que nous prévoyons de faire tourner:
 
-- **Panel de référence externe** — noter quelques dizaines de sites techniques à fort trafic (portails de documentation, blogs de devs, sites marketing de produit) et publier la distribution. Ça calibre à quoi "normal" ressemble.
+- **Panel de référence externe** — noter quelques dizaines de sites techniques à fort trafic (portails de documentation, blogs de devs, sites marketing de produit) et publier la distribution. Ça calibre à quoi « normal » ressemble — la comparaison que ce self-audit seul ne peut pas faire.
 - **Pilote de corrélation citation** — pour ~50 URLs, comparer le LLMO Score à la vraie fréquence de citation par les IA (sondage de ChatGPT, Claude et Perplexity). C'est le premier vrai test pour savoir si le score prédit bien le résultat qu'il prétend prédire.
 
 La feuille de route complète se trouve dans [Experimental Projects](/fr/experimental-projects/), et les poids du v0.1 sont définis dans la [Spécification Draft du Score v0.1](/fr/specifications/score-v01/).

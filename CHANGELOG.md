@@ -10,6 +10,31 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Design tweaks, typo fixes, broken-link repairs, and translation backfills do **not** trigger a version bump. Only changes to framework concepts and content claims are tracked here.
 
+## [1.5.1] — 2026-05-24 — **Errata**
+
+### Headline
+
+Experiment Log #1 ("Dogfooding our own sites") was retracted and rewritten across all 8 locales. The post had claimed that `propel-lab.com` scored 29 / 100 as our corporate site. `propel-lab.com` is **not our property** — it is a third-party parked domain (GoDaddy / `wsimg.com/parking-lander` template with Google AdSense for Domains). Our actual corporate site is `propel-lab.co.jp`, which scored **94 / 100** in the same run.
+
+This is a factual correction. We are leaving the original story line preserved inside the rewritten post (as a "what this almost was" section) rather than scrubbing it, on the same falsifiability principle the score itself is built on.
+
+### What changed (per locale, 8 files)
+
+- Removed `propel-lab.com` from the results table, added `propel-lab.co.jp` (94/100) in its place
+- Rewrote the post around two new sections: **"What this experiment was almost about"** (the original 29/100 story, marked as a near-miss) and **"What we learned that we did not expect"** (narrative discipline as the actual takeaway)
+- New honest framing: all 6 owned sites scored 90+, which is too clean to function as proof of the score's predictive power. The next two Experiment Logs (external baseline panel + citation-correlation pilot) become the real validation path
+- Reproduction commands updated to use `propel-lab.co.jp` for the corporate row, with the parking-domain `curl` retained as a teaching artifact
+
+### Why we are publishing this rather than silently fixing
+
+A measurement project that hides its near-publication mistakes is the same project that hides its bad scores. The whole `llmo-checker` value proposition is "measure before you assume." Almost publishing a post based on an unmeasured domain-ownership assumption is the wrong kind of irony to bury.
+
+### Process note
+
+The error was caught by re-running `curl -s https://propel-lab.com/lander | head -1` and noticing `LANDER_SYSTEM` / `wsimg.com/parking-lander` / `adsense/domains` signatures in the destination HTML. WHOIS / DNS / registrar checks would have caught it earlier; future Experiment Logs that name specific domains will include an ownership-verification step before measurement.
+
+---
+
 ## [1.5.0] — 2026-05-24
 
 ### Headline
