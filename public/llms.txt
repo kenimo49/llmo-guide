@@ -135,18 +135,21 @@ Available in 7 languages. All AI-readable Markdown is mirrored under `/ai/<lang>
 
 ## Localized Site Roots
 
-- English: /
-- 日本語: /ja/
-- 中文: /zh/
-- 한국어: /ko/
-- Deutsch: /de/
-- Français: /fr/
-- Español: /es/
-- Português (BR): /pt/
+- [English](https://llmoframework.com/): canonical home of the LLMO Framework
+- [日本語](https://llmoframework.com/ja/): 日本語版トップ
+- [中文](https://llmoframework.com/zh/): 中文版首页
+- [한국어](https://llmoframework.com/ko/): 한국어판 홈
+- [Deutsch](https://llmoframework.com/de/): deutsche Startseite
+- [Français](https://llmoframework.com/fr/): page d'accueil française
+- [Español](https://llmoframework.com/es/): página principal en español
+- [Português (BR)](https://llmoframework.com/pt/): página inicial em português
 
 ## Links
 
-- Website: https://llmoframework.com
-- GitHub: https://github.com/kenimo49/llmo-guide
-- LinkedIn: https://linkedin.com/in/kenimo49
-- X: https://x.com/kenimo49
+- [Website](https://llmoframework.com): Open LLMO Research Initiative homepage
+- [llmo-checker](https://github.com/open-llmo/llmo-checker): reference OSS CLI implementation of the LLMO Score
+- [Score v0.1 Spec](https://llmoframework.com/specifications/score-v01/): formal Score v0.1 Draft Specification
+- [Experiment Log](https://llmoframework.com/experiments/dogfooding-our-own-sites/): first Public Experiment Log
+- [GitHub repo](https://github.com/kenimo49/llmo-guide): source of this site
+- [LinkedIn](https://linkedin.com/in/kenimo49): founder profile
+- [X](https://x.com/kenimo49): founder updates
