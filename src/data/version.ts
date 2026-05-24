@@ -9,9 +9,20 @@
  *
  * Design tweaks, typo fixes, translation backfills do NOT bump the version.
  */
-export const VERSION = '1.5.1';
+export const VERSION = '1.5.2';
 
 export const RELEASES = [
+  {
+    version: '1.5.2',
+    date: '2026-05-24',
+    summary:
+      'Experiment Log #1 follow-up. The four fixes promised in "What we are still changing on our own sites" all shipped the same day; an "Update (2026-05-24, same day): re-measured after shipping the four fixes" section was appended to the post across all 8 locales with before/after table and rule-predicted delta analysis.',
+    highlights: [
+      'kenimoto.dev `/llms.txt`: link entries rewritten as spec-compliant `- [title](url)` (llms-txt 90 → 100, overall 96 → 99)',
+      'mypcrig.com + kaoriq.com: `Person` schema lifted from `Organization.founder` nesting to an independent `@type` block (jsonld 82 → 94, mypcrig 90 → 93, kaoriq 93 → 96)',
+      'Experiment Log #1 closed honestly with re-measured scores in all 8 locales; deltas match the published score weights as predicted',
+    ],
+  },
   {
     version: '1.5.1',
     date: '2026-05-24',

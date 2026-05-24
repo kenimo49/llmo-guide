@@ -135,3 +135,21 @@ curl -s https://propel-lab.com/lander | head -1
 - **引用相关性 pilot** —— 对 ~50 个 URL，比较 LLMO Score 和真实的 AI 引用率（探测 ChatGPT、Claude、Perplexity）。这是对 score 是否真的能预测它声称要预测的 outcome 的第一次真测试。
 
 完整 roadmap 在 [Experimental Projects](/zh/experimental-projects/)，v0.1 的权重定义在 [Score v0.1 Draft Specification](/zh/specifications/score-v01/)。
+
+## Update (2026-05-24，同一天): 出货 4 个 fix 后的重新测量
+
+"我们在自己的站点上还在改的事" 列出的 4 个 fix 已经在原帖发布的同一天分两 wave 出货。用 `llmo-checker@0.1.0` 重新测量:
+
+| 站点 | Before | After | 什么起作用 |
+|---|---|---|---|
+| `llmoframework.com` | 96 | **99** | `/llms.txt` 的 `## Links` 部分转为 spec 合规的 `- [title](url)` 条目 (llms-txt 90 → 100) |
+| `kenimoto.dev` | 96 | **99** | 同样的修复: `## Links`、`## Books`、`## Blog Articles`、`## Research Papers` 部分改写为 `[title](url)` 条目 (llms-txt 90 → 100) |
+| `kaoriq.com` | 93 | **96** | 在首页把 `Person` 作为独立 `@type` 加上 (之前嵌套在 `Organization.founder` 里，score 只计一次) — jsonld 82 → 94 |
+| `mypcrig.com` | 90 | **93** | 同样的修复: `Person` 升级到独立的 `@type` block — jsonld 82 → 94 |
+| `propel-lab.co.jp` | 96 | 96 | `<meta name="description">` 在 v1.5.1 那波已经从 47 字扩展到 129 字 |
+
+delta 正是公开 scoring 规则所预测的: `llms-txt` weight 20 × 10 分跳跃 (90 → 100) = 整体 +2 (per-check 取整后 +3)，`jsonld` 的 `@type` 计数加分 (+12 per recognized `@type`，weight 20%) 落在整体 ~+2.4。这种显式可预测性正是 Lighthouse 风格的透明 score 作为副产品获得的特性 — 也正是外部基线面板数据到来时，我们会以反方向去找的同一种性质。
+
+修复的规模在行数上很小，每个不到一小时 (含 build 和 deploy 验证) 就能出货，这才是更诚实的 takeaway: score 指出的不是什么神秘的东西，而是我们一直拖着没清理的 4 个机械性的洞，一旦测量就小到能在 single follow-up wave 里全部出货。
+
+这没有**证明的**: 这些 delta 是否与下游 AI 引用行为相关。那仍然是 Experiment Log #3 的工作。本次 Update 只确认了 score 是内部一致的 — 修复会产生 spec 所预测的 delta。外部面板和引用相关性 pilot 仍然是真正的验证路径。

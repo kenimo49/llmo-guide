@@ -135,3 +135,21 @@ Este é o primeiro Public Experiment Log da série. Os dois próximos que planej
 - **Piloto de correlação com citação** — para ~50 URLs, comparar LLMO Score com a taxa real de citação por IA (sondando ChatGPT, Claude e Perplexity). É o primeiro teste real de se o score prevê o resultado que ele afirma prever.
 
 O plano completo está em [Experimental Projects](/pt/experimental-projects/), e os pesos do v0.1 estão definidos em [Score v0.1 Draft Specification](/pt/specifications/score-v01/).
+
+## Update (24/05/2026, mesmo dia): re-medido depois de entregar as quatro correções
+
+As quatro correções listadas em "O que ainda estamos mudando nos nossos próprios sites" entraram no ar no mesmo dia do post original, em duas ondas. Re-medido com `llmo-checker@0.1.0`:
+
+| Site | Antes | Depois | O que ajudou |
+|---|---|---|---|
+| `llmoframework.com` | 96 | **99** | Seção `## Links` do `/llms.txt` convertida para entradas `- [title](url)` conformes ao spec (llms-txt 90 → 100) |
+| `kenimoto.dev` | 96 | **99** | Mesma correção: `## Links`, `## Books`, `## Blog Articles` e `## Research Papers` reescritas como entradas `[title](url)` (llms-txt 90 → 100) |
+| `kaoriq.com` | 93 | **96** | Adicionamos um schema `Person` como `@type` independente na home (antes ficava aninhado em `Organization.founder`, e o score conta só uma vez) — jsonld 82 → 94 |
+| `mypcrig.com` | 90 | **93** | Mesma correção: `Person` promovido para um bloco `@type` próprio — jsonld 82 → 94 |
+| `propel-lab.co.jp` | 96 | 96 | `<meta name="description">` já tinha sido expandido de 47 para 129 caracteres na onda do v1.5.1 |
+
+Os deltas são exatamente o que a regra de scoring publicada prevê: `llms-txt` tem peso 20 × o salto de 10 pontos (90 → 100) = +2 no score total (arredondado para +3 pelo per-check rounding), e o bump de contagem de `@type` em `jsonld` (+12 por `@type` reconhecido, peso 20%) cai como ~+2,4 no total. Esse tipo de previsibilidade explícita é exatamente o que um score transparente estilo Lighthouse ganha como subproduto — e é a propriedade que vamos procurar, na direção inversa, quando os dados do painel de baseline externa chegarem.
+
+As correções foram pequenas em linhas (cada uma levou menos de uma hora, incluindo build e verificação de deploy), o que é a lição mais honesta: o score não apontou nada misterioso ou difícil de consertar. Ele apontou quatro coisas mecânicas que ainda não tínhamos limpado, e uma vez medidas, eram pequenas o suficiente para entregar tudo numa única onda de follow-up.
+
+O que isso **não** provou: que qualquer um desses deltas se correlaciona com o comportamento de citação por IA downstream. Esse continua sendo o trabalho do Experiment Log #3. Este update apenas confirma que o score é internamente consistente — as correções produzem os deltas que o spec prevê. O painel externo e o piloto de correlação com citação continuam sendo o caminho real de validação.

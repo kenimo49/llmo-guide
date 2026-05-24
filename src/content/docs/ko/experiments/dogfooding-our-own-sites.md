@@ -135,3 +135,21 @@ curl -s https://propel-lab.com/lander | head -1
 - **인용 상관 파일럿** — 약 50개 URL에 대해 LLMO Score와 실제 AI 인용율(ChatGPT, Claude, Perplexity 탐색)을 비교합니다. 점수가 주장하는 outcome을 실제로 예측하는지에 대한 첫 본격 테스트입니다.
 
 전체 로드맵은 [Experimental Projects](/ko/experimental-projects/)에 있고, v0.1 점수 가중치 정의는 [Score v0.1 Draft Specification](/ko/specifications/score-v01/)에 있습니다.
+
+## Update (2026-05-24, 같은 날): 4개 fix 출하 후 재측정
+
+"우리가 우리 사이트에서 아직 바꾸고 있는 것" 섹션에서 나열한 4개 fix가 원 글 게시와 같은 날 두 wave로 출하되었습니다. `llmo-checker@0.1.0`로 재측정:
+
+| 사이트 | Before | After | 무엇이 효과 있었나 |
+|---|---|---|---|
+| `llmoframework.com` | 96 | **99** | `/llms.txt`의 `## Links` 섹션을 spec 준수 `- [title](url)` 형식으로 변환 (llms-txt 90 → 100) |
+| `kenimoto.dev` | 96 | **99** | 같은 수정: `## Links`, `## Books`, `## Blog Articles`, `## Research Papers` 섹션을 `[title](url)` 형식으로 재작성 (llms-txt 90 → 100) |
+| `kaoriq.com` | 93 | **96** | `Person`을 홈페이지의 독립 `@type`으로 추가 (이전에는 `Organization.founder`에 중첩되어 있어서 score는 한 번만 카운트) — jsonld 82 → 94 |
+| `mypcrig.com` | 90 | **93** | 같은 수정: `Person`을 독립 `@type` 블록으로 승격 — jsonld 82 → 94 |
+| `propel-lab.co.jp` | 96 | 96 | `<meta name="description">`은 v1.5.1에서 이미 47 → 129자로 확장됨 |
+
+delta는 공개 스코어링 규칙의 예측 그대로입니다: `llms-txt` weight 20 × 10포인트 점프 (90 → 100) = 전체 +2 (per-check 반올림으로 +3), `jsonld`의 `@type` 카운트 가점 (+12 per recognized `@type`, weight 20%)은 전체에 ~+2.4 정도. Lighthouse 계열의 투명한 score가 부산물로 얻는 예측 가능성이 바로 이런 것입니다. 외부 baseline 패널 데이터가 모이면 역방향으로 같은 성질을 찾게 됩니다.
+
+수정 규모는 line 수로 작았고, 각 1시간 이내(build + deploy 확인 포함)로 출하할 수 있었습니다. 이게 더 정직한 takeaway입니다: score가 지적한 것은 어떤 신비로운 무언가가 아니라, 우리가 청소를 미뤄둔 4개의 기계적 구멍이었고, 한 번 측정하니 single follow-up wave로 전부 출하할 수 있는 규모였습니다.
+
+이것이 **증명하지 않은 것**: 이 delta들이 downstream AI 인용 행동과 상관관계가 있는지 여부. 그것은 여전히 Experiment Log #3의 일입니다. 이 Update는 score가 내부적으로 일관됐다는 한 가지만 확인합니다 — 수정이 spec이 예측하는 delta를 만들어냅니다. 외부 패널과 인용 상관 파일럿이 진짜 검증 경로입니다.

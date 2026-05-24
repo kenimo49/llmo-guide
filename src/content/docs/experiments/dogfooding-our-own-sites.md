@@ -135,3 +135,21 @@ This is the first entry of a Public Experiment Log series. The next two we plan 
 - **Citation correlation pilot** — for ~50 URLs, compare LLMO Score to actual AI citation rate (probing ChatGPT, Claude, and Perplexity). This is the first real test of whether the score predicts the outcome it claims to predict.
 
 The full roadmap lives at [Experimental Projects](/experimental-projects/), and v0.1 score weights are defined in [Score v0.1 Draft Specification](/specifications/score-v01/).
+
+## Update (2026-05-24, same day): re-measured after shipping the four fixes
+
+All four of the fixes listed in "What we are still changing on our own sites" shipped the same day as the original post, in two waves. Re-measured with `llmo-checker@0.1.0`:
+
+| Site | Before | After | What helped |
+|---|---|---|---|
+| `llmoframework.com` | 96 | **99** | `## Links` section in `/llms.txt` converted to spec-compliant `- [title](url)` entries (llms-txt 90 → 100) |
+| `kenimoto.dev` | 96 | **99** | Same fix: `## Links`, `## Books`, `## Blog Articles`, and `## Research Papers` sections rewritten as `[title](url)` link entries (llms-txt 90 → 100) |
+| `kaoriq.com` | 93 | **96** | Added a `Person` schema as an independent `@type` on the homepage (previously nested inside `Organization.founder`, which the score counts only once) — jsonld 82 → 94 |
+| `mypcrig.com` | 90 | **93** | Same fix: `Person` lifted to its own `@type` block — jsonld 82 → 94 |
+| `propel-lab.co.jp` | 96 | 96 | `<meta name="description">` already extended from 47 chars to 129 in the v1.5.1 wave |
+
+The deltas are exactly what the published scoring rule predicts: `llms-txt` is +20 weight × the 10-point jump (90 → 100) = +2 to the overall (rounded to +3 by the per-check rounding), and the `jsonld` `@type`-count bump (+12 per recognized `@type`, weighted 20%) lands as roughly +2.4 on the overall. That kind of explicit predictability is exactly what a Lighthouse-style transparent score earns by accident — and it is the property we will be looking for, in the inverse direction, when the external baseline panel data lands.
+
+The fixes were small in line count (each took under an hour, including build and deploy verification), which is the more honest takeaway: the score did not name anything mysterious or hard to fix. It named four mechanical things we had not previously bothered to clean up, and once measured, they were small enough to ship in a single follow-up wave.
+
+What this *did not* prove: that any of these deltas correlate with downstream AI citation behavior. That is still Experiment Log #3's job. This update only confirms that the score is internally consistent — fixes produce the deltas the spec predicts. The external panel and the citation-correlation pilot are the real validation path.

@@ -10,6 +10,33 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Design tweaks, typo fixes, broken-link repairs, and translation backfills do **not** trigger a version bump. Only changes to framework concepts and content claims are tracked here.
 
+## [1.5.2] — 2026-05-24 — **Experiment Log #1 follow-up**
+
+### Headline
+
+All four fixes promised at the end of Experiment Log #1 ("What we are still changing on our own sites") shipped the same day as the original v1.5.1 errata, in two waves. The four fixes covered: `propel-lab.co.jp` description (47 → 129 chars, shipped earlier in v1.5.1), `kaoriq.com` robots.txt AI-bot opt-in, `llmoframework.com` `/llms.txt` link section, and `kenimoto.dev` `/llms.txt` link section. Concurrently, `mypcrig.com` and `kaoriq.com` had their `Person` schema lifted out of `Organization.founder` nesting into an independent `@type` block, addressing the second item on the same to-do list.
+
+The post was closed with an **"Update (2026-05-24, same day): re-measured after shipping the four fixes"** section in all 8 locales, with a before/after table and a delta analysis showing that the rule-predicted score changes match the observed score changes exactly.
+
+### What changed (per locale, 8 files)
+
+- Appended `## Update (2026-05-24, same day): re-measured after shipping the four fixes` to `experiments/dogfooding-our-own-sites.md` in EN/JA/PT/ES/KO/ZH/DE/FR
+- Re-measured scores published: `llmoframework.com` 96 → 99 (llms-txt 90 → 100), `kenimoto.dev` 96 → 99 (llms-txt 90 → 100), `kaoriq.com` 93 → 96 (jsonld 82 → 94), `mypcrig.com` 90 → 93 (jsonld 82 → 94), `propel-lab.co.jp` 96 → 96 (already updated in v1.5.1)
+- Delta analysis: `llms-txt` weight 20 × 10-point jump (90 → 100) = +2 overall (rounded to +3 by per-check rounding); `jsonld` `@type`-count bump (+12 per recognized `@type`, weight 20%) = ~+2.4 overall — both observed deltas match the spec-predicted deltas
+- Honest framing: "this update only confirms that the score is internally consistent — fixes produce the deltas the spec predicts. The external panel and the citation-correlation pilot are the real validation path"
+
+### What this proves (and what it does not)
+
+It proves that the score is **internally consistent**: when the underlying signal changes by the amount the spec describes, the score moves by the amount the spec predicts. That is the floor: a score that fails this is broken before any external-validity question can be asked.
+
+It does **not** prove that any of these deltas correlate with downstream AI citation behavior. That is still the job of Experiment Log #3 (citation-correlation pilot). The next two Experiment Logs (external baseline panel + citation-correlation pilot) remain the real validation path.
+
+### Why MINOR
+
+Same-day follow-up updates to a published Experiment Log with re-measurement data, no new framework component or scoring change. Marked MINOR (not PATCH) because the update materially completes the open commitment in v1.5.1's closing paragraph ("We will publish a follow-up Experiment Log when these are done, with re-measured scores. Honest delta or no delta."), which raises the post's evidentiary weight rather than just adding an editorial section.
+
+---
+
 ## [1.5.1] — 2026-05-24 — **Errata**
 
 ### Headline

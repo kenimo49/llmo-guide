@@ -135,3 +135,21 @@ Das ist der erste Eintrag in einer Public-Experiment-Log-Serie. Die nächsten be
 - **Pilot zur Korrelation von Zitierungen** — für ~50 URLs den LLMO Score mit der tatsächlichen KI-Zitationsrate vergleichen (Abfragen von ChatGPT, Claude und Perplexity). Das ist der erste echte Test, ob der Score das Outcome vorhersagt, das er vorherzusagen behauptet.
 
 Die komplette Roadmap steht unter [Experimental Projects](/de/experimental-projects/), und die v0.1-Score-Gewichte sind in der [Score v0.1 Draft Specification](/de/specifications/score-v01/) definiert.
+
+## Update (24.05.2026, am selben Tag): nach Auslieferung der vier Fixes neu vermessen
+
+Alle vier in "Was wir auf unseren eigenen Sites noch ändern" gelisteten Fixes wurden am selben Tag wie der ursprüngliche Post in zwei Wellen ausgeliefert. Neu vermessen mit `llmo-checker@0.1.0`:
+
+| Site | Vorher | Nachher | Was geholfen hat |
+|---|---|---|---|
+| `llmoframework.com` | 96 | **99** | `## Links`-Abschnitt in `/llms.txt` zu spec-konformen `- [title](url)`-Einträgen umgeschrieben (llms-txt 90 → 100) |
+| `kenimoto.dev` | 96 | **99** | Gleicher Fix: `## Links`, `## Books`, `## Blog Articles` und `## Research Papers` als `[title](url)`-Einträge neu geschrieben (llms-txt 90 → 100) |
+| `kaoriq.com` | 93 | **96** | `Person`-Schema als eigenständiger `@type` auf der Startseite ergänzt (vorher nur in `Organization.founder` verschachtelt, der Score zählt das nur einmal) — jsonld 82 → 94 |
+| `mypcrig.com` | 90 | **93** | Gleicher Fix: `Person` auf einen eigenen `@type`-Block angehoben — jsonld 82 → 94 |
+| `propel-lab.co.jp` | 96 | 96 | `<meta name="description">` war bereits in der v1.5.1-Welle von 47 auf 129 Zeichen erweitert worden |
+
+Die Deltas sind genau das, was die veröffentlichte Scoring-Regel vorhersagt: `llms-txt` hat Gewicht 20 × den 10-Punkte-Sprung (90 → 100) = +2 auf die Gesamtsumme (gerundet auf +3 durch das per-check Rounding), und der `@type`-Count-Bump in `jsonld` (+12 pro erkanntem `@type`, Gewicht 20%) landet als ~+2,4 auf der Gesamtsumme. Diese Art expliziter Vorhersagbarkeit ist genau das, was ein transparenter Score im Lighthouse-Stil als Nebenprodukt erhält — und genau die Eigenschaft, nach der wir in umgekehrter Richtung suchen werden, wenn die Daten des externen Baseline-Panels eintreffen.
+
+Die Fixes waren klein in Zeilen (jeder unter einer Stunde, inklusive Build und Deploy-Verifikation), was das ehrlichere Takeaway ist: Der Score hat nichts Mysteriöses oder Schwerlösbares benannt. Er hat vier mechanische Dinge benannt, die wir bisher nicht aufgeräumt hatten, und einmal gemessen waren sie klein genug, um alles in einer einzigen Follow-up-Welle auszuliefern.
+
+Was das **nicht** bewiesen hat: dass irgendeines dieser Deltas mit nachgelagertem KI-Zitationsverhalten korreliert. Das bleibt die Aufgabe von Experiment Log #3. Dieses Update bestätigt nur, dass der Score intern konsistent ist — Fixes produzieren die Deltas, die das Spec vorhersagt. Das externe Panel und der Citation-Correlation-Pilot bleiben der echte Validierungspfad.

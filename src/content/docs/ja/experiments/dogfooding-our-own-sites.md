@@ -135,3 +135,21 @@ curl -s https://propel-lab.com/lander | head -1
 - **引用相関パイロット** — 約 50 URL について、LLMO スコアと実際の AI 引用率（ChatGPT、Claude、Perplexity をプローブ）を比較する。スコアが主張する outcome を実際に予測できているかの初の本検証
 
 全ロードマップは [Experimental Projects](/ja/experimental-projects/) を参照。v0.1 スコアの重み定義は [Score v0.1 Draft Specification](/ja/specifications/score-v01/) にある。
+
+## Update (2026-05-24、同日): 4 つの fix 出荷後の再計測
+
+「自分のサイトでまだ変えていること」セクションで挙げた 4 つの fix が、元記事の投稿と同じ日に 2 wave で出荷された。`llmo-checker@0.1.0` で再計測:
+
+| サイト | Before | After | 効いたもの |
+|---|---|---|---|
+| `llmoframework.com` | 96 | **99** | `/llms.txt` の `## Links` セクションを spec 準拠の `- [title](url)` 形式に変換 (llms-txt 90 → 100) |
+| `kenimoto.dev` | 96 | **99** | 同じ修正: `## Links` `## Books` `## Blog Articles` `## Research Papers` を `[title](url)` 形式に書き直し (llms-txt 90 → 100) |
+| `kaoriq.com` | 93 | **96** | `Person` を独立した `@type` としてホームページに追加 (以前は `Organization.founder` にネストされていて、score は 1 回しかカウントしない) — jsonld 82 → 94 |
+| `mypcrig.com` | 90 | **93** | 同じ修正: `Person` を独立 `@type` ブロックに昇格 — jsonld 82 → 94 |
+| `propel-lab.co.jp` | 96 | 96 | `<meta name="description">` は v1.5.1 で 47 → 129 文字に拡張済み |
+
+delta は公開スコアリングルールの予測通り: `llms-txt` の weight 20 × 10 ポイント (90 → 100) = 全体 +2 (per-check 丸めで +3)。`jsonld` の `@type` カウント加点 (+12 per recognized `@type`、weight 20%) は全体に +2.4 程度。Lighthouse 系の透明スコアが副産物として持つ予測可能性そのものだ。外部ベースラインパネルのデータが揃ったとき、逆方向で同じ性質を探すことになる。
+
+修正の規模は line 数で小さく、各 1 時間以内 (build + deploy 確認込) で出荷できた。これがより誠実な takeaway だ: スコアが指摘したのは謎の何かではなく、これまで掃除を後回しにしていた 4 つの機械的な穴で、一度測ってしまえば single follow-up wave で全部出荷できる規模だった。
+
+これが**証明していないこと**: これらの delta が下流の AI 引用挙動と相関するかどうか。そこは Experiment Log #3 の仕事だ。この Update が確認したのはスコアが内部整合しているという 1 点のみ — fix が spec の予測する delta を生む。外部パネルと引用相関パイロットが本当の検証パスになる。
