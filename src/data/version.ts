@@ -9,9 +9,22 @@
  *
  * Design tweaks, typo fixes, translation backfills do NOT bump the version.
  */
-export const VERSION = '1.4.0';
+export const VERSION = '1.5.0';
 
 export const RELEASES = [
+  {
+    version: '1.5.0',
+    date: '2026-05-24',
+    summary:
+      'Phase 1 (Reproducibility) content kickoff. Score v0.1 Draft Specification and the first Public Experiment Log ("Dogfooding our own sites") shipped across 8 locales. Reference implementation released as open-llmo/llmo-checker on GitHub.',
+    highlights: [
+      'New Specifications section: Score v0.1 Draft Spec (5 substrate checks, weighted scoring, JSON output schema, versioning policy) translated to all 8 locales',
+      'New Experiments section: first Public Experiment Log measured 6 sites we own with llmo-checker, propel-lab.com flagged at 29/100, honest reporting with concrete fix backlog',
+      'Sidebar restructured: 2 new top-level sections (Specifications, Experiments) added in all 8 locales',
+      'Reference implementation: open-llmo/llmo-checker scaffold + minimal CLI (Node 20+, TypeScript, 5 checks, CI green, MIT) — npm publish pending account verification',
+      'Translation QA: avoid-ai-writing-{ja,en,pt,es,ko}-detect all PASS; zh/de/fr deferred to codex two-pass review',
+    ],
+  },
   {
     version: '1.4.0',
     date: '2026-05-24',

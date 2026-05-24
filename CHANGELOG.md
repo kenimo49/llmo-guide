@@ -10,6 +10,44 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Design tweaks, typo fixes, broken-link repairs, and translation backfills do **not** trigger a version bump. Only changes to framework concepts and content claims are tracked here.
 
+## [1.5.0] — 2026-05-24
+
+### Headline
+
+Phase 1 (Reproducibility) content kickoff. The release publishes the **Score v0.1 Draft Specification** and the first entry of a **Public Experiment Log** series ("Dogfooding our own sites"), both translated to all 8 locales. The reference implementation `open-llmo/llmo-checker` is now live on GitHub as a separate OSS repository.
+
+### Added (16 new pages across 8 locales / 2 page types)
+
+- `specifications/score-v01/` — formal LLMO Score v0.1 Draft Specification. Documents per-check scoring rules (`llms-txt` 20, `robots-ai` 15, `canonical` 15, `jsonld` 20, `meta` 15), JSON output schema with stability guarantees, exit codes, deliberate v0.1 exclusion list (Citation Visibility / Chunk Readability reserved for v0.2), and versioning policy
+- `experiments/dogfooding-our-own-sites/` — first Public Experiment Log. Measures 6 sites we own with `llmo-checker@0.1.0`: llmoframework.com 96, kenimoto.dev 96, legacydram.com 93, mypcrig.com 90, kaoriq.com 90, **propel-lab.com 29 (critical)**. Includes diagnosis of why the corporate site failed (JS redirect + missing canonical), concrete fix backlog, and follow-up commitment
+
+### Reference implementation (separate repo)
+
+- `open-llmo/llmo-checker` published on GitHub: Node 20+ TypeScript CLI, 5 static checks, weighted scoring (total weight 85), vitest suite (11 tests), GitHub Actions CI green on Node 20.x / 22.x
+- README badges (CI / npm version / npm downloads / supported Node / MIT) + CHANGELOG v0.1.0 entry
+- npm publish pending: account verification (2FA setup) blocked the publish. Interim install via `npx github:open-llmo/llmo-checker <url>` documented in README
+
+### Sidebar
+
+- New top-level "Specifications" section (translated to all 8 locales) linking the Score v0.1 Draft Spec
+- New top-level "Experiments" section (translated to all 8 locales) linking the dogfooding entry
+- Both sections placed directly after the existing "Open LLMO Research Initiative" group
+
+### Translation QA
+
+- `avoid-ai-writing-ja-detect`: ✅ PASS (Index 1)
+- `avoid-ai-writing-en-detect`: ✅ PASS after em-dash density reduction (6.25 → 1.25/1000w via colon / parenthetical / comma / semicolon substitutions per context)
+- `avoid-ai-writing-pt-detect`: ✅ PASS after EN residual cleanup ("AI bot" → "bots de IA", "roadmap" → "plano", "baseline" → "linha de base", "outcome" → "resultado", "shape" → "formato", "framing" → "enquadramento")
+- `avoid-ai-writing-es-detect`: ✅ PASS after voseo cleanup ("lanzás" → "lanzas", "Agregá" → "Agrega", "Fijá" → "Fija") + same EN residual sweep as pt + `corre` → `se ejecuta` calque fix
+- `avoid-ai-writing-ko`: ✅ PASS
+- `zh / de / fr`: deferred to codex two-pass review (no dedicated detect skill, pattern parity with EN canonical maintained)
+
+### i18n
+
+- Open LLMO Research Initiative now has 8-locale parity for Phase 0 + Phase 1 content (24 + 16 = 40 initiative pages across 8 locales)
+
+---
+
 ## [1.4.0] — 2026-05-24
 
 ### Headline

@@ -129,6 +129,20 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Specifications',
+          translations: { ja: '仕様', 'zh-CN': '规范', ko: '사양', de: 'Spezifikationen', fr: 'Spécifications', es: 'Especificaciones', 'pt-BR': 'Especificações' },
+          items: [
+            { label: 'Score v0.1 Draft', slug: 'specifications/score-v01' },
+          ],
+        },
+        {
+          label: 'Experiments',
+          translations: { ja: '実験ログ', 'zh-CN': '实验日志', ko: '실험 로그', de: 'Experimente', fr: 'Expériences', es: 'Experimentos', 'pt-BR': 'Experimentos' },
+          items: [
+            { label: 'Dogfooding our own sites', translations: { ja: '自社サイトのdogfooding', 'zh-CN': '自家站点 dogfooding', ko: '자사 사이트 도그푸딩', de: 'Dogfooding eigener Sites', fr: 'Dogfooding de nos sites', es: 'Dogfooding de nuestros sitios', 'pt-BR': 'Dogfooding dos nossos sites' }, slug: 'experiments/dogfooding-our-own-sites' },
+          ],
+        },
+        {
           label: 'Getting Started',
           translations: { ja: 'はじめに', 'zh-CN': '入门指南', ko: '시작하기', de: 'Erste Schritte', fr: 'Pour commencer', es: 'Primeros pasos', 'pt-BR': 'Primeiros passos' },
           items: [
