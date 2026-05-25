@@ -9,9 +9,20 @@
  *
  * Design tweaks, typo fixes, translation backfills do NOT bump the version.
  */
-export const VERSION = '1.6.0';
+export const VERSION = '1.6.1';
 
 export const RELEASES = [
+  {
+    version: '1.6.1',
+    date: '2026-05-25',
+    summary:
+      'Home page now lists reference implementations applying the Framework to specific verticals. First entry: AI Native MEO (ainativemeo.com), the local business and map-search vertical adaptation.',
+    highlights: [
+      'New "Reference implementations" section added at the bottom of the home page (index.mdx)',
+      'AI Native MEO (ainativemeo.com) listed as the local business / map-search vertical adaptation',
+      'Editorial framing kept light to preserve ainativemeo.com\'s independent-media citation value',
+    ],
+  },
   {
     version: '1.6.0',
     date: '2026-05-24',

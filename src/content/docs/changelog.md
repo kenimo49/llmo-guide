@@ -18,6 +18,19 @@ The current version, the `package.json` `version` field, and the git tag `vX.Y.Z
 
 The full machine-readable history lives in [CHANGELOG.md on GitHub](https://github.com/kenimo49/llmo-guide/blob/main/CHANGELOG.md). Below is the human-readable summary.
 
+## v1.6.1 — 2026-05-25
+
+**Headline**: The home page now lists reference implementations applying the Framework to specific verticals. First entry: **AI Native MEO** (`ainativemeo.com`), the local business and map-search vertical adaptation.
+
+### Added
+
+- A new `Reference implementations` section at the bottom of the [home page](/) (EN canonical), introducing how vertical adaptations of the Framework are tracked
+- First listed implementation: [AI Native MEO](https://ainativemeo.com/) — practitioner-facing articles on Google Business Profile as JSON-LD, NAP entity resolution, and how each AI engine cites local data
+
+### Why this is a PATCH bump
+
+The change is a new section on an existing page, not a new component, guide, or case study. The Framework's structure and scoring are unchanged.
+
 ## v1.4.0 — 2026-05-24
 
 **Headline**: llmoframework.com is now positioned as the **Open LLMO Research Initiative**, with the LLMO Framework as its first published reference artifact. Three top-level Initiative pages ship across all 8 locales, the sidebar puts the Initiative before the Framework, and the Footer carries the Founder attribution site-wide.

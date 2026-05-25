@@ -10,6 +10,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Design tweaks, typo fixes, broken-link repairs, and translation backfills do **not** trigger a version bump. Only changes to framework concepts and content claims are tracked here.
 
+## [1.6.1] — 2026-05-25
+
+### Headline
+
+Home page now lists reference implementations applying the Framework to specific verticals. First entry: AI Native MEO (`ainativemeo.com`), the local business and map-search vertical adaptation.
+
+### Added
+
+- New `## Reference implementations` section at the bottom of `src/content/docs/index.mdx` (EN canonical)
+- First bullet: AI Native MEO (`ainativemeo.com`) — local business / map-search vertical, with practitioner-facing articles on Google Business Profile as JSON-LD, NAP entity resolution, and how each AI engine cites local data
+
+### Notes
+
+- Editorial framing kept light ("reference work that applies the Framework to specific verticals") to preserve the independent-media position of `ainativemeo.com` in the citation graph
+- Localised changelog summaries added in EN + JA changelog pages; per-locale `index.mdx` translations of the new section will follow as a separate translation backfill (no version bump)
+
+[1.6.1]: https://github.com/kenimo49/llmo-guide/compare/v1.6.0...v1.6.1
+
+
 ## [1.6.0] — 2026-05-24 — **Public Experiment Log #2: External baseline panel**
 
 ### Headline
