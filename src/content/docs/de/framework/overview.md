@@ -6,6 +6,8 @@ pubDate: 2026-04-30
 
 Das LLMO-Framework definiert fünf Kernkomponenten, die bestimmen, ob KI-Systeme Ihre Inhalte finden, verstehen und korrekt zitieren können.
 
+Möchten Sie zuerst das Konzept verstehen, lesen Sie [Was ist LLMO?](/de/guide/what-is-llmo/); wollen Sie sofort loslegen, folgen Sie dem [30-Minuten-Quickstart](/de/guide/quickstart/).
+
 ## Die fünf Komponenten
 
 ### 1. Wissensklarheit

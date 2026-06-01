@@ -6,6 +6,8 @@ pubDate: 2026-05-07
 
 O LLMO Framework define cinco componentes principais que determinam se sistemas de IA conseguem descobrir, entender e citar seu conteúdo com precisão.
 
+Quer começar pelo conceito? Leia [O que é LLMO?](/pt/guide/what-is-llmo/). Quer implementar logo? Vá direto para o [Início rápido em 30 min](/pt/guide/quickstart/).
+
 ## Os Cinco Componentes
 
 ### 1. Clareza de conhecimento

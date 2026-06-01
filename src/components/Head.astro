@@ -140,6 +140,24 @@ const headTags: HeadTag[] = (route?.head ?? []).filter((t: HeadTag) => {
   gtag('config', 'G-365LMYNSYQ');
 </script>
 
+<!-- GA4 funnel events: outbound + key CTA clicks (mark as key events in GA4 console) -->
+<script is:inline>
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href]');
+    if (!a || typeof gtag !== 'function') return;
+    var external = a.host && a.host !== location.host;
+    if (external) {
+      gtag('event', 'outbound_click', {
+        link_url: a.href,
+        link_domain: a.host,
+        link_text: (a.textContent || '').trim().slice(0, 100),
+      });
+    }
+    if (/github\.com$/.test(a.host)) gtag('event', 'cta_github');
+    if (/^\/(?:[a-z]{2}\/)?guide\/quickstart\/?$/.test(a.pathname)) gtag('event', 'cta_quickstart');
+  }, true);
+</script>
+
 <!-- Open Graph: locale (underscore form) + alternates + image -->
 <meta property="og:locale" content={ogLocale} />
 {ogLocaleAlternates.map((loc) => <meta property="og:locale:alternate" content={loc} />)}

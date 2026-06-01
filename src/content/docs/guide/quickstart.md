@@ -22,7 +22,7 @@ head:
       }
 ---
 
-You can make your site AI-discoverable in 30 minutes with three files. This guide covers the minimum viable LLMO implementation.
+**How do you do LLMO?** In practice it starts with three files. You can make your site AI-discoverable in 30 minutes — this guide covers the minimum viable LLMO implementation. New to the concept first? Read [What is LLMO?](/guide/what-is-llmo/), then come back here.
 
 ## The Three Essential Files
 

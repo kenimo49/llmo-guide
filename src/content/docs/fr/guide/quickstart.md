@@ -22,7 +22,7 @@ head:
       }
 ---
 
-Vous pouvez rendre votre site visible par l'IA en 30 minutes avec trois fichiers. Ce guide couvre l'implementation minimale viable de LLMO.
+Comment faire du LLMO ? En pratique, cela commence par trois fichiers. Vous pouvez rendre votre site visible par l'IA en 30 minutes avec ces trois fichiers. Ce guide couvre l'implementation minimale viable de LLMO.
 
 ## Les trois fichiers essentiels
 
@@ -190,3 +190,5 @@ Ce demarrage rapide couvre les composants **Signaux de recherche** et **Formatag
 - [Signaux d'autorité](/fr/framework/authority-signals/) -- Construisez une expertise verifiable
 - [Signaux de citation](/fr/framework/citation-signals/) -- Fournissez des donnees que l'IA souhaite citer
 - [Vue d'ensemble du Framework](/fr/framework/overview/) -- Evaluez votre site sur les 5 composants
+
+Vous partez du concept plutot que de l'implementation ? Lisez d'abord [Qu'est-ce que LLMO ?](/fr/guide/what-is-llmo/), puis revenez ici.

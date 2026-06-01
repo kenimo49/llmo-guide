@@ -22,7 +22,9 @@ head:
       }
 ---
 
-Sie können Ihre Website in 30 Minuten KI-auffindbar machen — mit drei Dateien. Diese Anleitung beschreibt die minimale LLMO-Implementierung.
+Wie setzt man LLMO um? In der Praxis beginnt es mit drei Dateien. Sie können Ihre Website in 30 Minuten KI-auffindbar machen. Diese Anleitung beschreibt die minimale LLMO-Implementierung.
+
+Wenn Sie zuerst das Konzept verstehen möchten, lesen Sie [Was ist LLMO?](/de/guide/what-is-llmo/) und kommen Sie dann hierher zurück.
 
 ## Die drei wichtigsten Dateien
 

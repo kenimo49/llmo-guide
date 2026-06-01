@@ -79,3 +79,8 @@ LLMO is an umbrella term that includes both AEO and GEO and extends beyond them 
 - **LLMO** — covers AEO + GEO + direct chat queries + RAG applications + autonomous AI agents browsing the web.
 
 In one line: **GEO and AEO are subsets of LLMO; LLMO is the broader implementation-focused standard.**
+
+## Next steps
+
+- **How do you do LLMO?** Follow the [30-minute Quickstart](/guide/quickstart/) to add the three essential files to your site.
+- **Want the full model?** Read [The LLMO Framework](/framework/overview/) — six scored components for AI discoverability.

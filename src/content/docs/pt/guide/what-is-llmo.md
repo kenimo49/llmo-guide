@@ -69,3 +69,8 @@ O LLMO é um conceito guarda-chuva que inclui:
 - **GEO (Generative Engine Optimization)**: Framework acadêmico para otimizar a visibilidade em motores de busca generativos. Introduzido por pesquisadores da Princeton University (2023).
 
 O LLMO engloba ambas as abordagens, fornecendo um framework mais amplo e focado em implementação para todas as interações com LLMs — não apenas motores de busca.
+
+## Próximos passos
+
+- [Início rápido em 30 min](/pt/guide/quickstart/) — adicione os três arquivos essenciais (robots.txt, llms.txt e JSON-LD) ao seu site.
+- [LLMO Framework](/pt/framework/overview/) — os componentes de pontuação para avaliar a visibilidade do seu site por IA.

@@ -62,6 +62,8 @@ head:
 
 **The LLMO Framework defines six core components — Knowledge Clarity, Structural Formatting, Retrieval Signals, Authority Signals, Citation Signals, and Coherence Signals — that together determine whether AI systems can discover, understand, and accurately cite your content.** Each component is scored 0-3, for a maximum site score of 18 points.
 
+New to the concept? Start with [What is LLMO?](/guide/what-is-llmo/), or jump straight to the [30-minute Quickstart](/guide/quickstart/).
+
 ## What are the six components of the LLMO Framework?
 
 ### 1. Knowledge Clarity

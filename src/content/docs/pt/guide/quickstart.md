@@ -22,7 +22,7 @@ head:
       }
 ---
 
-Você pode tornar seu site descobrível por IA em 30 minutos com três arquivos. Este guia cobre a implementação mínima viável do LLMO.
+Como fazer LLMO? Na prática, começa com três arquivos. Você pode tornar seu site descobrível por IA em 30 minutos. Este guia cobre a implementação mínima viável do LLMO.
 
 ## Os Três Arquivos Essenciais
 
@@ -190,3 +190,5 @@ Este início rápido cobre os componentes de **Sinais de recuperação** e **For
 - [Sinais de autoridade](/pt/framework/authority-signals/) — Construa expertise verificável
 - [Sinais de citação](/pt/framework/citation-signals/) — Forneça dados que a IA quer citar
 - [Visão Geral do Framework](/pt/framework/overview/) — Avalie seu site em todos os 5 componentes
+
+Quer começar pelo conceito? Leia [O que é LLMO?](/pt/guide/what-is-llmo/) primeiro e depois volte para implementar.
