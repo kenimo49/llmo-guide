@@ -24,7 +24,7 @@ head:
             "name": "How long does it take to implement LLMO?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A minimum LLMO baseline (llms.txt, /ai/ Markdown, robots.txt allowing GPTBot/ClaudeBot/PerplexityBot, JSON-LD on key pages) takes about 30 minutes on a small site. Reaching 13/15 on the LLMO Framework typically takes a few weeks of incremental work as you fix authority and citation signals across the site."
+              "text": "A minimum LLMO baseline (llms.txt, /ai/ Markdown, robots.txt allowing GPTBot/ClaudeBot/PerplexityBot, JSON-LD on key pages) takes about 30 minutes on a small site. Reaching 16/18 on the LLMO Framework typically takes a few weeks of incremental work as you fix authority and citation signals across the site."
             }
           },
           {
@@ -88,7 +88,7 @@ head:
             "name": "Can I implement LLMO on a static site (no backend)?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Static sites are the ideal LLMO target — every component (llms.txt, /ai/ Markdown, JSON-LD, robots.txt, sitemap.xml) is a static file. The site you are reading is a static Astro site published on GitHub Pages, scoring 15/15 on the LLMO Framework."
+              "text": "Yes. Static sites are the ideal LLMO target — every component (llms.txt, /ai/ Markdown, JSON-LD, robots.txt, sitemap.xml) is a static file. The site you are reading is a static Astro site published on GitHub Pages, scoring 18/18 on the LLMO Framework."
             }
           },
           {
@@ -117,7 +117,7 @@ Most LLMO work — semantic HTML, JSON-LD, sitemaps, robots.txt — also strengt
 ## How long does it take to implement LLMO?
 
 - **30 minutes**: minimum baseline (llms.txt, /ai/ Markdown, AI-allowing robots.txt, JSON-LD on key pages). See the [Quickstart](/guide/quickstart/).
-- **A few weeks**: reach 13/15 on the [LLMO Framework](/framework/overview/). Most of the time goes into Authority and Citation signals across the site.
+- **A few weeks**: reach 16/18 on the [LLMO Framework](/framework/overview/). Most of the time goes into Authority and Citation signals across the site.
 
 ## What should I implement first?
 
@@ -182,7 +182,7 @@ See [LLMO vs SEO vs AEO vs GEO](/guide/llmo-vs-seo-aeo-geo/) for the full breakd
 
 Yes. Static sites are the ideal LLMO target — every component (llms.txt, /ai/ Markdown, JSON-LD, robots.txt, sitemap.xml) is a static file.
 
-The site you are reading is a static Astro site published on GitHub Pages, scoring 15/15 on the LLMO Framework.
+The site you are reading is a static Astro site published on GitHub Pages, scoring 18/18 on the LLMO Framework.
 
 ## How often should I update content for Citation Signals?
 

@@ -122,7 +122,7 @@ Visibilidade em IA não é uma otimização única. Requer monitoramento contín
 
 | Descoberta | Fonte | Relevância para LLMO |
 |------------|-------|---------------------|
-| +8.337% de crescimento de tráfego por IA possível | TRM Labs | Os 5 componentes trabalhando juntos |
+| +8.337% de crescimento de tráfego por IA possível | TRM Labs | Os 6 componentes trabalhando juntos |
 | Conversão 25x maior da busca por IA | Go Fish Digital | Qualidade acima de quantidade |
 | Menções na web 3x mais preditivas que backlinks | Ahrefs (75 mil marcas) | Sinais de autoridade > SEO tradicional |
 | +115,1% de visibilidade ao adicionar estatísticas | Paper GEO (KDD 2024) | Sinais de citação de maior alavancagem |

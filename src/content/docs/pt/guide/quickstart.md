@@ -189,6 +189,6 @@ Este início rápido cobre os componentes de **Sinais de recuperação** e **For
 - [Clareza de conhecimento](/pt/framework/knowledge-clarity/) — Escreva conteúdo que a IA consegue entender
 - [Sinais de autoridade](/pt/framework/authority-signals/) — Construa expertise verificável
 - [Sinais de citação](/pt/framework/citation-signals/) — Forneça dados que a IA quer citar
-- [Visão Geral do Framework](/pt/framework/overview/) — Avalie seu site em todos os 5 componentes
+- [Visão Geral do Framework](/pt/framework/overview/) — Avalie seu site em todos os 6 componentes
 
 Quer começar pelo conceito? Leia [O que é LLMO?](/pt/guide/what-is-llmo/) primeiro e depois volte para implementar.

@@ -73,4 +73,4 @@ LLMO umfasst beide Ansätze und bietet gleichzeitig ein umfassenderes, praxisori
 ## Nächste Schritte
 
 - [30-Minuten-Quickstart](/de/guide/quickstart/) — fügen Sie die drei wichtigsten Dateien zu Ihrer Website hinzu
-- [LLMO Framework](/de/framework/overview/) — bewerten Sie Ihre KI-Auffindbarkeit anhand der fünf Komponenten
+- [LLMO Framework](/de/framework/overview/) — bewerten Sie Ihre KI-Auffindbarkeit anhand der sechs Komponenten

@@ -38,7 +38,7 @@
 
 ## How LLMO Relates to This Research
 
-The LLMO Framework synthesizes these findings into 5 implementable components:
+The LLMO Framework synthesizes these findings into 6 implementable components:
 1. Knowledge Clarity — From GEO's clarity metrics
 2. Structural Formatting — From Microsoft's Structure principle
 3. Retrieval Signals — From llms.txt + crawlability research

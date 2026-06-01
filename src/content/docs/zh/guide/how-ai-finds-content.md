@@ -75,7 +75,7 @@ RAG系统从向量数据库中检索相关文档，并将其注入AI的上下文
 2. **结构化内容** → 更好的RAG检索 → 更好的AI回答 → 更多引用
 3. **更多引用** → 更强的权威信号 → 在网络搜索中更容易被选中
 
-LLMO同时针对三条路径进行优化。LLMO Framework的[五大组件](/zh/framework/overview/)分别针对这些发现路径的不同方面。
+LLMO同时针对三条路径进行优化。LLMO Framework的[六大组件](/zh/framework/overview/)分别针对这些发现路径的不同方面。
 
 ## 常见误区
 

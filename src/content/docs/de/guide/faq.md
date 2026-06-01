@@ -13,7 +13,7 @@ head:
         "inLanguage": "de",
         "mainEntity": [
           {"@type": "Question", "name": "Ersetzt LLMO SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. LLMO und SEO lösen unterschiedliche Probleme und laufen parallel. SEO zielt auf gerankte Suchergebnisse; LLMO zielt darauf ab, von KI-Systemen (ChatGPT, Claude, Gemini, Perplexity) zitiert, zusammengefasst oder direkt beantwortet zu werden. Die meisten LLMO-Arbeiten — semantisches HTML, JSON-LD, Sitemaps, robots.txt — stärken auch SEO, daher musst du dich nicht entscheiden."}},
-          {"@type": "Question", "name": "Wie lange dauert die LLMO-Implementierung?", "acceptedAnswer": {"@type": "Answer", "text": "Eine minimale LLMO-Baseline (llms.txt, /ai/ Markdown, robots.txt mit Erlaubnis für GPTBot/ClaudeBot/PerplexityBot, JSON-LD auf wichtigen Seiten) dauert auf einer kleinen Site etwa 30 Minuten. 13/15 im LLMO-Framework zu erreichen, dauert typischerweise einige Wochen schrittweiser Arbeit."}},
+          {"@type": "Question", "name": "Wie lange dauert die LLMO-Implementierung?", "acceptedAnswer": {"@type": "Answer", "text": "Eine minimale LLMO-Baseline (llms.txt, /ai/ Markdown, robots.txt mit Erlaubnis für GPTBot/ClaudeBot/PerplexityBot, JSON-LD auf wichtigen Seiten) dauert auf einer kleinen Site etwa 30 Minuten. 16/18 im LLMO-Framework zu erreichen, dauert typischerweise einige Wochen schrittweiser Arbeit."}},
           {"@type": "Question", "name": "Was sollte ich zuerst implementieren?", "acceptedAnswer": {"@type": "Answer", "text": "Beginne mit Abrufsignalen (Komponente 3): /llms.txt, /ai/ Markdown-Zusammenfassungen, robots.txt mit ausdrücklicher Erlaubnis für KI-Crawler, erreichbare sitemap.xml. Ohne diese können Wissensklarheit und Autoritätsarbeit nicht gefunden werden."}},
           {"@type": "Question", "name": "Brauche ich wirklich /llms.txt und ein /ai/-Verzeichnis?", "acceptedAnswer": {"@type": "Answer", "text": "Beide sind empfohlen, aber optional. /llms.txt (gemäß llmstxt.org) gibt einer KI eine schnelle, strukturierte Karte der Site — besonders wertvoll, wenn KI-Agenten Seiten direkt abrufen statt über Suche. /ai/ Markdown gibt Crawlern und Copy-Paste-Nutzern sauberen Text ohne HTML-Chrome."}},
           {"@type": "Question", "name": "Wie blockiere ich unerwünschte KI-Crawler?", "acceptedAnswer": {"@type": "Answer", "text": "Verwende robots.txt mit expliziten User-agent-Direktiven. Beispiel: 'User-agent: GPTBot' gefolgt von 'Disallow: /' wählt deine Site aus den OpenAI-Trainingscrawls aus. Jeder große Crawler — GPTBot (OpenAI), ClaudeBot (Anthropic), PerplexityBot (Perplexity), Google-Extended (Google), Bytespider (ByteDance) — veröffentlicht User-Agent und Opt-out-Semantik."}},
@@ -21,7 +21,7 @@ head:
           {"@type": "Question", "name": "Ist JSON-LD erforderlich oder reicht reines HTML?", "acceptedAnswer": {"@type": "Answer", "text": "Reines semantisches HTML allein funktioniert, schneidet aber schlechter ab. JSON-LD lässt dich explizite Fakten ausdrücken — author, publisher, datePublished, sameAs-Identitäten —, die KI-Systeme ohne Prosa-Parsing konsumieren. Für LLMO ist JSON-LD die günstigste Einzelmaßnahme, die Strukturierte Formatierung und Autoritätssignale gleichzeitig hebt."}},
           {"@type": "Question", "name": "Ist LLMO für B2B-Sites mit wenig Traffic relevant?", "acceptedAnswer": {"@type": "Answer", "text": "Ja — wohl mehr noch. B2B-Traffic aus KI-Suche konvertiert deutlich besser als aus generischer Suche (Go Fish Digital beobachtete 25× höhere Conversion). Wenn Käufer KI-Assistenten nach Anbietern fragen, ist die zitierte Quelle zu sein wertvoller als auf Seite 2 von Google."}},
           {"@type": "Question", "name": "Wie verhält sich LLMO zu AEO und GEO?", "acceptedAnswer": {"@type": "Answer", "text": "LLMO ist der Oberbegriff. AEO (Jason Barnard, 2018) zielt auf Featured Snippets und Voice Answers — kein formales akademisches Framework. GEO (Princeton/IIT Delhi/Adobe, KDD 2024) ist die akademische Arbeit, fokussiert auf generative Suche. LLMO synthetisiert beides plus Abruf- und Autoritätssignale zu einem implementierbaren Framework."}},
-          {"@type": "Question", "name": "Kann ich LLMO auf einer statischen Site (ohne Backend) implementieren?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Statische Sites sind das ideale LLMO-Ziel — jede Komponente (llms.txt, /ai/ Markdown, JSON-LD, robots.txt, sitemap.xml) ist eine statische Datei. Die Site, die du gerade liest, ist eine statische Astro-Site auf GitHub Pages und erreicht 15/15 im LLMO-Framework."}},
+          {"@type": "Question", "name": "Kann ich LLMO auf einer statischen Site (ohne Backend) implementieren?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Statische Sites sind das ideale LLMO-Ziel — jede Komponente (llms.txt, /ai/ Markdown, JSON-LD, robots.txt, sitemap.xml) ist eine statische Datei. Die Site, die du gerade liest, ist eine statische Astro-Site auf GitHub Pages und erreicht 18/18 im LLMO-Framework."}},
           {"@type": "Question", "name": "Wie oft sollte ich Inhalte für Zitiersignale aktualisieren?", "acceptedAnswer": {"@type": "Answer", "text": "KI-Systeme gewichten Aktualität. Aktualisiere primäre Referenzseiten (Frameworks, Leitfäden, Papers/Forschung) mindestens vierteljährlich, schnelllebige Themen (Modell-Releases, KI-Politik, Tooling) monatlich. Aktualisiere immer sowohl datePublished (Erstellung) als auch dateModified (Überarbeitung). Microsofts Richtlinien vom Oktober 2025 listen Aktualität als eines von drei Kernprinzipien."}}
         ]
       }
@@ -41,7 +41,7 @@ Die meisten LLMO-Arbeiten stärken auch SEO, daher musst du dich nicht entscheid
 ## Wie lange dauert die LLMO-Implementierung?
 
 - **30 Minuten**: minimale Baseline. Siehe [Schnellstart](/de/guide/quickstart/).
-- **Einige Wochen**: 13/15 im [LLMO-Framework](/de/framework/overview/) erreichen.
+- **Einige Wochen**: 16/18 im [LLMO-Framework](/de/framework/overview/) erreichen.
 
 ## Was sollte ich zuerst implementieren?
 
@@ -84,7 +84,7 @@ Volle Aufschlüsselung unter [LLMO vs SEO vs AEO vs GEO](/de/guide/llmo-vs-seo-a
 
 ## Kann ich LLMO auf einer statischen Site implementieren?
 
-Ja. Jede Komponente ist eine statische Datei. Diese Site ist eine statische Astro-Site auf GitHub Pages, 15/15.
+Ja. Jede Komponente ist eine statische Datei. Diese Site ist eine statische Astro-Site auf GitHub Pages, 18/18.
 
 ## Wie oft sollte ich Inhalte aktualisieren?
 

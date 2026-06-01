@@ -189,4 +189,4 @@ This quickstart covers the **Retrieval Signals** and **Structural Formatting** c
 - [Knowledge Clarity](/framework/knowledge-clarity/) — Write content AI can understand
 - [Authority Signals](/framework/authority-signals/) — Build verifiable expertise
 - [Citation Signals](/framework/citation-signals/) — Provide data AI wants to cite
-- [Framework Overview](/framework/overview/) — Score your site across all 5 components
+- [Framework Overview](/framework/overview/) — Score your site across all 6 components

@@ -189,6 +189,6 @@ Ce demarrage rapide couvre les composants **Signaux de recherche** et **Formatag
 - [Clarté des connaissances](/fr/framework/knowledge-clarity/) -- Ecrivez du contenu que l'IA peut comprendre
 - [Signaux d'autorité](/fr/framework/authority-signals/) -- Construisez une expertise verifiable
 - [Signaux de citation](/fr/framework/citation-signals/) -- Fournissez des donnees que l'IA souhaite citer
-- [Vue d'ensemble du Framework](/fr/framework/overview/) -- Evaluez votre site sur les 5 composants
+- [Vue d'ensemble du Framework](/fr/framework/overview/) -- Evaluez votre site sur les 6 composants
 
 Vous partez du concept plutot que de l'implementation ? Lisez d'abord [Qu'est-ce que LLMO ?](/fr/guide/what-is-llmo/), puis revenez ici.

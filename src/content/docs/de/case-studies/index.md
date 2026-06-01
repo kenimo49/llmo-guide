@@ -122,7 +122,7 @@ KI-Sichtbarkeit ist keine einmalige Optimierung. Sie erfordert laufendes Monitor
 
 | Erkenntnis | Quelle | LLMO-Relevanz |
 |------------|--------|---------------|
-| +8.337 % KI-Traffic-Wachstum möglich | TRM Labs | Alle 5 Komponenten im Zusammenspiel |
+| +8.337 % KI-Traffic-Wachstum möglich | TRM Labs | Alle 6 Komponenten im Zusammenspiel |
 | 25-fach höhere Conversion durch KI-Suche | Go Fish Digital | Qualität vor Quantität |
 | Web Mentions 3-fach prädiktiver als Backlinks | Ahrefs (75.000 Marken) | Autoritätssignale > traditionelle SEO |
 | +115,1 % Sichtbarkeit durch Statistikintegration | GEO Paper (KDD 2024) | Zitiersignale mit größtem Hebel |

@@ -75,7 +75,7 @@ Ces voies se renforcent mutuellement :
 2. **Un contenu structure** → Une meilleure recuperation RAG → De meilleures reponses IA → Plus de citations
 3. **Plus de citations** → Des signaux d'autorite plus forts → Plus de chances d'etre selectionne dans la recherche web
 
-LLMO optimise simultanement pour les trois voies. Les [cinq composants](/fr/framework/overview/) du LLMO Framework traitent chacun des aspects specifiques de ces voies de decouverte.
+LLMO optimise simultanement pour les trois voies. Les [six composants](/fr/framework/overview/) du LLMO Framework traitent chacun des aspects specifiques de ces voies de decouverte.
 
 ## Idees recues
 

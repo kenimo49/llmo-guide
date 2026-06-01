@@ -189,4 +189,4 @@ Sitemap: https://yoursite.com/sitemap.xml
 - [知识清晰度](/zh/framework/knowledge-clarity/) — 撰写AI能理解的内容
 - [权威信号](/zh/framework/authority-signals/) — 建立可验证的专业权威
 - [引用信号](/zh/framework/citation-signals/) — 提供AI愿意引用的数据
-- [Framework Overview](/zh/framework/overview/) — 从5大组件全面评估你的网站
+- [Framework Overview](/zh/framework/overview/) — 从6大组件全面评估你的网站

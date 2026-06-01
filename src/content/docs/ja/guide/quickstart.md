@@ -189,4 +189,4 @@ Sitemap: https://yoursite.com/sitemap.xml
 - [ナレッジクラリティ](/ja/framework/knowledge-clarity/) -- AIが理解できるコンテンツの書き方
 - [権威性シグナル](/ja/framework/authority-signals/) -- 検証可能な専門性の構築
 - [引用シグナル](/ja/framework/citation-signals/) -- AIが引用したくなるデータの提供
-- [Framework Overview](/ja/framework/overview/) -- 5つのコンポーネントでサイトをスコアリング
+- [Framework Overview](/ja/framework/overview/) -- 6つのコンポーネントでサイトをスコアリング

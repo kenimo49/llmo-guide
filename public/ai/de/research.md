@@ -38,7 +38,7 @@
 
 ## Beziehung zum LLMO Framework
 
-Das LLMO Framework synthetisiert diese Erkenntnisse in 5 implementierbaren Komponenten:
+Das LLMO Framework synthetisiert diese Erkenntnisse in 6 implementierbaren Komponenten:
 1. Wissensklarheit — aus den GEO-Klarheits-Metriken
 2. Strukturierte Formatierung — aus dem Microsoft-Struktur-Prinzip
 3. Abrufsignale — aus llms.txt + Crawlbarkeits-Forschung

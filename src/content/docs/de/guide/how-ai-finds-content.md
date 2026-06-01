@@ -75,7 +75,7 @@ Diese Wege verstärken sich gegenseitig:
 2. **Strukturierte Inhalte** → Besseres RAG-Retrieval → Bessere KI-Antworten → Mehr Zitierungen
 3. **Mehr Zitierungen** → Stärkere Autoritätssignale → Höhere Wahrscheinlichkeit, in der Websuche ausgewählt zu werden
 
-LLMO optimiert für alle drei Wege gleichzeitig. Die [fünf Komponenten](/de/framework/overview/) des LLMO Frameworks adressieren jeweils spezifische Aspekte dieser Entdeckungswege.
+LLMO optimiert für alle drei Wege gleichzeitig. Die [sechs Komponenten](/de/framework/overview/) des LLMO Frameworks adressieren jeweils spezifische Aspekte dieser Entdeckungswege.
 
 ## Häufige Missverständnisse
 

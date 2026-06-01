@@ -122,7 +122,7 @@ AI visibility is not a one-time optimization. It requires ongoing monitoring and
 
 | Finding | Source | LLMO Relevance |
 |---------|--------|---------------|
-| +8,337% AI traffic growth possible | TRM Labs | All 5 components working together |
+| +8,337% AI traffic growth possible | TRM Labs | All 6 components working together |
 | 25x higher conversion from AI search | Go Fish Digital | Quality over quantity |
 | Web mentions 3x more predictive than backlinks | Ahrefs (75K brands) | Authority Signals > traditional SEO |
 | +115.1% visibility from adding statistics | GEO Paper (KDD 2024) | Citation Signals highest leverage |

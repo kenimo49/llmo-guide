@@ -191,4 +191,4 @@ Dieser Schnellstart deckt die Komponenten **Abrufsignale** und **Strukturierte F
 - [Wissensklarheit](/de/framework/knowledge-clarity/) — Inhalte schreiben, die KI verstehen kann
 - [Autoritätssignale](/de/framework/authority-signals/) — Überprüfbare Expertise aufbauen
 - [Zitiersignale](/de/framework/citation-signals/) — Daten bereitstellen, die KI gerne zitiert
-- [Framework-Übersicht](/de/framework/overview/) — Ihre Website anhand aller 5 Komponenten bewerten
+- [Framework-Übersicht](/de/framework/overview/) — Ihre Website anhand aller 6 Komponenten bewerten

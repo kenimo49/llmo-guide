@@ -122,7 +122,7 @@ La visibilidad en IA no es una optimización puntual. Requiere monitoreo continu
 
 | Hallazgo | Fuente | Relevancia para LLMO |
 |---------|--------|----------------------|
-| +8,337% de crecimiento de tráfico de IA posible | TRM Labs | Los 5 componentes funcionando juntos |
+| +8,337% de crecimiento de tráfico de IA posible | TRM Labs | Los 6 componentes funcionando juntos |
 | 25x mayor conversión desde búsqueda con IA | Go Fish Digital | Calidad sobre cantidad |
 | Las menciones web son 3x más predictivas que los backlinks | Ahrefs (75K marcas) | Señales de autoridad > SEO tradicional |
 | +115.1% de visibilidad al agregar estadísticas | GEO Paper (KDD 2024) | Señales de citación con mayor palanca |

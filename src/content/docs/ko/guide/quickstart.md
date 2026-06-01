@@ -189,4 +189,4 @@ Sitemap: https://yoursite.com/sitemap.xml
 - [지식 명확성](/ko/framework/knowledge-clarity/) -- AI가 이해할 수 있는 콘텐츠 작성
 - [권위 신호](/ko/framework/authority-signals/) -- 검증 가능한 전문성 구축
 - [인용 신호](/ko/framework/citation-signals/) -- AI가 인용하고 싶은 데이터 제공
-- [Framework Overview](/ko/framework/overview/) -- 5가지 컴포넌트로 사이트 점수 확인
+- [Framework Overview](/ko/framework/overview/) -- 6가지 컴포넌트로 사이트 점수 확인

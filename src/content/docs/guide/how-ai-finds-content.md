@@ -75,7 +75,7 @@ These paths reinforce each other:
 2. **Structured content** → Better RAG retrieval → Better AI responses → More citations
 3. **More citations** → Higher authority signals → More likely to be selected in web search
 
-LLMO optimizes for all three paths simultaneously. The [five components](/framework/overview/) of the LLMO Framework each address specific aspects of these discovery paths.
+LLMO optimizes for all three paths simultaneously. The [six components](/framework/overview/) of the LLMO Framework each address specific aspects of these discovery paths.
 
 ## Common Misconceptions
 

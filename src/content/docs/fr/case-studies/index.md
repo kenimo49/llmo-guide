@@ -122,7 +122,7 @@ La visibilité IA n'est pas une optimisation ponctuelle. Elle nécessite un suiv
 
 | Constat | Source | Pertinence LLMO |
 |---------|--------|-----------------|
-| +8 337 % de croissance du trafic IA possible | TRM Labs | Les 5 composantes en synergie |
+| +8 337 % de croissance du trafic IA possible | TRM Labs | Les 6 composantes en synergie |
 | Conversion 25 fois supérieure via la recherche IA | Go Fish Digital | La qualité prime sur la quantité |
 | Mentions web 3 fois plus prédictives que les backlinks | Ahrefs (75 000 marques) | Signaux d'autorité > SEO traditionnel |
 | +115,1 % de visibilité en ajoutant des statistiques | GEO Paper (KDD 2024) | Signaux de citation : levier le plus puissant |
