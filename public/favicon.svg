@@ -1,21 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <!-- LLMO Framework: 5 nodes = 5 components, connected by lines -->
+  <!-- LLMO Framework: 6 nodes = 6 components around the core, connected by lines -->
   <circle cx="64" cy="64" r="10" />
   <circle cx="64" cy="20" r="7" />
-  <circle cx="106" cy="48" r="7" />
-  <circle cx="90" cy="100" r="7" />
-  <circle cx="38" cy="100" r="7" />
-  <circle cx="22" cy="48" r="7" />
+  <circle cx="102" cy="42" r="7" />
+  <circle cx="102" cy="86" r="7" />
+  <circle cx="64" cy="108" r="7" />
+  <circle cx="26" cy="86" r="7" />
+  <circle cx="26" cy="42" r="7" />
   <line x1="64" y1="54" x2="64" y2="27" stroke-width="2.5" />
-  <line x1="73" y1="59" x2="99" y2="48" stroke-width="2.5" />
-  <line x1="70" y1="72" x2="85" y2="95" stroke-width="2.5" />
-  <line x1="58" y1="72" x2="43" y2="95" stroke-width="2.5" />
-  <line x1="55" y1="59" x2="29" y2="48" stroke-width="2.5" />
-  <line x1="71" y1="20" x2="99" y2="43" stroke-width="1.5" opacity="0.4" />
-  <line x1="109" y1="55" x2="94" y2="94" stroke-width="1.5" opacity="0.4" />
-  <line x1="84" y1="104" x2="44" y2="104" stroke-width="1.5" opacity="0.4" />
-  <line x1="34" y1="94" x2="19" y2="55" stroke-width="1.5" opacity="0.4" />
-  <line x1="29" y1="43" x2="57" y2="20" stroke-width="1.5" opacity="0.4" />
+  <line x1="73" y1="59" x2="96" y2="46" stroke-width="2.5" />
+  <line x1="73" y1="69" x2="96" y2="83" stroke-width="2.5" />
+  <line x1="64" y1="74" x2="64" y2="101" stroke-width="2.5" />
+  <line x1="55" y1="69" x2="32" y2="83" stroke-width="2.5" />
+  <line x1="55" y1="59" x2="32" y2="46" stroke-width="2.5" />
+  <line x1="70" y1="24" x2="96" y2="38" stroke-width="1.5" opacity="0.4" />
+  <line x1="102" y1="49" x2="102" y2="79" stroke-width="1.5" opacity="0.4" />
+  <line x1="96" y1="90" x2="70" y2="104" stroke-width="1.5" opacity="0.4" />
+  <line x1="58" y1="104" x2="32" y2="90" stroke-width="1.5" opacity="0.4" />
+  <line x1="26" y1="79" x2="26" y2="49" stroke-width="1.5" opacity="0.4" />
+  <line x1="32" y1="38" x2="58" y2="24" stroke-width="1.5" opacity="0.4" />
   <style>
     circle{fill:#3b82f6}line{stroke:#3b82f6}
     @media(prefers-color-scheme:dark){circle{fill:#60a5fa}line{stroke:#60a5fa}}
