@@ -35,7 +35,7 @@ LLMO（Large Language Model Optimization）是优化网页内容的实践，使 
 - 3. 检索信号: /zh/framework/retrieval-signals/
 - 4. 权威信号: /zh/framework/authority-signals/
 - 5. 引用信号: /zh/framework/citation-signals/
-- 6. 一致性信号（英文）: /framework/coherence-signals/
+- 6. 一致性信号: /zh/framework/coherence-signals/
 
 ### 审计（仅英文/日文）
 - 两段审查: /guide/llmo-audit-two-pass-review/

@@ -61,7 +61,7 @@ Based on Microsoft's guidelines, here are specific actions you can take:
 ## How Microsoft's Principles Map to LLMO
 
 ```
-Microsoft's 3 Principles    LLMO Framework (5 Components)
+Microsoft's 3 Principles    LLMO Framework (6 Components)
 ─────────────────────────    ────────────────────────────
 Structure                →   2. Structural Formatting
                              3. Retrieval Signals (partial)

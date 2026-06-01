@@ -61,7 +61,7 @@ Basándose en las directrices de Microsoft, estas son acciones específicas que 
 ## Cómo se corresponden los principios de Microsoft con LLMO
 
 ```
-3 principios de Microsoft    LLMO Framework (5 componentes)
+3 principios de Microsoft    LLMO Framework (6 componentes)
 ────────────────────────     ────────────────────────────
 Estructura               →   2. Formato estructurado
                              3. Señales de recuperación (parcial)

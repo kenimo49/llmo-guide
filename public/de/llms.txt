@@ -35,7 +35,7 @@ LLMO (Large Language Model Optimization) ist die Praxis der Optimierung von Webi
 - 3. Abrufsignale: /de/framework/retrieval-signals/
 - 4. Autoritätssignale: /de/framework/authority-signals/
 - 5. Zitiersignale: /de/framework/citation-signals/
-- 6. Kohärenzsignale (en): /framework/coherence-signals/
+- 6. Kohärenzsignale: /de/framework/coherence-signals/
 
 ### Audit (nur EN/JA)
 - Zwei-Pass-Review: /guide/llmo-audit-two-pass-review/

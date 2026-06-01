@@ -61,7 +61,7 @@ Com base nas diretrizes da Microsoft, aqui estão ações específicas que você
 ## Como os Princípios da Microsoft Mapeiam para o LLMO
 
 ```
-3 Princípios da Microsoft    LLMO Framework (5 Componentes)
+3 Princípios da Microsoft    LLMO Framework (6 Componentes)
 ────────────────────────     ───────────────────────────────
 Estrutura               →    2. Formatação estrutural
                              3. Sinais de recuperação (parcial)

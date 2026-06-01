@@ -20,7 +20,7 @@ pubDate: 2026-05-07
 | **Enfoque** | Rankings de búsqueda | Respuestas de IA | Búsqueda generativa | Todas las interacciones con LLM |
 | **Objetivo** | Google, Bing | Asistentes de voz, búsqueda con IA | Motores de búsqueda con IA | ChatGPT, Claude, Gemini, Perplexity |
 | **Respaldo académico** | Décadas de investigación | Limitado | Princeton (KDD 2024) | Emergente |
-| **Marco** | Bien establecido | Informal | Orientado a investigación | LLMO Framework (5 componentes) |
+| **Marco** | Bien establecido | Informal | Orientado a investigación | LLMO Framework (6 componentes) |
 | **Alcance** | Búsqueda web | Estrecho (solo respuestas) | Estrecho (búsqueda generativa) | Amplio (todos los contextos LLM) |
 
 ## La relación

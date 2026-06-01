@@ -35,7 +35,7 @@ LLMO(Large Language Model Optimization)는 ChatGPT, Claude, Gemini, Perplexity �
 - 3. 검색 신호: /ko/framework/retrieval-signals/
 - 4. 권위 신호: /ko/framework/authority-signals/
 - 5. 인용 신호: /ko/framework/citation-signals/
-- 6. 일관성 신호 (영문): /framework/coherence-signals/
+- 6. 일관성 신호: /ko/framework/coherence-signals/
 
 ### 감사 (영문/일문 전용)
 - 2단계 검토: /guide/llmo-audit-two-pass-review/

@@ -10,7 +10,7 @@ head:
       {
         "@context": "https://schema.org",
         "@type": "DefinedTermSet",
-        "@id": "https://llmoframework.com/framework/overview/#components",
+        "@id": "https://llmoframework.com/zh/framework/overview/#components",
         "name": "LLMO Framework Components",
         "description": "Six core components of the LLMO Framework, scored 0-3 each, for a maximum site score of 18 points.",
         "hasDefinedTerm": [
@@ -18,43 +18,43 @@ head:
             "@type": "DefinedTerm",
             "name": "Knowledge Clarity",
             "description": "Clear, factual, unambiguous content that AI can understand and summarize accurately. Measured by plain language use, defined terms, structured facts, and absence of unexplained jargon.",
-            "inDefinedTermSet": "https://llmoframework.com/framework/overview/#components",
-            "url": "https://llmoframework.com/framework/knowledge-clarity/"
+            "inDefinedTermSet": "https://llmoframework.com/zh/framework/overview/#components",
+            "url": "https://llmoframework.com/zh/framework/knowledge-clarity/"
           },
           {
             "@type": "DefinedTerm",
             "name": "Structural Formatting",
             "description": "Machine-readable structure including semantic HTML, Markdown, page-scoped JSON-LD, and the llms.txt standard, with build-time verification that JSON-LD actually emits in served HTML.",
-            "inDefinedTermSet": "https://llmoframework.com/framework/overview/#components",
-            "url": "https://llmoframework.com/framework/structural-formatting/"
+            "inDefinedTermSet": "https://llmoframework.com/zh/framework/overview/#components",
+            "url": "https://llmoframework.com/zh/framework/structural-formatting/"
           },
           {
             "@type": "DefinedTerm",
             "name": "Retrieval Signals",
             "description": "Signals that help AI systems find content: crawlability via robots.txt and sitemap.xml, machine-readable endpoints under /ai/, and adoption of the llms.txt standard.",
-            "inDefinedTermSet": "https://llmoframework.com/framework/overview/#components",
-            "url": "https://llmoframework.com/framework/retrieval-signals/"
+            "inDefinedTermSet": "https://llmoframework.com/zh/framework/overview/#components",
+            "url": "https://llmoframework.com/zh/framework/retrieval-signals/"
           },
           {
             "@type": "DefinedTerm",
             "name": "Authority Signals",
             "description": "Signals that demonstrate expertise and trustworthiness: verifiable author attribution, cross-platform identity (sameAs links), and evidence-based claims with citations.",
-            "inDefinedTermSet": "https://llmoframework.com/framework/overview/#components",
-            "url": "https://llmoframework.com/framework/authority-signals/"
+            "inDefinedTermSet": "https://llmoframework.com/zh/framework/overview/#components",
+            "url": "https://llmoframework.com/zh/framework/authority-signals/"
           },
           {
             "@type": "DefinedTerm",
             "name": "Citation Signals",
             "description": "References that AI systems can verify: primary sources, publication and modification dates, version information, and links to academic papers or official documentation.",
-            "inDefinedTermSet": "https://llmoframework.com/framework/overview/#components",
-            "url": "https://llmoframework.com/framework/citation-signals/"
+            "inDefinedTermSet": "https://llmoframework.com/zh/framework/overview/#components",
+            "url": "https://llmoframework.com/zh/framework/citation-signals/"
           },
           {
             "@type": "DefinedTerm",
             "name": "Coherence Signals",
             "description": "Same fact tells the same story across every surface an AI reads: HTML, JSON-LD, Markdown, llms.txt. Single source of truth for numeric and factual claims, with CI gates against cross-file drift.",
-            "inDefinedTermSet": "https://llmoframework.com/framework/overview/#components",
-            "url": "https://llmoframework.com/framework/coherence-signals/"
+            "inDefinedTermSet": "https://llmoframework.com/zh/framework/overview/#components",
+            "url": "https://llmoframework.com/zh/framework/coherence-signals/"
           }
         ]
       }

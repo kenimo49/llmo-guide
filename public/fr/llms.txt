@@ -35,7 +35,7 @@ Le LLMO (Large Language Model Optimization) est la pratique d'optimisation du co
 - 3. Signaux de recherche : /fr/framework/retrieval-signals/
 - 4. Signaux d'autorité : /fr/framework/authority-signals/
 - 5. Signaux de citation : /fr/framework/citation-signals/
-- 6. Signaux de cohérence (en) : /framework/coherence-signals/
+- 6. Signaux de cohérence : /fr/framework/coherence-signals/
 
 ### Audit (EN/JA uniquement)
 - Revue en deux passes : /guide/llmo-audit-two-pass-review/

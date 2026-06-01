@@ -20,7 +20,7 @@ pubDate: 2026-04-30
 | **Fokus** | Suchrankings | KI-Antworten | Generative Suche | Alle LLM-Interaktionen |
 | **Ziel** | Google, Bing | Sprachassistenten, KI-Suche | KI-gestützte Suchmaschinen | ChatGPT, Claude, Gemini, Perplexity |
 | **Wissenschaftliche Basis** | Jahrzehntelange Forschung | Begrenzt | Princeton (KDD 2024) | Im Aufbau |
-| **Framework** | Gut etabliert | Informell | Forschungsorientiert | LLMO Framework (5 Komponenten) |
+| **Framework** | Gut etabliert | Informell | Forschungsorientiert | LLMO Framework (6 Komponenten) |
 | **Umfang** | Websuche | Eng (nur Antworten) | Eng (generative Suche) | Breit (alle LLM-Kontexte) |
 
 ## Die Beziehung

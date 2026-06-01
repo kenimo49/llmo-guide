@@ -61,7 +61,7 @@ Basierend auf Microsofts Richtlinien können Sie folgende konkrete Maßnahmen er
 ## Zuordnung von Microsofts Prinzipien zu LLMO
 
 ```
-Microsofts 3 Prinzipien         LLMO Framework (5 Komponenten)
+Microsofts 3 Prinzipien         LLMO Framework (6 Komponenten)
 ─────────────────────────       ────────────────────────────
 Struktur                    →   2. Strukturierte Formatierung
                                 3. Abrufsignale (teilweise)

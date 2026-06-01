@@ -61,7 +61,7 @@ Sur la base des lignes directrices de Microsoft, voici les actions concrètes à
 ## Correspondance entre les principes de Microsoft et le LLMO
 
 ```
-3 principes de Microsoft       Framework LLMO (5 composantes)
+3 principes de Microsoft       Framework LLMO (6 composantes)
 ─────────────────────────      ────────────────────────────
 Structure                  →   2. Formatage structuré
                                3. Signaux de recherche (partiel)

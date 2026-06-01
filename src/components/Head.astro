@@ -153,7 +153,7 @@ const headTags: HeadTag[] = (route?.head ?? []).filter((t: HeadTag) => {
         link_text: (a.textContent || '').trim().slice(0, 100),
       });
     }
-    if (/github\.com$/.test(a.host)) gtag('event', 'cta_github');
+    // GitHub clicks are already captured by outbound_click (filter link_domain=github.com in GA4).
     if (/^\/(?:[a-z]{2}\/)?guide\/quickstart\/?$/.test(a.pathname)) gtag('event', 'cta_quickstart');
   }, true);
 </script>
