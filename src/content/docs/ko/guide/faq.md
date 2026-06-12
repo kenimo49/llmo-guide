@@ -27,7 +27,7 @@ head:
       }
 ---
 
-LLMO 프레임워크 구현에 관한 자주 묻는 질문. 당신의 질문이 없으면 [issue를 만드세요](https://github.com/kenimo49/llmo-guide/issues) — issue tracker의 답변은 이 페이지에 반영됩니다.
+LLMO 프레임워크 구현에 관한 자주 묻는 질문. 당신의 질문이 없으면 [issue를 만드세요](https://github.com/kenimo49/llmo-guide/issues) — issue tracker의 답변은 이 페이지에 반영됩니다. 기본 정의는 [LLMO란?](/ko/guide/what-is-llmo/)을 참고하세요.
 
 ## LLMO가 SEO를 대체합니까?
 

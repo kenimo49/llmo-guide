@@ -1,6 +1,6 @@
 ---
-title: "LLMO Quickstart: Implement in 30 Minutes"
-description: "Add the three essential LLMO files to your site in under 30 minutes: llms.txt, robots.txt for AI crawlers, and JSON-LD structured data."
+title: "How to Do LLMO: The 30-Minute Quickstart"
+description: "How to do LLMO in practice: add the three essential files — llms.txt, robots.txt for AI crawlers, and JSON-LD structured data — to make your site AI-discoverable in under 30 minutes."
 pubDate: 2026-04-30
 head:
   - tag: script
@@ -10,8 +10,8 @@ head:
       {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": "LLMO Quickstart: Implement in 30 Minutes",
-        "description": "Add the three essential LLMO files to your site in under 30 minutes.",
+        "name": "How to Do LLMO: The 30-Minute Quickstart",
+        "description": "How to do LLMO in practice: add the three essential files to make your site AI-discoverable in under 30 minutes.",
         "totalTime": "PT30M",
         "step": [
           {"@type": "HowToStep", "name": "Add robots.txt for AI crawlers", "position": 1},
@@ -24,7 +24,9 @@ head:
 
 **How do you do LLMO?** In practice it starts with three files. You can make your site AI-discoverable in 30 minutes — this guide covers the minimum viable LLMO implementation. New to the concept first? Read [What is LLMO?](/guide/what-is-llmo/), then come back here.
 
-## The Three Essential Files
+## How to Do LLMO: The Three Essential Files
+
+There are three files at the core of how to do LLMO. Add all three and your site moves from invisible to AI-discoverable.
 
 | File | Purpose | Time |
 |------|---------|------|

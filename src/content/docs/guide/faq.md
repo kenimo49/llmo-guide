@@ -103,7 +103,7 @@ head:
       }
 ---
 
-Common questions about implementing the LLMO Framework. If yours is missing, [open an issue](https://github.com/kenimo49/llmo-guide/issues) — answers from the issue tracker get folded back into this page.
+Common questions about implementing the LLMO Framework. If yours is missing, [open an issue](https://github.com/kenimo49/llmo-guide/issues) — answers from the issue tracker get folded back into this page. For the underlying definition, see [What is LLMO?](/guide/what-is-llmo/).
 
 ## Does LLMO replace SEO?
 

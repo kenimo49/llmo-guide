@@ -4,6 +4,8 @@ description: "LLMO, SEO, AEO, GEO 비교. LLMO는 AEO와 GEO를 포괄하면서 
 pubDate: 2026-04-30
 ---
 
+용어 자체를 먼저 확인하려면 [LLMO란?](/ko/guide/what-is-llmo/)부터 보세요. 이 페이지는 정의를 이미 안다는 전제로 진행합니다.
+
 ## 검색 최적화의 진화
 
 ```

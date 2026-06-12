@@ -41,6 +41,8 @@ head:
 
 **LLMO, SEO, AEO, and GEO are four overlapping content-optimization disciplines.** LLMO is the umbrella concept that includes AEO and GEO and extends to all LLM interactions, while SEO is the older sibling that targets search engines rather than AI systems.
 
+Still pinning down the core term? Start with [What is LLMO?](/guide/what-is-llmo/) — this page assumes you already have the definition.
+
 ## What is the difference between LLMO, SEO, AEO, and GEO?
 
 - **SEO (Search Engine Optimization, 1997-)** — optimizes for ranking in search engine results (Google, Bing). Signals: backlinks, keywords, technical performance.

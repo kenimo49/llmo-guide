@@ -104,7 +104,7 @@ head:
       }
 ---
 
-LLMOフレームワーク実装に関するよくある質問。あなたの質問が見つからない場合は [Issue](https://github.com/kenimo49/llmo-guide/issues) を作成してください — issue tracker の回答はこのページに反映されます。
+LLMOフレームワーク実装に関するよくある質問。あなたの質問が見つからない場合は [Issue](https://github.com/kenimo49/llmo-guide/issues) を作成してください — issue tracker の回答はこのページに反映されます。前提となる定義は [LLMOとは何か](/ja/guide/what-is-llmo/) を参照。
 
 ## LLMOはSEOを置き換えるのか？
 

@@ -4,7 +4,7 @@ description: "Microsoft's official guidelines for optimizing content to appear i
 pubDate: 2026-04-30
 ---
 
-In October 2025, Microsoft published official guidelines for content creators who want their content to appear in AI-generated search answers (Bing Chat, Copilot). These guidelines align closely with the LLMO Framework and provide vendor-confirmed validation for several LLMO components.
+In October 2025, Microsoft published official guidelines for content creators who want their content to appear in AI-generated search answers (Bing Chat, Copilot). These guidelines align closely with the LLMO Framework and provide vendor-confirmed validation for several LLMO components. (New to the discipline? See [What is LLMO?](/guide/what-is-llmo/).)
 
 ## The Three Principles
 

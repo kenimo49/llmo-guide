@@ -4,7 +4,7 @@ description: "AI discovers content through three paths: training data, real-time
 pubDate: 2026-04-30
 ---
 
-When a user asks ChatGPT about your business, where does the answer come from? AI systems discover content through three distinct paths. Each path has different requirements for optimization.
+When a user asks ChatGPT about your business, where does the answer come from? AI systems discover content through three distinct paths. Each path has different requirements for optimization — together they are the "how" behind [LLMO (Large Language Model Optimization)](/guide/what-is-llmo/).
 
 ## The Three Discovery Paths
 
