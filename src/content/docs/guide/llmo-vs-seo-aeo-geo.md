@@ -87,3 +87,5 @@ In one sentence: **AEO ⊂ GEO ⊂ LLMO** — every AEO win is a GEO win is an L
 Optimize for **LLMO** if you want to cover the broadest surface. LLMO is a superset, so its checklist covers AEO and GEO as a side effect. Sites that optimize for SEO alone may still rank in Google but be invisible to ChatGPT, Claude, Gemini, and Perplexity — which is increasingly where users start their queries.
 
 Start here: [LLMO Quickstart in 30 minutes](/guide/quickstart/) covers the three essential files (`robots.txt`, `llms.txt`, JSON-LD) that move a site from invisible to AI-citable.
+
+Working in local or map-search? [LLMO vs GEO vs AEO for local business](https://ainativemeo.com/blog/llmo-vs-geo-vs-aeo/) applies this same comparison to Google Business Profile, NAP entity resolution, and how each AI engine cites local data.
