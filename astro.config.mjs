@@ -1,5 +1,52 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import sitemap from '@astrojs/sitemap';
+import { readdirSync, statSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { join, relative } from 'node:path';
+
+// Pages where a locale has no translation are served as English fallback at a
+// localized URL and carry noindex (see src/components/Head.astro). They must
+// also be kept out of the sitemap, otherwise we tell Google "index this"
+// (sitemap) and "don't" (noindex) at once. Derive the fallback URL set from the
+// filesystem so it self-corrects the moment a real translation is added.
+const DOCS = fileURLToPath(new URL('./src/content/docs', import.meta.url));
+const SITEMAP_LOCALES = ['ja', 'zh', 'ko', 'de', 'fr', 'es', 'pt'];
+
+function walkDocs(dir) {
+  const out = [];
+  for (const name of readdirSync(dir)) {
+    const p = join(dir, name);
+    if (statSync(p).isDirectory()) out.push(...walkDocs(p));
+    else if (/\.(md|mdx)$/.test(name)) out.push(p);
+  }
+  return out;
+}
+function toSlug(absPath, baseDir) {
+  return relative(baseDir, absPath)
+    .replace(/\\/g, '/')
+    .replace(/\.(md|mdx)$/, '')
+    .replace(/\/?index$/, '');
+}
+
+const enSlugs = new Set();
+const localeSlugs = Object.fromEntries(SITEMAP_LOCALES.map((l) => [l, new Set()]));
+for (const file of walkDocs(DOCS)) {
+  const seg = relative(DOCS, file).replace(/\\/g, '/').split('/')[0];
+  if (SITEMAP_LOCALES.includes(seg)) {
+    localeSlugs[seg].add(toSlug(file, join(DOCS, seg)));
+  } else {
+    enSlugs.add(toSlug(file, DOCS));
+  }
+}
+const fallbackPaths = new Set();
+for (const locale of SITEMAP_LOCALES) {
+  for (const slug of enSlugs) {
+    if (!localeSlugs[locale].has(slug)) {
+      fallbackPaths.add(slug ? `/${locale}/${slug}/` : `/${locale}/`);
+    }
+  }
+}
 
 export default defineConfig({
   site: 'https://llmoframework.com',
@@ -204,6 +251,25 @@ export default defineConfig({
         baseUrl: 'https://github.com/kenimo49/llmo-guide/edit/main/',
       },
       lastUpdated: true,
+    }),
+    // Declared explicitly (Starlight skips its own auto-sitemap when one is
+    // already present) so we can drop noindex fallback pages. i18n config
+    // mirrors Starlight's so hreflang alternates stay in the sitemap.
+    sitemap({
+      i18n: {
+        defaultLocale: 'root',
+        locales: {
+          root: 'en',
+          ja: 'ja',
+          zh: 'zh-CN',
+          ko: 'ko',
+          de: 'de',
+          fr: 'fr',
+          es: 'es',
+          pt: 'pt-BR',
+        },
+      },
+      filter: (page) => !fallbackPaths.has(new URL(page).pathname),
     }),
   ],
 });

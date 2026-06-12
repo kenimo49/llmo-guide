@@ -12,6 +12,7 @@
     "verify-jsonld": "node scripts/verify-json-ld.mjs"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.0",
     "@astrojs/starlight": "^0.37.7",
     "astro": "^5.6.1",
     "sharp": "^0.34.2"
