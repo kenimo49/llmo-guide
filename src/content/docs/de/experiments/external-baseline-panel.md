@@ -1,6 +1,7 @@
 ---
 title: "Public Experiment Log #2: Externes Baseline-Panel"
 description: "Wir haben 39 stark frequentierte Technikseiten mit llmo-checker@0.1.0 bewertet, um zu kalibrieren, wie 'normal' aussieht. Der Median liegt bei 61. Drei der größten Dokumentationsportale schneiden mit unter 40 ab."
+pubDate: 2026-05-24
 ---
 
 Das erste Public Experiment Log hat sechs Sites bewertet, die wir betreiben. Alle sechs landeten bei 90+. Das war ehrlich darin, zu sauber zu sein, um als Beweis für irgendetwas zu taugen. Hier kommt die Kalibrierung, die das erste Log nicht liefern konnte: ein Panel aus 39 stark frequentierten Technikseiten, die uns nicht gehören, gemessen mit demselben Tool, am selben Tag.

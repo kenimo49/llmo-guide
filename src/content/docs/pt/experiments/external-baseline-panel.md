@@ -1,6 +1,7 @@
 ---
 title: "Public Experiment Log #2: Painel de baseline externa"
 description: "Pontuamos 39 sites técnicos de alto tráfego com llmo-checker@0.1.0 para calibrar o que é 'normal'. A mediana é 61. Três dos maiores portais de documentação ficam abaixo de 40."
+pubDate: 2026-05-24
 ---
 
 O primeiro Public Experiment Log pontuou seis sites que operamos. Os seis aterrissaram em 90+. O texto foi honesto em reconhecer que era limpo demais para servir de prova de qualquer coisa. Esta é a calibração que o primeiro log não conseguiu entregar: um painel de 39 sites técnicos de alto tráfego que não operamos, pontuados com a mesma ferramenta, no mesmo dia.

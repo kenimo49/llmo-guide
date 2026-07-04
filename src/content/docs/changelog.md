@@ -118,7 +118,7 @@ Every release of this framework reveals what the previous release didn't see. v1
 ### New
 
 - **Case study: [When the Framework Author Violates the Framework](/case-studies/llmo-framework-self-audit/)** — this site's own self-audit. v1.1.0 introduced Coherence Signals; v1.2.0 shipped with five out-of-sync version surfaces (`package.json`, `version.ts`, `CHANGELOG.md`, EN/JA changelog pages, git tags). The codex second-pass review caught the irony in 4 minutes. The case study documents the drift, the detection, the 10-step fix, and three patterns that generalize: release process is itself a coherence surface; tooling earns its keep when bypassed; frameworks don't exempt their authors.
-- **[Coherence Signals: Release Process is a Coherence Surface](/framework/coherence-signals/#release-process-is-a-coherence-surface)** — new sub-section that generalizes the v1.2.0 episode. Frames a version number as a fact in the LLMO sense, then defines the four-step prevention pattern: generate from one source / make version visible at runtime / gate on cross-checks / second-pass review before tagging.
+- **[Coherence Signals: Release Process is a Coherence Surface](/framework/coherence-signals/#6-release-process-is-a-coherence-surface)** — new sub-section that generalizes the v1.2.0 episode. Frames a version number as a fact in the LLMO sense, then defines the four-step prevention pattern: generate from one source / make version visible at runtime / gate on cross-checks / second-pass review before tagging.
 
 ### Why this is its own release
 

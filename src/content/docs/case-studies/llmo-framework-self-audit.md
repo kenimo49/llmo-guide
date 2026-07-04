@@ -139,7 +139,7 @@ ken caught the sixth surface in the time it took to read the v1.3.0 page that br
 
 ## What's Next
 
-The v1.3.0 work that introduces this case study also adds a new sub-section to [Coherence Signals](/framework/coherence-signals/#release-process-is-a-coherence-surface) called *"Release Process is a Coherence Surface"*, generalizing the lesson.
+The v1.3.0 work that introduces this case study also adds a new sub-section to [Coherence Signals](/framework/coherence-signals/#6-release-process-is-a-coherence-surface) called *"Release Process is a Coherence Surface"*, generalizing the lesson.
 
 The framework is not finished. Every release reveals something the previous release didn't see — including, sometimes, an hour after the previous release shipped.
 

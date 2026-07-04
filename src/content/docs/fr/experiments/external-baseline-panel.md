@@ -1,6 +1,7 @@
 ---
 title: "Public Experiment Log #2 : panel de référence externe"
 description: "Nous avons noté 39 sites techniques à fort trafic avec llmo-checker@0.1.0 pour calibrer à quoi « normal » ressemble. La médiane est de 61. Trois des plus gros portails de documentation tombent sous 40."
+pubDate: 2026-05-24
 ---
 
 Le premier Public Experiment Log notait six sites que nous possédons. Tous les six ont atterri à 90+. Nous étions honnêtes : c'était trop propre pour servir de preuve de quoi que ce soit. Voici la calibration que le premier log ne pouvait pas fournir : un panel de 39 sites techniques à fort trafic que nous ne possédons pas, notés avec le même outil, le même jour.

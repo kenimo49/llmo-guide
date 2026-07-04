@@ -1,6 +1,7 @@
 ---
 title: "Public Experiment Log #2: Panel de línea base externa"
 description: "Medimos 39 sitios técnicos de alto tráfico con llmo-checker@0.1.0 para calibrar cómo se ve lo 'normal'. La mediana es 61. Tres de los portales de documentación más grandes sacan menos de 40."
+pubDate: 2026-05-24
 ---
 
 El primer Public Experiment Log midió seis sitios que poseemos. Los seis aterrizaron en 90+. Fue honesto al admitir que estaba demasiado limpio como para servir de prueba de nada. Este es el calibrado que ese primer log no podía dar: un panel de 39 sitios técnicos de alto tráfico que no nos pertenecen, medidos con la misma herramienta, el mismo día.

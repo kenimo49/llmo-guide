@@ -1,6 +1,7 @@
 ---
 title: "Public Experiment Log #2: External baseline panel"
 description: "We scored 39 high-traffic technical sites with llmo-checker@0.1.0 to calibrate what 'normal' looks like. The median is 61. Three of the largest documentation portals score below 40."
+pubDate: 2026-05-24
 ---
 
 The first Public Experiment Log scored six sites we own. All six landed at 90+. That was honest about being too clean to function as proof of anything. This is the calibration the first log could not provide: a panel of 39 high-traffic technical sites we do not own, scored with the same tool, on the same day.
