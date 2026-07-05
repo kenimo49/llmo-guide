@@ -139,7 +139,10 @@ const headTags: HeadTag[] = (route?.head ?? []).filter((t: HeadTag) => {
 
 <!-- Google Analytics (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-365LMYNSYQ"></script>
-<script>
+<!-- is:inline is load-bearing: without it Astro bundles this as type="module",
+     scoping (and minifying) `gtag` so it never reaches window.gtag — the funnel
+     listener below then no-ops on its typeof guard. -->
+<script is:inline>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
