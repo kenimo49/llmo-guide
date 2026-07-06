@@ -143,6 +143,15 @@ const headTags: HeadTag[] = (route?.head ?? []).filter((t: HeadTag) => {
      scoping (and minifying) `gtag` so it never reaches window.gtag — the funnel
      listener below then no-ops on its typeof guard. -->
 <script is:inline>
+  // 内部トラフィック除外: 自動化ブラウザ / ローカル / ?internal=1 オプトイン端末を計測しない
+  (function () {
+    try { if (new URLSearchParams(location.search).get('internal') === '1') { localStorage.setItem('llmoframework_internal', '1'); } } catch (e) {}
+    var optedOut = false;
+    try { optedOut = localStorage.getItem('llmoframework_internal') === '1'; } catch (e) {}
+    if (navigator.webdriver || optedOut || /^(localhost|127\.|192\.168\.|iris-pc)/.test(location.hostname)) {
+      window['ga-disable-G-365LMYNSYQ'] = true;
+    }
+  })();
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
