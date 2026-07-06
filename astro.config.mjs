@@ -198,6 +198,7 @@ export default defineConfig({
             { label: 'LLMO vs SEO vs AEO vs GEO', slug: 'guide/llmo-vs-seo-aeo-geo' },
             { label: 'How AI Finds Content', translations: { ja: 'AIがコンテンツを発見する仕組み', 'zh-CN': 'AI如何发现内容', ko: 'AI가 콘텐츠를 발견하는 방법', de: 'Wie KI Inhalte findet', fr: "Comment l'IA découvre le contenu", es: 'Cómo la IA encuentra contenido', 'pt-BR': 'Como a IA encontra conteúdo' }, slug: 'guide/how-ai-finds-content' },
             { label: 'Quickstart: 30 Minutes', translations: { ja: 'クイックスタート：30分で実装', 'zh-CN': '快速入门：30分钟实现', ko: '빠른 시작: 30분 구현', de: 'Schnellstart: 30 Minuten', fr: 'Démarrage rapide : 30 minutes', es: 'Inicio rápido: 30 minutos', 'pt-BR': 'Início rápido: 30 minutos' }, slug: 'guide/quickstart' },
+            { label: 'Measuring LLMO', translations: { ja: 'LLMOの測定', 'zh-CN': '衡量LLMO', ko: 'LLMO 측정', de: 'LLMO messen', fr: 'Mesurer le LLMO', es: 'Medir LLMO', 'pt-BR': 'Medindo LLMO' }, slug: 'guide/measuring-llmo' },
             { label: 'FAQ', translations: { ja: 'よくある質問', 'zh-CN': '常见问题', ko: '자주 묻는 질문', de: 'Häufige Fragen', fr: 'Foire aux questions', es: 'Preguntas frecuentes', 'pt-BR': 'Perguntas frequentes' }, slug: 'guide/faq' },
           ],
         },

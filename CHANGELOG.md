@@ -10,6 +10,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Design tweaks, typo fixes, broken-link repairs, and translation backfills do **not** trigger a version bump. Only changes to framework concepts and content claims are tracked here.
 
+## [1.7.0] — 2026-07-07
+
+### Headline
+
+New guide: Measuring LLMO (Citation Rate / Brand Mention Density / AI Referral Conversion), plus field-evidence expansions to Knowledge Clarity and Citation Signals (EN/JA)
+
+### Added
+
+- New `guide/measuring-llmo` (EN canonical + JA): the measurement gap (no official citation APIs; GA4 referrals as a floor, not a ceiling), the 8.2× tracker-divergence problem and the "write down your definition of citation first" rule, three core metrics with formulas and code, three implementation layers (GA4 channel-group regex / manual five-platform protocol / API automation), the crawler-log leading indicator, a weekly-monthly-quarterly improvement cadence, and the substrate-vs-outcome split against Score v0.1
+- `framework/knowledge-clarity` (EN/JA): new "AI Cites Passages, Not Pages" section (chunk-level retrieval, 44.2% of citations from the first 30% of a page, 40–75 word passages cited ~3.1× more); three new implementation items (pronouns → named subjects, vague words → verifiable facts, question-shaped headings); new "Field Evidence" section with two single-variable experiments (answer-first rewrites: 7 of 12 pages gained citations; H3→H2 promotion: 6 of 9); checklist expanded from 5 to 10 items
+- `framework/citation-signals` (EN/JA): new "Statistics Are the Strongest Citation Signal" section (GEO nine-tactic table; +115.1% benchmark vs +37% live-test caveat; passage-level scope); new "The Effect Is Domain-Dependent" section (science/tech vs how-to vs niche); new implementation item #1 "Replace Adjectives with Numbers"; new "Field Evidence" section (three-numbers-one-paragraph → Perplexity citation on day 11; sitewide domain-split observation); checklist expanded from 5 to 8 items
+
+### Notes
+
+- Sidebar: "Measuring LLMO" added to Getting Started after Quickstart, with all 7 locale label translations
+- Framework pages now cite the underlying field experiments (published on kenimoto.dev) as primary sources, per the framework's own Citation Signals guidance
+- Translation backfill for zh/ko/de/fr/es/pt follows separately (no version bump)
+
+
 ## [1.6.2] — 2026-07-06
 
 ### Headline

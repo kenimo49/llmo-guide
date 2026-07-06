@@ -9,9 +9,20 @@
  *
  * Design tweaks, typo fixes, translation backfills do NOT bump the version.
  */
-export const VERSION = '1.6.2';
+export const VERSION = '1.7.0';
 
 export const RELEASES = [
+  {
+    version: '1.7.0',
+    date: '2026-07-07',
+    summary:
+      'New Measuring LLMO guide (Citation Rate / Mention Density / AI Referral Conversion) plus field-evidence expansions to Knowledge Clarity and Citation Signals (EN/JA)',
+    highlights: [
+      'New guide/measuring-llmo: three core metrics, three implementation layers (GA4 / manual five-platform protocol / API automation), and the "define citation before choosing a tracker" rule from the 8.2× tracker-divergence measurement',
+      'Knowledge Clarity: passage-level retrieval mechanics (44.2% of citations from the first 30% of a page), three new implementation items, and two single-variable field experiments (answer-first 7/12, H3→H2 promotion 6/9)',
+      'Citation Signals: GEO nine-tactic table with benchmark-vs-live caveat (+115.1% vs +37%), domain-dependence breakdown, and the adjectives→numbers edit with an 11-day Perplexity replication',
+    ],
+  },
   {
     version: '1.6.2',
     date: '2026-07-06',
