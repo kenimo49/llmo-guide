@@ -18,6 +18,20 @@ The current version, the `package.json` `version` field, and the git tag `vX.Y.Z
 
 The full machine-readable history lives in [CHANGELOG.md on GitHub](https://github.com/kenimo49/llmo-guide/blob/main/CHANGELOG.md). Below is the human-readable summary.
 
+## v1.6.2 — 2026-07-06
+
+**Headline**: The [What is LLMO?](/guide/what-is-llmo/) page now formally owns the term — a `DefinedTerm` schema entry, a term-origin section, and a "How do you do LLMO?" section (EN/JA).
+
+### Added
+
+- **"What does LLMO stand for?"** — states the expansion (Large Language Model Optimization) and why the term names the mechanism (LLM retrieval/citation behavior) rather than a surface
+- **"How do you do LLMO?"** — the three starter files (`llms.txt`, AI-crawler `robots.txt`, JSON-LD) in implementation order, routing to the [Quickstart](/guide/quickstart/)
+- `DefinedTerm` JSON-LD marking the page as the glossary entry for the term "LLMO"; FAQPage entries expanded from 3 to 5
+
+### Why this is a PATCH bump
+
+New sections and schema on an existing guide page. No new component, guide, or case study; scoring unchanged.
+
 ## v1.6.1 — 2026-05-25
 
 **Headline**: The home page now lists reference implementations applying the Framework to specific verticals. First entry: **AI Native MEO** (`ainativemeo.com`), the local business and map-search vertical adaptation.

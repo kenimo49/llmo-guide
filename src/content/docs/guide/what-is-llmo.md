@@ -34,8 +34,41 @@ head:
               "@type": "Answer",
               "text": "LLMO is an umbrella concept that includes AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization). LLMO encompasses both approaches while providing a broader framework for all LLM interactions, not just search engines."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "What does LLMO stand for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "LLMO stands for Large Language Model Optimization. It is sometimes read as 'LLM Optimization'. The target of the optimization is the LLM's retrieval and citation behavior, not a search engine's ranking algorithm."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you do LLMO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Start with three files: llms.txt (an AI-readable site summary), robots.txt rules that admit AI crawlers, and JSON-LD structured data. The LLMO Framework's 30-minute Quickstart walks through all three, and the full framework scores six components of AI discoverability."
+            }
           }
         ]
+      }
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: |
+      {
+        "@context": "https://schema.org",
+        "@type": "DefinedTerm",
+        "name": "LLMO",
+        "alternateName": "Large Language Model Optimization",
+        "description": "The practice of optimizing web content so that Large Language Models — such as ChatGPT, Claude, Gemini, and Perplexity — can accurately discover, understand, and cite it in their responses.",
+        "url": "https://llmoframework.com/guide/what-is-llmo/",
+        "inDefinedTermSet": {
+          "@type": "DefinedTermSet",
+          "name": "LLMO Framework Glossary",
+          "url": "https://llmoframework.com/"
+        }
       }
 ---
 
@@ -46,6 +79,10 @@ head:
 LLMO is a content discipline aimed at AI systems — ChatGPT, Claude, Gemini, and Perplexity — rather than search engine crawlers. Where SEO optimizes for ranking, LLMO optimizes for *being cited verbatim* in an AI-generated answer.
 
 The shortest possible definition: **LLMO is SEO for AI answers instead of search results.**
+
+## What does LLMO stand for?
+
+LLMO stands for **Large Language Model Optimization** — sometimes read as "LLM Optimization". The name states the target precisely: the thing being optimized against is the LLM's retrieval and citation behavior, not a search engine's ranking algorithm. That distinction is why the term has outlasted looser labels; it names the mechanism, not the surface.
 
 ## Why does LLMO matter?
 
@@ -80,7 +117,12 @@ LLMO is an umbrella term that includes both AEO and GEO and extends beyond them 
 
 In one line: **GEO and AEO are subsets of LLMO; LLMO is the broader implementation-focused standard.**
 
-## Next steps
+## How do you do LLMO?
 
-- **How do you do LLMO?** Follow the [30-minute Quickstart](/guide/quickstart/) to add the three essential files to your site.
-- **Want the full model?** Read [The LLMO Framework](/framework/overview/) — six scored components for AI discoverability.
+Start with three files, in this order:
+
+1. **llms.txt** — an AI-readable summary of your site at a stable URL
+2. **robots.txt rules that admit AI crawlers** — GPTBot, ClaudeBot, PerplexityBot and peers
+3. **JSON-LD structured data** — machine-readable facts an LLM can quote without guessing
+
+The [30-minute Quickstart](/guide/quickstart/) walks through all three with copy-paste templates. For the full model, read [The LLMO Framework](/framework/overview/) — six scored components for AI discoverability.

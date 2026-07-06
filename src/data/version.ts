@@ -9,9 +9,20 @@
  *
  * Design tweaks, typo fixes, translation backfills do NOT bump the version.
  */
-export const VERSION = '1.6.1';
+export const VERSION = '1.6.2';
 
 export const RELEASES = [
+  {
+    version: '1.6.2',
+    date: '2026-07-06',
+    summary:
+      'What is LLMO? page: DefinedTerm schema, term-origin section, and How-do-you-do-LLMO section (EN/JA)',
+    highlights: [
+      '"What does LLMO stand for?" and "How do you do LLMO?" sections added to the defining page (EN/JA)',
+      'DefinedTerm JSON-LD marks guide/what-is-llmo as the glossary entry for the term LLMO',
+      'FAQPage entries expanded from 3 to 5 questions',
+    ],
+  },
   {
     version: '1.6.1',
     date: '2026-05-25',

@@ -10,6 +10,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Design tweaks, typo fixes, broken-link repairs, and translation backfills do **not** trigger a version bump. Only changes to framework concepts and content claims are tracked here.
 
+## [1.6.2] — 2026-07-06
+
+### Headline
+
+What is LLMO? page: DefinedTerm schema, term-origin section, and How-do-you-do-LLMO section (EN/JA)
+
+### Added
+
+- `guide/what-is-llmo` (EN/JA): "What does LLMO stand for?" section — states the expansion and why the term names the mechanism (LLM retrieval/citation behavior) rather than a surface.
+- `guide/what-is-llmo` (EN/JA): "How do you do LLMO?" section — the three starter files (llms.txt, AI-crawler robots.txt, JSON-LD) in implementation order, routing to the Quickstart.
+- `guide/what-is-llmo` (EN/JA): `DefinedTerm` JSON-LD for the term "LLMO" (glossary-entry signal for the defining page), plus two FAQPage entries mirroring the new sections.
+
+
 ## [1.6.1] — 2026-05-25
 
 ### Headline

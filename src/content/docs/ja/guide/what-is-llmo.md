@@ -34,8 +34,41 @@ head:
               "@type": "Answer",
               "text": "LLMOはAEO (Answer Engine Optimization) とGEO (Generative Engine Optimization) を包含する上位概念である。両方のアプローチを含みつつ、検索エンジンに限らないすべてのLLMインタラクションに対応した、より広範なフレームワークを提供する。"
             }
+          },
+          {
+            "@type": "Question",
+            "name": "LLMOは何の略か？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "LLMOはLarge Language Model Optimizationの略である。「LLM最適化」と読まれることもある。最適化の対象は検索エンジンのランキングアルゴリズムではなく、LLMのリトリーバルと引用の挙動である。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "LLMOはどう実践するのか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "3つのファイルから始める: llms.txt (AIが読めるサイト要約)、AIクローラーを許可するrobots.txt、そしてJSON-LD構造化データ。LLMO Frameworkの30分クイックスタートがこの3つを順に解説しており、フレームワーク本体はAI可視性を6コンポーネントで採点する。"
+            }
           }
         ]
+      }
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: |
+      {
+        "@context": "https://schema.org",
+        "@type": "DefinedTerm",
+        "name": "LLMO",
+        "alternateName": "Large Language Model Optimization",
+        "description": "ChatGPT・Claude・Gemini・PerplexityなどのLarge Language ModelがWebコンテンツを正確に発見・理解し、回答の中で引用できるように最適化する手法。",
+        "url": "https://llmoframework.com/ja/guide/what-is-llmo/",
+        "inDefinedTermSet": {
+          "@type": "DefinedTermSet",
+          "name": "LLMO Framework Glossary",
+          "url": "https://llmoframework.com/ja/"
+        }
       }
 ---
 
@@ -46,6 +79,10 @@ head:
 LLMOは、検索エンジンのクローラーではなく、ChatGPT・Claude・Gemini・PerplexityといったAIシステムに向けたコンテンツ設計の分野である。SEOが検索順位のために最適化するのに対し、LLMOはAIが生成する回答の中で*そのまま引用される*ことを目指す。
 
 最も短い定義はこうだ。**LLMOとは、検索結果ではなくAIの回答のためのSEOである。**
+
+## LLMOは何の略か？
+
+LLMOは **Large Language Model Optimization** の略である——「LLM最適化」と読まれることもある。この名前は最適化の対象を正確に示している。対象は検索エンジンのランキングアルゴリズムではなく、LLMのリトリーバルと引用の挙動そのものだ。表面ではなく機構を名指ししていること——それがこの用語が曖昧なラベル群より長持ちしている理由である。
 
 ## LLMOはなぜ重要なのか？
 
@@ -80,7 +117,12 @@ LLMOはAEOとGEOの両方を包含し、検索にとどまらないすべてのL
 
 一行でまとめると: **GEOとAEOはLLMOのサブセットであり、LLMOはより広範で実装重視の標準である。**
 
-## 次のステップ
+## LLMOはどう実践するのか？
 
-- **LLMOの実践方法は?** [30分でクイックスタート](/ja/guide/quickstart/) で3つの必須ファイルを追加する。
-- **全体像は?** [LLMO Framework](/ja/framework/overview/) — AI可視性のための6つの採点コンポーネント。
+3つのファイルから、この順で始める:
+
+1. **llms.txt** — 安定したURLに置く、AIが読めるサイト要約
+2. **AIクローラーを許可するrobots.txt** — GPTBot・ClaudeBot・PerplexityBotなど
+3. **JSON-LD構造化データ** — LLMが推測なしに引用できる機械可読の事実
+
+[30分でクイックスタート](/ja/guide/quickstart/)が3つすべてをコピペ可能なテンプレート付きで解説している。全体像は [LLMO Framework](/ja/framework/overview/) — AI可視性のための6つの採点コンポーネント。
