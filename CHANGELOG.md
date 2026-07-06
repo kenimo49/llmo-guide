@@ -10,6 +10,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Design tweaks, typo fixes, broken-link repairs, and translation backfills do **not** trigger a version bump. Only changes to framework concepts and content claims are tracked here.
 
+## [1.8.0] — 2026-07-07
+
+### Headline
+
+Two new pages — Multilingual LLMO guide and Citation Half-Life research — plus Retrieval Signals and LLMO-vs-SEO field-evidence expansions (EN/JA)
+
+### Added
+
+- New `guide/multilingual-llmo` (EN canonical + JA): the wrong-language citation problem (LLM engines answer in the reader's language but cite the English URL; Google-backed engines inherit hreflang handling, ChatGPT/Perplexity often do not), why the retrieval layer is English-biased (inbound-link asymmetry, partial hreflang parsing, translation quality as a trust signal), signal fixes ranked by measured impact (hreflang + x-default > self-referencing canonical per language > per-language llms.txt > engine configuration: nothing), the language-asymmetry strategy (22-day 4-language measurement: PT 748 pageviews with 17 articles vs EN 195 with 26; community door / thinner AI-search fields / early-mover basics), and this site's own 8-locale fallback + noindex implementation as the reference
+- New `research/citation-half-life` (EN + JA): published decay estimates (median ≈4.5 weeks, 40–60% monthly domain turnover, ~50% of cited content under 13 weeks old), the five-rule reproducible protocol (fixed frozen prompts, three retries counted at prompt level, weekly cadence, AI-vs-GSC two-clock control, decay fit from peak not week 1), measured half-lives across 3 page types × 3 engines (3.2–9.1 weeks; evergreen ~2× experience reports; Perplexity slowest, ChatGPT fastest), partial and uneven refresh recovery (60–75% of peak, substantive edits only), and the launch-vs-retention split mapped to Citation vs Authority/Coherence signals
+- `framework/retrieval-signals` (EN/JA): new "Give Every Page a .md Twin" pattern (same URL + `.md`, `text/markdown; charset=utf-8`, `Link: rel="alternate"` advertisement, GitHub Pages/Jekyll trap, curl verification, honest vendor-confirmation caveat) and new "Avoid the Five llms.txt Anti-Patterns" section from a 30-file production audit (24/30 affected: dump-everything, robots.txt contradiction, HTML-only links, about-page theatre, frozen at launch) with the five-question pre-ship audit; checklist expanded by 3 items
+- `guide/llmo-vs-seo-aeo-geo` (EN/JA): new "Do LLMO and SEO conflict?" section — the coexist / conditional / conflict tactic taxonomy (pruning, structure, statistics coexist; internal links and keywords are execution-dependent; answer-first and over-condensing conflict via dwell time and depth), per-page-role resolution, and the separate-metrics rule; fourth question added to FAQPage JSON-LD
+
+### Notes
+
+- Sidebar: "Multilingual LLMO" added to Getting Started after Measuring LLMO; "Citation Half-Life" added to Research — both with all 7 locale label translations
+- Citation Half-Life is a Research entry, not a Public Experiment Log: Experiment Log #3 remains reserved for the Score v0.1 citation-correlation test
+- Translation backfill for zh/ko/de/fr/es/pt follows separately (no version bump)
+
+
 ## [1.7.0] — 2026-07-07
 
 ### Headline

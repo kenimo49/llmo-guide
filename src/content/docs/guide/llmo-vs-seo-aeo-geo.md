@@ -34,6 +34,14 @@ head:
               "@type": "Answer",
               "text": "Optimizing for LLMO covers AEO and GEO as a side effect, because LLMO is a superset. Sites that only optimize for SEO will still rank in Google but may be invisible to ChatGPT, Claude, Gemini, and Perplexity. Start with LLMO if your audience uses AI tools to discover content."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Do LLMO and SEO conflict?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Partially. LLMO tactics fall into three classes relative to SEO: coexisting tactics (content pruning, structured headings, statistics and citations) help both; conditional tactics (internal linking, keyword consistency) help or hurt depending on execution; conflicting tactics (aggressive answer-first rewrites, over-condensing body text) can raise AI citations while reducing dwell time, topical depth, and search traffic. Apply coexisting tactics site-wide, split conflicting tactics by page role, and measure SEO and LLMO with separate metrics."
+            }
           }
         ]
       }
@@ -89,3 +97,29 @@ Optimize for **LLMO** if you want to cover the broadest surface. LLMO is a super
 Start here: [LLMO Quickstart in 30 minutes](/guide/quickstart/) covers the three essential files (`robots.txt`, `llms.txt`, JSON-LD) that move a site from invisible to AI-citable.
 
 Working in local or map-search? [LLMO vs GEO vs AEO for local business](https://ainativemeo.com/blog/llmo-vs-geo-vs-aeo/) applies this same comparison to Google Business Profile, NAP entity resolution, and how each AI engine cites local data.
+
+## Do LLMO and SEO conflict?
+
+Partially — and "apply every LLMO tactic to every page" is the specific way sites discover this. In one documented case, a site that adopted answer-first rewrites, condensed body text, and question-form headings across all pages saw AI citations increase within a month while Google Search Console showed existing search traffic declining ([field report, Japanese](https://zenn.dev/kenimo49/articles/llmo-seo-tradeoff-coexist-design)).
+
+Relative to SEO, LLMO tactics fall into three classes:
+
+**1. Coexisting tactics — apply site-wide without hesitation**
+
+- **Content pruning**: consolidating thin or duplicate pages helps SEO (link equity, quality signals) and LLMO alike — multiple URLs competing for the same concept read as low confidence to generative engines. Pair pruning with keeping the surviving page updated: stale pages lose citation frequency.
+- **Structured headings and Q&A formatting**: richer extraction for AI, richer snippets for search.
+- **Statistics and cited sources**: the strongest coexisting tactic. GEO research shows statistics additions raise citation rates; the same primary data strengthens E-E-A-T. Google's own AI-optimization guidance positions generative visibility as an extension of strong SEO, not a replacement.
+
+**2. Conditional tactics — outcome depends on execution**
+
+- **Internal linking**: pruning without re-pointing links creates orphan pages that break both human navigation and crawler paths. Prune and re-link as one operation.
+- **Keywords**: density-style repetition measurably *lowers* AI visibility, while consistent entity-level terminology helps both engines. Consistency beats density.
+
+**3. Conflicting tactics — split by page role, never apply uniformly**
+
+- **Answer-first structure** improves AI citation (real-time retrieval judges relevance from the opening passage) but can cut dwell time and scroll depth when readers get the full answer up front.
+- **Over-condensing** makes chunks easier to extract but strips the topical depth and long-tail coverage that search rewards. The fix is structural: keep opening summaries and section-lead sentences terse, keep total body depth intact, and let lists and tables make deep content extractable. Shorten the *distance to the answer*, not the content.
+
+The resolution is per-page role assignment: glossary and FAQ pages go full answer-first; case studies and deep technical pages keep an opening summary but preserve depth. Do not try to maximize both disciplines on a single page.
+
+**Measure the two disciplines separately.** A blended dashboard averages the trade-off away — AI citations rise while search traffic quietly erodes. Track SEO through Search Console (traffic, position) and LLMO through direct AI querying in fresh sessions ([Measuring LLMO](/guide/measuring-llmo/) covers the metrics). Only side-by-side tracking exposes the exchange rate a tactic actually has.

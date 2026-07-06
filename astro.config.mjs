@@ -199,6 +199,7 @@ export default defineConfig({
             { label: 'How AI Finds Content', translations: { ja: 'AIがコンテンツを発見する仕組み', 'zh-CN': 'AI如何发现内容', ko: 'AI가 콘텐츠를 발견하는 방법', de: 'Wie KI Inhalte findet', fr: "Comment l'IA découvre le contenu", es: 'Cómo la IA encuentra contenido', 'pt-BR': 'Como a IA encontra conteúdo' }, slug: 'guide/how-ai-finds-content' },
             { label: 'Quickstart: 30 Minutes', translations: { ja: 'クイックスタート：30分で実装', 'zh-CN': '快速入门：30分钟实现', ko: '빠른 시작: 30분 구현', de: 'Schnellstart: 30 Minuten', fr: 'Démarrage rapide : 30 minutes', es: 'Inicio rápido: 30 minutos', 'pt-BR': 'Início rápido: 30 minutos' }, slug: 'guide/quickstart' },
             { label: 'Measuring LLMO', translations: { ja: 'LLMOの測定', 'zh-CN': '衡量LLMO', ko: 'LLMO 측정', de: 'LLMO messen', fr: 'Mesurer le LLMO', es: 'Medir LLMO', 'pt-BR': 'Medindo LLMO' }, slug: 'guide/measuring-llmo' },
+            { label: 'Multilingual LLMO', translations: { ja: '多言語LLMO', 'zh-CN': '多语言LLMO', ko: '다국어 LLMO', de: 'Mehrsprachiges LLMO', fr: 'LLMO multilingue', es: 'LLMO multilingüe', 'pt-BR': 'LLMO multilíngue' }, slug: 'guide/multilingual-llmo' },
             { label: 'FAQ', translations: { ja: 'よくある質問', 'zh-CN': '常见问题', ko: '자주 묻는 질문', de: 'Häufige Fragen', fr: 'Foire aux questions', es: 'Preguntas frecuentes', 'pt-BR': 'Perguntas frequentes' }, slug: 'guide/faq' },
           ],
         },
@@ -238,6 +239,7 @@ export default defineConfig({
             { label: 'Papers & References', translations: { ja: '論文・参考文献', 'zh-CN': '论文与参考文献', ko: '논문 및 참고문헌', de: 'Publikationen & Referenzen', fr: 'Articles & Références', es: 'Artículos y referencias', 'pt-BR': 'Artigos e referências' }, slug: 'research/papers' },
             { label: 'GEO Paper Summary', translations: { ja: 'GEO論文の要約', 'zh-CN': 'GEO论文摘要', ko: 'GEO 논문 요약', de: 'GEO-Paper Zusammenfassung', fr: 'Résumé de l\'article GEO', es: 'Resumen del artículo GEO', 'pt-BR': 'Resumo do artigo GEO' }, slug: 'research/geo-paper-summary' },
             { label: 'Microsoft Guidelines', translations: { ja: 'Microsoftのガイドライン', 'zh-CN': '微软指南', ko: 'Microsoft 가이드라인', de: 'Microsoft-Richtlinien', fr: 'Directives Microsoft', es: 'Directrices de Microsoft', 'pt-BR': 'Diretrizes da Microsoft' }, slug: 'research/microsoft-guidelines' },
+            { label: 'Citation Half-Life', translations: { ja: 'AI引用の半減期', 'zh-CN': '引用半衰期', ko: '인용 반감기', de: 'Zitations-Halbwertszeit', fr: 'Demi-vie des citations', es: 'Vida media de las citas', 'pt-BR': 'Meia-vida das citações' }, slug: 'research/citation-half-life' },
           ],
         },
         {

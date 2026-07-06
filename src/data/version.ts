@@ -9,9 +9,21 @@
  *
  * Design tweaks, typo fixes, translation backfills do NOT bump the version.
  */
-export const VERSION = '1.7.0';
+export const VERSION = '1.8.0';
 
 export const RELEASES = [
+  {
+    version: '1.8.0',
+    date: '2026-07-07',
+    summary:
+      'Two new pages — Multilingual LLMO guide and Citation Half-Life research — plus field-evidence expansions to Retrieval Signals (.md twins, five llms.txt anti-patterns) and the LLMO-vs-SEO conflict taxonomy (EN/JA)',
+    highlights: [
+      'New guide/multilingual-llmo: the wrong-language citation problem (engines answer in the reader\'s language but cite the English URL), signal fixes ranked by measured impact (hreflang+x-default > self-canonical > per-language llms.txt), and the language-asymmetry strategy from a 4-language 22-day measurement (PT 748 vs EN 195 pageviews)',
+      'New research/citation-half-life: 90-day fixed-protocol measurement across ChatGPT/Claude/Perplexity — half-lives of 3.2 to 9.1 weeks, evergreen pages hold citations ~2x longer than experience reports, substantive refreshes recover 60-75% of peak',
+      'Retrieval Signals: "Give Every Page a .md Twin" implementation pattern and the five llms.txt anti-patterns from a 30-file production audit (24/30 affected), with the five-question pre-ship audit',
+      'LLMO vs SEO vs AEO vs GEO: new "Do LLMO and SEO conflict?" section with the coexist/conditional/conflict tactic taxonomy and per-page-role resolution, added to FAQPage schema',
+    ],
+  },
   {
     version: '1.7.0',
     date: '2026-07-07',
